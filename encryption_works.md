@@ -102,7 +102,7 @@ Even if they can, using Tor still gives us many advantages. It makes their job m
 
 The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en).
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/torbrowser.png)
 
 When Snowden [was answering questions on Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower) from a "secure Internet connection", he was probably routing his traffic through the Tor network. He may have also been using a [bridge](https://bridges.torproject.org/) to connect to the Tor network to make the fact that he was using Tor from his IP address less obvious to eavesdroppers.
 
@@ -162,11 +162,11 @@ Without verifying keys you have no way to know that you're not falling victim to
 
 The following screenshots show Pidgin's visual indications of fingerprint verification. If you have verified OTR fingerprints your conversation is private, and if you haven't, your conversation is encrypted but you might be under attack. You can't know for sure without verifying.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/verified.png) ![](https://raw.github.com/micahflee/encryption-works/master/images/unverified.png)
 
 If you click the Unverified link (in Adium it's a lock icon) you can choose "Authenticate buddy". The OTR protocol supports three types of verification: the [socialist millionaire](https://en.wikipedia.org/wiki/Socialist_millionaire) protocol, a [shared secret](https://en.wikipedia.org/wiki/Shared_secret), and manual fingerprint verification. All OTR clients support manual fingerprint verification, but not all clients support other types of verification. When in doubt, choose manual fingerprint verification.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/fingerprints.png)
 
 In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to meet up in person, or talk on the phone if you can recognize their voice, or find some other out-of-band but secure method to verify fingerprints, such as sending a PGP encrypted and signed email.
 
@@ -232,7 +232,8 @@ Like OTR, each PGP key has a unique fingerprint. You can find [a copy of my publ
 
 The security of crypto often relies on the security of a password. Since passwords are very easily guessed by computers, cryptographers prefer the term [passphrase](https://en.wikipedia.org/wiki/Passphrase) to encourage users to make their passwords very long and secure.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/password_strength.png)
+Comic courtsey [XKCD](https://xkcd.com/936/)
 
 For tips on choosing good passphrases, read the [passphrase section](https://www.eff.org/wp/defending-privacy-us-border-guide-travelers-carrying-digital-devices#passphrase) of EFF's Defending Privacy at the U.S. Border: A Guide for Travelers Carrying Digital Devices whitepaper, and also the [Diceware Passphrase Home Page](http://world.std.com/~reinhold/diceware.html).
 
@@ -250,11 +251,11 @@ Right now PGP is very difficult to use securely from a web browser. While some b
 
 You can send encrypted emails and digitally sign them using the graphical user interface provided by Thunderbird and Enigmail. Here's an example of an encrypted email that I'm sending to myself. When I hit send, my software took the body of the message and encrypted it using my public key, making the content unintelligible to eavesdroppers, and indeed to my email provider too.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/encrypt_sign.png)
 
 When I opened this email I was prompted to type in my encryption passphrase to decrypt it. Since it was encrypted using my public key, the only way I could decrypt it is with my secret key. Since my secret key is protected with a passphrase, I needed to type my passphrase to temporarily decrypt my secret key in order to use it to decrypt the message.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)
 
 ### PGP Isn't Just For Email
 
@@ -295,13 +296,13 @@ As with OTR keys, each PGP key has a unique fingerprint. And as with OTR, you ne
 
 You can right-click on a key in this list and choose View Details to see its fingerprint. Here are the details of the PGP key that the disk encryption software [TrueCrypt](http://www.truecrypt.org/) uses to digitally digitally sign releases of its software.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/key_properties.png)
 
 Also like OTR, you need to meet in person, talk on the phone, or use an already verified OTR session to compare each character of the fingerprint.
 
 After you have verified that the public key you have belongs to the person you think it does, you can click "Select action" and choose "Sign Key".
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/key_signing.png)
 
 In the screenshot above I checked the "Local signatures (cannot be exported)" box. In this way, you can sign PGP keys, which is necessary for Enigmail and other PGP software to display security messages that make sense, but you don't run the risk of [accidentally publishing who you communicate with to a PGP key server](https://en.wikipedia.org/wiki/Key_server_%28cryptographic%29#Privacy_concerns).
 
@@ -349,11 +350,11 @@ After booting to the DVD you have the option to install Tails on a USB stick, wh
 
 I discussed using Thunderbird with the Enigmail add-on to access your email and use PGP, however this software doesn't come with Tails. Tails comes with [Claws Mail](http://www.claws-mail.org/) which includes a PGP plugin.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/claws_mail.png)
 
 Instead of using Enigmail's PGP key management graphical user interface to import, export, generate, view details about, and sign keys, you can click on the clipboard icon in the top right of the screen and choose Manage Keys to open [Seahorse](https://live.gnome.org/Seahorse), which provides these same features.
 
-**TODO: insert image**
+![](https://raw.github.com/micahflee/encryption-works/master/images/tails_manage_keys.png)
 
 ### Workflow
 
