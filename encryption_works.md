@@ -233,6 +233,7 @@ Like OTR, each PGP key has a unique fingerprint. You can find [a copy of my publ
 The security of crypto often relies on the security of a password. Since passwords are very easily guessed by computers, cryptographers prefer the term [passphrase](https://en.wikipedia.org/wiki/Passphrase) to encourage users to make their passwords very long and secure.
 
 ![](https://raw.github.com/micahflee/encryption-works/master/images/password_strength.png)
+
 Comic courtsey [XKCD](https://xkcd.com/936/)
 
 For tips on choosing good passphrases, read the [passphrase section](https://www.eff.org/wp/defending-privacy-us-border-guide-travelers-carrying-digital-devices#passphrase) of EFF's Defending Privacy at the U.S. Border: A Guide for Travelers Carrying Digital Devices whitepaper, and also the [Diceware Passphrase Home Page](http://world.std.com/~reinhold/diceware.html).
