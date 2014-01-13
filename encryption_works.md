@@ -234,7 +234,7 @@ The security of crypto often relies on the security of a password. Since passwor
 
 ![](https://raw.github.com/micahflee/encryption-works/master/images/password_strength.png)
 
-Comic courtsey [XKCD](https://xkcd.com/936/)
+Comic courtesy [XKCD](https://xkcd.com/936/)
 
 For tips on choosing good passphrases, read the [passphrase section](https://www.eff.org/wp/defending-privacy-us-border-guide-travelers-carrying-digital-devices#passphrase) of EFF's Defending Privacy at the U.S. Border: A Guide for Travelers Carrying Digital Devices whitepaper, and also the [Diceware Passphrase Home Page](http://world.std.com/~reinhold/diceware.html).
 
