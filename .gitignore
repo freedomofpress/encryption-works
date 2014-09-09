@@ -1,0 +1,4 @@
+# Vim
+*.swp
+# compiled output from Pandoc
+*.html
