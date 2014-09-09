@@ -1,0 +1,19 @@
+# Using python as the language since it doesn't matter, but this lets us run
+# any script as script and passes the build as long as it exits non-zero
+language: python
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install -y pandoc
+script: "./build.sh"
+# Note: deploy will only trigger for pushes to master, unless you change the
+# conditional deployment defaults.
+# http://docs.travis-ci.com/user/deployment/
+deploy:
+  provider: s3
+  # Make sure the user has an IAM policy that it allows it to access this bucket
+  bucket: encryption-works
+  skip_cleanup: true
+  local-dir: build
+  access_key_id: AKIAIKUMGTV7B3GWHBLA
+  secret_access_key:
+    secure: YohYa+1YW6dFl4wZWD4hc34teid/HAXRp2mHpXR39FK14wfamaGyAW+8fQXanxgZB1s+RmmTkP7ka1tGcLSMv/NqBKW57MiWSx4r+4i8j7/edkzeyF96dxSBDdJvIE32mi6GKkynCEiHXbbgToPX/Jjjo0I+JKFwneKSHUu2xXw=
