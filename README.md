@@ -1,7 +1,7 @@
 # Encryption Works: How to Protect Your Privacy in the Age of NSA Surveillance
 
 > *Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.*
-> 
+>
 > — Edward Snowden, answering questions live on the [Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower)
 
 On July 2, 2013, [Freedom of the Press Foundation](https://pressfreedomfoundation.org/) published this whitepaper entitled Encryption Works. You can find the original [online](https://pressfreedomfoundation.org/encryption-works) or in the PDF and ODT format in the "original" folder.
