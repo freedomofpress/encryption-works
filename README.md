@@ -8,9 +8,23 @@ On July 2, 2013, [Freedom of the Press Foundation](https://pressfreedomfoundatio
 
 This version has been converted to markdown so it can be easily tracked in git and collaboratively edited. The guide itself is in [encryption_works.md](https://github.com/micahflee/encryption-works/blob/master/encryption_works.md).
 
+## Contributing
+
+The source of the document is `encryption_works.md`, which is written in Markdown using the [Pandoc extensions]. Pandoc can render the document to HTML, PDF, or a number of other output formats.
+
+To do so, first [install Pandoc](http://johnmacfarlane.net/pandoc/installing.html). Once it is installed, you can render the `.md` to `.html` with
+
+    $ pandoc -s -t html5 encryption_works.md > encryption_works.html
+
+For further information on conversion options, see the [Pandoc README] or man page.
+
+[Pandoc extensions]: http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown "Pandoc Markdown extensions"
+[Pandoc README]: http://johnmacfarlane.net/pandoc/README.html "Pandoc README"
+
 This work is licensed under [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 
---
+---
+
 Micah Lee
 [@micahflee](https://twitter.com/micahflee) | micah@pressfreedomfoundation.org
 0x5C17616361BD9F92422AC08BB4D25A1E99999697
