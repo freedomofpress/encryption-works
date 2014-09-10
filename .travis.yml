@@ -17,3 +17,7 @@ deploy:
   access_key_id: AKIAIKUMGTV7B3GWHBLA
   secret_access_key:
     secure: YohYa+1YW6dFl4wZWD4hc34teid/HAXRp2mHpXR39FK14wfamaGyAW+8fQXanxgZB1s+RmmTkP7ka1tGcLSMv/NqBKW57MiWSx4r+4i8j7/edkzeyF96dxSBDdJvIE32mi6GKkynCEiHXbbgToPX/Jjjo0I+JKFwneKSHUu2xXw=
+  # Just for testing, so Travis can deploy when I push autobuild
+  # Would probably best to remove this, or decide on a proper set of deployment conditions, before merging this PR
+  on:
+    all_branches: true
