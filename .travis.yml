@@ -3,7 +3,7 @@
 language: python
 before_install:
 - sudo apt-get update -qq
-- sudo apt-get install -y pandoc
+- sudo apt-get install -y pandoc texlive
 script: "./build.sh"
 # Note: deploy will only trigger for pushes to master, unless you change the
 # conditional deployment defaults.
