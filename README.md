@@ -14,7 +14,11 @@ The source of the document is `encryption_works.md`, which is written in Markdow
 
 To do so, first [install Pandoc](http://johnmacfarlane.net/pandoc/installing.html). Once it is installed, you can render the `.md` to `.html` with
 
-    $ pandoc -s -t html5 encryption_works.md > encryption_works.html
+    $ pandoc -s -t html5 encryption_works.md -o encryption_works.html
+
+If you want to render pdf, make sure you follow the instructions on the Pandoc installation page to install LaTeX for your platform. Then:
+
+    $ pandoc -s -t latex encryption_works.md -o encryption_works.pdf
 
 For further information on conversion options, see the [Pandoc README] or man page.
 
