@@ -7,30 +7,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-10-29 19:03+0100\n"
+"POT-Creation-Date: 2015-01-08 10:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
-#: encryption_works.md:2
-msgid ""
-"# Encryption Works: How to Protect Your Privacy in the Age of NSA "
-"Surveillance"
+#. type: Title #
+#: encryption_works.md:1
+#, no-wrap
+msgid "Encryption Works: How to Protect Your Privacy in the Age of NSA Surveillance"
 msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:6
+#, no-wrap
 msgid ""
 "> *Encryption works. Properly implemented strong crypto systems are one of "
 "the few things that you can rely on. Unfortunately, endpoint security is so "
-"terrifically weak that NSA can frequently find ways around it.* > > — "
-"Edward Snowden, answering questions live on the [Guardian's "
-"website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower)"
+"terrifically weak that NSA can frequently find ways around it.*\n"
+"> \n"
+"> — Edward Snowden, answering questions live on the [Guardian's "
+"website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower)\n"
 msgstr ""
 
 #. type: Plain text
@@ -56,9 +57,10 @@ msgid ""
 "communicating with sources online."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:12
-msgid "## Threat Model"
+#. type: Title ##
+#: encryption_works.md:11
+#, no-wrap
+msgid "Threat Model"
 msgstr ""
 
 #. type: Plain text
@@ -92,20 +94,26 @@ msgid ""
 "governments. This paper explores methods you can use in both cases."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:20
-msgid "## Crypto Systems"
+#. type: Title ##
+#: encryption_works.md:19
+#, no-wrap
+msgid "Crypto Systems"
 msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:28
+#, no-wrap
 msgid ""
 "> *We discovered something. Our one hope against total domination. A hope "
 "that with courage, insight and solidarity we could use to resist. A strange "
-"property of the physical universe that we live in.* > > *The universe "
-"believes in encryption.* > > *It is easier to encrypt information than it is "
-"to decrypt it.* > > — Julian Assange, in the introduction of Cypherpunks: "
-"Freedom and the Future of the Internet"
+"property of the physical universe that we live in.*\n"
+"> \n"
+"> *The universe believes in encryption.*\n"
+"> \n"
+"> *It is easier to encrypt information than it is to decrypt it.*\n"
+"> \n"
+"> — Julian Assange, in the introduction of Cypherpunks: Freedom and the "
+"Future of the Internet\n"
 msgstr ""
 
 #. type: Plain text
@@ -199,9 +207,10 @@ msgid ""
 "focused on how we can use it to securely and privately communicate."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:46
-msgid "## Software You Can Trust"
+#. type: Title ##
+#: encryption_works.md:45
+#, no-wrap
+msgid "Software You Can Trust"
 msgstr ""
 
 #. type: Plain text
@@ -238,12 +247,13 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:54
+#, no-wrap
 msgid ""
 "> Microsoft Corp. (MSFT), the world's largest software company, provides "
 "intelligence agencies with information about bugs in its popular software "
 "before it publicly releases a fix, according to two people familiar with the "
 "process. That information can be used to protect government computers and to "
-"access the computers of terrorists or military foes."
+"access the computers of terrorists or military foes.\n"
 msgstr ""
 
 #. type: Plain text
@@ -268,26 +278,29 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:64
+#, no-wrap
 msgid ""
 "> Skype, the Internet-based calling service, began its own secret program, "
 "Project Chess, to explore the legal and technical issues in making Skype "
 "calls readily available to intelligence agencies and law enforcement "
 "officials, according to people briefed on the program who asked not to be "
-"named to avoid trouble with the intelligence agencies.  > > Project Chess, "
-"which has never been previously disclosed, was small, limited to fewer than "
-"a dozen people inside Skype, and was developed as the company had sometimes "
-"contentious talks with the government over legal issues, said one of the "
-"people briefed on the project. The project began about five years ago, "
-"before most of the company was sold by its parent, eBay, to outside "
-"investors in 2009. Microsoft acquired Skype in an $8.5 billion deal that was "
-"completed in October 2011.  > > A Skype executive denied last year in a blog "
-"post that recent changes in the way Skype operated were made at the behest "
-"of Microsoft to make snooping easier for law enforcement. It appears, "
-"however, that Skype figured out how to cooperate with the intelligence "
-"community before Microsoft took over the company, according to documents "
-"leaked by Edward J. Snowden, a former contractor for the N.S.A. One of the "
-"documents about the Prism program made public by Mr. Snowden says Skype "
-"joined Prism on Feb. 6, 2011."
+"named to avoid trouble with the intelligence agencies.\n"
+"> \n"
+"> Project Chess, which has never been previously disclosed, was small, "
+"limited to fewer than a dozen people inside Skype, and was developed as the "
+"company had sometimes contentious talks with the government over legal "
+"issues, said one of the people briefed on the project. The project began "
+"about five years ago, before most of the company was sold by its parent, "
+"eBay, to outside investors in 2009. Microsoft acquired Skype in an $8.5 "
+"billion deal that was completed in October 2011.\n"
+"> \n"
+"> A Skype executive denied last year in a blog post that recent changes in "
+"the way Skype operated were made at the behest of Microsoft to make snooping "
+"easier for law enforcement. It appears, however, that Skype figured out how "
+"to cooperate with the intelligence community before Microsoft took over the "
+"company, according to documents leaked by Edward J. Snowden, a former "
+"contractor for the N.S.A. One of the documents about the Prism program made "
+"public by Mr. Snowden says Skype joined Prism on Feb. 6, 2011.\n"
 msgstr ""
 
 #. type: Plain text
@@ -346,14 +359,16 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:78
+#, no-wrap
 msgid ""
 "> *Cypherpunks write code. We know that someone has to write software to "
 "defend privacy, and since we can't get privacy unless we all do, we're going "
 "to write it. We publish our code so that our fellow Cypherpunks may practice "
 "and play with it. Our code is free for all to use, worldwide. We don't much "
 "care if you don't approve of the software we write. We know that software "
-"can't be destroyed and that a widely dispersed system can't be shut down.* > "
-"> — Eric Hughes, in his 1993 Cypherpunk Manifesto"
+"can't be destroyed and that a widely dispersed system can't be shut down.*\n"
+"> \n"
+"> — Eric Hughes, in his 1993 Cypherpunk Manifesto\n"
 msgstr ""
 
 #. type: Plain text
@@ -402,9 +417,10 @@ msgid ""
 "discuss in detail below, solves many of these problems."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:88
-msgid "## Anonymize Your Location with Tor"
+#. type: Title ##
+#: encryption_works.md:87
+#, no-wrap
+msgid "Anonymize Your Location with Tor"
 msgstr ""
 
 #. type: Plain text
@@ -449,12 +465,13 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:98
+#, no-wrap
 msgid ""
 "> A global passive adversary would be a person or an entity able to monitor "
 "at the same time the traffic between all the computers in a network. By "
 "studying, for example, the timing and volume patterns of the different "
 "communications across the network, it would be statistically possible to "
-"identify Tor circuits and thus matching Tor users and destination servers."
+"identify Tor circuits and thus matching Tor users and destination servers.\n"
 msgstr ""
 
 #. type: Plain text
@@ -503,9 +520,10 @@ msgid ""
 "eavesdroppers."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:110
-msgid "## Off-the-Record (OTR) Chat"
+#. type: Title ##
+#: encryption_works.md:109
+#, no-wrap
+msgid "Off-the-Record (OTR) Chat"
 msgstr ""
 
 #. type: Plain text
@@ -521,8 +539,8 @@ msgid ""
 "conversations. Note: this is different than the \"off-the-record\" option in "
 "Google, which is **not** secure. And remember: while Google and Facebook’s "
 "HTTPS connection is very valuable for protection against your message while "
-"it’s in transit, they still have the keys to your conversations so they "
-"can hand them over to authorities."
+"it’s in transit, they still have the keys to your conversations so they can "
+"hand them over to authorities."
 msgstr ""
 
 #. type: Plain text
@@ -536,9 +554,10 @@ msgid ""
 "need to understand how it works and what attacks against it are possible."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:116
-msgid "### Service Providers and Jabber"
+#. type: Title ###
+#: encryption_works.md:115
+#, no-wrap
+msgid "Service Providers and Jabber"
 msgstr ""
 
 #. type: Plain text
@@ -562,9 +581,10 @@ msgid ""
 "[jabber.org](http://www.jabber.org/)'s service."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:122
-msgid "### OTR Clients"
+#. type: Title ###
+#: encryption_works.md:121
+#, no-wrap
+msgid "OTR Clients"
 msgstr ""
 
 #. type: Plain text
@@ -590,9 +610,10 @@ msgid ""
 "[ChatSecure](http://chrisballinger.info/apps/chatsecure/)."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:128
-msgid "### Your Key"
+#. type: Title ###
+#: encryption_works.md:127
+#, no-wrap
+msgid "Your Key"
 msgstr ""
 
 #. type: Plain text
@@ -607,9 +628,10 @@ msgid ""
 "previously verified your identity."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:132
-msgid "### Sessions"
+#. type: Title ###
+#: encryption_works.md:131
+#, no-wrap
+msgid "Sessions"
 msgstr ""
 
 #. type: Plain text
@@ -687,8 +709,8 @@ msgid ""
 "conversations—which [NSA believes it is legally allowed to "
 "do](https://www.eff.org/deeplinks/2013/06/depth-review-new-nsa-documents-expose-how-americans-can-be-spied-without-warrant), "
 "even if you're a US citizen and they don't have a warrant or probable "
-"cause—and later they compromise your OTR key, they cannot use it to go "
-"back and decrypt your old conversations."
+"cause—and later they compromise your OTR key, they cannot use it to go back "
+"and decrypt your old conversations."
 msgstr ""
 
 #. type: Plain text
@@ -713,9 +735,10 @@ msgid ""
 "as well."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:156
-msgid "### OTR Fingerprint Verification"
+#. type: Title ###
+#: encryption_works.md:155
+#, no-wrap
+msgid "OTR Fingerprint Verification"
 msgstr ""
 
 #. type: Plain text
@@ -828,9 +851,10 @@ msgid ""
 "attack will only be used cautiously."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:180
-msgid "### Logs"
+#. type: Title ###
+#: encryption_works.md:179
+#, no-wrap
+msgid "Logs"
 msgstr ""
 
 #. type: Plain text
@@ -844,18 +868,31 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:202
+#, no-wrap
 msgid ""
 "> (1:40:51 PM) bradass87 has not been authenticated yet. You should "
-"authenticate this buddy.  > > (1:40:51 PM) Unverified conversation with "
-"bradass87 started.  > > (1:41:12 PM) bradass87: hi > > (1:44:04 PM) "
-"bradass87: how are you? > > (1:47:01 PM) bradass87: im an army intelligence "
-"analyst, deployed to eastern baghdad, pending discharge for \"adjustment "
-"disorder\" in lieu of \"gender identity disorder\" > > (1:56:24 PM) "
-"bradass87: im sure you're pretty busy...  > > (1:58:31 PM) bradass87: if you "
-"had unprecedented access to classified networks 14 hours a day 7 days a week "
-"for 8+ months, what would you do? > > (1:58:31 PM) info@adrianlamo.com : "
-"Tired of being tired > > (2:17:29 PM) bradass87: ? > > (6:07:29 PM) "
-"info@adrianlamo.com: What's your MOS?"
+"authenticate this buddy.\n"
+"> \n"
+"> (1:40:51 PM) Unverified conversation with bradass87 started.\n"
+"> \n"
+"> (1:41:12 PM) bradass87: hi\n"
+"> \n"
+"> (1:44:04 PM) bradass87: how are you?\n"
+"> \n"
+"> (1:47:01 PM) bradass87: im an army intelligence analyst, deployed to "
+"eastern baghdad, pending discharge for \"adjustment disorder\" in lieu of "
+"\"gender identity disorder\"\n"
+"> \n"
+"> (1:56:24 PM) bradass87: im sure you're pretty busy...\n"
+"> \n"
+"> (1:58:31 PM) bradass87: if you had unprecedented access to classified "
+"networks 14 hours a day 7 days a week for 8+ months, what would you do?\n"
+"> \n"
+"> (1:58:31 PM) info@adrianlamo.com : Tired of being tired\n"
+"> \n"
+"> (2:17:29 PM) bradass87: ?\n"
+"> \n"
+"> (6:07:29 PM) info@adrianlamo.com: What's your MOS?\n"
 msgstr ""
 
 #. type: Plain text
@@ -891,9 +928,10 @@ msgid ""
 "[here](https://trac.adium.im/ticket/15729)."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:210
-msgid "## \"Pretty Good Privacy\" (PGP) Email Encryption"
+#. type: Title ##
+#: encryption_works.md:209
+#, no-wrap
+msgid "\"Pretty Good Privacy\" (PGP) Email Encryption"
 msgstr ""
 
 #. type: Plain text
@@ -926,9 +964,10 @@ msgid ""
 "up](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818)."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:218
-msgid "### Keypairs and Keyrings"
+#. type: Title ###
+#: encryption_works.md:217
+#, no-wrap
+msgid "Keypairs and Keyrings"
 msgstr ""
 
 #. type: Plain text
@@ -993,9 +1032,10 @@ msgid ""
 "only I can decrypt, provided that my secret key has not been compromised."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:232
-msgid "### Passphrases"
+#. type: Title ###
+#: encryption_works.md:231
+#, no-wrap
+msgid "Passphrases"
 msgstr ""
 
 #. type: Plain text
@@ -1035,9 +1075,10 @@ msgid ""
 "vaults](https://en.wikipedia.org/wiki/Password_vault)."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:244
-msgid "### Software"
+#. type: Title ###
+#: encryption_works.md:243
+#, no-wrap
+msgid "Software"
 msgstr ""
 
 #. type: Plain text
@@ -1072,9 +1113,10 @@ msgid ""
 "through it."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:252
-msgid "### Encrypting, Decrypting, and Signatures"
+#. type: Title ###
+#: encryption_works.md:251
+#, no-wrap
+msgid "Encrypting, Decrypting, and Signatures"
 msgstr ""
 
 #. type: Plain text
@@ -1108,9 +1150,10 @@ msgstr ""
 msgid "![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)"
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:262
-msgid "### PGP Isn't Just For Email"
+#. type: Title ###
+#: encryption_works.md:261
+#, no-wrap
+msgid "PGP Isn't Just For Email"
 msgstr ""
 
 #. type: Plain text
@@ -1170,9 +1213,10 @@ msgid ""
 "    -----END PGP MESSAGE-----\n"
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:291
-msgid "### Identity Verification"
+#. type: Title ###
+#: encryption_works.md:290
+#, no-wrap
+msgid "Identity Verification"
 msgstr ""
 
 #. type: Plain text
@@ -1262,9 +1306,10 @@ msgid ""
 "fingerprints before you can be sure that you're not under attack."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:315
-msgid "### Attacks"
+#. type: Title ###
+#: encryption_works.md:314
+#, no-wrap
+msgid "Attacks"
 msgstr ""
 
 #. type: Plain text
@@ -1284,15 +1329,19 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:325
+#, no-wrap
 msgid ""
 "> On Thursday, before The Post published its first story, I made contact on "
-"a new channel. He was not expecting me there and responded in alarm.  > > "
-"\"Do I know you?\" he wrote.  > > I sent him a note on another channel to "
-"verify my digital \"fingerprint,\" a precaution we had been using for some "
-"time. Tired, I sent the wrong one. \"That is not at all the right "
-"fingerprint,\" he wrote, preparing to sign off. \"You're getting MITM'd.\" "
-"He was talking about a \"man in the middle\" attack, a standard NSA "
-"technique to bypass encryption. I hastily corrected my error."
+"a new channel. He was not expecting me there and responded in alarm.\n"
+"> \n"
+"> \"Do I know you?\" he wrote.\n"
+"> \n"
+"> I sent him a note on another channel to verify my digital \"fingerprint,\" "
+"a precaution we had been using for some time. Tired, I sent the wrong "
+"one. \"That is not at all the right fingerprint,\" he wrote, preparing to "
+"sign off. \"You're getting MITM'd.\" He was talking about a \"man in the "
+"middle\" attack, a standard NSA technique to bypass encryption. I hastily "
+"corrected my error.\n"
 msgstr ""
 
 #. type: Plain text
@@ -1304,9 +1353,10 @@ msgid ""
 "identity verification."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:329
-msgid "## Tails: The Amnesic Incognito Live System"
+#. type: Title ##
+#: encryption_works.md:328
+#, no-wrap
+msgid "Tails: The Amnesic Incognito Live System"
 msgstr ""
 
 #. type: Plain text
@@ -1331,16 +1381,20 @@ msgstr ""
 
 #. type: Plain text
 #: encryption_works.md:339
+#, no-wrap
 msgid ""
 "> Tails is a live system that aims at preserving your privacy and "
 "anonymity. It helps you to use the Internet anonymously almost anywhere you "
 "go and on any computer but leave no trace using unless you ask it "
-"explicitly.  > > It is a complete operating-system designed to be used from "
-"a DVD or a USB stick independently of the computer's original operating "
-"system. It is Free Software and based on Debian GNU/Linux.  > > Tails comes "
-"with several built-in applications pre-configured with security in mind: web "
-"browser, instant messaging client, email client, office suite, image and "
-"sound editor, etc."
+"explicitly.\n"
+"> \n"
+"> It is a complete operating-system designed to be used from a DVD or a USB "
+"stick independently of the computer's original operating system. It is Free "
+"Software and based on Debian GNU/Linux.\n"
+"> \n"
+"> Tails comes with several built-in applications pre-configured with "
+"security in mind: web browser, instant messaging client, email client, "
+"office suite, image and sound editor, etc.\n"
 msgstr ""
 
 #. type: Plain text
@@ -1407,9 +1461,10 @@ msgid ""
 "volume allows you to do this."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:351
-msgid "### PGP and Email in Tails"
+#. type: Title ###
+#: encryption_works.md:350
+#, no-wrap
+msgid "PGP and Email in Tails"
 msgstr ""
 
 #. type: Plain text
@@ -1440,9 +1495,10 @@ msgstr ""
 msgid "![](https://raw.github.com/micahflee/encryption-works/master/images/tails_manage_keys.png)"
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:361
-msgid "### Workflow"
+#. type: Title ###
+#: encryption_works.md:360
+#, no-wrap
+msgid "Workflow"
 msgstr ""
 
 #. type: Plain text
@@ -1556,9 +1612,10 @@ msgid ""
 "would have remained secret."
 msgstr ""
 
-#. type: Plain text
-#: encryption_works.md:379
-msgid "## A Fighting Chance"
+#. type: Title ##
+#: encryption_works.md:378
+#, no-wrap
+msgid "A Fighting Chance"
 msgstr ""
 
 #. type: Plain text
