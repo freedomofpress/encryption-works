@@ -1,4 +1,4 @@
-# El Cifrado Funciona: Cómo porteger tu privacidad en la era de Vigilancia de la NSA
+# El Cifrado Funciona: Cómo proteger tu privacidad en la era de Vigilancia de la NSA
 
 > *El cifrado funciona. Los sistemas de cifrado fuertes e implementados de forma apropiada son una de las pocas cosas en que te puedes confiar. Desafortunadamente, la seguridad de punto final es tan terriblemente débil que la NSA frecuentemente encuentra formas de evadirla.*
 > 
