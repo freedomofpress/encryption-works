@@ -407,3 +407,11 @@ Protecting your privacy in the age of ubiquitous NSA surveillance is incredibly 
 But even with [direct access to all the data traveling at the speed of light through the Internet's backbone fiber-optic cables](http://www.guardian.co.uk/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa), even with [cooperation of the major United States tech companies](http://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/) (which are extremely difficult for people to boycott), the largest, most powerful, and best funded surveillance apparatus that humanity has ever seen cannot defeat mathematics.
 
 The challenge of the new cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default.
+
+
+# About Freedom of the Press Foundation
+
+> “A cantankerous press, an obstinate press, a ubiquitous press must be suffered by those in authority in order to preserve the even greater values of freedom of expression and the right of the people to know.” \
+—Judge Murray Gurfein, Pentagon Papers case, June 17, 1971
+
+The **Freedom of the Press Foundation** is a 501(c)3 non-profit organization dedicated to helping support and defend public-interest journalism focused on exposing mismanagement, corruption, and law-breaking in government. We accept tax-deductible donations to a variety of journalism organizations that push for transparency and accountability, and we work to preserve and strengthen the rights guaranteed to the press under the First Amendment. We also manage [SecureDrop](https://securedrop.org), an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources. It was originally created by the late Aaron Swartz. Click [here](https://freedom.press/securedrop/directory) to see a full list of news organizations which have implemented SecureDrop. 
