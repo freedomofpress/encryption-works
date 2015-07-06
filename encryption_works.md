@@ -409,7 +409,7 @@ But even with [direct access to all the data traveling at the speed of light thr
 The challenge of the new cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default.
 
 
-# About Freedom of the Press Foundation
+# About The Freedom of the Press Foundation
 
 > “A cantankerous press, an obstinate press, a ubiquitous press must be suffered by those in authority in order to preserve the even greater values of freedom of expression and the right of the people to know.” \
 —Judge Murray Gurfein, Pentagon Papers case, June 17, 1971
