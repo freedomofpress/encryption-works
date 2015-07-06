@@ -270,6 +270,19 @@ When I opened this email I was prompted to type in my encryption passphrase to d
 
 ![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)
 
+### How To Verify Someone's Key in Enigmail and View Signatures
+
+If you're a journalist trying to get to grips with these privacy tools, it's useful to get together with colleagues and help one another out with setup. In addition, you can verify one another, which makes it harder for you to be individually attacked. By having a key signed by colleagues and other people you trust, it's harder to be the victim of an attack where someone tries to steal your identity.
+
+Here's how to verify someone's GPG key: 
+
+- Meet your colleagues face-to-face. Each person should bring their own laptop.
+- Make sure your key is uploaded to a key-server. In the "Key Management" section of Enigmail, right-click and select "Upload Public Keys to Keyserver." It should suggest [pgp.mit.edu](http://pgp.mit.edu) by default, which will work fine.
+- Search for your friend's key in the keyserver and download it into Enigmail. Then, verbally verify that the fingerprints are the same. If you know your colleagues, this is enough, but if you're unsure of names, feel free to ask pople to bring some form of ID so you can double-check.
+- Once you've verified their key is correct, you should sign it with yours. 
+- You can see who else has signed a person's key by clicking on it and choosing "View Signatures" from the "Select action ..." drop-down menu.
+- In the end, each person should have an GPG keyring containing signed keys of each other person.
+
 ### PGP Isn't Just For Email
 
 While PGP is often used for email encryption, nothing stops you from using it to encrypt anything and publish it using any medium. You can post PGP encrypted messages on blogs, social networks, and forums.
