@@ -209,6 +209,13 @@ In theory, it’s possible to de-anonymize Tor traffic by studying the timing of
 
 OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people that you chat with. Identity verification is extremely important and something that many OTR users neglect to do. While OTR is much more user friendly that other forms of public key encryption, if you wish to use it securely you still need to understand how it works and what attacks against it are possible.
 
+## A Note About Gmail's "off the record" function.
+
+![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
+
+While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
+
+
 ### Service Providers and Jabber
 
 Using OTR only encrypts the contents of your chat conversations but not the metadata related to them. This metadata includes who you talk to and when and how often you talk to them. For this reason I recommend using a service that isn't known to collaborate with intelligence agencies. While this won't necessarily protect your metadata at least you have a chance of keeping it private.
