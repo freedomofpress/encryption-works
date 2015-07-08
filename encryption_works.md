@@ -171,8 +171,6 @@ If you're working on sensitive material, it's a good idea to keep your laptop in
 Using the digital security tools described in this document only gives you so much security -- good physical security is half the battle. A 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201) of American journalist and WikiLeaks volunteer Jacob Appelbaum revealed that if his laptop is out of his sight for any length of time, he destroys it because of the risk that it's been compromised. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
 
 
-
-
 # Anonymizing Your Location With Tor
 
 Despite NSA surveillance, it’s still possible to browse the web with a high degree of anonymity. Tor is a web browser like Firefox or Internet Explorer, but it allows you to use the Internet while concealing your IP address, which is generally an accurate representation of your approximate location. 
@@ -375,34 +373,11 @@ Here's how to verify someone's GPG key:
 - You can see who else has signed a person's key by clicking on it and choosing "View Signatures" from the "Select action ..." drop-down menu.
 - In the end, each person should have an GPG keyring containing signed keys of each other person.
 
-### PGP Isn't Just For Email
+## Encrypting Files with PGP
 
-While PGP is often used for email encryption, nothing stops you from using it to encrypt anything and publish it using any medium. You can post PGP encrypted messages on blogs, social networks, and forums.
+As well as powering e-mail encryption, you can also use PGP to encrypt files on your hard-drive with your public key. This serves as a second layer of protection on top of full-drive encryption and also allows you to use traditionally insecure cloud storage systems with a new degree of trust: with PGP-encrypted files, you can store documents on Dropbox that not even they can access or read.
 
-Kevin Poulsen [published a PGP encrypted message on Wired's website](http://www.wired.com/threatlevel/2013/06/signed-bda0df3c/) intended for Edward Snowden to read. As long as Wired has a copy of Snowden's real public key, only someone in possession of Snowden's secret key can decrypt this message. We don't know how Wired got a copy of Snowden's public key.
-
-Here's a message that was encrypted to my public key. Without having access to my associated secret key, NSA should not be able to break the encryption. (NSA, let me know if you get it.)
-
-    -----BEGIN PGP MESSAGE-----
-    Version: GnuPG v1.4.12 (GNU/Linux)
-
-    hQIMA86M3VXog5+ZAQ//Wep9ZiiCMSmLk/Pt54d2wQk07fjxI4c1rw+jfkKQAi4n
-    6HzrX9YIbgTukuv/0Bjl+yp3qcm22n6B/mk+P/3Cbxo+bW3gsq5OLFNenQO3RMNM
-    i9RC+qJ82sgPXX6i9V/KszNxAyfegbMseoW9FcFwViD14giBQwA7NDw3ICm89PTj
-    y+YBMA50iRqdErmACz0fHfA/Ed5yu5cOVVa8DD12/upTzx7i0mmkAxwsKiktEaKQ
-    vg8i1gvzqeymWYnckGony08eCCIZFc78CeuhODy0+MXyrnBRP9p++fcQE7/GspKo
-    SbxVT3evwT2UkebezQT2+AL57NEnRsJzsgQM4R0sMgvZI7I6kfWKerhFMt3imSt1
-    QGphXmKZPRvKqib59U57GsZU1/2CMIlYBVMTZIpYKRh6NgE8ityaa4gehJDl16xa
-    pZ8z3DMNt3CRF8hqWmJNUfDwUvXBEk8d/8Lkh39/IFHbWqNJh6cgq3+CipXH5HjL
-    iVh7tzGPfB6yn+RETzcZjesZHtz4hFudOxTMV0YnTIv0FGtfxsfEQe7ZVmmfqGNG
-    glxE0EfbXt0psLXngFMneZYBJqXGFsK3r5bHjRm6wpC9EDAzXp+Tb+jQgs8t5eWV
-    xiQdBpNZnjnGiIOASOxJrIRuzbTjo389683NfLvPRY8eX1iEw58ebjLvDhvDZ2jS
-    pwGuWuJ/8QNZou1RfU5QL0M0SEe3ACm4wP5zfUGnW8o1vKY9rK5/9evIiA/DMAJ+
-    gF20Y6WzGg4llG9qCAnBkc3GgC7K1zkXU5N1VD50Y0qLoNsKy6eengXvmiL5EkFK
-    RnLtP45kD2rn6iZq3/Pnj1IfPonsdaNttb+2fhpFWa/r1sUyYadWeHs72vH83MgB
-    I6h3Ae9ilF5tYLs2m6u8rKFM8zZhixSh
-    =a8FR
-    -----END PGP MESSAGE-----
+![Encrypting a file on Mac with GPGTools can be accessed through the "Services" tab in the secondary menu.](http://i.imgur.com/adsGT8j.jpg)
 
 ### Identity Verification
 
