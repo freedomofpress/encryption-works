@@ -96,33 +96,123 @@ It's important to remember that just because you use free software doesn't mean 
 
 Tails, which is a live DVD and live USB GNU/Linux distribution that I will discuss in detail below, solves many of these problems.
 
-## Anonymize Your Location with Tor
 
-Tor is a software service that allows you to use the Internet while concealing your IP address, which is, in general, a fairly accurate representation of your location. The [Tor](https://www.torproject.org/) network is made up of over 3,600 volunteer servers called nodes. When someone uses the Tor network to visit a website their connection gets bounced through three of these nodes (called a circuit) before finally exiting into the normal Internet. Anyone intercepting traffic will think your location is the final node which your traffic exits from.
+Some journalists think that if they're not working on national security stories, the have nothing to worry about. Edward Snowden and Chelsea Manning are two recent high-profile examples of leakers, but the truth is that journalists working on a whole host of different story types should be thinking about their digital security.
 
-It's important to remember that just because your connection to the Internet may be anonymous that doesn't magically make it secure. EFF has made a great [visualization of how Tor and HTTPS can work together to protect your privacy](https://www.eff.org/pages/tor-and-https).
+The NSA isn't the only adversity journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
 
-Like all good cryptography software, Tor is free software, complete with an open [bug tracker](https://trac.torproject.org/projects/tor), [mailing lists](https://www.torproject.org/docs/documentation#MailingLists), and [source code](https://gitweb.torproject.org/tor.git?a=tree;hb=HEAD).
+What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them. This starts by asking ourselves questions about our work, such as:
 
-Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
+- What are you protecting?
+- Who/what are you protecting against? 
+- What steps can you take?
 
-> A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
+Take the above example of the newsroom which got scooped. They want to protect their story -- they don't want all their research to go unrewarded and some other news outlet to get the credit. They're protecting against disgruntled ex-employees as well as external attackers. To prevent this from happening, the newsroom can take steps and implement strict practices where journalists have their access revoked to editorial documents as soon as their employment is terminated.
 
-We still don't know whether or not NSA or GCHQ counts as a global adversary, but we do know that they monitor a large portion of the Internet. It's too early to know for sure how often these intelligence agencies can defeat the anonymity of the Tor network.
+As you can see, threat modeling is about how you think about a problem as much as what you do to solve it. In this example, we weren't thinking about the NSA or of being hacked by an external adversary. In fact, hacking isn't the biggest danger facing most journalists -- it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a phishing attack and someone getting access to all your e-mail. 
 
-Even if they can, using Tor still gives us many advantages. It makes their job much harder, and we leave much less identifying data on the servers we connect to through the Tor network. It makes it much harder to be the victim of a MITM attack at our local network or ISP level. And even if some Tor circuits can be defeated by a global adversary, if enough people are getting their traffic routed through the same Tor nodes at the same time, it might be difficult for the adversary to tell which traffic belongs to which circuits.
+Journalists' e-mail accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail into resetting the password rather than hacking Google itself. There's even a phrase for this -- *rubber-hose cryptanalysis* refers to the fact that it's far easier to coerce or trick someone into giving you their password than break the underlying encryption.
 
-The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en).
+!["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/torbrowser.png)
+Let's look at another example: a metro journalist reporting on corruption in her city's police force. This is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
 
-When Snowden [was answering questions on Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower) from a "secure Internet connection", he was probably routing his traffic through the Tor network. He may have also been using a [bridge](https://bridges.torproject.org/) to connect to the Tor network to make the fact that he was using Tor from his IP address less obvious to eavesdroppers.
+The adversity in this case isn't the NSA, but the scenario shows why practicing good operational security protects you from numerous adversities. Snowden is the most famous recent example of a whistleblower, but journalists use inside sources who need protecting quite often.
+
+---
+
+# Operational Security
+
+> "The sad fact is that when it comes to the internet, everybody is a spy: the government, the service providers watching your packets whiz by, the employer who operates the network you're reading this post on, the lurker on the wifi at Starbucks. The ubiquity of digital communications has made it harder than ever before to engage in truly private conversations." \
+— John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a Secure Drop instance.
+
+Protecting the communications between journalists and sources is one of the most important press freedom issues of the 21st Century. A record number of whistleblowers have recently been prosecuted in large part because the government thinks it can obtain the email and phone call records of any interaction, without ever attempting to force journalists to testify against their sources in court. A [report](https://www.aclu.org/sites/default/files/field_document/dem14-withlibertytomonitorall-07282014.pdf) from the American Civil Liberties Union, titled "With Liberty To Monitor All: How Large-Scale US Surveillance is Harming Journalism, Law And American Democracy" pointed out the numerous ways in which the US surveillance apparatus is chilling journalism. In interviews with numerous reporters, several themes emerged: 
+
+- The landscape for journalists reporting on policy failures and military decisions has been chilled and toughened.
+- Journalists believe sources are less likely to talk to them, since technology makes it much easier to follow a leak trail than before.
+- Journalists are concerned that the government now has access to "a record of everywhere I’ve walked, everywhere I’ve been." 
+
+To that end, Freedom of the Press Foundation has supported a variety of encryption tools for journalists that aim at protecting these digital communications. We hope to train journalism organizations in how to use these tools, so they can keep their sources, and themselves, safer.
+
+Once it's clear that journalists have to protect themselves from a variety of threats, not only three-letter government agencies, the next thing to consider is what steps to take to protect themselves from other threats. This line of thinking is called "operational security," or "opsec" for short.
+
+## Strong Passphrases
+
+The first meaningful action you can take towards ensuring your digital security is to protect your computer and online accounts with a strong password. This is the first —and most important— line of defense between you and anyone with physical access to your computer who wants to impersonate you. 
+
+Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as "Tr0ub4dor&3," to reference a popular [XKCD comic](https://xkcd.com/936/). The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
+
+Passphrases are longer than passwords."The quick fox jumps over the lazy dog" is a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it. The aforementioned XKCD comic's advice is to come up with a passphrase of unconnected words, such as "correct horse battery staple." This is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and words often come in groups -- I say brown, you think cow; I say garden, you think shed.
+
+The solution is to externally randomize the words that constitute your passphrase. This is where [Diceware](http://world.std.com/~reinhold/diceware.html) comes in -- using dice to choose the words of your passphrase increases its randomness and its security.
+
+Additionally, Freedom of the Press Foundation recommends using a password manager such as [KeePassX](https://www.keepassx.org). The app is unlocked by a master passphrase, which you memorize.
+
+As well as protecting password vaults, you should also choose good passphrases for your PGP secret key and disk encryption.
+
+## Hard-Drive Encryption
+
+A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're travelling.
+
+Encrypting your hard-drive doesn't just make it harder for the NSA to access your documents, it makes you more secure generally -- if your laptop is stolen, an attacker can't rip out the hard-drive and extract sensitive data.
+
+For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/files/eff-border-search_2.pdf) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border. Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
+
+- Have a separate computer for work travel, which does not contain sensitive material. 
+- Sign out of e-mail accounts and power off laptops before approaching the border. 
+- As always, make regular backups, so that the loss of a computer is not catastrophic.
+
+As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when deciding what files to have on a computer you cross borders with.
+
+## Physical Security
+
+If you're working on sensitive material, it's a good idea to keep your laptop in your possession at all times. This limits an attacker's ability to steal your device or gain access long enough to install malicious software (such as a keylogger) on it.
+
+Using the digital security tools described in this document only gives you so much security -- good physical security is half the battle. A 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201) of American journalist and WikiLeaks volunteer Jacob Appelbaum revealed that if his laptop is out of his sight for any length of time, he destroys it because of the risk that it's been compromised. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
+
+
+# Anonymizing Your Location With Tor
+
+Despite NSA surveillance, it’s still possible to browse the web with a high degree of anonymity. Tor is a web browser like Firefox or Internet Explorer, but it allows you to use the Internet while concealing your IP address, which is generally an accurate representation of your approximate location. 
+
+The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes —in a circuit— before exiting onto the normal Internet. If someone is monitoring your traffic, they can only track traffic through the final node, which is in a different location to you. 
+
+![To obscure your location, Tor routes your connection through three intermediaries.](http://i.imgur.com/OURTxj8.png)
+
+Despite attempts by the US and UK intelligence agencies to deanonymize Tor traffic, it appears that Tor is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
+
+## Setup
+
+The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). 
+
+![The Tor Browser](http://i.imgur.com/quqUncE.png)
+
+## Browsing Habits
+
+You should use Tor differently than you use a regular browser: some of the features it uses to obscure your location can be undermined if you don't take a few extra steps to protect yourself.
+
+- Don't enable or install browser plugins, including Adobe Flash. These can bypass Tor's security and give away your location.
+- Be aware of unencrypted sites, which don't have a lock icon next to the URL. Tor anonymizes your Internet traffic but unencrypted connections can still be eavesdropped on between the final node and the Internet server.
+- Don't download documents downloaded through Tor, since these documents can reveal your regular IP address to an adversary. Open them while offline or consider using Tails.
+
+As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as HTTPS Everywhere) for other browsing.
+
+## Theoretical Shortcomings
+
+In theory, it’s possible to de-anonymize Tor traffic by studying the timing of packets as they move across the network, but it’s too early to say how often large intelligence agencies can defeat the anonymity of the Tor network. Even so, this becomes much harder as the number of nodes and the volume of traffic increases.
 
 ## Off-the-Record (OTR) Chat
 
 [Off-the-Record](http://www.cypherpunks.ca/otr/) (OTR) is a layer of encryption that can be added to any existing instant message chat system, provided that you can connect to that chat system using a chat client that supports OTR, such as [Pidgin](https://pidgin.im/) or [Adium](http://adium.im/). With OTR it's possible to have secure, end-to-end encrypted conversations over services like Google Talk and Facebook chat without Google or Facebook ever having access to the contents of the conversations. Note: this is different than the "off-the-record" option in Google, which is **not** secure. And remember: while Google and Facebook’s HTTPS connection is very valuable for protection against your message while it’s in transit, they still have the keys to your conversations so they can hand them over to authorities.
 
 OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people that you chat with. Identity verification is extremely important and something that many OTR users neglect to do. While OTR is much more user friendly that other forms of public key encryption, if you wish to use it securely you still need to understand how it works and what attacks against it are possible.
+
+## A Note About Gmail's "off the record" function.
+
+![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
+
+While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
+
 
 ### Service Providers and Jabber
 
@@ -270,34 +360,24 @@ When I opened this email I was prompted to type in my encryption passphrase to d
 
 ![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)
 
-### PGP Isn't Just For Email
+### How To Verify Someone's Key in Enigmail and View Signatures
 
-While PGP is often used for email encryption, nothing stops you from using it to encrypt anything and publish it using any medium. You can post PGP encrypted messages on blogs, social networks, and forums.
+If you're a journalist trying to get to grips with these privacy tools, it's useful to get together with colleagues and help one another out with setup. In addition, you can verify one another, which makes it harder for you to be individually attacked. By having a key signed by colleagues and other people you trust, it's harder to be the victim of an attack where someone tries to steal your identity.
 
-Kevin Poulsen [published a PGP encrypted message on Wired's website](http://www.wired.com/threatlevel/2013/06/signed-bda0df3c/) intended for Edward Snowden to read. As long as Wired has a copy of Snowden's real public key, only someone in possession of Snowden's secret key can decrypt this message. We don't know how Wired got a copy of Snowden's public key.
+Here's how to verify someone's GPG key: 
 
-Here's a message that was encrypted to my public key. Without having access to my associated secret key, NSA should not be able to break the encryption. (NSA, let me know if you get it.)
+- Meet your colleagues face-to-face. Each person should bring their own laptop.
+- Make sure your key is uploaded to a key-server. In the "Key Management" section of Enigmail, right-click and select "Upload Public Keys to Keyserver." It should suggest [pgp.mit.edu](http://pgp.mit.edu) by default, which will work fine.
+- Search for your friend's key in the keyserver and download it into Enigmail. Then, verbally verify that the fingerprints are the same. If you know your colleagues, this is enough, but if you're unsure of names, feel free to ask pople to bring some form of ID so you can double-check.
+- Once you've verified their key is correct, you should sign it with yours. 
+- You can see who else has signed a person's key by clicking on it and choosing "View Signatures" from the "Select action ..." drop-down menu.
+- In the end, each person should have an GPG keyring containing signed keys of each other person.
 
-    -----BEGIN PGP MESSAGE-----
-    Version: GnuPG v1.4.12 (GNU/Linux)
+## Encrypting Files with PGP
 
-    hQIMA86M3VXog5+ZAQ//Wep9ZiiCMSmLk/Pt54d2wQk07fjxI4c1rw+jfkKQAi4n
-    6HzrX9YIbgTukuv/0Bjl+yp3qcm22n6B/mk+P/3Cbxo+bW3gsq5OLFNenQO3RMNM
-    i9RC+qJ82sgPXX6i9V/KszNxAyfegbMseoW9FcFwViD14giBQwA7NDw3ICm89PTj
-    y+YBMA50iRqdErmACz0fHfA/Ed5yu5cOVVa8DD12/upTzx7i0mmkAxwsKiktEaKQ
-    vg8i1gvzqeymWYnckGony08eCCIZFc78CeuhODy0+MXyrnBRP9p++fcQE7/GspKo
-    SbxVT3evwT2UkebezQT2+AL57NEnRsJzsgQM4R0sMgvZI7I6kfWKerhFMt3imSt1
-    QGphXmKZPRvKqib59U57GsZU1/2CMIlYBVMTZIpYKRh6NgE8ityaa4gehJDl16xa
-    pZ8z3DMNt3CRF8hqWmJNUfDwUvXBEk8d/8Lkh39/IFHbWqNJh6cgq3+CipXH5HjL
-    iVh7tzGPfB6yn+RETzcZjesZHtz4hFudOxTMV0YnTIv0FGtfxsfEQe7ZVmmfqGNG
-    glxE0EfbXt0psLXngFMneZYBJqXGFsK3r5bHjRm6wpC9EDAzXp+Tb+jQgs8t5eWV
-    xiQdBpNZnjnGiIOASOxJrIRuzbTjo389683NfLvPRY8eX1iEw58ebjLvDhvDZ2jS
-    pwGuWuJ/8QNZou1RfU5QL0M0SEe3ACm4wP5zfUGnW8o1vKY9rK5/9evIiA/DMAJ+
-    gF20Y6WzGg4llG9qCAnBkc3GgC7K1zkXU5N1VD50Y0qLoNsKy6eengXvmiL5EkFK
-    RnLtP45kD2rn6iZq3/Pnj1IfPonsdaNttb+2fhpFWa/r1sUyYadWeHs72vH83MgB
-    I6h3Ae9ilF5tYLs2m6u8rKFM8zZhixSh
-    =a8FR
-    -----END PGP MESSAGE-----
+As well as powering e-mail encryption, you can also use PGP to encrypt files on your hard-drive with your public key. This serves as a second layer of protection on top of full-drive encryption and also allows you to use traditionally insecure cloud storage systems with a new degree of trust: with PGP-encrypted files, you can store documents on Dropbox that not even they can access or read.
+
+![Encrypting a file on Mac with GPGTools can be accessed through the "Services" tab in the secondary menu.](http://i.imgur.com/adsGT8j.jpg)
 
 ### Identity Verification
 
@@ -394,3 +474,11 @@ Protecting your privacy in the age of ubiquitous NSA surveillance is incredibly 
 But even with [direct access to all the data traveling at the speed of light through the Internet's backbone fiber-optic cables](http://www.guardian.co.uk/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa), even with [cooperation of the major United States tech companies](http://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/) (which are extremely difficult for people to boycott), the largest, most powerful, and best funded surveillance apparatus that humanity has ever seen cannot defeat mathematics.
 
 The challenge of the new cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default.
+
+
+# About The Freedom of the Press Foundation
+
+> “A cantankerous press, an obstinate press, a ubiquitous press must be suffered by those in authority in order to preserve the even greater values of freedom of expression and the right of the people to know.” \
+—Judge Murray Gurfein, Pentagon Papers case, June 17, 1971
+
+The **Freedom of the Press Foundation** is a 501(c)3 non-profit organization dedicated to helping support and defend public-interest journalism focused on exposing mismanagement, corruption, and law-breaking in government. We accept tax-deductible donations to a variety of journalism organizations that push for transparency and accountability, and we work to preserve and strengthen the rights guaranteed to the press under the First Amendment. We also manage [SecureDrop](https://securedrop.org), an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources. It was originally created by the late Aaron Swartz. Click [here](https://freedom.press/securedrop/directory) to see a full list of news organizations which have implemented SecureDrop. 
