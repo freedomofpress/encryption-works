@@ -270,6 +270,14 @@ When I opened this email I was prompted to type in my encryption passphrase to d
 
 ![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)
 
+## Encrypting Files with PGP
+
+As well as powering e-mail encryption with a desktop client like Apple Mail or Thunderbird, you can also use PGP to encrypt files on your hard-drive with your public key.
+
+This serves as a second layer of protection if you use full-disk encryption and lends you extra security to transfer those files onto a flash drive or upload them to a cloud storage website.
+
+![Using GPGTools to encrypt a file on Mac.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/pgp_encrypt_files.png)
+
 ### PGP Isn't Just For Email
 
 While PGP is often used for email encryption, nothing stops you from using it to encrypt anything and publish it using any medium. You can post PGP encrypted messages on blogs, social networks, and forums.
