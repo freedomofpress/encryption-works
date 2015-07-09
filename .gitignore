@@ -3,3 +3,4 @@
 # compiled output from Pandoc
 *.html
 *.pdf
+.DS_Store
