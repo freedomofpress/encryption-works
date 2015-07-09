@@ -10,13 +10,13 @@ This version has been converted to markdown so it can be easily tracked in git a
 
 ## Contributing
 
-If you'd like to see any specific changes or improvements to this document, feel free to [raise an issue](https://github.com/freedomofpress/encryption-works/issues) on this repository.
+If you'd like to see any specific changes or improvements to this document, feel free to [open an issue](https://github.com/freedomofpress/encryption-works/issues) on this repository.
 
 If you want to really get your hands dirty, fork our repository.  Then, if you'd like to contribute to this document, please follow these instructions:
 
 1.	create a *"feature branch"* referencing the issue's ID (i.e. `git checkout -b issue_34`)
-1.	make your presice correction to the document, and commit it.
-1.	submit a pull request on our repo for consideration.
+2.	make your presice correction to the document, and commit it.
+3.	submit a pull request on our repo for consideration.
 
 ## Hosting and Distributing with Pandoc
 
