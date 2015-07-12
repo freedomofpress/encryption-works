@@ -337,6 +337,18 @@ Washington Post journalist Barton Gellman, who Edward Snowden trusted with infor
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used right, provides the tools necessary to prevent MITM attacks. But these tools only work if the users are vigilant about identity verification.
 
+### What PGP Doesn't Do
+
+To use PGP effectively, it's good to understand what it does and doesn't do.
+
+For instance, using PGP with e-mail encryption only encrypts the *content* of your e-mails. It doesn't encrypt the to/from fields, the subject line or the metadata, the sundry details associated with the message. For an e-mail, metadata would include the associated e-mail addresses, the time and date sent and the IP address the e-mail originated from. This means that someone surveilling me can tell that at 2:05pm on Sunday, June 21, *tommy@freedom.press* e-mailed *trevor@freedom.press* from a certain IP address, but they can't tell what the content of the message was.
+
+Senator Diane Feinstein (D—Calif.) is a staunch defender of the NSA and has long [maintained](http://www.theguardian.com/world/2013/oct/21/dianne-feinstein-defends-nsa-data-collection) that the type of metadata collection the NSA carries out isn't intrusive because it doesn't include the content. Simply put, this isn't true, especially given that a caller's location is [included](http://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order) in phone metadata collection. If you know that someone called a suicide hotline from the Golden Gate Bridge, you can infer something about their mental state. Similarly, the knowledge that a young woman called an abortion clinic is telling on its own -- you don't necessarily need to know what the content of the call was.
+
+Many PGP users obscure the subject line of their e-mails by opting to title the e-mail something unspecific, like "Summer 2015." 
+
+PGP also doesn't automatically guarantee mean anonymity. If I send a PGP-encrypted e-mail from *tommy.collison@gmail.com,* it isn't hard to tell who the owner of the e-mail address is, even though the content of the e-mail is encrypted. For added security, combine PGP with a pseudonymous e-mail account.
+
 ## Tails: The Amnesic Incognito Live System
 
 Using "properly implemented strong crypto systems" has a huge learning curve and requires dedicated users who are willing to put in extra work to take control of their own privacy, which is the main reason why OTR and PGP are not currently in widespread use. But even when you use these tools, how can you ensure "endpoint security" when you can't necessarily trust your operating system or other software that you depend on every day?
