@@ -130,6 +130,13 @@ Using OTR only encrypts the contents of your chat conversations but not the meta
 
 I also recommend you use an XMPP (also known as Jabber) service. Like email, Jabber is a federated, open protocol. Users of [riseup.net](https://www.riseup.net/en/chat)'s Jabber service can chat with users of [jabber.ccc.de](https://web.jabber.ccc.de/)'s service as well as [jabber.org](http://www.jabber.org/)'s service.
 
+## A Note About Gmail's "off the record" function.
+
+![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
+
+While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
+
+
 ### OTR Clients
 
 To use OTR you'll need to download software. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and separately the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use GNU/Linux you can install the pidgin and pidgin-otr packages. You can read through [documentation on how to set up your Pidgin accounts with OTR](http://www.cypherpunks.ca/otr/index.php#docs). If you use Mac OS X you can download and install [Adium](http://adium.im/), which is a free software chat client that includes OTR support. You can read the [official documentation](http://adium.im/help/pgs/AdvancedFeatures-OTREncryption.html) on how to get set up with OTR encryption with Adium.
