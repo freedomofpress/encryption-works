@@ -1,4 +1,4 @@
-# Encryption Works: How to Protect Your Privacy in the Age of NSA Surveillance
+# Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
 
 <style>
 div#out-of-date {
