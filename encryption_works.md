@@ -130,11 +130,9 @@ Using OTR only encrypts the contents of your chat conversations but not the meta
 
 I also recommend you use an XMPP (also known as Jabber) service. Like email, Jabber is a federated, open protocol. Users of [riseup.net](https://www.riseup.net/en/chat)'s Jabber service can chat with users of [jabber.ccc.de](https://web.jabber.ccc.de/)'s service as well as [jabber.org](http://www.jabber.org/)'s service.
 
-### OTR Clients
+## Using OTR
 
-To use OTR you'll need to download software. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and separately the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use GNU/Linux you can install the pidgin and pidgin-otr packages. You can read through [documentation on how to set up your Pidgin accounts with OTR](http://www.cypherpunks.ca/otr/index.php#docs). If you use Mac OS X you can download and install [Adium](http://adium.im/), which is a free software chat client that includes OTR support. You can read the [official documentation](http://adium.im/help/pgs/AdvancedFeatures-OTREncryption.html) on how to get set up with OTR encryption with Adium.
-
-There are also Jabber and OTR clients available for Android, called [Gibberbot](https://guardianproject.info/apps/gibber/), and for iOS, called [ChatSecure](http://chrisballinger.info/apps/chatsecure/).
+To use OTR, you'll need to download additional software with your IM client. For a full explanation of how it works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/).
 
 ### Your Key
 
