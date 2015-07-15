@@ -489,53 +489,72 @@ In general, software websites have to provide the checksum for you to check, but
 
 ## Tails: The Amnesic Incognito Live System
 
-Using "properly implemented strong crypto systems" has a huge learning curve and requires dedicated users who are willing to put in extra work to take control of their own privacy, which is the main reason why OTR and PGP are not currently in widespread use. But even when you use these tools, how can you ensure "endpoint security" when you can't necessarily trust your operating system or other software that you depend on every day?
+As mentioned above, the Tor network is the best choice today for secure web browsing: it obscures your location, prevents third-party trackers, and you can create a new browsing identity quickly and easily. What if there was an entire operating system designed with these principles in mind?
 
-The solution is to use an entirely different operating system comprised completely of "software you can trust" when you have a serious need for real privacy. [Tails](https://tails.boum.org/about/index.en.html) helps solve this problem.
+That's the thinking behind the Tails system. PGP and OTR are totally undermined if an attacker has physically compromised your machine and, say, installed a keylogger to capture all your logins, passphrases, and other sensitive data.
+
+Tails was designed to be an entire operating system comprised solely of "software you can trust," meaning that you don't have to rely on other closed-source software. It also has features to prevent tracking, such as wiping itself clean every time you power down.
+
+![The Tails operating system.](/images/tails_desktop.png)
 
 > Tails is a live system that aims at preserving your privacy and anonymity. It helps you to use the Internet anonymously almost anywhere you go and on any computer but leave no trace using unless you ask it explicitly.
-> 
+>
 > It is a complete operating-system designed to be used from a DVD or a USB stick independently of the computer's original operating system. It is Free Software and based on Debian GNU/Linux.
-> 
+>
 > Tails comes with several built-in applications pre-configured with security in mind: web browser, instant messaging client, email client, office suite, image and sound editor, etc.
 
-Tails is not for everyone. It's still difficult to use compared to normal operating systems, it's slow, it doesn't have all the software you may want. But Tails has all of these properties because it's specifically designed to make it harder for users to mess up their endpoint security. If you're in a position where you think that NSA, or any other potential attacker, may want to target you and your colleagues (the journalist/whistleblower relationship comes to mind) it's one of the best tools available.
+In some ways, Tails is more difficult to use compared to a regular operating system. It's slow, and doesn't have all the software you might need. But some of these shortcomings are by design: such limitations make it a lot harder to mess up their endpoint security. If you're in the position where you think the NSA, or another potential attacker, may want to target you or your colleagues (the journalist-whistleblower relationship comes to mind), it's the best tool available.
 
-Because Tails is not practical for daily computer use, it's a good idea to get into the habit of using OTR and PGP in your normal operating system as well. Tails won't help blunt the effects of dragnet surveillance by itself, but encrypting as much as we can on a daily basis will.
+Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP, and OTR encryption on your main operating system is also a good idea. 
 
-Every time you boot Tails you start from a clean slate. Anything you did in your previous session on Tails gets erased and the system is reverted back to the default state. This means that even if you get infected with malware while using Tails, the next time you boot into it the malware will be gone.
+Every time you boot Tails you start from a clean state. Anything and everything you did previously gets erased and the system reverts back to its default out-of-the-box state. It's designed this way so that if you get infected with malware while using Tails, it's almost certainly gone the next time you boot up.
 
-You can get started using Tails by [downloading](https://tails.boum.org/download/index.en.html) the DVD image and burning it to a DVD. You then need to boot to this DVD. This step is different depending on what model computer you have, but it often involves entering your BIOS and changing your boot order so your computer tries booting from DVD before it tries your hard drive. On newer PCs you might need to disable [UEFI "secure boot"](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Booting) in the BIOS as well, which is the crypto that's used to make sure your computer will only boot to digitally signed versions of Windows (which, in affect, makes it harder for people to boot into non-Windows operating systems). The [Tails website](https://tails.boum.org/download/index.en.html#start) has more information on booting Tools from a DVD or USB stick.
+(While Tails prevents many endpoint attacks, like all security tools, it is not 100% impervious to attacks. Recently, researchers have showed how attackers can implant malware in the BIOS —or the brains— of a computer, which may allow Tails to be [compromised](http://www.wired.com/2015/03/researchers-uncover-way-hack-bios-undermine-secure-operating-systems/). However, it's unclear how widespread this attack is or if it's particularly effective in the wild.)
 
-After booting to the DVD you have the option to install Tails on a USB stick, which is especially useful because it allows you to configure a [persistent volume](https://tails.boum.org/doc/first_steps/persistence/index.en.html), an encrypted section of your USB stick to store your data. Despite starting from a clean slate each time you boot up, it's important for you to be able to have access to your OTR and PGP keys, your Claws Mail (more below) and Pidgin settings, and any documents you're working with. Your persistent volume allows you to do this.
+It's a good idea to install Tails on a fresh storage device (either a DVD or a USB stick) to ensure everything works as it should. There are two ways of installing Tails:
 
-### PGP and Email in Tails
+- 1) Using the command line and the Tails .iso file to create a Tails instance on a removable storage device. For instructions, [click here](https://tails.boum.org/download/index.en.html).
+- 2) Using an existing Tails installation and cloning the operating system onto a second storage device. For instructions, [click here](https://tails.boum.org/doc/first_steps/installation/index.en.html).
 
-I discussed using Thunderbird with the Enigmail add-on to access your email and use PGP, however this software doesn't come with Tails. Tails comes with [Claws Mail](http://www.claws-mail.org/) which includes a PGP plugin.
+Once you get past this tricky install, Tails is currently the gold standard for anonymously using a computer, particularly when coupled with PGP-encrypted email.
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/claws_mail.png)
+**The email application bundled with Tails is called Claws Mail. Currently, there is a [serious vulnerability](https://tails.boum.org/support/known_issues/index.en.html#index21h2) in Claws Mail that can leak the plaintext of your emails to the email server. If you decide to use Claws Mail, we strongly recommend implementing one of the [official workarounds](https://tails.boum.org/security/claws_mail_leaks_plaintext_to_imap/index.en.html#index1h1) until the issue is fixed in Tails.**
 
-Instead of using Enigmail's PGP key management graphical user interface to import, export, generate, view details about, and sign keys, you can click on the clipboard icon in the top right of the screen and choose Manage Keys to open [Seahorse](https://live.gnome.org/Seahorse), which provides these same features.
+### Persistence: How to save your work between sessions
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/tails_manage_keys.png)
+Journalists rely on their notes, and so the idea of an operating system that saves nothing between sessions may sound sub-optimal. But Tails has the optional feature of persistence -- saving files in an encrypted volume which are accessible across separate sessions. This is useful for files you're working on, and encryption keys you use with Tails. (It's generally inadvisable to move keys off a Tails machine -- you should keep them compartmentalized and away from your regular computer operating system.)
 
-### Workflow
+If you're going to be using the persistence feature, you have to install Tails on a USB stick or an SD card, not a DVD. Also, you have to clone Tails from an existing installation rather than manually flashing Tails onto a USB from a computer.
 
-To get started having private communications with your friends and colleagues with very high endpoint security, here are the steps you need to take.
+The Tails [installation guide](https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html) has instructions on configuring persistence.
 
-* Meet up with your friends face-to-face. Each person should bring their own laptop and USB stick.
-* Download and burn a Tails DVD. Boot to Tails and create Tails USB sticks for each person.
-* When everyone has a Tails USB stick, each person should boot to Tails on her own laptop and configure a persistence volume on her USB stick. Since this volume is encrypted, each person should come up with her own secure passphrase that she will need to enter each time she boots to Tails. Everyone should reboot their laptops into Tails again and this time mount the persistent volume.
-* Each person should create a new pseudonymous Jabber account. One way to do this is to go to [https://register.jabber.org/](https://register.jabber.org/) in Iceweasel. Since Tails makes all Internet traffic go over Tor, this is effectively making an anonymous Jabber account.
-* Each person should open Pidgin and configure it to use their new Jabber account and create a new OTR key. Everyone should add each other to their buddy lists and start OTR sessions with eachother. Since everyone is in the same room, this is the perfect time to compare fingerprints and verify the identity of all parties so that you'll able to communicate securely over the Internet in the future.
-* Each person should create a new pseudonymous email address as well. Some email providers, such as Gmail, make it very difficult to create new accounts while using Tor and staying anonymous, so find another email provider to use instead. Make sure your email provider supports IMAP (so you can use a desktop email client) over SSL (so your email client uses encryption when communicating with the email srever). If everyone chooses the same email provider, sending emails between accounts should never leave that email server, which reduces the metadata about your email usage available to anyone conducting dragnet surveillance of the Internet.
-* Each person should generate a new PGP key for their email address. Like with disk encryption, it's important to choose a strong passphrase when generating a PGP key.
-* The PGP-enabled email client that comes with Tails is called Claws Mail. Each person should configure Claws Mail to use their new email address, and then email a copy of their public key to all other people in the room.
-* Each person should import everyone else's public key into their keyring, and should manually verify the PGP fingerprints. Don't skip this step. In the end, each person should have a keyring containing signed keys of each other person.
+### Setting Up Secure Computers 
 
-If a malicious attacker physically steals your Tails USB stick, modifies it, and gives it back, he can compromise all of the security of Tails. For this reason, it's important to keep your USB stick with you at all times.
+> “Tails have been vital to my ability to work securely on the NSA story. The more I've come to learn about communications security, the more central Tails has become to my approach.”
+> 
+> Glenn Greenwald, journalist and Freedom of the Press Foundation board-member.
 
-Had CIA Director and retired four-star general David Petraeus and his biographer Paula Broadwell decided to use Tails, Tor, OTR, and PGP, their [extramarital affair](https://en.wikipedia.org/wiki/Petraeus_scandal) likely would have remained secret.
+Tails is currently the most secure operating system out there, so it's a good tool to have in your journalistic arsenal. The benefits of using it compound if your colleagues are using it too. Here's how to get several people up and running on Tails.
+
+-* Download and burn a Tails DVD. Boot to Tails and create Tails USB sticks for each person.		
+-* When everyone has a Tails USB stick, each person should boot to Tails on her own laptop and configure a persistence volume on her USB stick. Since this volume is encrypted, each person should come up with her own secure passphrase that she will need to enter each time she boots to Tails. Everyone should reboot their laptops into Tails again and this time mount the persistent volume.		
+-* Each person should create a new pseudonymous Jabber account. (Refer back to [The Intercept](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/) for a how-to.) Since Tails makes all Internet traffic go over Tor, this is effectively making an anonymous Jabber account.		
+-* Each person should open Pidgin and configure it to use their new Jabber account and create a new OTR key. Everyone should add one other to their buddy lists and start OTR sessions with eachother. Since everyone is in the same room, this is the perfect time to compare fingerprints and verify the identity of all parties so that you'll able to communicate securely over the Internet in the future.		
+-* Each person should create a new pseudonymous email address as well. Some email providers, such as Gmail, make it very difficult to create new accounts while using Tor and staying anonymous, so find another email provider to use instead. Make sure the email provider supports IMAP (so you can use a desktop email client) over SSL (so your email client uses encryption when communicating with the email server). If everyone chooses the same email provider, sending emails between accounts should never leave that email server, which reduces the metadata about your email usage available to anyone conducting dragnet surveillance of the Internet.		
+-* Each person should generate a new PGP key for their email address. Like with disk encryption, it's important to choose a strong passphrase when generating a PGP key.		
+
+### Potential Pitfalls
+
+If a malicious attacker manages to modify or compromise your Tails USB stick, the security of the operating system can be compromised. For this reason, you should keep your install on you at all times and, if you suspect it's been compromised, create a new installation on a fresh device.
+
+There are two ways of mitigating such a problem, making it less likely your Tails installation will be compromised in some way: 
+
+- 1) Only transfer the files and tools you need for the specific tasks you're trying to accomplish in Tails.
+- 2) Create compartmentalized accounts and identities (email accounts, chat accounts, GPG/OTR keys, etc.) that are totally separated from your established digital presence.
+
+This second point is important, and separating your contextual identities is a way to beef up Tail's built-in technical security features. Tails works best when it's supplemented by behavioral changes on the user's part in order to stay anonymous. For instance, you should use different Tails sessions for different tasks. (A session refers to a time spent using Tails, and it ends when you shut down and Tails resets. If you use Tails over two days and shut down in between, you're said to have two sessions.)
+
+Also, if you have an anonymous email address you use to communicate with a source, it's inadvisable to also log into your personal or work email accounts.
 
 ## A Fighting Chance
 
