@@ -220,37 +220,15 @@ With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conver
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
-In 1991, Phil Zimmermann developed email encryption software called [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy), or PGP, which he intended peace activists to use while organizing in the anti-nuclear movement.
+PGP stands for "Pretty Good Privacy," software you can use to encrypt your e-mail messages. GPG is an free, open-source version of this software. The terms PGP and GPG are often used interchangeably. Unfortunately, the process is notoriously hard to use, as seen by Glenn Greenwald [explaining](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) how he could not initially talk to Edward Snowden because PGP is so difficult to set up.
 
-Today, PGP is a company that sells a proprietary encryption program by the same name. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is 100% compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
+If you use PGP encryption, you will have to make some changes about how you use e-mail. For example, if you use PGP on your hard-drive but receive an encrypted e-mail on your phone, you won't be able to decrypt the e-mail and read it until you get back to your computer.
 
-Unfortunately, PGP is notoriously hard to use, as exemplified by [Greenwald explaining how he could not initially talk to Edward Snowden because it was so difficult to set up](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818).
+Like OTR, each PGP key has a unique fingerprint. You can find a copy of my public key on [MIT's keyserver](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D), and my fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key. 
 
-### Keypairs and Keyrings
+### What's a key? 
 
-As with OTR, each person who wishes to send or receive encrypted email needs to generate their own PGP key, called a keypair. PGP keypairs are split into two parts, the public key and the secret key.
-
-If you have someone's public key, you can do two things: **encrypt messages** that can only be decrypted with their secret key, and **verify signatures** that were generated with their secret key. It's safe to give your public key to anyone who wants it. The worst anyone can do with it is encrypt messages that only you can decrypt.
-
-With your secret key you can do two things: **decrypt messages** that were encrypted using your public key, and **digitally sign messages**. It's important to keep your secret key secret. An attacker with your secret key can decrypt messages intended only for you, and he can forge messages on your behalf. Secret keys are generally encrypted with a passphrase, so even if your computer gets compromised and your secret key gets stolen, the attacker would need to get your passphrase before he would have access to it. Unlike OTR, PGP does not have forward secrecy. If your PGP secret key is compromised and the attacker has copies of any historical encrypted emails you have received, he can go back and retro-actively decrypt them all.
-
-Since you need other people's public keys in order to encrypt messages to them, PGP software lets you manage a keyring with your secret key, your public key, and all of the public keys of the people you communicate with.
-
-Using PGP for email encryption can be very inconvenient. For example, if you set up PGP on your computer but have received an encrypted email on your phone, you won't be able to decrypt it to read the email until you get to your computer.
-
-Like OTR, each PGP key has a unique fingerprint. You can find [a copy of my public key here](https://pressfreedomfoundation.org/keys/micah.asc), and my fingerprint is 5C17 6163 61BD 9F92 422A C08B B4D2 5A1E 9999 9697. If you look at my public key you'll see that it's quite long and would be hard to read out over the phone. A fingerprint is a short and more convenient way to uniquely represent a key. With my public key you can encrypt messages that only I can decrypt, provided that my secret key has not been compromised.
-
-### Passphrases
-
-The security of crypto often relies on the security of a password. Since passwords are very easily guessed by computers, cryptographers prefer the term [passphrase](https://en.wikipedia.org/wiki/Passphrase) to encourage users to make their passwords very long and secure.
-
-![](https://raw.github.com/micahflee/encryption-works/master/images/password_strength.png)
-
-Comic courtesy [XKCD](https://xkcd.com/936/)
-
-For tips on choosing good passphrases, read the [passphrase section](https://www.eff.org/wp/defending-privacy-us-border-guide-travelers-carrying-digital-devices#passphrase) of EFF's Defending Privacy at the U.S. Border: A Guide for Travelers Carrying Digital Devices whitepaper, and also the [Diceware Passphrase Home Page](http://world.std.com/~reinhold/diceware.html).
-
-In addition to protecting PGP secret keys, you also need to choose good passphrases for disk encryption and [password vaults](https://en.wikipedia.org/wiki/Password_vault).
+The process uses a public key and a private key, both strings of randomly-generated numbers and letters unique to each person. Information about the public key is stored on something called a public key server, which is a little like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail. Used correctly, you can think of a public key as signing a message with the assurance that nobody could have written or tampered with it. However, this assumes that you trust the public key -- for more information, see the section on webs of trust below.
 
 ### Software
 
@@ -298,6 +276,16 @@ Here's a message that was encrypted to my public key. Without having access to m
     I6h3Ae9ilF5tYLs2m6u8rKFM8zZhixSh
     =a8FR
     -----END PGP MESSAGE-----
+
+
+### The Web of Trust 
+
+PGP works best when a web of trust is created. Strong crypto can still be broken since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted e-mail. An adversity could potentially trick you into thinking that their public key was your colleagues. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message onto your college, with info purported to be from you. 
+
+This can be solved, or at least mitigated, if you and your colleague independently verify each other's keys. This way, you verify your colleague's public key independently of when they e-mail you. But this raises another problem -- meeting people and verifying their keys is time-consuming. 
+
+The answer to this is the web of trust. As time goes on, you meet people and verify their keys. If you sign those keys (publicly asserting that you've verified them), that functions as a vouch of sorts -- this key has verified that key belongs to who it says it does. If I trust your key, by extension I should trust the keys you've signed, even if I don't know the signed key personally. I trust it because I trust you.
+
 
 ### Identity Verification
 
