@@ -192,7 +192,7 @@ It's still much better practice to use OTR without verifying fingerprints than t
 
 OTR will encrypt the content of your chats, but there's another factor to consider when you're chatting with Off-The Record: logs.
 
-Here is an excerpt from the chat logs of a conversation between Chelsea Manning (formerly Bradley) and Adrian Lamo, who turned him in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
+Here is an excerpt from the chat logs of a conversation between Chelsea Manning (shown here as bradass87) and Adrian Lamo, who turned him in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
 
 > (1:40:51 PM) bradass87 has not been authenticated yet. You should authenticate this buddy. \
 > (1:40:51 PM) Unverified conversation with bradass87 started. \
