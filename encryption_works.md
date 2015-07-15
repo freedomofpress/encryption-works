@@ -337,6 +337,15 @@ Washington Post journalist Barton Gellman, who Edward Snowden trusted with infor
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used right, provides the tools necessary to prevent MITM attacks. But these tools only work if the users are vigilant about identity verification.
 
+### Verifying Check-Sums
+
+Another use for PGP is to verify correct software. To understand what I mean, consider the question: when you go to download a piece of software (the Tor Browser Bundle, for example), how do you know that what you're downloading is the same as what the developers created? How do you know that you didn't download a fake version? This could happen accidentally or maliciously.
+
+The answer is to check the "check-sum" of the software. This is a series of digits shown in two places, on your computer and on the servers where you downloaded the software wrong. If these numbers are the same, we can say with some degree of certainty that the file we downloaded is the same as the developer intended us to get.
+![Verifying checksums for the Tails download.](http://i.imgur.com/zvUgZH6.jpg)
+Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify these check-sums.
+
+
 ## Tails: The Amnesic Incognito Live System
 
 Using "properly implemented strong crypto systems" has a huge learning curve and requires dedicated users who are willing to put in extra work to take control of their own privacy, which is the main reason why OTR and PGP are not currently in widespread use. But even when you use these tools, how can you ensure "endpoint security" when you can't necessarily trust your operating system or other software that you depend on every day?
