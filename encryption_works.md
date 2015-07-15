@@ -220,15 +220,19 @@ With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conver
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
-PGP stands for "Pretty Good Privacy," software you can use to encrypt your e-mail messages. GPG is an free, open-source version of this software. The terms PGP and GPG are often used interchangeably. Unfortunately, the process is notoriously hard to use, as seen by Glenn Greenwald [explaining](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) how he could not initially talk to Edward Snowden because PGP is so difficult to set up.
+PGP stands for "Pretty Good Privacy," software you can use to encrypt your e-mail messages. GPG is a free, open-source version of this software. The terms PGP and GPG are often used interchangeably. Unfortunately, the process is notoriously hard to use, as seen by Glenn Greenwald [explaining](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) how he could not initially talk to Edward Snowden because PGP is so difficult to set up.
 
-If you use PGP encryption, you will have to make some changes about how you use e-mail. For example, if you use PGP on your hard-drive but receive an encrypted e-mail on your phone, you won't be able to decrypt the e-mail and read it until you get back to your computer.
+If you use PGP encryption, you will have to make some changes about how you use e-mail. For example, if you use PGP on your computer but receive an encrypted e-mail on your phone, you won't be able to decrypt the e-mail and read it until you get back to your computer.
 
-Like OTR, each PGP key has a unique fingerprint. You can find a copy of my public key on [MIT's keyserver](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D), and my fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key. 
+PGP is used in two ways with e-mail: it can encrypt the content of e-mail messages, and it can sign messages, proving that the message the sender sent is the same one you're now reading, and that it wasn't tampered with in transit. (This assumes you trust the public key -- more on that later.)
 
 ### What's a key? 
 
-The process uses a public key and a private key, both strings of randomly-generated numbers and letters unique to each person. Information about the public key is stored on something called a public key server, which is a little like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail. Used correctly, you can think of a public key as signing a message with the assurance that nobody could have written or tampered with it. However, this assumes that you trust the public key -- for more information, see the section on webs of trust below.
+PGP uses a public key and a private key, both strings of randomly-generated numbers and letters unique to each person. Information about the public key is stored on something called a public key server, which is a little like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail. 
+
+You can think of your public key and private key like your e-mail address and e-mail passphrase. You probably want your general e-mail address to be public, so that people can contact you -- it's the same with your public key. 
+
+Like OTR, each PGP key has a unique fingerprint. You can find a copy of my public key on [MIT's keyserver](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D), and my fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key. 
 
 ### Software
 
