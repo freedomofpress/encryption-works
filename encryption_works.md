@@ -120,107 +120,99 @@ When Snowden [was answering questions on Guardian's website](http://www.guardian
 
 ## Off-the-Record (OTR) Chat
 
-# Off-The-Record (OTR)
-
 Some instant message chat programs, such as Google Talk, support adding a layer of encryption to conversations. With this end-to-end encryption software, called "Off the Record" (OTR), you can have secure chats using Google Talk and Facebook chat without Google or Facebook ever being able to see the contents of your conversation. 
-
-## A Note About Gmail's "off the record" function.
-
-![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
-
-While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
-
-## About OTR
 
 OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people you chat with. Identity verification is important, and something many OTR users neglect to do. While OTR is more user-friendly than other types of encryption, there are some things you should know about OTR to understand it fully and know what attacks against it are possible.
 
 OTR encrypts the contents of your chats but not the metadata related to them -- who you talk to, how often, and when. You can use Google Talk and Facebook Chat with OTR, but we know that these services collaborate with the US government. For this reason, Freedom of the Press Foundation recommends using a chat service that doesn't collaborate with intelligence agencies. It's not a guarantee against metadata gathering, but it's better than nothing. 
 
-The Freedom of the Press Foundation recommend using XMPP, also known as Jabber. Like e-mail, Jabber is an open protocol. 
+OTR works with Google Talk and Facebook Chat, but Freedom of the Press Foundation recommend using XMPP, also known as Jabber. Jabber is an open protocol, and, unlike Facebook and Google, makes it harder for conversation metadata to be found. This is good for journalists who want to speak more securely to whistleblowers.
 
-To use OTR, you'll need to download additional software with your IM client. For a full explanation of how it works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/).
+To use OTR, you'll need to download additional software with your IM client. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use GNU/Linux you can install the pidgin and pidgin-otr packages. If you use Mac OS X you can download and install [Adium](https://adium.im), a free software chat application that includes OTR support.
 
-### Your Key
+There are also Jabber and OTR clients available for Android, called [Gibberbot](https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im), and for iOS, called [ChatSecure](http://chrisballinger.info/apps/chatsecure/)
 
-When you start using OTR, your chat client generates an encryption key and stores it in a file in your user's home folder on your hard drive. If your computer or smartphone get lost, stolen, or infected with malware, it's possible that your OTR key can get compromised. If this happens, it would be possible for an attacker with control over your Jabber server to be able to mount a MITM attack against you while you're chatting with people who have previously verified your identity.
+For a full explanation of how it works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/).
 
-### Sessions
+### A Note About Gmail's "off the record" function.
 
-If you want to use OTR to talk privately with your friends, your friends also need to be using it. An encrypted session between two people requires two encryption keys. For example, if you and your friend are both logged into Facebook chat using Adium or Pidgin and you have both configured OTR, you can chat in private. However if you are logged into IM using Adium or Pidgin but your friend is chatting directly from facebook.com in a web browser, you cannot have an encrypted conversation.
+When using Google Hangouts for instant messaging, there's a setting to disable "Hangout history," and it's useful to differentiate between this feature and what the software Off-The-Record offers.
 
-If you wish to use Facebook or Google's services to chat with your friends, I recommend disabling chat within the web interface of these services and only using Adium and Pidgin to connect, and encouraging all of your friends to do the same thing. Here is instructions on how to do so for [Facebook](https://www.facebook.com/help/215888465102253/) and [Google](https://support.google.com/chat/bin/answer.py?hl=en&answer=161823).
+![Google's version of going off the record isn't secure.](https://raw.githubusercontent.com/tommycollison/encryption-works/issue_74_otr_intro/images/hangouts_history.png)
 
-When you start an encrypted OTR session, your client software will tell you something like this:
+Essentially, disabling the "Hangout history" function does not display a conversation log to the user. This takes the conversation off the record in the literal sense, but users aren't given any reason to believe that Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which use Off-The Record messaging encryption aren't readable to anyone except the participants, including Google. This is far more secure. 
 
-    Attempting to start a private conversation with username@jabberservice...
-    Unverified conversation with username@jabberservice/ChatClient started.
+If you haven't yet updated from Google Talk to Hangouts, this feature is, confusingly, also called "off the record."
 
-If you have already verified the OTR fingerprint of the person you're talking with (more on this below) your session will look like this:
+One way of mitigating this problem is to use the Jabber protocol for chatting. As Micah Lee [explained](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/) in an article for The Intercept:
 
-    Attempting to start a private conversation with username@jabberservice...
-    Private conversation with username@jabberservice/ChatClient started.
+>But if both sides of a conversation — both Romeo and Juliet, in our example — use the same server for their Jabber accounts, they’ll leak less metadata about their conversations. Messages will stay within in the same server rather than getting sent over the internet.
+> 
+> Unlike email, most Jabber servers let anyone create accounts using Tor, and don’t require that you provide any identifying information at all.
+
+## Keys
+
+When you start using OTR, your chat client generates an encryption key and stores it in a file on your hard drive. If your computer or smartphone gets lost, stolen, or infected with malware, you should assume your key has been compromised -- an attacker could impersonate you. If this happens, you should generate a new key and reverify yourself with your chat clients. 
 
 When you start a new OTR session, your OTR software and your friend's OTR software send a series of messages back and forth to agree upon a new session key. This temporary encryption key, which is only known by your IM clients and is never sent over the Internet, is then used to encrypt and decrypt messages. When the session is finished both clients forget the key. If you start chatting with the same person later, your clients generate a brand new session key.
 
-In this way, even if an eavesdropper is logging all of your encrypted OTR conversations—which [NSA believes it is legally allowed to do](https://www.eff.org/deeplinks/2013/06/depth-review-new-nsa-documents-expose-how-americans-can-be-spied-without-warrant), even if you're a US citizen and they don't have a warrant or probable cause—and later they compromise your OTR key, they cannot use it to go back and decrypt your old conversations.
+In this way, even if an eavesdropper is logging all of your encrypted OTR conversations -- which NSA believes it is legally [allowed to do](http://www.forbes.com/sites/andygreenberg/2013/06/20/leaked-nsa-doc-says-it-can-collect-and-keep-your-encrypted-data-as-long-as-it-takes-to-crack-it/), even if you're a US citizen and they don't have a warrant or probable cause -- and later they compromise your OTR key, they cannot use it to go back and decrypt your old conversations.
 
 This property is called forward secrecy, and it is a feature that OTR has which PGP does not. If your PGP secret key (more on this below) gets compromised, and the attacker has access to all the encrypted messages you've received, they can go back and decrypt them all.
 
-Read more about how forward secrecy works, and why all major Internet companies should adopt it for their websites, [here](https://www.eff.org/deeplinks/2011/11/long-term-privacy-forward-secrecy). The good news is Google [has already adopted forward secrecy](https://www.eff.org/deeplinks/2011/11/long-term-privacy-forward-secrecy), and Facebook [will implement it soon](https://www.facebook.com/pages/Perfect-forward-secrecy/101895216519655) as well.
+### Verifying A Contact's OTR Fingerprint
+ 
+If you want to use OTR to talk privately with friends, colleagues, and sources, they need to be using OTR too. An encrypted chat requires both people have keys, so if you're using OTR and you're chatting with a colleague who's using facebook.com, you cannot have an encrypted conversation. 
 
-### OTR Fingerprint Verification
+When you start an encrypted OTR session, your chat software will tell you something like this:
 
-When you start a new OTR session with someone, your IM software receives the fingerprint of her encryption key, and your OTR software remembers this fingerprint. As long as someone uses the same encryption key when she talks to you, presumably because she's consistently using the same device, she will have the same fingerprint. If her fingerprint changes then either she is using a different OTR key or you are both the target of a MITM attack.
+> *** Encrypted OTR chat initiated. lucasgrey@darkdna.net's identity not verified.
 
-Without verifying keys you have no way to know that you're not falling victim to an undetected, successful MITM attack.
+With OTR, each key has a fingerprint, a string of numbers and letters you can use to verify someone's identity. Mine is C34DF2CE 7B7D24B3 E56AADB0 9ADC6CBE 6D4D164A. Unlike session keys, encryption keys are persistent: the fingerprint will stay the same across numerous conversations unless you change device or are the victim of a man-in-the-middle attack.
 
-**Even if the person you're talking to is definitely your real friend because she know things that only she would know, and you're using OTR encryption, an attacker might still be reading your conversation.*** This is because you might actually be having an encrypted OTR conversation with the attacker, who is then having a separate encrypted OTR conversation with your real friend and just forwarding messages back and forth. Rather than your friend's fingerprint your client would be seeing the attacker's fingerprint. All you, as a user, can see is that the conversation is "Unverified".
+It's worth remembering that fingerprints are unique to devices, not accounts. This means that if I chat with people on my Jabber account from my Mac and from my Android phone, those contacts will have two fingerprints for me.  It's important to repeat the verification step on each device with each contact you talk to.
 
-The following screenshots show Pidgin's visual indications of fingerprint verification. If you have verified OTR fingerprints your conversation is private, and if you haven't, your conversation is encrypted but you might be under attack. You can't know for sure without verifying.
+![Verifying someone's fingerprint in Adium.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/otr_key_verification.png)
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/verified.png) ![](https://raw.github.com/micahflee/encryption-works/master/images/unverified.png)
+In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to find some other secure channel to verify fingerprints. You could meet up in person, or talk on the phone if you can recognize their voice, or send a PGP encrypted and signed email.
 
-If you click the Unverified link (in Adium it's a lock icon) you can choose "Authenticate buddy". The OTR protocol supports three types of verification: the [socialist millionaire](https://en.wikipedia.org/wiki/Socialist_millionaire) protocol, a [shared secret](https://en.wikipedia.org/wiki/Shared_secret), and manual fingerprint verification. All OTR clients support manual fingerprint verification, but not all clients support other types of verification. When in doubt, choose manual fingerprint verification.
+OTR fingerprints are 40 characters. It's statistically impossible to generate two OTR keys that have the same fingerprint. However, it is possible to generate an OTR key that isn't a collision but looks like one on cursory inspection. For example, the first few characters and last few characters could be the same with different characters in the middle. For this reason, it's important to compare each of the 40 characters to be sure you have the correct OTR key.
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/fingerprints.png)
+Without verifying keys you have no way to know that you're not falling victim to an undetected, successful MITM attack. Even if the person you're talking to is definitely your real friend because she know things that only she would know, and you're using OTR encryption, an attacker might still be reading your conversation. This is because you might actually be having an encrypted OTR conversation with the attacker, who is then having a separate encrypted OTR conversation with your real friend and just forwarding messages back and forth. Rather than your friend's fingerprint your client would be seeing the attacker's fingerprint. All you, as a user, can see is that the conversation is "Unverified".
 
-In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to meet up in person, or talk on the phone if you can recognize their voice, or find some other out-of-band but secure method to verify fingerprints, such as sending a PGP encrypted and signed email.
+That said, it's better to use OTR unverified than it is to have a sensitive conversation through an unencrypted channel. Although manual fingerprint verification is the most secure way of verifying a chat partner's identity, there are some on-the-fly methods: you could ask them for a detail only they would know -- **what color is the sofa in my apartment?** or **what dish did you bring to the pot-luck last week?**
 
-OTR fingerprints are 40 hexadecimal characters. It's statistically impossible to generate two OTR keys that have the same fingerprint, which is called a collision. However it is possible to generate an OTR key that isn't a collision but looks like one on cursory inspection. For example, the first few characters and last few characters could be the same with different characters in the middle. For this reason, it's important to compare each of the 40 characters to be sure you have the correct OTR key.
+To the best of our knowledge, this approach wouldn't have worked when Edward Snowden first made contact with Laura Poitras. For this reason, Poitras asked someone both she and Snowden were in contact with to tweet Poitras's fingerprint, which provided external verification of the key. 
 
-Because you generally set up a new OTR key each time you set up a new device (for example, if you want to use the same Jabber account to chat from your Android phone with Gibberbot as you use on your Windows PC with Pidgin), you often end up with multiple keys, and therefore multiple fingerprints. It's important to repeat the verification step on each device with each contact you talk to.
-
-It's still much better practice to use OTR without verifying fingerprints than to not use OTR at all. An attacker that attempts a MITM attack against an OTR session runs the very real risk of getting caught, so likely this attack will only be used cautiously.
+![Micah Lee's tweet verified Laura Poitras's GPG fingerprint.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/micah_key_tweet.png)
 
 ### Logs
 
-Here is an excerpt from the [chat logs](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs), published by Wired, of a conversation between Bradley Manning and Adrian Lamo, who turned him in to authorities:
+OTR will encrypt the content of your chats, but there's another factor to consider when you're chatting with Off-The Record: logs.
+
+Here is an excerpt from the chat logs of a conversation between Chelsea Manning (shown here as bradass87) and Adrian Lamo, who turned him in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
 
 > (1:40:51 PM) bradass87 has not been authenticated yet. You should authenticate this buddy.
-> 
+
 > (1:40:51 PM) Unverified conversation with bradass87 started.
-> 
-> (1:41:12 PM) bradass87: hi
-> 
+
+> (1:41:12 PM) bradass87: hi 
+
 > (1:44:04 PM) bradass87: how are you?
-> 
+
 > (1:47:01 PM) bradass87: im an army intelligence analyst, deployed to eastern baghdad, pending discharge for "adjustment disorder" in lieu of "gender identity disorder"
-> 
-> (1:56:24 PM) bradass87: im sure you're pretty busy...
-> 
+
+> (1:56:24 PM) bradass87: im sure you're pretty busy... 
+
 > (1:58:31 PM) bradass87: if you had unprecedented access to classified networks 14 hours a day 7 days a week for 8+ months, what would you do?
-> 
-> (1:58:31 PM) info@adrianlamo.com : Tired of being tired
-> 
-> (2:17:29 PM) bradass87: ?
-> 
-> (6:07:29 PM) info@adrianlamo.com: What's your MOS?
 
-As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, yet it still ended up getting published on Wired's website and used as evidence against Bradley Manning. While it's possible their conversation was under a MITM attack, it's very unlikely. Instead both Bradley Manning's and Adrian Lamo's OTR clients were logging a copy of their conversation to their hard drives, unencrypted.
+As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, but excerpts were published on Wired's website and used as evidence in Manning's trail. The reason why? Because either Manning and Lamo's OTR clients were logging a copy of their conversations and saving the chat to a hard drive, unencrypted. 
 
-While it can sometimes be useful to keep logs of conversations, it also greatly compromises your privacy. If Pidgin and Adium didn't log OTR conversations by default, it's likely that these chat logs would never have become part of the public record.
+For journalists, logging conversations (either by taking notes or using a tape recorder) is part of the job, but you should know that logging conversations greatly compromises your privacy. If the clients hadn't logged OTR conversations by default, it's likely that the above conversation would never have become part of the public record. 
 
-With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. Adium still logs OTR conversations by default so you must manually turn off logging yourself, which is a bug in Adium. Because Adium is free software with an open bug tracker, you can follow and contribute to the conversations about fixing this bug [here](https://trac.adium.im/ticket/15722) and [here](https://trac.adium.im/ticket/15729).
+With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. As of July 2015, Adium still logs OTR conversations by default, and you must manually turn off logging yourself in Adium's Preferences pane.
+
+Freedom of The Press recommends turning off logging unless absolutely necessary. 
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
