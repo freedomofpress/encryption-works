@@ -284,12 +284,17 @@ Here's a message that was encrypted to my public key. Without having access to m
 
 ### The Web of Trust 
 
-PGP works best when a web of trust is created. Strong crypto can still be broken since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted e-mail. An adversity could potentially trick you into thinking that their public key was your colleagues. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message onto your college, with info purported to be from you. 
+PGP works best when a web of trust is created. Strong crypto can still be broken since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted e-mail and I'm an adversary. I could  trick you into thinking that their public key was your colleagues. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message onto your colleague, with info purported to be from you. 
 
 This can be solved, or at least mitigated, if you and your colleague independently verify each other's keys. This way, you verify your colleague's public key independently of when they e-mail you. But this raises another problem -- meeting people and verifying their keys is time-consuming. 
 
-The answer to this is the web of trust. As time goes on, you meet people and verify their keys. If you sign those keys (publicly asserting that you've verified them), that functions as a vouch of sorts -- this key has verified that key belongs to who it says it does. If I trust your key, by extension I should trust the keys you've signed, even if I don't know the signed key personally. I trust it because I trust you.
+One answer to this is the web of trust. As time goes on, you meet people and verify their keys. If you sign those keys (publicly asserting that you've verified them), that functions as a vouch of sorts -- this key has verified that key belongs to who it says it does. If I trust your key, by extension I should trust the keys you've signed, even if I don't know the signed key personally. I trust it because I trust you.
 
+There are some times when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. There are times that you don't always want to reveal that -- the source-journalist relationship comes to mind. 
+
+On the other hand, signatures lend trustworthiness -- if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any other ones. (When you create a PGP key, there's no verification process that you the e-mail address associated with the key, so signing keys is a way of proving ownership.) 
+
+In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and deciding on a case-by-case basis.
 
 ### Identity Verification
 
