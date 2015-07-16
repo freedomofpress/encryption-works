@@ -337,16 +337,25 @@ Washington Post journalist Barton Gellman, who Edward Snowden trusted with infor
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used right, provides the tools necessary to prevent MITM attacks. But these tools only work if the users are vigilant about identity verification.
 
-### Verifying Check-Sums
+### Verifying Checksums
 
 Another use for PGP is to verify correct software. To understand what I mean, consider the question: when you go to download a piece of software (the Tor Browser Bundle, for example), how do you know that what you're downloading is the same as what the developers created? How do you know that you didn't download a fake version? This could happen accidentally or maliciously.
 
-The answer is to check the "check-sum" of the software. This is a series of digits shown in two places, on your computer and on the servers where you downloaded the software wrong. If these numbers are the same, we can say with some degree of certainty that the file we downloaded is the same as the developer intended us to get.
+The answer is to check the "check-sum" of the software. This is a string of between 32 and 64 characters which are unique to the piece of software you want to download. The string is shown in two places, on your computer and on the servers where you download the software from. Using the GPG tools installed on your computer, you can determine whether the string you see matches the one published on the developer's website. If the strings are the same, we can say with some degree of certainty that the file we downloaded is the same as the one the developer intended us to get.
+
+To verify a checksum, you need to import the public key of the Tails developers. To do this, download the Tails signing key from the [Tails website](https://tails.boum.org/download/index.en.html):
+
+![Downloading the Tails signing key.](http://i.imgur.com/dbBK8op.png)
+
+This will download the .key file onto your hard-drive. From there, you just need to drag and drop (or click **File > Import** in the GPG Keychain application): 
+
+![Importing the Tails signing key into our GPG keychain.](http://i.imgur.com/eytZ0C5.png)
+
+From here, follow the advice on the [Tails installation page](https://tails.boum.org/download/index.en.html) on using the command line to verify the checksum.
 
 ![Verifying checksums for the Tails download.](http://i.imgur.com/zvUgZH6.jpg)
 
-In general, software websites have to provide the checksum for you to check, but not all do. Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify these check-sums.
-
+In general, software websites have to provide the checksum for you to check, but not all do. Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify a checksum.
 
 ## Tails: The Amnesic Incognito Live System
 
