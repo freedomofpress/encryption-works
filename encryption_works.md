@@ -130,12 +130,11 @@ Using OTR only encrypts the contents of your chat conversations but not the meta
 
 I also recommend you use an XMPP (also known as Jabber) service. Like email, Jabber is a federated, open protocol. Users of [riseup.net](https://www.riseup.net/en/chat)'s Jabber service can chat with users of [jabber.ccc.de](https://web.jabber.ccc.de/)'s service as well as [jabber.org](http://www.jabber.org/)'s service.
 
-## A Note About Gmail's "off the record" function.
+### A Note About Gmail's "off the record" function.
 
 ![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
 
-While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
-
+While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record (OTR) offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have use OTR encryption aren't readable to anyone except the participants, including Google. This is far more secure.
 
 ### OTR Clients
 
