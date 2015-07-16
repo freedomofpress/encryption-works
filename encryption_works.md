@@ -140,6 +140,8 @@ The Freedom of the Press Foundation recommend using XMPP, also known as Jabber. 
 
 To use OTR, you'll need to download additional software with your IM client. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use GNU/Linux you can install the pidgin and pidgin-otr packages. If you use Mac OS X you can download and install [Adium](https://adium.im), a free software chat application that includes OTR support.
 
+There are also Jabber and OTR clients available for Android, called [Gibberbot](https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im), and for iOS, called [ChatSecure](http://chrisballinger.info/apps/chatsecure/)
+
 For a full explanation of how it works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/).
 
 ### Your Key
