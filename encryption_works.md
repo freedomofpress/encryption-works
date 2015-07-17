@@ -98,8 +98,9 @@ Tails, which is a live DVD and live USB GNU/Linux distribution that I will discu
 
 ## Threat Models
 
-> "The sad fact is that when it comes to the internet, everybody is a spy: the government, the service providers watching your packets whiz by, the employer who operates the network you're reading this post on, the lurker on the wifi at Starbucks. The ubiquity of digital communications has made it harder than ever before to engage in truly private conversations." \
-— John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
+> "The sad fact is that when it comes to the internet, everybody is a spy: the government, the service providers watching your packets whiz by, the employer who operates the network you're reading this post on, the lurker on the wifi at Starbucks. The ubiquity of digital communications has made it harder than ever before to engage in truly private conversations."
+>
+> — John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
 
 Protecting the communications between journalists and sources is one of the most important press freedom issues of the 21st century. A record number of whistleblowers have recently been prosecuted in large part because the government thinks it can obtain the email and phone call records of any interaction, without ever attempting to force journalists to testify against their sources in court. A [report](https://www.aclu.org/sites/default/files/field_document/dem14-withlibertytomonitorall-07282014.pdf) from the American Civil Liberties Union, titled "With Liberty To Monitor All: How Large-Scale US Surveillance is Harming Journalism, Law And American Democracy" pointed out the numerous ways in which the US surveillance apparatus is chilling journalism. In interviews with numerous reporters, several themes emerged: 
 
@@ -113,7 +114,7 @@ Once it's clear that journalists have to protect themselves from a variety of th
 
 ### Operational Security
 
-The NSA isn't the only adversity journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
+The NSA isn't the only adversary journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
 
 What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them. This starts by asking questions such as:
 
@@ -125,13 +126,13 @@ Take the above example of the newsroom which got scooped. They want to protect t
 
 As you can see, threat modeling is about how you think about a problem as much as what you do to solve it. In this example, we weren't thinking about the NSA or of being hacked by an external adversary. In fact, hacking isn't the biggest danger facing most journalists -- it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a phishing attack and someone getting access to all your e-mail. 
 
-Journalists' e-mail accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail into resetting the password rather than hacking Google itself. There's even a phrase for this -- *rubber-hose cryptanalysis* refers to the fact that it's far easier to coerce or trick someone into giving you their password than break the underlying encryption.
-
 !["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
+
+Journalists' e-mail accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail into resetting the password rather than hacking Google itself. In any security system, the user is always the weakest link -- you can have all the PGP encryption in the world, but if your password's written on a post-it note on your desk, anyone with physical access to your office has access to your data.
 
 Let's look at another example: a metro journalist reporting on corruption in her city's police force. This is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
 
-The adversity in this case isn't the NSA, but the scenario shows why practicing good operational security protects you from numerous adversities. Snowden is the most famous recent example of a whistleblower, but journalists use inside sources who need protecting quite often.
+The adversary in this case isn't the NSA, but the scenario shows why practicing good operational security protects you from numerous adversities. Snowden is the most famous recent example of a whistleblower, but journalists use inside sources who need protecting quite often.
 
 ### Strong Passphrases
 
@@ -139,7 +140,7 @@ The first meaningful action you can take towards ensuring your digital security 
 
 Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as "Tr0ub4dor&3," to reference a popular [XKCD comic](https://xkcd.com/936/). The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
 
-Passphrases are longer than passwords."The quick fox jumps over the lazy dog" is a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it. The aforementioned XKCD comic's advice is to come up with a passphrase of unconnected words, such as "correct horse battery staple." This is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and words often come in groups -- I say brown, you think cow; I say garden, you think shed.
+Passphrases are longer than passwords."The quick fox jumps over the lazy dog" is a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it. The aforementioned XKCD comic's advice is to come up with a passphrase of unconnected words, such as "correct horse battery staple." This is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and often think of words in groups -- I say brown, you think cow; I say garden, you think shed.
 
 The solution is to externally randomize the words that constitute your passphrase. This is where [Diceware](http://world.std.com/~reinhold/diceware.html) comes in -- using dice to choose the words of your passphrase increases its randomness and its security.
 
