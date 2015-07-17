@@ -272,7 +272,7 @@ When I opened this email I was prompted to type in my encryption passphrase to d
 
 ### How To Verify Someone's Key in Enigmail and View Signatures
 
-If you're a journalist trying to get to grips with these privacy tools, it's useful to get together with colleagues and help one another out with setup. In addition, you can verify one another, which makes it harder for you to be individually attacked. By having a key signed by colleagues and other people you trust, it's harder to be the victim of an attack where someone tries to steal your identity.
+If you're a journalist trying to get to grips with these privacy tools, it's useful to get together with colleagues and help one another out with setup. In addition, you can increase the trustworthiness of a colleague's key by signing it. In essence, you're publicly asserting that you trust that a person's key belongs to that person, and wasn't created by someone else.
 
 Here's how to verify someone's GPG key: 
 
