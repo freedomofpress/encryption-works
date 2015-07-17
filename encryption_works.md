@@ -195,12 +195,18 @@ OTR will encrypt the content of your chats, but there's another factor to consid
 Here is an excerpt from the chat logs of a conversation between Chelsea Manning (shown here as bradass87) and Adrian Lamo, who turned him in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
 
 > (1:40:51 PM) bradass87 has not been authenticated yet. You should authenticate this buddy.
+
 > (1:40:51 PM) Unverified conversation with bradass87 started.
->(1:41:12 PM) bradass87: hi 
->(1:44:04 PM) bradass87: how are you?
->(1:47:01 PM) bradass87: im an army intelligence analyst, deployed to eastern baghdad, pending discharge for "adjustment disorder" in lieu of "gender identity disorder"
->(1:56:24 PM) bradass87: im sure you're pretty busy... 
->(1:58:31 PM) bradass87: if you had unprecedented access to classified networks 14 hours a day 7 days a week for 8+ months, what would you do?
+
+> (1:41:12 PM) bradass87: hi 
+
+> (1:44:04 PM) bradass87: how are you?
+
+> (1:47:01 PM) bradass87: im an army intelligence analyst, deployed to eastern baghdad, pending discharge for "adjustment disorder" in lieu of "gender identity disorder"
+
+> (1:56:24 PM) bradass87: im sure you're pretty busy... 
+
+> (1:58:31 PM) bradass87: if you had unprecedented access to classified networks 14 hours a day 7 days a week for 8+ months, what would you do?
 
 As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, but excerpts were published on Wired's website and used as evidence in Manning's trail. The reason why? Because either Manning and Lamo's OTR clients were logging a copy of their conversations and saving the chat to a hard drive, unencrypted. 
 
