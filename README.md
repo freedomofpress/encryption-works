@@ -10,6 +10,16 @@ This version has been converted to markdown so it can be easily tracked in git a
 
 ## Contributing
 
+If you'd like to see any specific changes or improvements to this document, feel free to [open an issue](https://github.com/freedomofpress/encryption-works/issues) on this repository.
+
+If you want to really get your hands dirty, fork our repository.  Then, if you'd like to contribute to this document, please follow these instructions:
+
+1.	Create a *"feature branch"* referencing the issue's ID (i.e. `git checkout -b issue_34`).
+2.	Make your precise correction to the document, and commit it.
+3.	Submit a pull request on our repo for consideration.
+
+## Hosting and Distributing with Pandoc
+
 The source of the document is `encryption_works.md`, which is written in Markdown using the [Pandoc extensions]. Pandoc can render the document to HTML, PDF, or a number of other output formats.
 
 To do so, first [install Pandoc](http://johnmacfarlane.net/pandoc/installing.html). Once it is installed, you can render the `.md` to `.html` with
