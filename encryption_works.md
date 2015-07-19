@@ -224,7 +224,7 @@ In 1991, Phil Zimmermann developed email encryption software called [Pretty Good
 
 Today, PGP is a company that sells a proprietary encryption program by the same name. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is 100% compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
 
-Unfortunately, PGP is notoriously hard to use, as exemplified by [Greenwald explaining how he could not initially talk to Edward Snowden because it was so difficult to set up](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818).
+Unfortunately, PGP is notoriously hard to use, as exemplified by [Greenwald explaining how he could not initially talk to Edward Snowden because it was so difficult to set up](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818). 
 
 ### Keypairs and Keyrings
 
@@ -259,6 +259,10 @@ To install GPG, Windows users can download [Gpg4win](http://www.gpg4win.org/), a
 You'll have to download an email client to use PGP correctly. An email client is a program on your computer that you open to check your email, as opposed to using your web browser. The most popular PGP setup is the email client [Thunderbird](https://www.mozilla.org/en-US/thunderbird) with the [Enigmail](http://enigmail.net/home/index.php) add-on. Thunderbird and Enigmail are free software and run on Window, Mac, and GNU/Linux.
 
 Right now PGP is very difficult to use securely from a web browser. While some browser extensions exist that help with this, I would recommend sticking to a desktop email client until the field of browser crypto matures. It's possible to use PGP encryption with Gmail, but the easiest way is to set up an email client like Thunderbird and run your Gmail account through it.
+
+Recently, however, there has been a promising development in secure web-based email. [ProtonMail](https://protonmail.ch), founded in 2013 and in Beta as of 2014, is a web-based email provider that seeks to make encryption easy to use. Like PGP, ProtonMail provides end-to-end encryption but, unlike PGP, ProtonMail's encryption is automatic and invisible to both recipient and sender: it does not require either party to manage private or public keys. Technically, ProtonMail does not do anything that PGP does not already do, and is based on secure, open source implementations of AES, RSA, and OpenPGP.
+
+ProtonMail messages are stored and transmitted in encrypted format and the company's own servers are located in Switzerland, outside of EU and US jurisdiction. Users also have the ability to set a self-destruct time for each message and set automatic log-out time periods in browsers. ProtonMail does not use cloud services like Amazon Web Services (AWS) and does not retain permanent logs or require identifying information to sign up for its service. The overwhelming demand for ProtonMail's service is promising and indicative of interest in easier-to-use encryption. 
 
 ### Encrypting, Decrypting, and Signatures
 
