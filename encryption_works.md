@@ -176,7 +176,7 @@ With OTR, each key has a fingerprint, a string of numbers and letters you can us
 
 It's worth remembering that fingerprints are unique to devices, not accounts. This means that if I chat with people on my Jabber account from my Mac and from my Android phone, those contacts will have two fingerprints for me.  It's important to repeat the verification step on each device with each contact you talk to.
 
-![Verifying someone's fingerprint in Adium.](http://i.imgur.com/ZS03LAd.png)
+![Verifying someone's fingerprint in Adium.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/otr_key_verification.png)
 
 In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to find some other secure channel to verify fingerprints. You could meet up in person, or talk on the phone if you can recognize their voice, or send a PGP encrypted and signed email.
 
