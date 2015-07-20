@@ -272,10 +272,11 @@ When I opened this email I was prompted to type in my encryption passphrase to d
 
 ## Encrypting Files with PGP
 
-As well as powering e-mail encryption with a desktop client like Apple Mail or Thunderbird, you can also use PGP to encrypt files on your hard-drive with your public key. This serves as a second layer of protection on top of hard-drive encryption and also allows you to use traditionally insecure cloud storage systems with a new degree of trust: with PGP-encrypted files, you can store documents on Dropbox that not even they can access or read.
+As well as powering e-mail encryption with a desktop client like Apple Mail or Thunderbird, you can also use PGP to encrypt files on your hard-drive with your public key. 
+
+This serves as a second layer of protection if you use full-disk encryption and lends you extra security to transfer those files onto a flash drive or upload them to a cloud storage website.
 
 ![Using GPGTools to encrypt a file on Mac.](http://i.imgur.com/adsGT8j.jpg)
-
 
 ### PGP Isn't Just For Email
 
