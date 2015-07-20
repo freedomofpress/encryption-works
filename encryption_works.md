@@ -128,6 +128,8 @@ Some instant message chat programs, such as Google Talk, support adding a layer 
 
 While using Google Talk on gmail.com, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function does not display a conversation log to the user. This takes the conversation "off the record" in the literal sense, but users aren't given any reason to believe Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
 
+As of July 2015, Google is encouraging users to switch from 
+
 ### About OTR
 
 OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people you chat with. Identity verification is important, and something many OTR users neglect to do. While OTR is more user-friendly than other types of encryption, there are some things you should know about OTR to understand it fully and know what attacks against it are possible.
