@@ -188,7 +188,7 @@ That said, it's better to use OTR unverified than it is to have a sensitive conv
 
 To the best of our knowledge, this approach wouldn't have worked when Edward Snowden first made contact with Laura Poitras. For this reason, Poitras asked someone both she and Snowden were in contact with to tweet Poitras's fingerprint, which provided external verification of the key. 
 
-![Micah Lee's tweet verified Laura Poitras's GPG fingerprint.](http://i.imgur.com/ZdziZGs.png)
+![Micah Lee's tweet verified Laura Poitras's GPG fingerprint.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/micah_key_tweet.png)
 
 ### Logs
 
