@@ -345,15 +345,15 @@ The answer is to check the "check-sum" of the software. This is a string of betw
 
 To verify a checksum, you need to import the public key of the Tails developers. To do this, download the Tails signing key from the [Tails website](https://tails.boum.org/download/index.en.html):
 
-![Downloading the Tails signing key.](http://i.imgur.com/dbBK8op.png)
+![Downloading the Tails signing key.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tails_signing_key.png)
 
 This will download the .key file onto your hard-drive. From there, you just need to drag and drop (or click **File > Import** in the GPG Keychain application): 
 
-![Importing the Tails signing key into our GPG keychain.](http://i.imgur.com/eytZ0C5.png)
+![Importing the Tails signing key into our GPG keychain.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tails_import.png)
 
 From here, follow the advice on the [Tails installation page](https://tails.boum.org/download/index.en.html) on using the command line to verify the checksum.
 
-![Verifying checksums for the Tails download.](http://i.imgur.com/zvUgZH6.jpg)
+![Verifying checksums for the Tails download.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tails_verification.png)
 
 In general, software websites have to provide the checksum for you to check, but not all do. Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify a checksum.
 
