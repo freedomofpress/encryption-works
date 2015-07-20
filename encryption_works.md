@@ -399,6 +399,8 @@ The challenge of the new cypherpunk movement is to make secure and verified end-
 # About Freedom of the Press Foundation
 
 > “A cantankerous press, an obstinate press, a ubiquitous press must be suffered by those in authority in order to preserve the even greater values of freedom of expression and the right of the people to know.” \
-—Judge Murray Gurfein, Pentagon Papers case, June 17, 1971
+>
+>— Judge Murray Gurfein, Pentagon Papers case, June 17, 1971
 
-The **Freedom of the Press Foundation** is a 501(c)3 non-profit organization dedicated to helping support and defend public-interest journalism focused on exposing mismanagement, corruption, and law-breaking in government. We accept tax-deductible donations to a variety of journalism organizations that push for transparency and accountability, and we work to preserve and strengthen the rights guaranteed to the press under the First Amendment. We also maintain [SecureDrop](http://securedrop.org), an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources. [Click here](https://freedom.press/securedrop/directory) for a list of current SecureDrop instances.
+
+**[Freedom of the Press Foundation](http://freedom.press)]** is a 501(c)3 non-profit organization dedicated to helping support and defend public-interest journalism focused on exposing mismanagement, corruption, and law-breaking in government. We accept tax-deductible donations to a variety of journalism organizations that push for transparency and accountability, and we work to preserve and strengthen the rights guaranteed to the press under the First Amendment. We also maintain [SecureDrop](http://securedrop.org), an open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources. [Click here](https://freedom.press/securedrop/directory) for a list of current SecureDrop instances.
