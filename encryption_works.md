@@ -114,7 +114,9 @@ Once it's clear that journalists have to protect themselves from a variety of th
 
 ### Operational Security
 
-The NSA isn't the only adversary journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
+**The advice is this chapter is directed towards journalists in particular, but the advice is far more general, and can be adapted to other scenarios.**
+
+The NSA is just adversary reporters should be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
 
 What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them. This starts by asking questions such as:
 
@@ -130,9 +132,9 @@ As you can see, threat modeling is about how you think about a problem as much a
 
 Journalists' e-mail accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail into resetting the password rather than hacking Google itself. In any security system, the user is always the weakest link -- you can have all the PGP encryption in the world, but if your password's written on a post-it note on your desk, anyone with physical access to your office has access to your data.
 
-Let's look at another example: a metro journalist reporting on corruption in her city's police force. This is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
+The adversary isn't the NSA, but the scenario shows why practicing good operational security protects you from numerous adversities. Snowden is the most famous recent example of a whistleblower, but journalists use inside sources who need protecting quite often.
 
-The adversary in this case isn't the NSA, but the scenario shows why practicing good operational security protects you from numerous adversities. Snowden is the most famous recent example of a whistleblower, but journalists use inside sources who need protecting quite often.
+For more information on threat models, how they work and how to develop them, check out Jonathan Stray's excellent guide to [threat modeling](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/#threat-modeling).
 
 ### Strong Passphrases
 
