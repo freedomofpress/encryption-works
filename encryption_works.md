@@ -105,7 +105,7 @@ Cryptography tools have been around since the early 90s, but the Snowden disclos
 
 Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. As with OTR, both parties need to be using the app for the encryption to work. Signal uses your device's data connection (or wifi), and so users don't incur SMS fees.
 
-![Encrypted text messaging with Signal.](http://i.imgur.com/bhzO0wY.jpg)
+![Encrypted text messaging with Signal.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/signal.png)
 
 You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android, it's called [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms)
 
