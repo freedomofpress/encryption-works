@@ -276,7 +276,7 @@ As well as powering e-mail encryption with a desktop client like Apple Mail or T
 
 This serves as a second layer of protection if you use full-disk encryption and lends you extra security to transfer those files onto a flash drive or upload them to a cloud storage website.
 
-![Using GPGTools to encrypt a file on Mac.](http://i.imgur.com/adsGT8j.jpg)
+![Using GPGTools to encrypt a file on Mac.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/pgp_encrypt_files.png)
 
 ### PGP Isn't Just For Email
 
