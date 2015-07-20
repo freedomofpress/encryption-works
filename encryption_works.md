@@ -120,21 +120,25 @@ When Snowden [was answering questions on Guardian's website](http://www.guardian
 
 ## Off-the-Record (OTR) Chat
 
-[Off-the-Record](http://www.cypherpunks.ca/otr/) (OTR) is a layer of encryption that can be added to any existing instant message chat system, provided that you can connect to that chat system using a chat client that supports OTR, such as [Pidgin](https://pidgin.im/) or [Adium](http://adium.im/). With OTR it's possible to have secure, end-to-end encrypted conversations over services like Google Talk and Facebook chat without Google or Facebook ever having access to the contents of the conversations. Note: this is different than the "off-the-record" option in Google, which is **not** secure. And remember: while Google and Facebook’s HTTPS connection is very valuable for protection against your message while it’s in transit, they still have the keys to your conversations so they can hand them over to authorities.
+# Off-The-Record (OTR)
 
-OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people that you chat with. Identity verification is extremely important and something that many OTR users neglect to do. While OTR is much more user friendly that other forms of public key encryption, if you wish to use it securely you still need to understand how it works and what attacks against it are possible.
+Some instant message chat programs, such as Google Talk, support adding a layer of encryption to conversations. With this end-to-end encryption software, called "Off the Record" (OTR), you can have secure chats using Google Talk and Facebook chat without Google or Facebook ever being able to see the contents of your conversation. 
 
-### Service Providers and Jabber
+## A Note About Gmail's "off the record" function.
 
-Using OTR only encrypts the contents of your chat conversations but not the metadata related to them. This metadata includes who you talk to and when and how often you talk to them. For this reason I recommend using a service that isn't known to collaborate with intelligence agencies. While this won't necessarily protect your metadata at least you have a chance of keeping it private.
+![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
 
-I also recommend you use an XMPP (also known as Jabber) service. Like email, Jabber is a federated, open protocol. Users of [riseup.net](https://www.riseup.net/en/chat)'s Jabber service can chat with users of [jabber.ccc.de](https://web.jabber.ccc.de/)'s service as well as [jabber.org](http://www.jabber.org/)'s service.
+While using Google Talk in a web browser, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function turns off logging. This takes the conversation "off the record" in the literal sense, but there's no way of telling if Google keeps a log of the conversation that isn't publicly displayed. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
 
-### OTR Clients
+## About OTR
 
-To use OTR you'll need to download software. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and separately the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use GNU/Linux you can install the pidgin and pidgin-otr packages. You can read through [documentation on how to set up your Pidgin accounts with OTR](http://www.cypherpunks.ca/otr/index.php#docs). If you use Mac OS X you can download and install [Adium](http://adium.im/), which is a free software chat client that includes OTR support. You can read the [official documentation](http://adium.im/help/pgs/AdvancedFeatures-OTREncryption.html) on how to get set up with OTR encryption with Adium.
+OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people you chat with. Identity verification is important, and something many OTR users neglect to do. While OTR is more user-friendly than other types of encryption, there are some things you should know about OTR to understand it fully and know what attacks against it are possible.
 
-There are also Jabber and OTR clients available for Android, called [Gibberbot](https://guardianproject.info/apps/gibber/), and for iOS, called [ChatSecure](http://chrisballinger.info/apps/chatsecure/).
+OTR encrypts the contents of your chats but not the metadata related to them -- who you talk to, how often, and when. You can use Google Talk and Facebook Chat with OTR, but we know that these services collaborate with the US government. For this reason, Freedom of the Press Foundation recommends using a chat service that doesn't collaborate with intelligence agencies. It's not a guarantee against metadata gathering, but it's better than nothing. 
+
+The Freedom of the Press Foundation recommend using XMPP, also known as Jabber. Like e-mail, Jabber is an open protocol. 
+
+To use OTR, you'll need to download additional software with your IM client. For a full explanation of how it works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/).
 
 ### Your Key
 
