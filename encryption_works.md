@@ -124,11 +124,13 @@ Some instant message chat programs, such as Google Talk, support adding a layer 
 
 ### A Note About Gmail's "off the record" function.
 
-![Google's version of "Off the Record" isn't secure.](http://i.imgur.com/B2rO58t.png)
+When using Google Hangouts for instant messaging, there's a setting to disable "Hangout history," and it's useful to differentiate between this feature and what the software Off-The-Record offers.
 
-While using Google Talk on gmail.com, there's a setting to go "off the record," and it's useful to differentiate between this feature and what the software Off-the-Record offers. Essentially, Google's "off the record" function does not display a conversation log to the user. This takes the conversation "off the record" in the literal sense, but users aren't given any reason to believe Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which have the Off the Record software layer installed aren't readable to anyone except the participants, including Google. This is far more secure.
+![Google's version of going off the record isn't secure.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/hangouts_history.png)
 
-As of July 2015, Google is encouraging users to switch from 
+Essentially, disabling the "Hangout history" function does not display a conversation log to the user. This takes the conversation off the record in the literal sense, but users aren't given any reason to believe that Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which use Off-The Record messaging encryption aren't readable to anyone except the participants, including Google. This is far more secure. 
+
+If you haven't yet updated from Google Talk to Hangouts, this feature is, confusingly, also called "off the record."
 
 ### About OTR
 
