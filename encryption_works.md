@@ -98,25 +98,33 @@ Tails, which is a live DVD and live USB GNU/Linux distribution that I will discu
 
 ## Anonymize Your Location with Tor
 
-Tor is a software service that allows you to use the Internet while concealing your IP address, which is, in general, a fairly accurate representation of your location. The [Tor](https://www.torproject.org/) network is made up of over 3,600 volunteer servers called nodes. When someone uses the Tor network to visit a website their connection gets bounced through three of these nodes (called a circuit) before finally exiting into the normal Internet. Anyone intercepting traffic will think your location is the final node which your traffic exits from.
+Despite NSA surveillance, it’s still possible to browse the web with a high degree of anonymity. The Tor Browser is a web browser like Firefox or Internet Explorer, but it allows you to use the Internet while concealing your IP address, which is generally an accurate representation of your approximate location. 
 
-It's important to remember that just because your connection to the Internet may be anonymous that doesn't magically make it secure. EFF has made a great [visualization of how Tor and HTTPS can work together to protect your privacy](https://www.eff.org/pages/tor-and-https).
+The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes —in a circuit— before exiting onto the normal Internet. If someone is monitoring your traffic, they can only track traffic through the final node, which is in a different location to you. 
 
-Like all good cryptography software, Tor is free software, complete with an open [bug tracker](https://trac.torproject.org/projects/tor), [mailing lists](https://www.torproject.org/docs/documentation#MailingLists), and [source code](https://gitweb.torproject.org/tor.git?a=tree;hb=HEAD).
+![To obscure your location, Tor routes your connection through three intermediaries.](http://i.imgur.com/OURTxj8.png)
 
-Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
+Despite attempts by US and UK intelligence agencies to deanonymize Tor traffic, it appears that Tor is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
 
-> A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
+### Setup
 
-We still don't know whether or not NSA or GCHQ counts as a global adversary, but we do know that they monitor a large portion of the Internet. It's too early to know for sure how often these intelligence agencies can defeat the anonymity of the Tor network.
+The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). 
 
-Even if they can, using Tor still gives us many advantages. It makes their job much harder, and we leave much less identifying data on the servers we connect to through the Tor network. It makes it much harder to be the victim of a MITM attack at our local network or ISP level. And even if some Tor circuits can be defeated by a global adversary, if enough people are getting their traffic routed through the same Tor nodes at the same time, it might be difficult for the adversary to tell which traffic belongs to which circuits.
+![The Tor Browser](http://i.imgur.com/quqUncE.png)
 
-The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en).
+### Browsing Habits
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/torbrowser.png)
+You should use Tor differently than you use a regular browser: some of the features it uses to obscure your location can be undermined if you don't take a few extra steps to protect yourself.
 
-When Snowden [was answering questions on Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower) from a "secure Internet connection", he was probably routing his traffic through the Tor network. He may have also been using a [bridge](https://bridges.torproject.org/) to connect to the Tor network to make the fact that he was using Tor from his IP address less obvious to eavesdroppers.
+- Don't enable or install browser plugins, including Adobe Flash. These can bypass Tor's security and give away your location.
+- Be aware of unencrypted sites, which don't have a lock icon next to the URL. Tor anonymizes your Internet traffic but unencrypted connections can still be eavesdropped on between the final node and the Internet server.
+- Don't download documents downloaded through Tor, since these documents can reveal your regular IP address to an adversary. Open them while offline or consider using Tails.
+
+As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
+
+### Theoretical Shortcomings
+
+In theory, it’s possible to de-anonymize Tor traffic by studying the timing of packets as they move across the network, but it’s too early to say whether large intelligence agencies can defeat the anonymity of the Tor network. Even so, an attack like this becomes much harder as the number of nodes and the volume of traffic increases. If you're a student at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
 
 ## Off-the-Record (OTR) Chat
 
