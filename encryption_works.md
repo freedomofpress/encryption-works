@@ -100,17 +100,17 @@ Tails, which is a live DVD and live USB GNU/Linux distribution that I will discu
 
 Despite NSA surveillance, it’s still possible to browse the web with a high degree of anonymity. The Tor Browser is a web browser like Firefox or Internet Explorer, but it allows you to use the Internet while concealing your IP address, which is generally an accurate representation of your approximate location. 
 
+![The Tor Browser](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tor_FPF.png)
+
 The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes —in a circuit— before exiting onto the normal Internet. If someone is monitoring your traffic, they can only track traffic through the final node, which is in a different location to you. 
 
-![To obscure your location, Tor routes your connection through three intermediaries.](http://i.imgur.com/OURTxj8.png)
+![To obscure your location, Tor routes your connection through three intermediaries.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tor_relays.png)
 
 Despite attempts by US and UK intelligence agencies to deanonymize Tor traffic, it appears that Tor is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
 
 ### Setup
 
 The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). 
-
-![The Tor Browser](http://i.imgur.com/quqUncE.png)
 
 ### Browsing Habits
 
