@@ -108,7 +108,7 @@ The Tor network is made up of over 6,000 volunteer servers, called nodes. When y
 
 ![To obscure your location, Tor routes your connection through three intermediaries.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tor_relays.png)
 
-Despite attempts by US and UK intelligence agencies to deanonymize Tor traffic, it appears that Tor is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
+Despite attempts by US and UK intelligence agencies to deanonymize Tor traffic, the Tor network is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
 
 ### Setup
 
