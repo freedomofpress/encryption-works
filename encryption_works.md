@@ -106,7 +106,7 @@ The software is free and open-source, meaning that it comes with a high degree o
 
 The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes —in a circuit— before exiting onto the normal Internet. If someone is monitoring your traffic, they can only track traffic through the final node, which is in a different location to you. 
 
-![To obscure your location, Tor routes your connection through three intermediaries.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tor_relays.png)
+![To obscure your location, Tor routes your connection through three intermediaries.](/images/tor_relays.png)
 
 Despite attempts by US and UK intelligence agencies to deanonymize Tor traffic, the Tor network is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
 
