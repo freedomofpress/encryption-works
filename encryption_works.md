@@ -237,9 +237,9 @@ Like OTR, each PGP key has a unique fingerprint. You can find a copy of my publi
 
 You can think of your public key and private key like your e-mail address and e-mail passphrase. You probably want your general e-mail address to be public, so that people can contact you -- it's the same with your public key. And, in the same way you should keep your e-mail passphrase to yourself, you should never share your private key with anyone or attach it in an e-mail.
 
-It's a good idea to publicly announce your key, especially if you create a new one. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio: 
+It's a good idea to publicize your key, especially if you create a new one. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio: 
 
-![Glenn Greenwald's Twitter bio, which includes a link to his PGP public key.](images/Greenwald_key_link.png)
+![Glenn Greenwald's Twitter bio, which includes a link to his PGP public key.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/Greenwald_key_link.png)
 
 This increases the legitimacy of the key. Not only does an attacker have to create a false key for Greenwald, but they have to hack his Twitter account and point the link in his bio to his key to the fake key. That's not likely to happen, especially since —for added security— Glenn's public key is listed on his site, <firstlook.org/theintercept>. This line of attack leaves several obvious clues, and is therefore hard to pull off. Therefore, we can say with some degree of trust that Glenn's public key info is legitimate.
 
