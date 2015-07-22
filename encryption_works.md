@@ -110,6 +110,12 @@ The Tor network is made up of over 6,000 volunteer servers, called nodes. When y
 
 Despite attempts by US and UK intelligence agencies to deanonymize Tor traffic, the Tor network is still largely secure. One leaked NSA slide titled "Tor Stinks" states that the de-anonymization success rate has been [negligible](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document). Another [described](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor as "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
 
+Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
+
+> The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating her, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
+
+As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
+
 ### Setup
 
 The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). 
