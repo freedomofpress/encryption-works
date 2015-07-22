@@ -120,8 +120,6 @@ When Snowden [was answering questions on Guardian's website](http://www.guardian
 
 ## Off-the-Record (OTR) Chat
 
-# Off-The-Record (OTR)
-
 [Off-the-Record](http://www.cypherpunks.ca/otr/) (OTR) is a layer of encryption that can be added to any existing instant message chat system, provided that you can connect to that chat system using a chat client that supports OTR, such as [Pidgin](https://pidgin.im/) or [Adium](http://adium.im/). With OTR it's possible to have secure, end-to-end encrypted conversations over services like Google Talk and Facebook chat without Google or Facebook ever having access to the contents of the conversations. Note: this is different than the "off-the-record" option in Google, which is **not** secure. And remember: while Google and Facebook’s HTTPS connection is very valuable for protection against your message while it’s in transit, they still have the keys to your conversations so they can hand them over to authorities.
 
 OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people that you chat with. Identity verification is extremely important and something that many OTR users neglect to do. While OTR is much more user friendly that other forms of public key encryption, if you wish to use it securely you still need to understand how it works and what attacks against it are possible.
