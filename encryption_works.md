@@ -126,7 +126,7 @@ As with Tails, these limitations are designed to keep Tor as secure as possible.
 
 ### Theoretical Shortcomings
 
-In theory, it’s possible to de-anonymize Tor traffic by studying the timing of packets as they move across the network, but it’s too early to say whether large intelligence agencies can defeat the anonymity of the Tor network. Even so, an attack like this becomes much harder as the number of nodes and the volume of traffic increases. If you're a student at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
+In theory, it’s possible to de-anonymize Tor traffic by studying the timing of packets as they move across the network, but it’s too early to say whether large intelligence agencies can defeat the anonymity of the Tor network. Even so, an attack like this becomes much harder as the number of nodes and the volume of traffic increases. If you're a student or staff-member at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
 
 ## Off-the-Record (OTR) Chat
 
