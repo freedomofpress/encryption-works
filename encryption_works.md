@@ -108,22 +108,6 @@ The Tor network is made up of over 6,000 volunteer servers, called nodes. When y
 
 ![To obscure your location, Tor routes your connection through three intermediaries.](/images/tor_relays.png)
 
-### Global Adversities
-
-Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
-
-> A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
-
-Leaked NSA slides [have](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document) titles such as "Tor Stinks" and have [called](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
-
-That said, leaked NSA slides indicate the surveillance agency could de-anonymize "a very small fraction" of Tor users. We still don't know if the NSA or GCHQ counts as a global adversity. But we do know that they monitor a large portion of the Internet, so it's hard to fully tell how often these intelligence agencies can defeat the Tor network's anonymity.
-
-Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
-
-> The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating her, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
-
-As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
-
 ### Setup
 
 The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). 
@@ -140,9 +124,26 @@ Here are some further tips to enhance your security and privacy while using the 
 
 As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
 
-### Theoretical Shortcomings
+### What Tor Doesn't Protect You From
 
-In theory, it’s possible to de-anonymize Tor traffic by studying the timing of packets as they move across the network, but it’s too early to say whether large intelligence agencies can defeat the anonymity of the Tor network. Even so, an attack like this becomes much harder as the number of nodes and the volume of traffic increases. If you're a student or staff-member at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
+Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
+
+> A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
+
+We don't know if the NSA and GCHQ are big enough to fit this definition of "global adversities," but we do know they monitor a large portion of the Internet. It's too early to say whether this large-scale surveillance is enough to defeat Tor's network anonymity in the general sense.
+
+Leaked NSA slides [have](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document) titles such as "Tor Stinks" and have [called](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
+
+That said, leaked NSA slides indicate the surveillance agency can de-anonymize "a very small fraction" of Tor users. 
+
+An attack like this becomes much harder as the number of nodes and the volume of traffic increases -- not impossible, but more time-consuming and expensive. If you're a student or staff-member at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
+
+
+Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
+
+> The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating her, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
+
+As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
 
 ## Off-the-Record (OTR) Chat
 
