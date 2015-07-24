@@ -118,10 +118,10 @@ When Snowden [was answering questions on Guardian's website](http://www.guardian
 
 Here are some further tips to enhance your security and privacy while using the Tor browser. Some tips, such as disabling flash, are good advice for any web browser.
 
-- Don't enable or install browser plugins, including Adobe Flash. These can bypass Tor's security and give away your location.
+- Turn on No Scripts for added security, as this prevents javascript from running in the browser, which could put you at risk of being identified.
 - Be aware of unencrypted sites, which don't have a lock icon next to the URL. Tor anonymizes your Internet traffic but unencrypted connections can still be eavesdropped on between the final node and the Internet server.
 - Try to avoid downloading files such as PDFs or Microsoft Word
-documents (which end in .doc or .docx), as they can be vehicles for malware that can be used by an attacker to de-anonymize your web browsing."
+documents (which end in .doc or .docx), as they can be vehicles for malware that can be used by an attacker to de-anonymize your web browsing.
 
 As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
 
