@@ -124,6 +124,9 @@ Here are some further tips to enhance your security and privacy while using the 
 
 As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
 
+It's important to remember that just because your connection to the Internet may be anonymous that doesn't magically make it secure. EFF has made a great [visualization of how Tor and HTTPS can work together to protect your privacy](https://www.eff.org/pages/tor-and-https).
+
+
 ### What Tor Doesn't Protect You From
 
 Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
