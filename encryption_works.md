@@ -140,12 +140,13 @@ That said, leaked NSA slides indicate the surveillance agency can de-anonymize "
 
 An attack like this becomes much harder as the number of nodes and the volume of traffic increases -- not impossible, but more time-consuming and expensive. If you're a student or staff-member at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
 
-
 Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
 
 > The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating her, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
 
 As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
+
+With all this said, using Tor still gives us many advantages. It makes the job of the global adversary much harder, and we leave much less identifying data on the servers we connect to through the Tor network. It makes it much harder to be the victim of a man-in-the-middle attack at our local network or ISP level. Even if some Tor circuits can be defeated by a global adversary, if enough people are getting their traffic routed through the same Tor nodes at the same time, it might be difficult for the adversary to tell which traffic belongs to which circuits.
 
 ## Off-the-Record (OTR) Chat
 
