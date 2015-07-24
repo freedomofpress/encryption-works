@@ -108,8 +108,15 @@ The Tor network is made up of over 6,000 volunteer servers, called nodes. When y
 
 ![To obscure your location, Tor routes your connection through three intermediaries.](/images/tor_relays.png)
 
+### Global Adversities
 
-Leaked NSA slides indicate the surveillance agency could de-anonymize "a very small fraction" of Tor users. We still don't know if the NSA or GCHQ counts as a global adversity. But we do know that they monitor a large portion of the Internet, so it's hard to fully tell how often these intelligence agencies can defeat the Tor network's anonymity.
+Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
+
+> A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
+
+Leaked NSA slides [have](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document) titles such as "Tor Stinks" and have [called](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
+
+That said, leaked NSA slides indicate the surveillance agency could de-anonymize "a very small fraction" of Tor users. We still don't know if the NSA or GCHQ counts as a global adversity. But we do know that they monitor a large portion of the Internet, so it's hard to fully tell how often these intelligence agencies can defeat the Tor network's anonymity.
 
 Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
 
