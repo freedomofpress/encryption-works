@@ -98,7 +98,7 @@ Tails, which is a live DVD and live USB GNU/Linux distribution that I will discu
 
 ## Anonymize Your Location with Tor
 
-Despite NSA surveillance, it’s still possible to browse the web with a high degree of anonymity. The Tor Browser is a web browser like Firefox or Safari, but it allows you to use the Internet while concealing your IP address, which is generally an accurate representation of your approximate location. 
+While your web habits can often be tracked when browsing the Internet, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser like Firefox or Safari, but it allows you to browse the web while masking your IP address, which is generally an accurate representation of your approximate location. 
 
 The software is free and open-source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
 
