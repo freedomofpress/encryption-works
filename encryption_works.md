@@ -128,6 +128,8 @@ As with all privacy-enhancing software, an attacker with physical access to the 
 
 The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). 
 
+When Snowden [was answering questions on Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower) from a "secure Internet connection", he was probably routing his traffic through the Tor network. He may have also been using a [bridge](https://bridges.torproject.org/) to connect to the Tor network to make the fact that he was using Tor from his IP address less obvious to eavesdroppers.
+
 ### Browsing Habits
 
 You should use Tor differently than you use a regular browser: some of the features it uses to obscure your location can be undermined if you don't take a few extra steps to protect yourself.
