@@ -104,7 +104,7 @@ The software is free and open-source, meaning that it comes with a high degree o
 
 ![The Tor Browser](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tor_FPF.png)
 
-The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes —in a circuit— before exiting onto the normal Internet. If someone is monitoring your traffic, they can only track traffic through the final node, which is in a different location to you. 
+The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes — called a circuit – before exiting onto the normal Internet. Anyone intercepting Internet traffic will think your location is the final node which your traffic exits from.
 
 ![To obscure your location, Tor routes your connection through three intermediaries.](/images/tor_relays.png)
 
@@ -125,7 +125,6 @@ Here are some further tips to enhance your security and privacy while using the 
 As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
 
 It's important to remember that just because your connection to the Internet may be anonymous that doesn't magically make it secure. EFF has made a great [visualization of how Tor and HTTPS can work together to protect your privacy](https://www.eff.org/pages/tor-and-https).
-
 
 ### What Tor Doesn't Protect You From
 
