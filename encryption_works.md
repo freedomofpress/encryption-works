@@ -132,7 +132,7 @@ When Snowden [was answering questions on Guardian's website](http://www.guardian
 
 ### Browsing Habits
 
-You should use Tor differently than you use a regular browser: some of the features it uses to obscure your location can be undermined if you don't take a few extra steps to protect yourself.
+Here are some further tips to enhance your security and privacy while using the Tor browser. Some tips, such as disabling flash, are good advice for any web browser.
 
 - Don't enable or install browser plugins, including Adobe Flash. These can bypass Tor's security and give away your location.
 - Be aware of unencrypted sites, which don't have a lock icon next to the URL. Tor anonymizes your Internet traffic but unencrypted connections can still be eavesdropped on between the final node and the Internet server.
