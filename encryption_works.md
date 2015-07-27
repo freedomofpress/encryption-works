@@ -138,7 +138,7 @@ For a full explanation of how it works and how to set it up, check out The Inter
 
 When using Google Hangouts for instant messaging, there's a setting to disable "Hangout history," and it's useful to differentiate between this feature and what the software Off-The-Record offers.
 
-![Google's version of going off the record isn't secure.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/hangouts_history.png)
+![Google's version of going off the record isn't secure.](https://raw.githubusercontent.com/tommycollison/encryption-works/issue_74_otr_intro/images/hangouts_history.png)
 
 Essentially, disabling the "Hangout history" function does not display a conversation log to the user. This takes the conversation off the record in the literal sense, but users aren't given any reason to believe that Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which use Off-The Record messaging encryption aren't readable to anyone except the participants, including Google. This is far more secure. 
 
