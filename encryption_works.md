@@ -220,7 +220,11 @@ With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conver
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
-PGP stands for "Pretty Good Privacy," software you can use to encrypt your e-mail messages. GPG is a free, open-source version of this software. The terms PGP and GPG are often used interchangeably. Unfortunately, the process is notoriously hard to use, as evidenced by Glenn Greenwald initially being 
+In 1991, Phil Zimmermann developed [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (PGP), software which he intended peace activists to use while organizing in the anti-nuclear movement.
+
+PGP stands for "Pretty Good Privacy," software you can use to encrypt your e-mail messages. Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
+
+Unfortunately, the process is notoriously hard to use, as evidenced by Glenn Greenwald initially being 
 [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk security with Edward Snowden.
 
 If you use PGP encryption, you will have to make some changes about how you use e-mail. For example, if you use PGP on your computer but receive an encrypted e-mail on your phone, you won't be able to decrypt the e-mail and read it until you get back to your computer.
@@ -233,7 +237,7 @@ On the other end, the receiver uses PGP to decrypt the message and verify the e-
 
 PGP uses a public key and a private key, both strings of randomly-generated numbers and letters unique to each person. Information about the public key is stored on something called a public key server, which is a bit like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail. 
 
-Like OTR, each PGP key has a unique fingerprint. You can find a copy of my public key on [MIT's keyserver](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D), and my fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key. 
+Like OTR, each PGP key has a unique fingerprint. [Here's](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D) the PGP public for Tommy Collison, one of the authors of this guide. That key's fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key. 
 
 You can think of your public key and private key like your e-mail address and e-mail passphrase. You probably want your general e-mail address to be public, so that people can contact you -- it's the same with your public key. And, in the same way you should keep your e-mail passphrase to yourself, you should never share your private key with anyone or attach it in an e-mail.
 
@@ -293,7 +297,7 @@ Here's a message that was encrypted to my public key. Without having access to m
 
 ### The Web of Trust 
 
-PGP works best when a web of trust is created. Strong crypto can still be broken since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted e-mail and I'm an adversary. I could  trick you into thinking that their public key was your colleagues. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message onto your colleague, with info purported to be from you. 
+PGP works best when a web of trust is created. Strong crypto can still be broken since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted e-mail and I'm an attacker. I could  trick you into thinking that their public key was your colleagues. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message onto your colleague, with info purported to be from you. 
 
 This can be solved, or at least mitigated, if you and your colleague independently verify each other's keys. This way, you verify your colleague's public key independently of when they e-mail you. But this raises another problem -- meeting people and verifying their keys is time-consuming. 
 
@@ -301,7 +305,9 @@ One answer to this is the web of trust. As time goes on, you meet people and ver
 
 There are some times when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. There are times that you don't always want to reveal that -- the source-journalist relationship comes to mind. 
 
-On the other hand, signatures lend trustworthiness -- if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any other ones. (When you create a PGP key, there's no verification process that you the e-mail address associated with the key, so signing keys is a way of proving ownership.) 
+On the other hand, signatures lend trustworthiness -- if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any other ones. 
+
+(When you create a PGP key, there's no verification process that you the e-mail address associated with the key, so signing keys is a way of proving ownership. This has happened to several Tor developers and one of the authors of this guide.) 
 
 In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and deciding on a case-by-case basis.
 
