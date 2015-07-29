@@ -254,7 +254,9 @@ In addition to protecting PGP secret keys, you also need to choose good passphra
 
 ### Software
 
-To install GPG, Windows users can install [Gpg4win](http://www.gpg4win.org) and Mac OS X users can download [GPGTools](https://gpgtools.org). You'll also have to download a desktop e-mail client to use PGP correctly. This is because PGP does not yet function satisfactorily in a web browser. Freedom of the Press recommends using [Thunderbird](https://www.mozilla.org/en-US/thunderbird) as your desktop e-mail client with the [Enigmail](https://www.enigmail.net/home/index.php) add-on. 
+To install GPG, Windows users can install [Gpg4win](http://www.gpg4win.org) and Mac OS X users can download [GPGTools](https://gpgtools.org). If you run GNU/Linux you should already have GPG installed (since GPG is a command line program) but there's software that interfaces with email clients that makes it much easier to use.
+
+Some third parties have developed browser extensions to use GPG with web-based email, but it's comparatively less secure than using a desktop mail client and comes with its own set of shortcomings, such as not being able to encrypt attachments. Freedom of the Press recommends using [Thunderbird](https://www.mozilla.org/en-US/thunderbird) as your desktop e-mail client with the [Enigmail](https://www.enigmail.net/home/index.php) add-on.
 
 ### Sending And Receiving Encrypted E-mail
 
