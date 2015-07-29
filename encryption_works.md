@@ -239,9 +239,11 @@ PGP uses a public key and a private key, both strings of randomly-generated numb
 
 Like OTR, each PGP key has a unique fingerprint. [Here's](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D) the PGP public for Tommy Collison, one of the authors of this guide. That key's fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key. 
 
+In 2013, Kevin Poulsen [published](http://www.wired.com/threatlevel/2013/06/signed-bda0df3c/) a PGP encrypted message on Wired's website intended for Edward Snowden to read. As long as Wired has a copy of Snowden's real public key, only someone in possession of Snowden's secret key can decrypt this message.
+
 You can think of your public key and private key like your e-mail address and e-mail passphrase. You probably want your general e-mail address to be public, so that people can contact you -- it's the same with your public key. And, in the same way you should keep your e-mail passphrase to yourself, you should never share your private key with anyone or attach it in an e-mail.
 
-It's a good idea to publicize your key, especially if you create a new one. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio: 
+It's a good idea to publicize your public key, especially if you create a new pair. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio: 
 
 ![Glenn Greenwald's Twitter bio, which includes a link to his PGP public key.](https://raw.githubusercontent.com/tommycollison/encryption-works/issue_76_pgp_intro/images/Greenwald_key_link.png)
 
