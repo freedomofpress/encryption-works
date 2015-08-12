@@ -104,15 +104,25 @@ Tails, which is a live DVD and live USB GNU/Linux distribution that I will discu
 
 Cryptography tools have been around since the early 90s, but the Snowden disclosures kickstarted a renewed interest in widespread consumer cryptography. In response to usability issues with PGP and the ubiquity of smartphones, several new apps providing end-to-end encryption have risen to prominence. 
 
-Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. As with OTR, both parties need to be using the app for the encryption to work. Signal uses your device's data connection (or wifi), and so users don't incur SMS fees.
+Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is completely open source, and is made by [Open Whisper Systems](https://whispersystems.org). 
 
-![Encrypted text messaging with Signal.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/signal.png)
+![Signal messages are end-to-end encrypted.](/images/signal.png) 
+
+As with OTR, both parties need to be using the app for the encryption to work. Signal uses your device's data connection (or wifi), and so users don't incur SMS fees. 
+
+It's important to remember what these apps can and can't do -- while they will encrypt your conversations and log less metadata than traditional text messaging (the servers don't keep logs of who called who), you still have to use a valid cellphone number to sign up and, as always, beware of malware on your device.
 
 You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android, the functionality for making encrypted calls and sending encrypted texts is split into two apps:  [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone).
 
 ### Doesn't Apple Provide End-To-End Encryption?
 
-Apple made news when they [announced](https://www.apple.com/apples-commitment-to-customer-privacy/) that iMessage conversations were end-to-end encrypted. This was a big step, making iMessage more secure than traditional SMS, and it's better than what most tech companies are putting out. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure.
+Apple made news when they [announced](https://www.apple.com/apples-commitment-to-customer-privacy/) that iMessage conversations were end-to-end encrypted, meaning that if Apple is served with a legal order, they could not decrypt your communications even if they wanted to. 
+
+>  For all devices running iOS 8.0 and later versions, Apple will not perform iOS data extractions in response to government search warrants because the files to be extracted are protected by an encryption key that is tied to the user's passcode, which Apple does not possess.
+> 
+> [What we’re most commonly asked for and how we respond.](http://www.apple.com/privacy/government-information-requests/) Apple.com
+
+This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies are putting out. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure.
 
 The problem lies with proprietary software, which includes much of what’s released by Microsoft, Apple, and Google. It’s much more difficult for security researchers or users to independently verify that secret backdoors don’t exist at the clandestine demands of the surveillance state -- or that Apple doesn't secretly send a copy of your iMessages to the FBI. Apple CEO Tim Cook released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which allows a government to access user data.
 
@@ -120,7 +130,7 @@ The problem lies with proprietary software, which includes much of what’s rele
 >
 > — ["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
 
-While the rhetoric is promising, the fact is that users have absolutely no way to verify this. We’re forced to believe Cook. This promise may satisfy some, but we shouldn’t have to rely on blind trust for our online privacy.
+While we commend his comments and praise Apple for implementing disk encryption on devices running iOS, users have no way to verify this technically. We’re forced to believe Cook because Apple uses proprietary (closed source) software
 
 Free and open-source software, on the other hand, is developed with open bug trackers, open mailing lists, open governing structures and open source code. This makes it much harder for the software to be compromised by an adversity without the knowledge of the users. Since Signal is open-source, it has a higher degree of trust in this regard than iMessage.
 
