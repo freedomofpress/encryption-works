@@ -350,30 +350,6 @@ Here's a message that was encrypted to Micah Lee's public key. Without having ac
     =a8FR
     -----END PGP MESSAGE-----
 
-### Identity Verification
-
-As with OTR, it's important that you verify the PGP keys of the people you communicate with. In PGP you do this by using your secret key to digitally sign someone else's public key.
-
-From inside Thunderbird you can click the OpenPGP menu and open Key Management. You can check the "Display All Keys by Default" checkbox to see all of the keys in your keyring. From here you can import keys from files, from your clipboard, or from key servers. You can also generate new keypairs, and view details of all the keys in your keyring.
-
-As with OTR keys, each PGP key has a unique fingerprint. And as with OTR, you need to read out the entire fingerprint to be sure the public key you're looking at actually belongs to the person you believe it belongs to.
-
-You can right-click on a key in this list and choose View Details to see its fingerprint. Here are the details of the PGP key that the disk encryption software [TrueCrypt](http://www.truecrypt.org/) uses to digitally sign releases of its software.
-
-![](https://raw.github.com/micahflee/encryption-works/master/images/key_properties.png)
-
-Also like OTR, you need to meet in person, talk on the phone, or use an already verified OTR session to compare each character of the fingerprint.
-
-After you have verified that the public key you have belongs to the person you think it does, you can click "Select action" and choose "Sign Key".
-
-![](https://raw.github.com/micahflee/encryption-works/master/images/key_signing.png)
-
-In the screenshot above I checked the "Local signatures (cannot be exported)" box. In this way, you can sign PGP keys, which is necessary for Enigmail and other PGP software to display security messages that make sense, but you don't run the risk of [accidentally publishing who you communicate with to a PGP key server](https://en.wikipedia.org/wiki/Key_server_%28cryptographic%29#Privacy_concerns).
-
-If you receive an encrypted email from someone you know but the email is not digitally signed, you can't be completely sure that it was actually written by the person you think. It's possible it could be someone who spoofed their email address or compromised their email account.
-
-If your friend tells you in this email that she generated a new key, you need to meet up in person or talk to her on the phone and read out your fingerprints before you can be sure that you're not under attack.
-
 ### Attacks
 
 If you don't verify identities you have no way of knowing whether or not you are the victim of a MITM attack.
