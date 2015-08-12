@@ -402,7 +402,7 @@ From here, follow the advice on the [Tails installation page](https://tails.boum
 
 ![Verifying checksums for the Tails download.](images/tails_verification.png)
 
-Here, we can see that the *primary* and *subkey fingerprints* are the same for both the Tails website and my command line, which means the software I downloaded was what the developers intended me to get. 
+Here, we can see my command line reads "Good signature," which means the software I downloaded was what the developers intended me to get. (In this example, I haven't verified the Tails signing key, which you should -- check out the Tails [website](https://tails.boum.org/doc/get/trusting_tails_signing_key/index.en.html) to learn how to do this.) 
 
 In general, software websites have to provide the checksum for you to check, but not all do. Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify a checksum.
 
