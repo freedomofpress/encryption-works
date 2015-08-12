@@ -240,7 +240,7 @@ On the other end, the receiver uses PGP to decrypt the message and verify the e-
 
 ### What's a key?
 
-PGP uses a public key and a private key, both strings of randomly-generated numbers and letters unique to each person. Information about the public key is stored on something called a public key server, which is a bit like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail.
+PGP uses a public key and a private key, two mathematically-related numbers which are represented as unique strings of randomly-generated numbers and letters. Information about the public key is stored on something called a public key server, which is a bit like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail.
 
 ![A sample PGP block.](images/pgp_block.png)
 
