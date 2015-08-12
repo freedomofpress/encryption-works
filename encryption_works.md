@@ -248,7 +248,7 @@ Like OTR, each PGP key has a unique fingerprint. [Here's](https://pgp.mit.edu/pk
 
 You can think of your public key and private key like your e-mail address and e-mail passphrase. You probably want your general e-mail address to be public, so that people can contact you -- it's the same with your public key. And, in the same way you should always keep your e-mail passphrase to yourself, you should never share your private key with anyone or attach it in an e-mail.
 
-It's a good idea to publicize your public key, so that people who want to contact you can be sure that the public key they use belongs to you. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio:
+It's a good idea to publicize your public key, to help people who want to contact you verify that the public key they use belongs to you. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio:
 
 ![Glenn Greenwald's Twitter bio, which includes a link to his PGP public key.](https://raw.githubusercontent.com/tommycollison/encryption-works/issue_76_pgp_intro/images/Greenwald_key_link.png)
 
