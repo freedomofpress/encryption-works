@@ -128,7 +128,7 @@ OTR is used for two things: **encrypting the contents** of real-time instant mes
 
 Using OTR only encrypts the contents of your chat conversations but not the metadata related to them. This metadata includes who you talk to and when and how often you talk to them. For this reason I recommend using a service that isn't known to collaborate with intelligence agencies. While this won't necessarily protect your metadata at least you have a chance of keeping it private.
 
-I also recommend you use an XMPP (also known as Jabber) service. Like email, Jabber is a federated, open protocol. Users of [riseup.net](https://www.riseup.net/en/chat)'s Jabber service can chat with users of [jabber.ccc.de](https://web.jabber.ccc.de/)'s service as well as [jabber.org](http://www.jabber.org/)'s service.
+For a full explanation of how it works and how to set it up, check out the Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/). As an added bonus, the Intercept also explains how to set up OTR to work with Tor so you can keep your chats both anonymous and encrypted.
 
 ### OTR Clients
 
