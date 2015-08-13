@@ -141,13 +141,13 @@ There's been some discussion of global adversaries -- governments or other actor
 
 > A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
 
-We don't know if the NSA and GCHQ are big enough to fit this definition of "global adversities," but we do know they monitor a large portion of the Internet. It's too early to say whether this large-scale surveillance is enough to defeat Tor's network anonymity in the general sense.
+We don't know if the NSA and GCHQ are big enough to fit this definition of "global adversaries," but we do know they monitor a large portion of the Internet. It's too early to say whether this large-scale surveillance is enough to defeat Tor's network anonymity in the general sense.
 
-Leaked NSA slides [have](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document) titles such as "Tor Stinks" and have [called](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
+Thanks to the Snowden documents, we know that for many Internet users, powerful intelligence agencies such as NSA, GCHQ, and the collective "5 Eyes" fit this definition of a global passive adversary. It remains unclear whether they can use their network perspective to reliably de-anonymize Tor users, though.
 
-Leaked NSA slides indicate the surveillance agency can de-anonymize "a very small fraction" of Tor users. However, these slides are several years old now, and we do not know if their network visibility has increased.
+According to leaked NSA slides with titles such as ["Tor Stinks"](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document), Tor is "still the King of high secure, low latency Internet Anonymity" with "no contenders." However, the same slides also indicate that the surveillance agency can de-anonymize "a very small fraction" of Tor users. Also important to note is that these slides are also several years old now, so we don't know what the current status of these powerful organization's capabilities might be.
 
-An attack like this becomes much harder as the number of nodes and the volume of traffic increases -- not impossible, but more time-consuming and expensive. So if you're a student or staff-member at a college or university, you should [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
+Such an attack attack like this becomes much harder as the number of nodes and the volume of traffic increases -- not impossible, but more time-consuming and expensive. So if you're a student or staff-member at a college or university, you should [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
 
 Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
 
