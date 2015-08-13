@@ -248,21 +248,25 @@ In addition to protecting PGP secret keys, you also need to choose good passphra
 
 ### Software
 
-To install GPG, Windows users can download [Gpg4win](http://www.gpg4win.org/), and Mac OS X users can download [GPGTools](https://gpgtools.org/). If you run GNU/Linux you should already have GPG installed. GPG is a command line program, but there's software that interfaces with email clients that makes it much easier to use.
+To install GPG, Windows users can install [Gpg4win](http://www.gpg4win.org) and Mac OS X users can download [GPGTools](https://gpgtools.org). If you run GNU/Linux you should already have GPG installed (since GPG is a command line program) but there's software that interfaces with email clients that makes it much easier to use.
 
-You'll have to download an email client to use PGP correctly. An email client is a program on your computer that you open to check your email, as opposed to using your web browser. The most popular PGP setup is the email client [Thunderbird](https://www.mozilla.org/en-US/thunderbird) with the [Enigmail](http://enigmail.net/home/index.php) add-on. Thunderbird and Enigmail are free software and run on Window, Mac, and GNU/Linux.
+Some third parties have developed browser extensions to use GPG with web-based email, but it's comparatively less secure than using a desktop mail client and comes with its own set of shortcomings, such as not being able to encrypt attachments. Freedom of the Press recommends using [Thunderbird](https://www.mozilla.org/en-US/thunderbird) as your desktop e-mail client with the [Enigmail](https://www.enigmail.net/home/index.php) add-on.
 
-Right now PGP is very difficult to use securely from a web browser. While some browser extensions exist that help with this, I would recommend sticking to a desktop email client until the field of browser crypto matures. It's possible to use PGP encryption with Gmail, but the easiest way is to set up an email client like Thunderbird and run your Gmail account through it.
+### Sending And Receiving Encrypted E-mail
 
-### Encrypting, Decrypting, and Signatures
+Once you've installed Enigmail, you'll notice some new settings when you go to compose an e-mail in Thunderbird.
 
-You can send encrypted emails and digitally sign them using the graphical user interface provided by Thunderbird and Enigmail. Here's an example of an encrypted email that I'm sending to myself. When I hit send, my software took the body of the message and encrypted it using my public key, making the content unintelligible to eavesdroppers, and indeed to my email provider too.
+![Sending an encrypted e-mail with Thunderbird and the Enigmail add-on.](http://i.imgur.com/dnI6byg.png)
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/encrypt_sign.png)
+When sent, only *sva1bard@risup.net's* private key will be able to decrypt this e-mail (since it's encrypted with the corresponding public key).
 
-When I opened this email I was prompted to type in my encryption passphrase to decrypt it. Since it was encrypted using my public key, the only way I could decrypt it is with my secret key. Since my secret key is protected with a passphrase, I needed to type my passphrase to temporarily decrypt my secret key in order to use it to decrypt the message.
+If you try and access an encrypted e-mail in a web browser, it's unreadable because the private key is missing. 
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)
+![Web browsers can't read PGP-encrypted e-mail.](http://i.imgur.com/hKzASGT.png)
+
+But when the e-mail is accessed with the correct private key, it becomes readable again:
+
+![The decrypted e-mail.](http://i.imgur.com/1O5MYkQ.png)
 
 ### PGP Isn't Just For Email
 
