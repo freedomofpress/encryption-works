@@ -56,45 +56,143 @@ In short, encryption encompasses a whole host of uses, but here we are focused o
 
 ## Software You Can Trust
 
-When Snowden uses the term "endpoint security" he means the security of the computers on either end of the conversation that are doing the encrypting and the decrypting, as opposed to the security of the message when it’s in transit. If you send an encrypted email to a friend but you have a keylogger on your computer that's logging the entire message, as well as the passphrase that's protecting your encryption keys, your encryption isn't worth very much.
+> *Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide.*
+> 
+> — Eric Hughes, in his 1993 Cypherpunk Manifesto.
 
-Since Freedom of the Press Foundation board members Glenn Greenwald and Laura Poitras broke the NSA dragnet surveillance stories, a lot more information about US spy agencies has been made public. Specifically, Bloomberg wrote about [voluntary information sharing programs between US companies and US spy agencies](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html).
+One of the most controversial aspects of the Snowden disclosures was the complicity of several software services, which either handed over data to the NSA or purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies. 
 
-So far the most shocking revelation about these information sharing programs is that Microsoft has a policy of giving information about vulnerabilities in its software to the US government before it releases security updates to the public. The article says:
+> Microsoft has collaborated closely with US intelligence services to allow users' communications to be intercepted, including helping the National Security Agency to circumvent the company's own encryption, according to top-secret documents obtained by the Guardian. […] In July last year, nine months after Microsoft bought Skype, the NSA boasted that a new capability had tripled the amount of Skype video calls being collected. \
+—[“Microsoft handed the NSA access to encrypted messages.”](http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data) The Guardian. 
+
+In addition, [Bloomberg](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html) reported that Microsoft had given information to the NSA about software bugs before they fixed them:
 
 > Microsoft Corp. (MSFT), the world's largest software company, provides intelligence agencies with information about bugs in its popular software before it publicly releases a fix, according to two people familiar with the process. That information can be used to protect government computers and to access the computers of terrorists or military foes.
 
-This means that it's likely that NSA has been handed the keys to any computer running Windows, Office, Skype, or other Microsoft software. If you're running this software on your computer, it's likely that, with enough effort, the NSA could compromise your computer, and thus your encrypted communications, if you became a target.
+Not only is this a grossly irresponsible act which puts customers at risk of being hacked just so the NSA can spy on the world's citizens, but it means that the NSA, with enough effort, has been handed the keys to any computer running Windows, MS Office, Skype, or any other piece of Microsoft software, including their SkyDrive cloud storage software. This would obviate any encryption you use with communications.
 
-We've also learned from the [New York Times](http://www.nytimes.com/2013/06/20/technology/silicon-valley-and-spy-agency-bound-by-strengthening-web.html?pagewanted=all&_r=1&) that Skype, software that outside the security community has long had a reputation of being a secure way to communicate, has been feeding private conversations to the US government for the last five years.
+How could Skype get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open source or closed-source, depending on whether the underlying code is public when the underlying code is not publicly available for independent observers to see it and make sure that nothing untoward is happening. It’s much more difficult for to independently verify that secret backdoors don’t exist in closed-source at the clandestine demands of the surveillance state. 
 
-> Skype, the Internet-based calling service, began its own secret program, Project Chess, to explore the legal and technical issues in making Skype calls readily available to intelligence agencies and law enforcement officials, according to people briefed on the program who asked not to be named to avoid trouble with the intelligence agencies.
+Some pieces of closed-source software are still better than others. While Microsoft has openly collaborated with the US government, Apple took a different tack. Apple CEO Tim Cook recently released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which allows a government to access user data, and that its iMessage and FaceTime protocols are fully end-to-end encrypted, so even Apple can't decrypt the messages if they wanted (or were forced) to.
+
+> “Finally, I want to be absolutely clear that we have never worked with any government agency from any country to create a backdoor in any of our products or services. We have also never allowed access to our servers. And we never will.” \
+—["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
+
+While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, the fact is that users have absolutely no way to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
+
+This is why free and open source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users like Microsoft did.
+
+It’s useful here to delineate between two stages of encryption: endpoint security, and encryption in transit. When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. 
+
+For example, if you send an encrypted e-mail to a friend and someone has managed to install a key-logger on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
+
+Secure communications rely on more than just endpoint security, though. Your data should also be secure in transit, as it passes over the Internet. Take the same example, when you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Hotmail) can read it once you hit "Send." 
+
+This is an important question to ask when assessing whether a service or an app is truly secure: Can the service provider itself circumvent the encryption? If so, you cannot trust the security of that service. Tools such as iMessage, Gmail, Skype and Facebook Messenger promise end-to-end encryption but have the keys to decrypt your communications. True end-to-end encryption means that these service providers can't look at your communications even if they wanted to. 
+
+### Threat Models
+
+> "The sad fact is that when it comes to the internet, everybody is a spy: the government, the service providers watching your packets whiz by, the employer who operates the network you're reading this post on, the lurker on the wifi at Starbucks. The ubiquity of digital communications has made it harder than ever before to engage in truly private conversations." \
+— John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
+
+Threat modeling is risk assessment -- looking at your workflow and assessing areas where you could be targeted, and therefore what you need to protect. It involves asking questions about your work and identifying sensitive information and attack vectors. 
+
+* What am I trying to protect? 
+* How could I be attacked?
+
+Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption. 
+
+This isn't true for a number of reasons: one, there are dozens of reasons people should use encryption even if you're not a journalist or a whistleblower -- your medical details, credit card info, and personal photos shouldn't be fair game for hackers or governments.
+
+### Operational Security
+
+The NSA isn't the only adversary journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
+
+What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them. This starts by asking questions such as:
+
+- What are you protecting?
+- Who/what are you protecting against? 
+- What steps can you take?
+
+Take the above example of the newsroom which got scooped. They want to protect their story -- they don't want all their research to go unrewarded and some other news outlet to get the credit. They're protecting against disgruntled ex-employees as well as external attackers. To prevent this from happening, the newsroom can take simple steps and implement strict practices where journalists have their access revoked to editorial documents as soon as their employment is terminated.
+
+Jonathan Stray, a freelance journalist, has [more examples of threats](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/#threat-modeling) that have nothing to do with the NSA: 
+
+>*Police Misconduct.* You are reporting a story about local police misconduct. You have talked to sources including police officers and victims. You would prefer that the police commissioner not know of your story before it is ready to be published, to avoid any possible interference.
 > 
-> Project Chess, which has never been previously disclosed, was small, limited to fewer than a dozen people inside Skype, and was developed as the company had sometimes contentious talks with the government over legal issues, said one of the people briefed on the project. The project began about five years ago, before most of the company was sold by its parent, eBay, to outside investors in 2009. Microsoft acquired Skype in an $8.5 billion deal that was completed in October 2011.
+>*Insider Trading Whistleblower.* You are reporting on insider trading at a large bank and talking secretly to a whistleblower who may give you documents. If they are identified before the story comes out, at the very least you will lose your source. The source might lose their job or face legal trouble.
+>
+>*Syria War Photographer.* You are a photojournalist in Syria with digital images you want to get out of the country. Some of the images may identify people working with the rebels who could be targeted by the government. A security failure could mean someone loses their life.
+
+As you can see, threat modeling is about how you think about a problem as much as what you do to solve it.
+
+A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organization have been hacked by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists -- it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
+
+Journalists' email accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail (or you) into resetting the password rather than hacking Google itself. There's even a phrase for this -- *rubber-hose cryptanalysis* refers to the fact that it's far easier to coerce or trick someone into giving you their password than break the underlying encryption.
+
+!["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
+
+Let's look at another example: a metro journalist reporting on corruption in her city's police force. This is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
+
+The adversary in this case isn't the NSA, but local authorities can still subpoena emails or phone call records to see who you've been talking to.
+
+### Strong passphrases and password managers
+
+With threat modeling in mind, there are several easy steps you can take to improve your security before ever encrypting your emails or chats. These steps can be just as important --if not more so-- than the more complicated steps later on.
+
+The first meaningful action you can take towards ensuring your digital security is to protect your computer and online accounts with a strong password. This is the first —and most important— line of defense between you and anyone with physical access to your computer who wants to impersonate you. 
+
+Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as _"Tr0ub4dor&3,"_ to reference a popular [XKCD comic](https://xkcd.com/936/). 
+
+!["Password Strength." Courtesy of XKCD.](http://imgs.xkcd.com/comics/password_strength.png)
+
+The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
+
+Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" is a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it since password crackers are often preloaded with common phrases.
+
+> Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.
 > 
-> A Skype executive denied last year in a blog post that recent changes in the way Skype operated were made at the behest of Microsoft to make snooping easier for law enforcement. It appears, however, that Skype figured out how to cooperate with the intelligence community before Microsoft took over the company, according to documents leaked by Edward J. Snowden, a former contractor for the N.S.A. One of the documents about the Prism program made public by Mr. Snowden says Skype joined Prism on Feb. 6, 2011.
+> Edward Snowden's first email to Laura Poitras. Source: [WIRED.com](http://www.wired.com/2014/10/snowdens-first-emails-to-poitras/).
 
-Proprietary software, such as much of what's released by Microsoft, Apple, and Google, has another flaw. It's much more difficult for users to independently verify that secret backdoors don't exist at the clandestine demands of the surveillance state. Though recent reports have shown that many companies hand over an unknown amount of information in response to FISA requests, none have been shown to have direct backdoors into their systems.
+The XKCD comic's advice, to come up with a passphrase of unconnected words such as "correct horse battery staple," is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and words often come in groups -- I say brown, you think cow; I say garden, you think shed.
 
-There is other software that's more reliable in this regard. [Free and open source software](https://www.fsf.org/about/what-is-free-software) is not always user friendly and it's not always secure. However when it's developed in the open, with open bug trackers, open mailing lists, open governing structures, and open source code, it's much more difficult for these projects to have a policy of betraying their users like Microsoft has.
+The solution is to use a password manager. This is an application which creates and stores passwords in an encrypted "vault" which is protected by a strong passphrase which you memorize. This reduces the number of passphrases you have to memorize to one. There are a handful of well-known passphrase managers, such as 1Password or LastPass -- Freedom of the Press Foundation recommends using [KeePassX](https://www.keepassx.org), because it's open source. The app generates lengthy strings of characters of passphrases, such as _0e3@ft5n(xx1gncio,ofigryj0^4vl_, which is hard to remember but quite secure, and can be copied and pasted from the password app into your web browser. Not being able to remember your password can add to your security, since it means an attacker needs to have access to something physical (your computer, or your password vault) before they can compromise your account.
 
-GNU/Linux is an operating system that's composed entirely of free and open source software. Examples of GNU/Linux distributions include [Ubuntu](http://www.ubuntu.com/), [Debian](http://www.debian.org/), and [Fedora Core](https://fedoraproject.org/). It's the most popular free software alternative to Windows and Mac OS X.
+For the master passphrase, and for other passphrases you have to memorize or enter regularly, you can use [Diceware](http://world.std.com/~reinhold/diceware.html). This creates a passphrase made up of 6 or more words, such as _cleft cam synod lacy yr wok_. This is more secure than a password like _Tr0ub4dor&3_.
 
-While free software projects still might include malicious code (see the [Underhanded C Contest](http://underhanded.xcott.com/)), the person writing the code needs to hide it cleverly and hope none of the other developers, or downstream GNU/Linux package maintainers who prepare and compile the source code of projects to include in their distributions, notice.
+As well as protecting password vaults, you should also choose good passphrases for your PGP secret key and disk encryption.
 
-In the 1990s, when civilian cryptography was becoming popular and the US government was doing [everything](https://en.wikipedia.org/wiki/Phil_Zimmermann#Criminal_investigation) [they could](https://en.wikipedia.org/wiki/Clipper_chip) to prevent it, the "cypherpunk" movement was born. Many pieces of software intended to bring encryption to the people grew out of that movement.
+### Two Factor Authentication (2FA)
 
-> *Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide. We don't much care if you don't approve of the software we write. We know that software can't be destroyed and that a widely dispersed system can't be shut down.*
-> 
-> — Eric Hughes, in his 1993 Cypherpunk Manifesto
+Another way to beef up the security of your accounts is to enable two-factor authentication, which changes your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This is checked by way of a one-time confirmation number that’s texted to you and which you have to enter during the login process.
 
-That code, that's open and public so that fellow cypherpunks may practice and play with it, which anyone in the world can freely use, makes the basis of the software and protocols that we can trust: TLS (the encryption that powers HTTPS), LUKS ([disk encryption](https://en.wikipedia.org/wiki/Disk_encryption) built-in to GNU/Linux), OpenPGP, Off-the-Record, and Tor.
+With 2FA, even if an attacker somehow learns your password, they won’t be able to log in without the cellphone associated with the account.
 
-The [Tactical Technology Collective](https://tacticaltech.org/) has built a [great guide to open source security software that you can trust](https://tacticaltech.org/security-box) to keep your communications private from surveillance. It's important to remember that just using this software, and even using it perfectly, cannot guarantee the security of your crypto. For example, we have no idea if Apple has handed over [zero day](https://en.wikipedia.org/wiki/Zero-Day_Attack) vulnerabilities to the NSA for iOS like Microsoft is reported to have done. ChatSecure, which lets you have encrypted chat conversations on iOS devices, is only as secure as the operating system that it's running on.
+For information on how to set up two-factor authentication on most websites and services, check out [turnon2FA.com](https://www.turnon2fa.com).
 
-It's important to remember that just because you use free software doesn't mean you can't get hacked. People find zero day exploits for free software all the time, and sometimes sell them to governments and other malicious attackers. Free software users still download malicious attachments in their email, and they still often have badly configured and easily exploited services on their computers. And even worse, malware is often very good at hiding. If a free software user gets malware on their computer, it might stay there until the user formats their hard drive.
+After the 2014 celebrity photo hack, Recode [reported](https://recode.net/2014/09/01/apple-says-it-is-actively-investigating-celeb-photo-hack/https://recode.net/2014/09/01/apple-says-it-is-actively-investigating-celeb-photo-hack/) that two-factor authentication would probably have prevented the attackers from gaining access to the iCloud accounts.
 
-Tails, which is a live DVD and live USB GNU/Linux distribution that I will discuss in detail below, solves many of these problems.
+### Hard-Drive Encryption
+
+A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're traveling.
+
+Encrypting your hard-drive doesn't just make it harder for the NSA to access your documents, it makes you more secure generally -- if your laptop is stolen, an attacker can't rip out the hard-drive and extract sensitive data.
+
+Disk encryption is available for Mac OS X, Windows, and Linux, but the steps for enabling it differ for each operating system. For information on how to encrypt your disk, check out Micah Lee's guide to [encrypting your laptop like you mean it](https://firstlook.org/theintercept/2015/04/27/encrypting-laptop-like-mean/) on The Intercept.
+
+For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/files/eff-border-search_2.pdf) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border (the ninth circuit being the only [exception](https://scholar.google.com/scholar_case?case=13727924395632289367)). Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
+
+- Have a separate computer for work travel, which does not contain sensitive material. 
+- Sign out of e-mail accounts and power off laptops before approaching the border. 
+- As always, make regular backups, so the loss of a computer is not catastrophic.
+
+As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when deciding what files to have on a computer you cross borders with.
+
+### Physical Security
+
+If you're working on sensitive material, it's a good idea to keep your laptop in your possession as much as possible. This prevents an attacker from stealing or gaining access to the machine long enough to install malicious software on it. Devices left in hotel rooms are susceptible to this kind of attack so often that it's sometimes referred to as an "evil maid" attack.
+
+Using the digital security tools described in this document only gives you so much security -- good physical security is half the battle. In a 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201), American journalist and WikiLeaks volunteer Jacob Appelbaum said that he destroys his laptop if it's out of his sight for any length of time. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
 
 ## Signal and TextSecure
 
