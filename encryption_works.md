@@ -214,55 +214,76 @@ We recommend turning off logging by default and saving individual conversations 
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
-In 1991, Phil Zimmermann developed email encryption software called [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy), or PGP, which he intended peace activists to use while organizing in the anti-nuclear movement.
+In 1991, Phil Zimmermann developed [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (PGP), software which he intended peace activists to use while organizing in the anti-nuclear movement.
 
-Today, PGP is a company that sells a proprietary encryption program by the same name. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is 100% compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
+PGP stands for "Pretty Good Privacy," software you can use to encrypt your e-mail messages. Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
 
-Unfortunately, PGP is notoriously hard to use, as exemplified by [Greenwald explaining how he could not initially talk to Edward Snowden because it was so difficult to set up](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818).
+Unfortunately, the process is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk security with Edward Snowden.
 
-### Keypairs and Keyrings
+If you use PGP encryption, you will have to make some changes about how you use e-mail. For example, if you use PGP on your computer but receive an encrypted e-mail on your phone, you won't be able to decrypt the e-mail and read it until you get back to your computer.
 
-As with OTR, each person who wishes to send or receive encrypted email needs to generate their own PGP key, called a keypair. PGP keypairs are split into two parts, the public key and the secret key.
+PGP is used in two ways with e-mail: a sender can encrypt the content of e-mail messages, and sign messages, proving that the message the sender sent is the same one the receiver reads, and that it wasn't tampered with in transit. (Assuming you trust the public key -- more on this later.)
 
-If you have someone's public key, you can do two things: **encrypt messages** that can only be decrypted with their secret key, and **verify signatures** that were generated with their secret key. It's safe to give your public key to anyone who wants it. The worst anyone can do with it is encrypt messages that only you can decrypt.
+On the other end, the receiver uses PGP to decrypt the message and verify the e-mail's digital signature.
 
-With your secret key you can do two things: **decrypt messages** that were encrypted using your public key, and **digitally sign messages**. It's important to keep your secret key secret. An attacker with your secret key can decrypt messages intended only for you, and he can forge messages on your behalf. Secret keys are generally encrypted with a passphrase, so even if your computer gets compromised and your secret key gets stolen, the attacker would need to get your passphrase before he would have access to it. Unlike OTR, PGP does not have forward secrecy. If your PGP secret key is compromised and the attacker has copies of any historical encrypted emails you have received, he can go back and retro-actively decrypt them all.
+### What's a key?
 
-Since you need other people's public keys in order to encrypt messages to them, PGP software lets you manage a keyring with your secret key, your public key, and all of the public keys of the people you communicate with.
+PGP uses a public key and a private key, both strings of randomly-generated numbers and letters unique to each person. Information about the public key is stored on something called a public key server, which is a bit like a phonebook. When people want to e-mail you securely, they can look up your public key and send you an encrypted e-mail.
 
-Using PGP for email encryption can be very inconvenient. For example, if you set up PGP on your computer but have received an encrypted email on your phone, you won't be able to decrypt it to read the email until you get to your computer.
+Like OTR, each PGP key has a unique fingerprint. [Here's](https://pgp.mit.edu/pks/lookup?op=get&search=0xE7E8E7D097604F9D) the PGP public for Tommy Collison, one of the authors of this guide. That key's fingerprint is 696E C53E 8535 6DE8 10C3 75D2 E7E8 E7D0 9760 4F9D. If you look at my public key, you'll see that it's long and would be difficult to verbally confirm with another person. A fingerprint is a short and more convenient way to uniquely represent a key.
 
-Like OTR, each PGP key has a unique fingerprint. You can find [a copy of my public key here](https://pressfreedomfoundation.org/keys/micah.asc), and my fingerprint is 5C17 6163 61BD 9F92 422A C08B B4D2 5A1E 9999 9697. If you look at my public key you'll see that it's quite long and would be hard to read out over the phone. A fingerprint is a short and more convenient way to uniquely represent a key. With my public key you can encrypt messages that only I can decrypt, provided that my secret key has not been compromised.
+In 2013, Kevin Poulsen [published](http://www.wired.com/threatlevel/2013/06/signed-bda0df3c/) a PGP encrypted message on Wired's website intended for Edward Snowden to read. As long as Wired has a copy of Snowden's real public key, only someone in possession of Snowden's secret key can decrypt this message.
 
-### Passphrases
+You can think of your public key and private key like your e-mail address and e-mail passphrase. You probably want your general e-mail address to be public, so that people can contact you -- it's the same with your public key. And, in the same way you should keep your e-mail passphrase to yourself, you should never share your private key with anyone or attach it in an e-mail.
 
-The security of crypto often relies on the security of a password. Since passwords are very easily guessed by computers, cryptographers prefer the term [passphrase](https://en.wikipedia.org/wiki/Passphrase) to encourage users to make their passwords very long and secure.
+It's a good idea to publicize your public key, especially if you create a new pair. Many people [tweet](https://twitter.com/tommycollison/status/620696207187398656) their key's fingerprint, [mention](http://parkerhiggins.net/2014/08/email-signature-nudge-encryption-use/) it in their email signatures, or [link](https://twitter.com/ggreenwald) to it in their Twitter bio:
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/password_strength.png)
+![Glenn Greenwald's Twitter bio, which includes a link to his PGP public key.](https://raw.githubusercontent.com/tommycollison/encryption-works/issue_76_pgp_intro/images/Greenwald_key_link.png)
 
-Comic courtesy [XKCD](https://xkcd.com/936/)
-
-For tips on choosing good passphrases, read the [passphrase section](https://www.eff.org/wp/defending-privacy-us-border-guide-travelers-carrying-digital-devices#passphrase) of EFF's Defending Privacy at the U.S. Border: A Guide for Travelers Carrying Digital Devices whitepaper, and also the [Diceware Passphrase Home Page](http://world.std.com/~reinhold/diceware.html).
-
-In addition to protecting PGP secret keys, you also need to choose good passphrases for disk encryption and [password vaults](https://en.wikipedia.org/wiki/Password_vault).
+This increases the legitimacy of the key. Not only does an attacker have to create a false key for Greenwald, but they have to hack his Twitter account and point the link in his bio to his key to the fake key. That's not likely to happen, especially since —for added security— Glenn's public key is listed on his site, <firstlook.org/theintercept>. This line of attack leaves several obvious clues, and is therefore hard to pull off. Therefore, we can say with some degree of trust that Glenn's public key info is legitimate.
 
 ### Software
 
-To install GPG, Windows users can download [Gpg4win](http://www.gpg4win.org/), and Mac OS X users can download [GPGTools](https://gpgtools.org/). If you run GNU/Linux you should already have GPG installed. GPG is a command line program, but there's software that interfaces with email clients that makes it much easier to use.
+To install GPG, Windows users can install [Gpg4win](http://www.gpg4win.org) and Mac OS X users can download [GPGTools](https://gpgtools.org). If you run GNU/Linux you should already have GPG installed (since GPG is a command line program) but there's software that interfaces with email clients that makes it much easier to use.
 
-You'll have to download an email client to use PGP correctly. An email client is a program on your computer that you open to check your email, as opposed to using your web browser. The most popular PGP setup is the email client [Thunderbird](https://www.mozilla.org/en-US/thunderbird) with the [Enigmail](http://enigmail.net/home/index.php) add-on. Thunderbird and Enigmail are free software and run on Window, Mac, and GNU/Linux.
+Some third parties have developed browser extensions to use GPG with web-based email, but it's comparatively less secure than using a desktop mail client and comes with its own set of shortcomings, such as not being able to encrypt attachments. Freedom of the Press recommends using [Thunderbird](https://www.mozilla.org/en-US/thunderbird) as your desktop e-mail client with the [Enigmail](https://www.enigmail.net/home/index.php) add-on.
 
-Right now PGP is very difficult to use securely from a web browser. While some browser extensions exist that help with this, I would recommend sticking to a desktop email client until the field of browser crypto matures. It's possible to use PGP encryption with Gmail, but the easiest way is to set up an email client like Thunderbird and run your Gmail account through it.
+### Sending And Receiving Encrypted E-mail
 
-### Encrypting, Decrypting, and Signatures
+Once you've installed Enigmail, you'll notice some new settings when you go to compose an e-mail in Thunderbird.
 
-You can send encrypted emails and digitally sign them using the graphical user interface provided by Thunderbird and Enigmail. Here's an example of an encrypted email that I'm sending to myself. When I hit send, my software took the body of the message and encrypted it using my public key, making the content unintelligible to eavesdroppers, and indeed to my email provider too.
+![Sending an encrypted e-mail with Thunderbird and the Enigmail add-on.](images/sending_encrypted_email_with_thunderbird_and_enigmail.png)
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/encrypt_sign.png)
+When sent, only *sva1bard@risup.net's* private key will be able to decrypt this e-mail (since it's encrypted with the corresponding public key).
 
-When I opened this email I was prompted to type in my encryption passphrase to decrypt it. Since it was encrypted using my public key, the only way I could decrypt it is with my secret key. Since my secret key is protected with a passphrase, I needed to type my passphrase to temporarily decrypt my secret key in order to use it to decrypt the message.
+If you try and access an encrypted e-mail in a web browser, it's unreadable because the private key is missing. 
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/decrypt.png)
+![Web browsers can't read PGP-encrypted e-mail.](images/pgp_gibberish_in_browser.png)
+
+But when the e-mail is accessed with the correct private key, it becomes readable again:
+
+![The decrypted e-mail.](images/decrypted_email.png)
+
+## Encrypting Files with PGP
+
+As well as powering e-mail encryption with a desktop client like Apple Mail or Thunderbird, you can also use PGP to encrypt files on your hard-drive with your public key.
+
+This serves as a second layer of protection if you use full-disk encryption and lends you extra security to transfer those files onto a flash drive or upload them to a cloud storage website.
+
+![Using GPGTools to encrypt a file on Mac.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/pgp_encrypt_files.png)
+
+### How To Verify Someone's Key in Enigmail and View Signatures
+
+If you're a journalist trying to get to grips with these privacy tools, it's useful to get together with colleagues and help one another out with setup. In addition, you can increase the trustworthiness of a colleague's key by signing it. In essence, you're publicly asserting that you trust that a person's key belongs to that person, and wasn't created by someone else.
+
+Here's how to verify someone's GPG key:
+
+- Meet your colleagues face-to-face. Each person should bring their own laptop.
+- Make sure your key is uploaded to a key-server. In the "Key Management" section of Enigmail, right-click and select "Upload Public Keys to Keyserver." It should suggest [pgp.mit.edu](http://pgp.mit.edu) by default, which will work fine.
+- Search for your friend's key in the keyserver and download it into Enigmail. Then, verbally verify that the fingerprints are the same. If you know your colleagues, this is enough, but if you're unsure of names, feel free to ask people to bring some form of ID so you can double-check.
+- Once you've verified their key is correct, you should sign it with yours.
+- You can see who else has signed a person's key by clicking on it and choosing "View Signatures" from the "Select action ..." drop-down menu.
+- In the end, each person should have an GPG keyring containing signed keys of each other person.
 
 ### PGP Isn't Just For Email
 
@@ -292,6 +313,23 @@ Here's a message that was encrypted to my public key. Without having access to m
     I6h3Ae9ilF5tYLs2m6u8rKFM8zZhixSh
     =a8FR
     -----END PGP MESSAGE-----
+
+
+### The Web of Trust
+
+PGP works best when a web of trust is created. Strong crypto can still be broken since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted e-mail and I'm an attacker. I could  trick you into thinking that their public key was your colleagues. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message onto your colleague, with info purported to be from you.
+
+This can be solved, or at least mitigated, if you and your colleague independently verify each other's keys. This way, you verify your colleague's public key independently of when they e-mail you. But this raises another problem -- meeting people and verifying their keys is time-consuming.
+
+One answer to this is the web of trust. As time goes on, you meet people and verify their keys. If you sign those keys (publicly asserting that you've verified them), that functions as a vouch of sorts -- this key has verified that key belongs to who it says it does. If I trust your key, by extension I should trust the keys you've signed, even if I don't know the signed key personally. I trust it because I trust you.
+
+There are some times when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. There are times that you don't always want to reveal that -- the source-journalist relationship comes to mind.
+
+On the other hand, signatures lend trustworthiness -- if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any other ones.
+
+(When you create a PGP key, there's no verification process that you the e-mail address associated with the key, so signing keys is a way of proving ownership. This has happened to several Tor developers and one of the authors of this guide.)
+
+In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and deciding on a case-by-case basis.
 
 ### Identity Verification
 
@@ -330,6 +368,44 @@ Washington Post journalist Barton Gellman, who Edward Snowden trusted with infor
 > I sent him a note on another channel to verify my digital "fingerprint," a precaution we had been using for some time. Tired, I sent the wrong one. "That is not at all the right fingerprint," he wrote, preparing to sign off. "You're getting MITM'd." He was talking about a "man in the middle" attack, a standard NSA technique to bypass encryption. I hastily corrected my error.
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used right, provides the tools necessary to prevent MITM attacks. But these tools only work if the users are vigilant about identity verification.
+
+### What PGP Doesn't Do
+
+To use PGP effectively, it's good to understand what it does and doesn't do.
+
+For instance, using PGP with e-mail encryption only encrypts the *content* of your e-mails. It doesn't encrypt the to/from fields, the subject line or the metadata, the sundry details associated with the message. For an e-mail, metadata would include the associated e-mail addresses, the time and date sent and the IP address the e-mail originated from. This means that someone surveilling me can tell that at 2:05pm on Sunday, June 21, *tommy@freedom.press* e-mailed *trevor@freedom.press* from a certain IP address, but they can't tell what the content of the message was.
+
+Senator Diane Feinstein (D—Calif.) is a staunch defender of the NSA and has long [maintained](http://www.theguardian.com/world/2013/oct/21/dianne-feinstein-defends-nsa-data-collection) that the type of metadata collection the NSA carries out isn't intrusive because it doesn't include the content. However, even the list of people you're in e-mail correspondence with can be very revealing. In May 2013, the Associated Press [reported](http://bigstory.ap.org/article/govt-obtains-wide-ap-phone-records-probe) that the Justice Department had seized email and phone records of the AP newsroom as part of their [investigation](http://www.vanityfair.com/news/2015/03/james-risen-anonymous-source-government-battle) of government leaks. Even if the reporters had been using PGP, this wouldn't have encrypted the email addresses the reporters were in contact with.
+
+EFF [lists](https://www.eff.org/deeplinks/2013/06/why-metadata-matters) the numerous ways metadata can reveal more about someone than even the content of the calls. This is corroborated by former General Counsel of the National Security Agency Stewart Baker, who [said](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "Metadata absolutely tells you everything about somebody’s life. If you have enough metadata, you don’t really need content." Chillingly, former NSA director Michael Hayden has publicly [asserted](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "We kill people based on metadata." 
+
+Many PGP users mitigate this metadata leakage by using purposefully unspecific email subject lines, such as "Summer 2015" or "cat pics," or leaving the field blank.
+
+PGP also doesn't automatically guarantee anonymity. If I send a PGP-encrypted email from *tommy.collison@gmail.com,* it isn't hard to tell who the owner of the email address is, even though the content of the email is encrypted. For added security, combine PGP with a pseudonymous email account.
+
+There are two other steps you can take to decrease the amount of metadata leaked when using PGP e-mail encryption. The first is [TorBirdy](https://trac.torproject.org/projects/tor/wiki/torbirdy), an extension for Thunderbird that routes the app's traffic through the Tor network, enhancing your privacy. It's an involved process, but worth a look if you're comfortable with advanced settings.
+
+The second is using `--hidden-recipient` as a modifier to the `gpg` command when using GPG on the command-line. When the metadata of the subsequent encrypted file is [analyzed](http://tech.michaelaltfield.net/2013/10/19/analyzing-pgp-content/), the key ID of the recipient reads **0x0000000000000000**. 
+
+### Verifying Checksums
+
+Another use for PGP is to verify correct software. To understand what I mean, consider the question: when you go to download a piece of software (the Tor Browser Bundle, for example), how do you know that what you're downloading is the same as what the developers created? How do you know that you didn't download a fake version? This could happen accidentally or maliciously.
+
+The answer is to check the "checksum" of the software. This is a string of between 32 and 64 characters which are unique to the piece of software you want to download. The string is shown in two places, on your computer and on the servers where you download the software from. Using the GPG tools installed on your computer, you can determine whether the string you see matches the one published on the developer's website. If the strings are the same, we can say with some degree of certainty that the file we downloaded is the same as the one the developer intended us to get.
+
+To verify a checksum, you need to import the public key of the Tails developers. To do this, download the Tails signing key from the [Tails website](https://tails.boum.org/download/index.en.html):
+
+![Downloading the Tails signing key.](images/tails_signing_key.png)
+
+This will download the .key file onto your hard-drive. From there, you just need to drag and drop (or click **File > Import** in the GPG Keychain application):
+
+![Importing the Tails signing key into our GPG keychain.](images/tails_import.png)
+
+From here, follow the advice on the [Tails installation page](https://tails.boum.org/download/index.en.html) on using the command line to verify the checksum.
+
+![Verifying checksums for the Tails download.](images/tails_verification.png)
+
+In general, software websites have to provide the checksum for you to check, but not all do. Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify a checksum.
 
 ## Tails: The Amnesic Incognito Live System
 
