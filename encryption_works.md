@@ -389,8 +389,18 @@ Had CIA Director and retired four-star general David Petraeus and his biographer
 
 ## A Fighting Chance
 
-Protecting your privacy in the age of ubiquitous NSA surveillance is incredibly complex. Gaining a basic understanding of the concepts involved, much less actually using the software that's available, has an enormous learning curve.
+Two years after he blew the whistle on the NSA, Edward Snowden wrote an op-ed in The New York Times.
 
-But even with [direct access to all the data traveling at the speed of light through the Internet's backbone fiber-optic cables](http://www.guardian.co.uk/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa), even with [cooperation of the major United States tech companies](http://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/) (which are extremely difficult for people to boycott), the largest, most powerful, and best funded surveillance apparatus that humanity has ever seen cannot defeat mathematics.
+> Spymasters in Australia, Canada and France have exploited recent tragedies to seek intrusive new powers despite evidence such programs would not have prevented attacks. Prime Minister David Cameron of Britain recently mused, “Do we want to allow a means of communication between people which we cannot read?” [...]
+>
+> At the turning of the millennium, few imagined that citizens of developed democracies would soon be required to defend the concept of an open society against their own leaders.
+>
+> Yet the balance of power is beginning to shift. We are witnessing the emergence of a post-terror generation, one that rejects a worldview defined by a singular tragedy. 
+>
+> — ["Edward Snowden: The World Says No to Surveillance."](http://www.nytimes.com/2015/06/05/opinion/edward-snowden-the-world-says-no-to-surveillance.html) The New York Times.
 
-The challenge of the new cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default.
+Protecting your privacy in the age of ubiquitous NSA surveillance is incredibly complex. Gaining a basic understanding of the concepts involved, much less actually using the software that's available, has an enormous learning curve. But it is worth it. The conversation around surveillance is changing. Users around the world are rallying against passive surveillance and legal challenges against the U.S. surveillance apparatus are growing in number. 
+
+Increasingly, we're living our lives online and creating long data trails which can be accessed and mined for information. When there is so much data about us online, it becomes exponentially harder to keep our personal information to ourselves. The challenge of the cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default. 
+
+But even with [direct access](http://www.guardian.co.uk/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa) to all the data traveling at the speed of light through the Internet's backbone fiber-optic cables, even with [cooperation](http://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/) of the major United States tech companies (which are extremely difficult for people to boycott), the largest, most powerful and best-funded surveillance apparatus that humanity has ever seen can not invade our privacy without resistance.
