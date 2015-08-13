@@ -160,7 +160,6 @@ One way of mitigating this problem is to use the Jabber protocol for chatting. A
 >
 > Unlike email, most Jabber servers let anyone create accounts using Tor, and don’t require that you provide any identifying information at all.
 
-
 ### Verifying A Contact's OTR Fingerprint
  
 If you want to use OTR to talk privately with friends, colleagues, and sources, they need to be using OTR too. An encrypted chat requires both people have keys, so if you're using OTR and you're chatting with a colleague who's using facebook.com, you cannot have an encrypted conversation.
