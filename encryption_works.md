@@ -148,21 +148,15 @@ If you wish to use Facebook or Google's services to chat with your friends, I re
 
 When you start an encrypted OTR session, your client software will tell you something like this:
 
-    Attempting to start a private conversation with username@jabberservice...
-    Unverified conversation with username@jabberservice/ChatClient started.
+### A Note About Gmail's "off the record" function.
 
-If you have already verified the OTR fingerprint of the person you're talking with (more on this below) your session will look like this:
+When using Google Talk for instant messaging, there's a setting to "Go off the record," and it's useful to differentiate between this feature and what the Off-The-Record encryption software offers.
 
-    Attempting to start a private conversation with username@jabberservice...
-    Private conversation with username@jabberservice/ChatClient started.
+![Google's "Off the record" function may not be secure.](images/gtalk_off_the_record_john.png) ![Google's "Hangout history" function may not be secure.](images/hangouts_history.png)
 
-When you start a new OTR session, your OTR software and your friend's OTR software send a series of messages back and forth to agree upon a new session key. This temporary encryption key, which is only known by your IM clients and is never sent over the Internet, is then used to encrypt and decrypt messages. When the session is finished both clients forget the key. If you start chatting with the same person later, your clients generate a brand new session key.
+Essentially, going off the record in Google Talk (or disabling the "Hangout history" function, if you've updated to Hangouts) does not store the conversation log in either conversation participant's Gmail chat history. This may seem more secure, but it only prevents the conversation participants from viewing the history of their own conversations. There is no guarantee or way of determining whether or not Google retains a copy of your conversation.
 
-In this way, even if an eavesdropper is logging all of your encrypted OTR conversations—which [NSA believes it is legally allowed to do](https://www.eff.org/deeplinks/2013/06/depth-review-new-nsa-documents-expose-how-americans-can-be-spied-without-warrant), even if you're a US citizen and they don't have a warrant or probable cause—and later they compromise your OTR key, they cannot use it to go back and decrypt your old conversations.
-
-This property is called forward secrecy, and it is a feature that OTR has which PGP does not. If your PGP secret key (more on this below) gets compromised, and the attacker has access to all the encrypted messages you've received, they can go back and decrypt them all.
-
-Read more about how forward secrecy works, and why all major Internet companies should adopt it for their websites, [here](https://www.eff.org/deeplinks/2011/11/long-term-privacy-forward-secrecy). The good news is Google [has already adopted forward secrecy](https://www.eff.org/deeplinks/2011/11/long-term-privacy-forward-secrecy), and Facebook [will implement it soon](https://www.facebook.com/pages/Perfect-forward-secrecy/101895216519655) as well.
+By comparison, conversations over Google Talk which use Off-The Record message encryption are only readable to the participants, and Google is never able to read the contents of your conversation. This is far more secure.
 
 ### OTR Fingerprint Verification
 
