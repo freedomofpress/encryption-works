@@ -136,9 +136,15 @@ To use OTR you'll need to download software. If you use Windows you can download
 
 There are also Jabber and OTR clients available for Android, called [Gibberbot](https://guardianproject.info/apps/gibber/), and for iOS, called [ChatSecure](http://chrisballinger.info/apps/chatsecure/).
 
-### Your Key
+## Keys
 
-When you start using OTR, your chat client generates an encryption key and stores it in a file in your user's home folder on your hard drive. If your computer or smartphone get lost, stolen, or infected with malware, it's possible that your OTR key can get compromised. If this happens, it would be possible for an attacker with control over your Jabber server to be able to mount a MITM attack against you while you're chatting with people who have previously verified your identity.
+When you start using OTR, your chat client generates an encryption key and stores it in a file on your hard drive. If your computer or smartphone gets lost, stolen, or infected with malware, you should assume your key has been compromised -- an attacker could impersonate you. If this happens, you should generate a new key and reverify yourself with your chat clients. 
+
+When you start a new OTR session, your OTR software and your friend's OTR software send a series of messages back and forth to agree upon a new session key. This temporary encryption key, which is only known by your IM clients and is never sent over the Internet, is then used to encrypt and decrypt messages. When the session is finished both clients forget the key. If you start chatting with the same person later, your clients generate a brand new session key.
+
+In this way, even if an eavesdropper is logging all of your encrypted OTR conversations -- which NSA believes it is legally [allowed to do](http://www.forbes.com/sites/andygreenberg/2013/06/20/leaked-nsa-doc-says-it-can-collect-and-keep-your-encrypted-data-as-long-as-it-takes-to-crack-it/), even if you're a US citizen and they don't have a warrant or probable cause -- and later they compromise your OTR key, they cannot use it to go back and decrypt your old conversations.
+
+This property is called forward secrecy, and it is a feature that OTR has which PGP does not. If your PGP secret key (more on this below) gets compromised, and the attacker has access to all the encrypted messages you've received, they can go back and decrypt them all.
 
 ### Sessions
 
