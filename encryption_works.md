@@ -148,15 +148,15 @@ This property is called forward secrecy, and it is a feature that OTR has which 
 
 ### A Note About Gmail's "off the record" function.
 
-When using Google Hangouts for instant messaging, there's a setting to disable "Hangout history," and it's useful to differentiate between this feature and what the software Off-The-Record offers.
+When using Google Talk for instant messaging, there's a setting to "Go off the record," and it's useful to differentiate between this feature and what the cypherpunk software Off-The-Record offers.
 
 ![Google's "Off the record" function may not be secure.](images/gtalk_off_the_record_john.png)
 
-Essentially, disabling the "Hangout history" function does not display a conversation log to the user. This takes the conversation off the record in the literal sense, but users aren't given any reason to believe that Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which use Off-The Record messaging encryption aren't readable to anyone except the participants, including Google. This is far more secure.
+Essentially, going off the record in Google Talk (or disabling the "Hangout history" function, if you've updated to Hangouts) does not display a conversation log to the user. This takes the conversation off the record in the literal sense, but users aren't given any reason to believe that Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which use Off-The Record messaging encryption aren't readable to anyone except the participants, including Google. This is far more secure.
 
 If you haven't yet updated from Google Talk to Hangouts, this feature is, confusingly, also called "off the record."
 
-One way of mitigating this problem is to use the Jabber protocol for chatting. As Micah Lee [explained](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/) in an article for The Intercept:
+As mentioned above, one way of mitigating this problem is to use the Jabber protocol for chatting. As Micah Lee [explained](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/) in an article for The Intercept:
 
 >But if both sides of a conversation — both Romeo and Juliet, in our example — use the same server for their Jabber accounts, they’ll leak less metadata about their conversations. Messages will stay within in the same server rather than getting sent over the internet.
 >
