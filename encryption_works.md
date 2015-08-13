@@ -130,6 +130,16 @@ Using OTR only encrypts the contents of your chat conversations but not the meta
 
 I also recommend you use an XMPP (also known as Jabber) service. Like email, Jabber is a federated, open protocol. Users of [riseup.net](https://www.riseup.net/en/chat)'s Jabber service can chat with users of [jabber.ccc.de](https://web.jabber.ccc.de/)'s service as well as [jabber.org](http://www.jabber.org/)'s service.
 
+### A Note About Gmail's "off the record" function.
+
+When using Google Hangouts for instant messaging, there's a setting to disable "Hangout history," and it's useful to differentiate between this feature and what the software Off-The-Record offers.
+
+![Google's version of going off the record isn't secure.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/hangouts_history.png)
+
+Essentially, disabling the "Hangout history" function does not display a conversation log to the user. This takes the conversation off the record in the literal sense, but users aren't given any reason to believe that Google isn't still saving or reading the chat logs. In comparison, conversations over Google Talk which use Off-The Record messaging encryption aren't readable to anyone except the participants, including Google. This is far more secure. 
+
+If you haven't yet updated from Google Talk to Hangouts, this feature is, confusingly, also called "off the record."
+
 ### OTR Clients
 
 To use OTR you'll need to download software. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and separately the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use GNU/Linux you can install the pidgin and pidgin-otr packages. You can read through [documentation on how to set up your Pidgin accounts with OTR](http://www.cypherpunks.ca/otr/index.php#docs). If you use Mac OS X you can download and install [Adium](http://adium.im/), which is a free software chat client that includes OTR support. You can read the [official documentation](http://adium.im/help/pgs/AdvancedFeatures-OTREncryption.html) on how to get set up with OTR encryption with Adium.
