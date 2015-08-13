@@ -106,14 +106,13 @@ Cryptography tools have been around since the early 90s, but the Snowden disclos
 
 Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is completely open source, and is made by [Open Whisper Systems](https://whispersystems.org). 
 
-You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android devices, the functionality for making encrypted calls and sending encrypted texts is split into two apps:  [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone).
+You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android devices, the functionality for making encrypted calls and sending encrypted texts is split into two apps:  [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone). The Android apps are entirely cross-compatible with Signal.
 
 ![Signal messages are end-to-end encrypted.](/images/signal.png) 
 
 As with OTR, both parties need to be using the app for the encryption to work. Signal uses your device's data connection (or wifi), and so users don't incur SMS fees. 
 
 It's important to remember what these apps can and can't do -- while they will encrypt your conversations and log less metadata than traditional text messaging (the servers don't keep logs of who called who), you still have to use a valid cellphone number to sign up and, as always, beware of malware on your device.
-
 
 ### Doesn't Apple Provide End-To-End Encryption?
 
