@@ -164,29 +164,31 @@ This property is called forward secrecy, and it is a feature that OTR has which 
 
 Read more about how forward secrecy works, and why all major Internet companies should adopt it for their websites, [here](https://www.eff.org/deeplinks/2011/11/long-term-privacy-forward-secrecy). The good news is Google [has already adopted forward secrecy](https://www.eff.org/deeplinks/2011/11/long-term-privacy-forward-secrecy), and Facebook [will implement it soon](https://www.facebook.com/pages/Perfect-forward-secrecy/101895216519655) as well.
 
-### OTR Fingerprint Verification
+### Verifying A Contact's OTR Fingerprint
+ 
+If you want to use OTR to talk privately with friends, colleagues, and sources, they need to be using OTR too. An encrypted chat requires both people have keys, so if you're using OTR and you're chatting with a colleague who's using facebook.com, you cannot have an encrypted conversation. 
 
-When you start a new OTR session with someone, your IM software receives the fingerprint of her encryption key, and your OTR software remembers this fingerprint. As long as someone uses the same encryption key when she talks to you, presumably because she's consistently using the same device, she will have the same fingerprint. If her fingerprint changes then either she is using a different OTR key or you are both the target of a MITM attack.
+When you start an encrypted OTR session, your chat software will tell you something like this:
 
-Without verifying keys you have no way to know that you're not falling victim to an undetected, successful MITM attack.
+> *** Encrypted OTR chat initiated. lucasgrey@darkdna.net's identity not verified.
 
-**Even if the person you're talking to is definitely your real friend because she know things that only she would know, and you're using OTR encryption, an attacker might still be reading your conversation.*** This is because you might actually be having an encrypted OTR conversation with the attacker, who is then having a separate encrypted OTR conversation with your real friend and just forwarding messages back and forth. Rather than your friend's fingerprint your client would be seeing the attacker's fingerprint. All you, as a user, can see is that the conversation is "Unverified".
+With OTR, each key has a fingerprint, a string of numbers and letters you can use to verify someone's identity. Mine is C34DF2CE 7B7D24B3 E56AADB0 9ADC6CBE 6D4D164A. Unlike session keys, encryption keys are persistent: the fingerprint will stay the same across numerous conversations unless you change device or are the victim of a man-in-the-middle attack.
 
-The following screenshots show Pidgin's visual indications of fingerprint verification. If you have verified OTR fingerprints your conversation is private, and if you haven't, your conversation is encrypted but you might be under attack. You can't know for sure without verifying.
+It's worth remembering that fingerprints are unique to devices, not accounts. This means that if I chat with people on my Jabber account from my Mac and from my Android phone, those contacts will have two fingerprints for me.  It's important to repeat the verification step on each device with each contact you talk to.
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/verified.png) ![](https://raw.github.com/micahflee/encryption-works/master/images/unverified.png)
+![Verifying someone's fingerprint in Adium.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/otr_key_verification.png)
 
-If you click the Unverified link (in Adium it's a lock icon) you can choose "Authenticate buddy". The OTR protocol supports three types of verification: the [socialist millionaire](https://en.wikipedia.org/wiki/Socialist_millionaire) protocol, a [shared secret](https://en.wikipedia.org/wiki/Shared_secret), and manual fingerprint verification. All OTR clients support manual fingerprint verification, but not all clients support other types of verification. When in doubt, choose manual fingerprint verification.
+In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to find some other secure channel to verify fingerprints. You could meet up in person, or talk on the phone if you can recognize their voice, or send a PGP encrypted and signed email.
 
-![](https://raw.github.com/micahflee/encryption-works/master/images/fingerprints.png)
+OTR fingerprints are 40 characters. It's statistically impossible to generate two OTR keys that have the same fingerprint. However, it is possible to generate an OTR key that isn't a collision but looks like one on cursory inspection. For example, the first few characters and last few characters could be the same with different characters in the middle. For this reason, it's important to compare each of the 40 characters to be sure you have the correct OTR key.
 
-In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to meet up in person, or talk on the phone if you can recognize their voice, or find some other out-of-band but secure method to verify fingerprints, such as sending a PGP encrypted and signed email.
+Without verifying keys you have no way to know that you're not falling victim to an undetected, successful MITM attack. Even if the person you're talking to is definitely your real friend because she know things that only she would know, and you're using OTR encryption, an attacker might still be reading your conversation. This is because you might actually be having an encrypted OTR conversation with the attacker, who is then having a separate encrypted OTR conversation with your real friend and just forwarding messages back and forth. Rather than your friend's fingerprint your client would be seeing the attacker's fingerprint. All you, as a user, can see is that the conversation is "Unverified".
 
-OTR fingerprints are 40 hexadecimal characters. It's statistically impossible to generate two OTR keys that have the same fingerprint, which is called a collision. However it is possible to generate an OTR key that isn't a collision but looks like one on cursory inspection. For example, the first few characters and last few characters could be the same with different characters in the middle. For this reason, it's important to compare each of the 40 characters to be sure you have the correct OTR key.
+That said, it's better to use OTR unverified than it is to have a sensitive conversation through an unencrypted channel. Although manual fingerprint verification is the most secure way of verifying a chat partner's identity, there are some on-the-fly methods: you could ask them for a detail only they would know -- **what color is the sofa in my apartment?** or **what dish did you bring to the pot-luck last week?**
 
-Because you generally set up a new OTR key each time you set up a new device (for example, if you want to use the same Jabber account to chat from your Android phone with Gibberbot as you use on your Windows PC with Pidgin), you often end up with multiple keys, and therefore multiple fingerprints. It's important to repeat the verification step on each device with each contact you talk to.
+To the best of our knowledge, this approach wouldn't have worked when Edward Snowden first made contact with Laura Poitras. For this reason, Poitras asked someone both she and Snowden were in contact with to tweet Poitras's fingerprint, which provided external verification of the key. 
 
-It's still much better practice to use OTR without verifying fingerprints than to not use OTR at all. An attacker that attempts a MITM attack against an OTR session runs the very real risk of getting caught, so likely this attack will only be used cautiously.
+![Micah Lee's tweet verified Laura Poitras's GPG fingerprint.](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/micah_key_tweet.png)
 
 ### Logs
 
