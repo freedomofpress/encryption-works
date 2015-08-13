@@ -106,7 +106,13 @@ The software is free and open-source, meaning that it comes with a high degree o
 
 The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes — called a circuit – before exiting onto the normal Internet. Anyone intercepting Internet traffic will think your location is the final node which your traffic exits from.
 
-![To obscure your location, Tor routes your connection through three intermediaries.](/images/tor_relays.png)
+The EFF has a good graphical explanation of how Tor works:
+
+![Tor 1](https://www.torproject.org/images/htw1.png) 
+
+![Tor 2](https://www.torproject.org/images/htw2.png) 
+
+![Tor 3](https://www.torproject.org/images/htw3.png) 
 
 ### Setup
 
@@ -125,11 +131,11 @@ Here are some further tips to enhance your security and privacy while using the 
 - Try to avoid downloading files such as PDFs or Microsoft Word
 documents (which end in .doc or .docx), as they can be vehicles for malware that can be used by an attacker to de-anonymize your web browsing.
 
-As with Tails, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
-
-It's important to remember that just because your connection to the Internet may be anonymous that doesn't magically make it secure. EFF has made a great [visualization of how Tor and HTTPS can work together to protect your privacy](https://www.eff.org/pages/tor-and-https).
+However, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
 
 ### What Tor Doesn't Protect You From
+
+It's important to remember that just because your connection to the Internet may be anonymous that doesn't magically make it secure. EFF has made a great [visualization of how Tor and HTTPS can work together to protect your privacy](https://www.eff.org/pages/tor-and-https).
 
 Documentation for Tails, the operating system that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
 
