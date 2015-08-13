@@ -98,7 +98,7 @@ Tails, which is a live DVD and live USB GNU/Linux distribution that I will discu
 
 ## Anonymize Your Location with Tor
 
-While your web habits can often be tracked when browsing the Internet, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser like Firefox or Safari, but it allows you to browse the web while masking your IP address, which is generally an accurate representation of your approximate location. 
+While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser like Firefox or Safari. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location. 
 
 The software is free and open-source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
 
@@ -111,6 +111,8 @@ The Tor network is made up of over 6,000 volunteer servers, called nodes. When y
 ### Setup
 
 The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). Once you download and install it, you'll see that it works like any other web browser but is a little bit slower, since your traffic is being routed through the Tor network to provide you with anonymity.
+
+Some countries, such as [China](https://blog.torproject.org/blog/torprojectorg-blocked-gfw-china-sooner-or-later) and [Iran](https://blog.torproject.org/blog/iran-blocks-tor-tor-releases-same-day-fix) block Tor because, by design, Tor exit nodes are public. It's possible to get around this by using what are known as [bridges](https://bridges.torproject.org/) -- unlisted relays which may be less likely to be blocked by ISPs and/or governments.
 
 When Snowden [was answering questions on Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower) from a "secure Internet connection", he was probably routing his traffic through the Tor network. He may have also been using a [bridge](https://bridges.torproject.org/) to connect to the Tor network to make the fact that he was using Tor from his IP address less obvious to eavesdroppers.
 
@@ -129,7 +131,7 @@ It's important to remember that just because your connection to the Internet may
 
 ### What Tor Doesn't Protect You From
 
-Documentation for Tails, the live GNU/Linux distribution that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
+Documentation for Tails, the operating system that forces all of the user's network traffic to go through the Tor network, has [this to say](https://tails.boum.org/doc/about/warning/index.en.html#index7h1) about global adversaries:
 
 > A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
 
@@ -137,15 +139,19 @@ We don't know if the NSA and GCHQ are big enough to fit this definition of "glob
 
 Leaked NSA slides [have](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document) titles such as "Tor Stinks" and have [called](http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity) Tor "Still the King of high secure, low latency Internet Anonymity" with "no contenders."
 
-That said, leaked NSA slides indicate the surveillance agency can de-anonymize "a very small fraction" of Tor users. 
+Leaked NSA slides indicate the surveillance agency can de-anonymize "a very small fraction" of Tor users. However, these slides are several years old now, and we do not know if their network visibility has increased.
 
-An attack like this becomes much harder as the number of nodes and the volume of traffic increases -- not impossible, but more time-consuming and expensive. If you're a student or staff-member at a college or university, the Electronic Frontier Foundation encourages you to [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
+An attack like this becomes much harder as the number of nodes and the volume of traffic increases -- not impossible, but more time-consuming and expensive. So if you're a student or staff-member at a college or university, you should [set up](https://www.eff.org/torchallenge/tor-on-campus.html) a Tor node on campus.
 
 Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
 
 > The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating her, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
 
+You also have to be careful *where* you use Tor, since it could actually leave you *more* exposed in some instances, even though your traffic is encrypted. That's because network admins can tell when someone is using Tor, even though they can't tell what websites you're browsing. 
+
 In December 2013, several members of the Harvard University administration [received](http://www.theverge.com/2013/12/18/5224130/fbi-agents-tracked-harvard-bomb-threats-across-tor) a bomb threat sent from a burner email address. The FBI and Harvard officials were able to trace the email back to a student who had sent the threat to avoid taking a final exam. The student had used an anonymous email with the Tor browser, but still got caught because he used Tor from the Harvard network -- administrators were able to tell he was one of the few people using Tor that morning and confronted him.
+
+It's hard to have much sympathy for the prankster, but the fact that users can sometimes be de-anonymized is worrying for the many human rights activists and journalists who depend on Tor. This is why prominent security researcher Bruce Schneier [talks about]((https://www.schneier.com/blog/archives/2015/06/why_we_encrypt.html)) using encryption to provide "cover" for others who use encryption to save their lives. 
 
 As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
 
