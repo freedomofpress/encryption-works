@@ -118,19 +118,21 @@ It's important to remember what these apps can and can't do -- while they will e
 
 Apple made news when they [announced](https://www.apple.com/apples-commitment-to-customer-privacy/) that iMessage conversations were end-to-end encrypted, meaning that if Apple is served with a legal order, they could not decrypt your communications even if they wanted to. 
 
->  For all devices running iOS 8.0 and later versions, Apple will not perform iOS data extractions in response to government search warrants because the files to be extracted are protected by an encryption key that is tied to the user's passcode, which Apple does not possess.
+>For example, conversations which take place over iMessage and FaceTime are protected by end-to-end encryption so no one but the sender and receiver can see or read them. Apple cannot decrypt that data.
 > 
 > [What we’re most commonly asked for and how we respond.](http://www.apple.com/privacy/government-information-requests/) Apple.com
 
 This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies are putting out. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure.
 
-The problem lies with proprietary software, which includes much of what’s released by Microsoft, Apple, and Google. It’s much more difficult for security researchers or users to independently verify that secret backdoors don’t exist at the clandestine demands of the surveillance state -- or that Apple doesn't secretly send a copy of your iMessages to the FBI. Apple CEO Tim Cook released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which allows a government to access user data.
+The problem lies with proprietary software, which includes much of what’s released by Microsoft, Apple, and Google. It’s much more difficult for security researchers or users to independently verify that secret backdoors don’t exist at the clandestine demands of the surveillance state -- or that Apple doesn't secretly send a copy of your iMessages to the FBI. 
+
+In the impassioned open letter, Apple CEO Tim Cook affirmed Apple's commitment to privacy, and claimed that no Apple device has a backdoor which allows a government to access user data."
 
 > “Finally, I want to be absolutely clear that we have never worked with any government agency from any country to create a backdoor in any of our products or services. We have also never allowed access to our servers. And we never will.”
 >
 > — ["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
 
-While we commend his comments and praise Apple for implementing disk encryption on devices running iOS, users have no way to verify this technically. We’re forced to believe Cook because Apple uses proprietary (closed source) software
+While we commend his comments and praise Apple for implementing these encryption features on devices running iOS, users have no way to verify this technically. We’re forced to believe Cook because Apple uses proprietary (closed source) software
 
 Free and open-source software, on the other hand, is developed with open bug trackers, open mailing lists, open governing structures and open source code. This makes it much harder for the software to be compromised by an adversity without the knowledge of the users. Since Signal is open-source, it has a higher degree of trust in this regard than iMessage.
 
