@@ -184,33 +184,31 @@ It's still much better practice to use OTR without verifying fingerprints than t
 
 ### Logs
 
-Here is an excerpt from the [chat logs](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs), published by Wired, of a conversation between Bradley Manning and Adrian Lamo, who turned him in to authorities:
+OTR will encrypt the content of your chats, but there's another factor to consider when you're chatting with Off-The Record: logs.
+
+Here is an excerpt from the chat logs of a conversation between Chelsea Manning (shown here as bradass87) and Adrian Lamo, who turned him in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
 
 > (1:40:51 PM) bradass87 has not been authenticated yet. You should authenticate this buddy.
-> 
+
 > (1:40:51 PM) Unverified conversation with bradass87 started.
-> 
+
 > (1:41:12 PM) bradass87: hi
-> 
+
 > (1:44:04 PM) bradass87: how are you?
-> 
+
 > (1:47:01 PM) bradass87: im an army intelligence analyst, deployed to eastern baghdad, pending discharge for "adjustment disorder" in lieu of "gender identity disorder"
-> 
+
 > (1:56:24 PM) bradass87: im sure you're pretty busy...
-> 
+
 > (1:58:31 PM) bradass87: if you had unprecedented access to classified networks 14 hours a day 7 days a week for 8+ months, what would you do?
-> 
-> (1:58:31 PM) info@adrianlamo.com : Tired of being tired
-> 
-> (2:17:29 PM) bradass87: ?
-> 
-> (6:07:29 PM) info@adrianlamo.com: What's your MOS?
 
-As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, yet it still ended up getting published on Wired's website and used as evidence against Bradley Manning. While it's possible their conversation was under a MITM attack, it's very unlikely. Instead both Bradley Manning's and Adrian Lamo's OTR clients were logging a copy of their conversation to their hard drives, unencrypted.
+As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, but excerpts were published on Wired's website and used as evidence in Manning's trail. The reason why? Because either Manning and Lamo's OTR clients were logging a copy of their conversations and saving the chat to a hard drive, unencrypted.
 
-While it can sometimes be useful to keep logs of conversations, it also greatly compromises your privacy. If Pidgin and Adium didn't log OTR conversations by default, it's likely that these chat logs would never have become part of the public record.
+For journalists, logging conversations (either by taking notes or using a tape recorder) is part of the job, but you should know that logging conversations greatly compromises your privacy. If the clients hadn't logged OTR conversations by default, it's likely that the above conversation would never have become part of the public record.
 
-With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. Adium still logs OTR conversations by default so you must manually turn off logging yourself, which is a bug in Adium. Because Adium is free software with an open bug tracker, you can follow and contribute to the conversations about fixing this bug [here](https://trac.adium.im/ticket/15722) and [here](https://trac.adium.im/ticket/15729).
+With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. As of July 2015, Adium still logs OTR conversations by default, and you must manually turn off logging yourself in Adium's Preferences pane.
+
+We recommend turning off logging by default and saving individual conversations only when necessary.
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
