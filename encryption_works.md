@@ -167,13 +167,13 @@ If you want to use OTR to talk privately with friends, colleagues, and sources, 
 
 When you start an encrypted OTR session, your chat software will tell you something like this:
 
-> *** Encrypted OTR chat initiated. tpc@calyxinstitute.org's identity not verified.
+> *** Encrypted OTR chat initiated. tommyc@jabber.ccc.de's identity not verified.
 
-With OTR, each key has a fingerprint, a string of numbers and letters you can use to verify someone's identity. Mine is C34DF2CE 7B7D24B3 E56AADB0 9ADC6CBE 6D4D164A. Unlike session keys, encryption keys are persistent: the fingerprint will stay the same across numerous conversations unless you change device or are the victim of a man-in-the-middle attack.
+With OTR, each key has a fingerprint, a string of numbers and letters you can use to verify someone's identity. Mine is AF4E5D5A D8AE95CB C1672DDC E44FA6F4 F8706C16. Unlike session keys, encryption keys are persistent: the fingerprint will stay the same across numerous conversations unless you change device or are the victim of a man-in-the-middle attack.
 
 It's worth remembering that fingerprints are unique to devices, not accounts. This means that if I chat with people on my Jabber account from my Mac and from my Android phone, those contacts will have two fingerprints for me.  It's important to repeat the verification step on each device with each contact you talk to.
 
---image--
+![Verifying a contact's OTR fingerprint in Adium.](/images/verifying_otr_fingerprints..png)
 
 In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints. In order to be sure that both parties are seeing the correct fingerprints you both need to find some other secure channel to verify fingerprints. You could meet up in person, or talk on the phone if you can recognize their voice, or send a PGP encrypted and signed email.
 
