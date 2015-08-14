@@ -206,7 +206,7 @@ Chief among these is [Signal](https://whispersystems.org), a free and open-sourc
 
 You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android devices, the functionality for making encrypted calls and sending encrypted texts is split into two apps: [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone). The Android apps are entirely cross-compatible with Signal.
 
-![Signal messages are end-to-end encrypted.](/images/signal.png)
+![Signal messages are end-to-end encrypted.](images/signal.png)
 
 As with OTR, both parties need to be using the app for the encryption to work. Signal uses your device's data connection (or wifi), and so users don't incur SMS fees.
 
@@ -242,7 +242,7 @@ While you can often be tracked when browsing the Internet by both private corpor
 
 The software is free and open-source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
 
-![The Tor Browser](https://raw.githubusercontent.com/tommycollison/encryption-works/master/images/tor_FPF.png)
+![The Tor Browser](images/tor_fpf.png)
 
 The Tor network is made up of over 6,000 volunteer servers, called nodes. When you use Tor, your connection is routed through three of these nodes — called a circuit – before exiting onto the normal Internet. Anyone intercepting Internet traffic will think your location is the final node which your traffic exits from.
 
@@ -463,7 +463,7 @@ As well as powering e-mail encryption with a desktop client like Apple Mail or T
 
 This serves as a second layer of protection if you use full-disk encryption and lends you extra security to transfer those files onto a flash drive or upload them to a cloud storage website.
 
-![Using GPGTools to encrypt a file on Mac.](/images/encrypt_file_pgp_mac.png)
+![Using GPGTools to encrypt a file on Mac.](images/encrypt_file_pgp_mac.png)
 
 ### The Web of Trust
 
@@ -593,7 +593,7 @@ That's the thinking behind the Tails system. PGP and OTR are totally undermined 
 
 Tails was designed to be an entire operating system comprised solely of "software you can trust," meaning that you don't have to rely on other closed-source software. It also has features to prevent tracking, such as wiping itself clean every time you power down.
 
-![The Tails operating system.](/images/tails_desktop.png)
+![The Tails operating system.](images/tails_desktop.png)
 
 > Tails is a live system that aims at preserving your privacy and anonymity. It helps you to use the Internet anonymously almost anywhere you go and on any computer but leave no trace using unless you ask it explicitly.
 >
