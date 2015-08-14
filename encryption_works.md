@@ -1,17 +1,5 @@
 # Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
 
-<style>
-div#out-of-date {
-  background-color: #FFF263;
-  border: 1px solid #EFC933;
-  padding: 0px 16px;
-}
-</style>
-
-<div id="out-of-date">
-<p>Warning: This guide has not updated in over a year. Freedom of the Press Foundation is working on an updated version. If you're interested in contributing, or have ideas for what this guide should cover, please submit issues on <a href="https://github.com/freedomofpress/encryption-works">GitHub</a>
-</div>
-
 > *Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.*
 > 
 > — Edward Snowden, answering questions live on the [Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower)
