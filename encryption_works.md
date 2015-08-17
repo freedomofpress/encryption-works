@@ -120,7 +120,7 @@ Journalists' email accounts are often the subject of attacks, but it's more comm
 
 !["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
 
-Let's look at another example: a metro journalist reporting on corruption in her city's police force. This is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
+Let's look at Stray's example of a journalist reporting on local police misconduct: this is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
 
 The adversary in this case isn't the NSA, but local authorities can still subpoena emails or phone call records to see who you've been talking to.
 
