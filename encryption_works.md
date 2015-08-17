@@ -64,7 +64,7 @@ One of the most controversial aspects of the Snowden disclosures was the complic
 
 > Microsoft has collaborated closely with US intelligence services to allow users' communications to be intercepted, including helping the National Security Agency to circumvent the company's own encryption, according to top-secret documents obtained by the Guardian. […] In July last year, nine months after Microsoft bought Skype, the NSA boasted that a new capability had tripled the amount of Skype video calls being collected.
 >
-> —[“Microsoft handed the NSA access to encrypted messages.”](http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data) The Guardian. July 11, 2013.
+> —["Microsoft handed the NSA access to encrypted messages."](http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data) The Guardian. July 11, 2013.
 
 In addition, [Bloomberg](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html) reported that Microsoft had given information to the NSA about software bugs before they fixed them:
 
