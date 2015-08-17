@@ -60,7 +60,7 @@ In short, encryption encompasses a whole host of uses, but here we are focused o
 > 
 > — Eric Hughes, in his 1993 Cypherpunk Manifesto.
 
-One of the most controversial aspects of the Snowden disclosures was the complicity of several software services, which either handed over data to the NSA or purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies. 
+One of the most controversial aspects of the Snowden disclosures was the complicity of several software services, which either handed over customer data to the NSA or purposely designed their software to allow the NSA access to that data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies. 
 
 > Microsoft has collaborated closely with US intelligence services to allow users' communications to be intercepted, including helping the National Security Agency to circumvent the company's own encryption, according to top-secret documents obtained by the Guardian. […] In July last year, nine months after Microsoft bought Skype, the NSA boasted that a new capability had tripled the amount of Skype video calls being collected. \
 —[“Microsoft handed the NSA access to encrypted messages.”](http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data) The Guardian. 
