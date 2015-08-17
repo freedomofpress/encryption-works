@@ -256,8 +256,7 @@ Here are some further tips to enhance your security and privacy while using the 
 
 - Use Tor's new [Security Slider](https://blog.torproject.org/blog/tor-browser-45-released) feature. This allows you some control over your Tor experience based on your threat model. Generally speaking, we recommend setting it to "Medium-High."
 - Be careful of unencrypted sites, which don't have a lock icon next to the URL. Tor anonymizes your Internet traffic but unencrypted connections can still be eavesdropped on between the final node and the Internet server.
-- Try to avoid downloading files such as PDFs or Microsoft Word
-documents (which end in .doc or .docx), as they can be vehicles for malware that can be used by an attacker to de-anonymize your web browsing.
+- Try to avoid downloading files with Tor that require an external application to open. These can be vehicles for malware and can be used by an attacker to de-anonymize your web browsing. Tor comes with a built-in PDF viewer, but beware of .docx files, for instance.
 
 However, these limitations are designed to keep Tor as secure as possible. They can get in the way of your regular browsing habits, and so you should keep another web browser around (with add-ons such as [HTTPS Everywhere](https://www.eff.org/https-everywhere)) for other browsing.
 
