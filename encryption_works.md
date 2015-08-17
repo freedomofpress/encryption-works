@@ -136,7 +136,7 @@ Traditionally, computer users were encouraged to create and choose a password an
 
 The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
 
-Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" is a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it since password crackers are often preloaded with common phrases.
+Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" would be a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it since password crackers are often preloaded with common phrases.
 
 > Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.
 > 
