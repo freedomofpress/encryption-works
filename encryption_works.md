@@ -293,7 +293,7 @@ With all this said, using Tor still gives us many advantages. It makes the job o
 
 ## Off-the-Record (OTR) Chat
 
-The best way to end-to-end encrypt your instant messages is to use something called OTR chat with a Jabber/XMPP account. While it's possible to use OTR with Google Talk or Facebook Chat, we don't recommend it because these services could drop support for OTR without warning. Plus, Jabber leaks less metadata than these services, especially if both people are using the same Jabber server.
+The best way to encrypt your instant messages end-to-end is to use something called OTR chat with a Jabber/XMPP account. While it's possible to use OTR with Google Talk or Facebook Chat, we don't recommend it because these services could drop support for OTR without warning. Plus, Jabber leaks less metadata than these services, especially if both people are using the same Jabber server.
 
 ### How To Use
 
