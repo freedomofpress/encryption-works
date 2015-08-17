@@ -269,9 +269,7 @@ There's been some discussion of global adversaries -- governments or other actor
 
 > A global passive adversary would be a person or an entity able to monitor at the same time the traffic between all the computers in a network. By studying, for example, the timing and volume patterns of the different communications across the network, it would be statistically possible to identify Tor circuits and thus matching Tor users and destination servers.
 
-We don't know if the NSA and GCHQ are big enough to fit this definition of "global adversaries," but we do know they monitor a large portion of the Internet. It's too early to say whether this large-scale surveillance is enough to defeat Tor's network anonymity in the general sense.
-
-Thanks to the Snowden documents, we know that for many Internet users, powerful intelligence agencies such as NSA, GCHQ, and the collective "5 Eyes" fit this definition of a global passive adversary. It remains unclear whether they can use their network perspective to reliably de-anonymize Tor users, though.
+We don't know if the NSA and GCHQ are big enough to fit this definition of "global adversaries," but thanks to the Snowden documents we do know they monitor a large portion of the Internet. It's too early to say whether this large-scale surveillance is enough to defeat Tor's network anonymity in the general sense.
 
 According to leaked NSA slides with titles such as ["Tor Stinks"](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document), Tor is "still the King of high secure, low latency Internet Anonymity" with "no contenders." However, the same slides also indicate that the surveillance agency can de-anonymize "a very small fraction" of Tor users. Also important to note is that these slides are also several years old now, so we don't know what the current status of these powerful organization's capabilities might be.
 
