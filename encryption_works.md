@@ -126,7 +126,7 @@ The adversary in this case isn't the NSA, but local authorities can still subpoe
 
 ### Strong passphrases and password managers
 
-With threat modeling in mind, there are several easy steps you can take to improve your security before ever encrypting your emails or chats. These steps can be just as important --if not more so-- than the more complicated steps later on.
+With threat modeling in mind, there are several easy steps you can take to improve your security before ever encrypting your emails or chats. These steps can be just as important --if not more so-- than the more complicated steps described later in this guide.
 
 The first meaningful action you can take towards ensuring your digital security is to protect your computer and online accounts with a strong password. This is the first —and most important— line of defense between you and anyone with physical access to your computer who wants to impersonate you. 
 
