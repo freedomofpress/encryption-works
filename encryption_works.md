@@ -353,9 +353,7 @@ OTR fingerprints are 40 characters. It's statistically impossible to generate tw
 
 Without verifying keys you have no way to know that you're not falling victim to an undetected, successful MITM attack. Even if the person you're talking to is definitely your real friend because she know things that only she would know, and you're using OTR encryption, an attacker might still be reading your conversation. This is because you might actually be having an encrypted OTR conversation with the attacker, who is then having a separate encrypted OTR conversation with your real friend and just forwarding messages back and forth. Rather than your friend's fingerprint your client would be seeing the attacker's fingerprint. All you, as a user, can see is that the conversation is "Unverified".
 
-That said, it's better to use OTR unverified than it is to have a sensitive conversation through an unencrypted channel. Although manual fingerprint verification is the most secure way of verifying a chat partner's identity, there are some on-the-fly methods: you could ask them for a detail only they would know -- **what color is the sofa in my apartment?** or **what dish did you bring to the pot-luck last week?**
-
-This approach wouldn't have worked when Edward Snowden first made contact with Laura Poitras, though. For this reason, Poitras asked someone both she and Snowden were in contact with to tweet Poitras's fingerprint, which provided external verification of the key.
+That said, it's better to use OTR unverified than it is to have a sensitive conversation through an unencrypted channel. Although manual fingerprint verification is the most secure way of verifying a chat partner's identity, there are some on-the-fly methods, such as when Laura Poitras asked someone both she and Snowden were in contact with to tweet Poitras's fingerprint, which provided external verification of the key:
 
 ![Micah Lee's tweet verified Laura Poitras's GPG fingerprint.](images/micah_fingerprint_tweet.png)
 
