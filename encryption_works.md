@@ -71,7 +71,7 @@ Some pieces of closed-source software are still better than others. While Micros
 
 While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
-This is why free and open source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users like Microsoft did.
+This is why free and open source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users as Microsoft did.
 
 It’s useful here to delineate between two stages of encryption: endpoint security, and encryption in transit. When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. 
 
