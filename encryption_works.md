@@ -88,9 +88,6 @@ This is an important question to ask when assessing whether a service or an app 
 
 Threat modeling is risk assessment -- looking at your workflow and assessing areas where you could be targeted, and therefore what you need to protect. It involves asking questions about your work and identifying sensitive information and attack vectors. 
 
-* What am I trying to protect? 
-* How could I be attacked?
-
 Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption. 
 
 There are dozens of reasons people should use encryption even if you're not a journalist or a whistleblower -- your medical details, credit card info, and personal photos shouldn't be fair game for hackers or governments.
