@@ -73,13 +73,17 @@ While the rhetoric is promising, and there's evidence Apple is [telling](http://
 
 This is why free and open source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users as Microsoft did.
 
-It’s useful here to delineate between two stages of encryption: endpoint security, and encryption in transit. When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. 
+### Types of Encryption
 
-For example, if you send an encrypted e-mail to a friend and someone has managed to install a key-logger on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
+It’s useful here to delineate between different stages of encryption: endpoint security, encryption in transit, and end-to-end encryption. 
 
-Secure communications rely on more than just endpoint security, though. Your data should also be secure in transit, as it passes over the Internet. Take the same example, when you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Hotmail) can read it once you hit "Send." 
+When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted e-mail to a friend and someone has managed to install a key-logger on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
-This is an important question to ask when assessing whether a service or an app is truly secure: Can the service provider itself circumvent the encryption? If so, you cannot trust the security of that service. Tools such as iMessage, Gmail, Skype and Facebook Messenger promise end-to-end encryption but have the keys to decrypt your communications. True end-to-end encryption means that these service providers can't look at your communications even if they wanted to. 
+But secure communications rely on more than just endpoint security -- your data should also be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Yahoo) can read it once you hit "Send." However, PGP encryption provides end-to-end encryption for email, since the message cannot be read in plaintext until one of the conversation partners decrypts it.
+
+Finally, transit encryption refers to the encryption of your data as it travels between two points, such as your computer and the amazon.com server, allowing you to securely buy things while keeping your credit card info hidden from your ISP or other people on the network. Sites that provide transit encryption begin with "HTTPS" rather than "HTTP."
+
+Tools such as Facebook Chat promise transit encryption but not end-to-end encryption, meaning that the data is encrypted between your computer and Facebook's server, but can be seen by Facebook as its being delivered to the recipient. This isn't true of end-to-end encryption, meaning that these service providers can't look at the content of your communications even if they wanted to. It's not enough to ask whether a service provider _intends_ to circumvent its own encryption; providers rarely do. Instead, we must ask whether a service _can_ circumvent encryption, by nature of its design. If the answer is yes, you cannot trust the security of that service, because secure communication relies on taking advantage of each of these different types of encryption -- it's not enough to rely on just one.
 
 ### Threat Models
 
