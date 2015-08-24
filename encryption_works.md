@@ -133,7 +133,7 @@ With threat modeling in mind, there are several easy steps you can take to impro
 
 The first meaningful action you can take towards ensuring your digital security is to protect your computer and online accounts with a strong password. This is the first —and most important— line of defense between you and anyone with physical access to your computer who wants to impersonate you. 
 
-Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as _"Tr0ub4dor&3,"_ to reference a popular [XKCD comic](https://xkcd.com/936/). 
+Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as _Tr0ub4dor&3,_ to reference a popular [XKCD comic](https://xkcd.com/936/). 
 
 !["Password Strength." Courtesy of XKCD.](http://imgs.xkcd.com/comics/password_strength.png)
 
