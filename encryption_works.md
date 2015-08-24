@@ -69,7 +69,7 @@ Some pieces of closed-source software are still better than others. While Micros
 >
 > —["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
 
-While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, the fact is that users have absolutely no way to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
+While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
 This is why free and open source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users like Microsoft did.
 
