@@ -93,7 +93,7 @@ Threat modeling is risk assessment -- looking at your workflow and assessing are
 
 Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption. 
 
-This isn't true for a number of reasons: one, there are dozens of reasons people should use encryption even if you're not a journalist or a whistleblower -- your medical details, credit card info, and personal photos shouldn't be fair game for hackers or governments.
+There are dozens of reasons people should use encryption even if you're not a journalist or a whistleblower -- your medical details, credit card info, and personal photos shouldn't be fair game for hackers or governments.
 
 ### Operational Security
 
