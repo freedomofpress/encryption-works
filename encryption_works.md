@@ -381,9 +381,9 @@ Here is an excerpt from the chat logs of a conversation between Chelsea Manning 
 
 > (1:58:31 PM) bradass87: if you had unprecedented access to classified networks 14 hours a day 7 days a week for 8+ months, what would you do?
 
-As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, but excerpts were published on Wired's website and used as evidence in Manning's trail. The reason why? Because either Manning and Lamo's OTR clients were logging a copy of their conversations and saving the chat to a hard drive, unencrypted.
+As you can see from "Unverified conversation with bradass87 started," they were using OTR to encrypt their conversation, but excerpts were published on Wired's website and used as evidence in Manning's trail. The reason why? Lamo's OTR client was logging a copy of the conversation and saving the chat to a hard drive.
 
-For journalists, logging conversations (either by taking notes or using a tape recorder) is part of the job, but you should know that logging conversations greatly compromises your privacy. If the clients hadn't logged OTR conversations by default, it's likely that the above conversation would never have become part of the public record.
+For journalists, logging conversations (by taking notes or using a tape recorder) is part of the job, but you should know that logging conversations greatly compromises your privacy. If Lamo's OTR client had logging turned off, it's likely that the above conversation would never have become part of the public record.
 
 With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. As of July 2015, Adium still logs OTR conversations by default, and you must manually turn off logging yourself in Adium's Preferences pane.
 
