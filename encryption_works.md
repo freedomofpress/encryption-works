@@ -389,7 +389,7 @@ Unfortunately, the process is notoriously hard to use, as evidenced by Glenn Gre
 
 > You want to get in the process of doing this for everything because it seems hard, but it's not hard... this is super easy.
 
-If you use PGP encryption, you will have to make a few changes about how you use email. For example, if you use PGP on your computer but receive an encrypted email on your phone, you won't be able to decrypt the email and read it until you get back to your computer.
+If you use PGP encryption, you will have to make a few changes to how you use email. For example, if you use PGP on your computer but receive an encrypted email on your phone, you won't be able to decrypt the email and read it until you get back to your computer.
 
 PGP is used in two ways with email: 
 
