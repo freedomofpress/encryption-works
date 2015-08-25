@@ -451,7 +451,7 @@ But when the e-mail is accessed with the correct private key, it becomes readabl
 
 ## Encrypting Files with PGP
 
-As well as powering e-mail encryption with a desktop client like Apple Mail or Thunderbird, you can also use PGP to encrypt files on your hard-drive with your public key.
+As well as powering email encryption with desktop clients like Apple Mail or Thunderbird, you can also use PGP to encrypt files on your hard-drive with your public key.
 
 This serves as a second layer of protection if you use full-disk encryption and lends you extra security to transfer those files onto a flash drive or upload them to a cloud storage website.
 
