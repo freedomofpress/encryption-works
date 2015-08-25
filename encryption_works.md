@@ -541,7 +541,7 @@ PGP also doesn't automatically guarantee anonymity. If I send a PGP-encrypted em
 
 There are two other steps you can take to decrease the amount of metadata leaked when using PGP e-mail encryption. The first is [TorBirdy](https://trac.torproject.org/projects/tor/wiki/torbirdy), an extension for Thunderbird that routes the app's traffic through the Tor network, enhancing your privacy. It's an involved process, but worth a look if you're comfortable with advanced settings.
 
-The second is using `--hidden-recipient` as a modifier to the `gpg` command when using GPG on the command-line. When the metadata of the subsequent encrypted file is [analyzed](http://tech.michaelaltfield.net/2013/10/19/analyzing-pgp-content/), the key ID of the recipient reads **0x0000000000000000**. 
+The second is using `--hidden-recipient` as a modifier to the `gpg` command when using GPG on the command-line. When the metadata of the subsequent encrypted file is [analyzed](http://tech.michaelaltfield.net/2013/10/19/analyzing-pgp-content/), the key ID of the recipient reads **0x00000000**. (Encrypted emails usually have the real key ID attached, such as **0x97604F9D**.)
 
 ### Verifying Checksums
 
