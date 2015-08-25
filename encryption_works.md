@@ -569,7 +569,7 @@ In general, software websites have to provide the checksum for you to check, but
 
 ## Tails: The Amnesic Incognito Live System
 
->[Tails] has been an essential tool for reporting the NSA story. It is an all-in-one secure digital communication system (GPG email, OTR chat, Tor web browser, encrypted storage) that is small enough to swallow." 
+>"[Tails] has been an essential tool for reporting the NSA story. It is an all-in-one secure digital communication system (GPG email, OTR chat, Tor web browser, encrypted storage) that is small enough to swallow." 
 >
 >— Laura Poitras, Oscar-winning documentary filmmaker and board member with Freedom of the Press Foundation.
 
