@@ -385,9 +385,9 @@ As you can see from "Unverified conversation with bradass87 started," they were 
 
 For journalists, logging conversations (by taking notes or using a tape recorder) is part of the job, but you should know that logging conversations greatly compromises your privacy. If Lamo's OTR client had logging turned off, it's likely that the above conversation would never have become part of the public record.
 
-With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. As of July 2015, Adium still logs OTR conversations by default, and you must manually turn off logging yourself in Adium's Preferences pane.
-
 We recommend turning off logging by default and saving individual conversations only when necessary.
+
+With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conversations by default. As of July 2015, Adium still logs OTR conversations by default, and you must manually turn off logging yourself in Adium's Preferences pane.
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
