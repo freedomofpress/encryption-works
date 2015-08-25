@@ -179,7 +179,7 @@ Disk encryption is available for Mac OS X, Windows, and Linux, but the steps for
 For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/deeplinks/2010/11/effs-guide-protecting-devices-data-border) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border (the ninth circuit being the only [exception](https://scholar.google.com/scholar_case?case=13727924395632289367)). Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
 
 - Have a separate computer for work travel, which does not contain sensitive material. 
-- Sign out of e-mail accounts and power off laptops before approaching the border. 
+- Sign out of email accounts and power off laptops before approaching the border. 
 - As always, make regular backups, so the loss of a computer is not catastrophic.
 
 As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when deciding what files to have on a computer you cross borders with.
