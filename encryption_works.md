@@ -393,9 +393,9 @@ If you use PGP encryption, you will have to make a few changes about how you use
 
 PGP is used in two ways with email: 
 
-1) A sender can encrypt the content of email messages so that only the sender and receiver can read them.
+1. A sender can encrypt the content of email messages so that only the sender and receiver can read them.
 
-2) Senders can sign messages, proving that the message the sender sent is the same one the receiver reads, and that it wasn't tampered with in transit. (Assuming you trust the public key -- more on this later.)
+2. Senders can sign messages, proving that the message the sender sent is the same one the receiver reads, and that it wasn't tampered with in transit. (Assuming you trust the public key -- more on this later.)
 
 On the other end, the receiver uses PGP to decrypt the message and verify the email's digital signature.
 
