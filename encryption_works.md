@@ -429,7 +429,7 @@ Once you've installed Enigmail, you'll notice some new settings when you go to c
 
 ![Sending an encrypted e-mail with Thunderbird and the Enigmail add-on.](images/sending_encrypted_email_with_thunderbird_and_enigmail.png)
 
-When sent, only *sva1bard@risup.net's* private key will be able to decrypt this email (since it's encrypted with the corresponding public key).
+When sent, only the private key for `sva1bard@risup.net` will be able to decrypt this email (since it's encrypted with the corresponding public key).
 
 If you try and access an encrypted email in a web browser, it's unreadable because the private key is missing. 
 
@@ -529,7 +529,7 @@ Snowden was right to be cautious and to insist that he check Gellman's new PGP f
 
 To use PGP effectively, it's good to understand what it does and doesn't do.
 
-For instance, using PGP with e-mail encryption only encrypts the *content* of your e-mails. It doesn't encrypt the to/from fields, the subject line or the metadata, the sundry details associated with the message. For an e-mail, metadata would include the associated e-mail addresses, the time and date sent and the IP address the e-mail originated from. This means that someone surveilling me can tell that at 2:05pm on Sunday, June 21, *tommy@freedom.press* e-mailed *trevor@freedom.press* from a certain IP address, but they can't tell what the content of the message was.
+For instance, using PGP with e-mail encryption only encrypts the *content* of your e-mails. It doesn't encrypt the to/from fields, the subject line or the metadata, the sundry details associated with the message. For an e-mail, metadata would include the associated e-mail addresses, the time and date sent and the IP address the e-mail originated from. This means that someone surveilling me can tell that at 2:05pm on Sunday, June 21, `tommy@freedom.press` e-mailed `trevor@freedom.press` from a certain IP address, but they can't tell what the content of the message was.
 
 Senator Diane Feinstein (D—Calif.) is a staunch defender of the NSA and has long [maintained](http://www.theguardian.com/world/2013/oct/21/dianne-feinstein-defends-nsa-data-collection) that the type of metadata collection the NSA carries out isn't intrusive because it doesn't include the content. However, even the list of people you're in e-mail correspondence with can be very revealing. In May 2013, the Associated Press [reported](http://bigstory.ap.org/article/govt-obtains-wide-ap-phone-records-probe) that the Justice Department had seized email and phone records of the AP newsroom as part of their [investigation](http://www.vanityfair.com/news/2015/03/james-risen-anonymous-source-government-battle) of government leaks. Even if the reporters had been using PGP, this wouldn't have encrypted the email addresses the reporters were in contact with.
 
@@ -537,7 +537,7 @@ EFF [lists](https://www.eff.org/deeplinks/2013/06/why-metadata-matters) the nume
 
 Many PGP users mitigate this metadata leakage by using purposefully unspecific email subject lines, such as "Summer 2015" or "cat pics," or leaving the field blank.
 
-PGP also doesn't automatically guarantee anonymity. If I send a PGP-encrypted email from *tommy.collison@gmail.com,* it isn't hard to tell who the owner of the email address is, even though the content of the email is encrypted. For added security, combine PGP with a pseudonymous email account.
+PGP also doesn't automatically guarantee anonymity. If I send a PGP-encrypted email from `tommy.collison@gmail.com`, it isn't hard to tell who the owner of the email address is, even though the content of the email is encrypted. For added security, combine PGP with a pseudonymous email account.
 
 There are two other steps you can take to decrease the amount of metadata leaked when using PGP e-mail encryption. The first is [TorBirdy](https://trac.torproject.org/projects/tor/wiki/torbirdy), an extension for Thunderbird that routes the app's traffic through the Tor network, enhancing your privacy. It's an involved process, but worth a look if you're comfortable with advanced settings.
 
