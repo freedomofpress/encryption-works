@@ -337,7 +337,7 @@ When you start an encrypted OTR session, your chat software will tell you someth
 
 With OTR, each key has a fingerprint, a string of numbers and letters you can use to verify someone's identity. One of the OTR fingerprints for Tommy Collison, an editor of this guide, is AF4E5D5A D8AE95CB C1672DDC E44FA6F4 F8706C16. Unlike session keys, encryption keys are persistent: the fingerprint will stay the same across numerous conversations unless you change device or are the victim of a man-in-the-middle attack.
 
-It's worth remembering that fingerprints are unique to devices, not accounts. This means that if I chat with people on my Jabber account from my Mac and from my Android phone, those contacts will have two fingerprints for me.  It's important to repeat the verification step on each device with each contact you talk to.
+Fingerprints are unique to devices, not accounts. This means that if I chat with people on my Jabber account from my Mac and from my Android phone, those contacts will have two fingerprints for me.  It's important to repeat the verification step on each device with each contact you talk to.
 
 ![Verifying a contact's OTR fingerprint in Adium.](images/verifying_otr_fingerprints.png)
 
