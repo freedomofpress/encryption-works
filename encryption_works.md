@@ -427,17 +427,17 @@ While some third parties have developed end-to-end encryption plugins that you c
 
 Once you've installed Enigmail, you'll notice some new settings when you go to compose an email in Thunderbird.
 
-![Sending an encrypted e-mail with Thunderbird and the Enigmail add-on.](images/sending_encrypted_email_with_thunderbird_and_enigmail.png)
+![Sending an encrypted email with Thunderbird and the Enigmail add-on.](images/sending_encrypted_email_with_thunderbird_and_enigmail.png)
 
 When sent, only *sva1bard@risup.net's* private key will be able to decrypt this email (since it's encrypted with the corresponding public key).
 
 If you try and access an encrypted email in a web browser, it's unreadable because the private key is missing. 
 
-![Web browsers can't read PGP-encrypted e-mail.](images/pgp_gibberish_in_browser.png)
+![Web browsers can't read PGP-encrypted email.](images/pgp_gibberish_in_browser.png)
 
-But when the e-mail is accessed with the correct private key, it becomes readable again:
+But when the email is accessed with the correct private key, it becomes readable again:
 
-![The decrypted e-mail.](images/decrypted_email.png)
+![The decrypted email.](images/decrypted_email.png)
 
 ## Encrypting Files with PGP
 
