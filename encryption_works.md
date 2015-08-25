@@ -2,7 +2,7 @@
 
 ### August 2015
 
-### Written by Micah Lee. Edited by Tommy Collison, Harlo Holmes, and Garrett Robinson.
+### Originally written by Micah Lee. Updated version written by Tommy Collison and edited by Harlo Holmes, and Garrett Robinson.
 
 *Dedicated to cypherpunks, and to whistleblowers past and future.*
 
