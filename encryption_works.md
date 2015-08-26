@@ -288,7 +288,7 @@ In December 2013, several members of the Harvard University administration [rece
 
 It's hard to have much sympathy for the prankster, but the fact that users can sometimes be de-anonymized is worrying for the many human rights activists and journalists who depend on Tor. This is why prominent security researcher Bruce Schneier [talks about](https://www.schneier.com/blog/archives/2015/06/why_we_encrypt.html) using encryption to provide "cover" for others who use encryption to save their lives.
 
-As with all privacy-enhancing software, an attacker who has hacked your computer can spy on what you're doing, even if you're using Tor.
+As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
 
 With all this said, using Tor still gives us many advantages. It makes the job of the global adversary much harder, and we leave much less identifying data on the servers we connect to through the Tor network. It makes it much harder to be the victim of a man-in-the-middle attack at our local network or ISP level. Even if some Tor circuits can be defeated by a global adversary, if enough people are getting their traffic routed through the same Tor nodes at the same time, it might be difficult for the adversary to tell which traffic belongs to which circuits.
 
