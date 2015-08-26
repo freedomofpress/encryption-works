@@ -152,7 +152,7 @@ As well as protecting password vaults, you should also choose good passphrases f
 
 ### Two Factor Authentication (2FA)
 
-Another way to beef up the security of your accounts is to enable two-factor authentication, which changes your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This is checked by way of a one-time confirmation number that’s sent to you and which you have to enter during the login process.
+Another way to beef up the security of your accounts is to enable two-factor authentication, which changes your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This can be checked in a couple of ways, such as a token sent to you via SMS which you have to enter during the login process. Other ways include Authenticator apps or QR codes.
 
 With 2FA, even if an attacker somehow learns your password, they won’t be able to log in without the cellphone associated with the account.
 
