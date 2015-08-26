@@ -156,7 +156,7 @@ Another way to beef up the security of your accounts is to enable two-factor aut
 
 With 2FA, even if an attacker somehow learns your password, they won’t be able to log in without the cellphone associated with the account.
 
-For information on how to set up two-factor authentication on most websites and services, check out [turnon2FA.com](https://www.turnon2fa.com).
+For information on how to set up two-factor authentication on most websites and services, check out [turnon2FA.com](https://www.turnon2fa.com) or  [twofactorauth.org](https://twofactorauth.org).
 
 After the 2014 celebrity photo hack, Recode [reported](https://recode.net/2014/09/01/apple-says-it-is-actively-investigating-celeb-photo-hack/https://recode.net/2014/09/01/apple-says-it-is-actively-investigating-celeb-photo-hack/) that two-factor authentication would probably have prevented the attackers from gaining access to the iCloud accounts.
 
