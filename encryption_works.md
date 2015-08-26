@@ -1,4 +1,16 @@
-# Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
+### Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
+
+### August 2015
+
+### Originally written by Micah Lee. Updated version written by Tommy Collison and edited by Harlo Holmes, and Garrett Robinson.
+
+*Dedicated to cypherpunks, and to whistleblowers past and future.*
+
+A publication of **Freedom of the Press Foundation**. Originally published July 2013, updated August 2015.
+
+Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else is licensed under a Creative Commons Attribution 3.0 Unported License. [https://creativecommons.org/licenses/by/3.0/](https://creativecommons.org/licenses/by/3.0/).
+
+If you're interested in contributing to Encryption Works, or have ideas for what this guide should cover, please check out the project on [GitHub](https://github.com/freedomofpress/encryption-works/blob/master/CONTRIBUTING.md).
 
 > *Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.*
 > 
