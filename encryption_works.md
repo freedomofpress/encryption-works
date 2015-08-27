@@ -116,7 +116,7 @@ As you can see, threat modeling is about how you think about a problem as much a
 
 A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organization have been hacked by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists -- it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
 
-Journalists' email accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail (or you) into resetting the password rather than hacking Google itself.
+Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. Sometimes, adversaries just use intimidation to get that info out of people.
 
 !["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
 
