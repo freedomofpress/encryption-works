@@ -65,7 +65,7 @@ This is why free and open source software is more reliable in this regard. Free 
 
 It’s useful here to delineate between different stages of encryption: endpoint security, encryption in transit, and end-to-end encryption. 
 
-When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a key-logger on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
+When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a keylogger on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
 But secure communications rely on more than just endpoint security — your data should also be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Yahoo) can read it once you hit "Send." However, PGP encryption provides end-to-end encryption for email, since the message cannot be read in plaintext until one of the conversation partners decrypts it.
 
@@ -165,7 +165,7 @@ Encrypting your hard-drive doesn't just make it harder for the NSA to access you
 
 Disk encryption is available for Mac OS X, Windows, and Linux, but the steps for enabling it differ for each operating system. For information on how to encrypt your disk, check out Micah Lee's guide to [encrypting your laptop like you mean it](https://firstlook.org/theintercept/2015/04/27/encrypting-laptop-like-mean/) on The Intercept.
 
-For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/deeplinks/2010/11/effs-guide-protecting-devices-data-border) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border (the ninth circuit being the only [exception](https://scholar.google.com/scholar_case?case=13727924395632289367)). Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
+For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/deeplinks/2010/11/effs-guide-protecting-devices-data-border) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border (the Ninth Circuit being the only [exception](https://scholar.google.com/scholar_case?case=13727924395632289367)). Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
 
 - Have a separate computer for work travel, which does not contain sensitive material. 
 - Sign out of email accounts and power off laptops before approaching the border. 
@@ -233,7 +233,7 @@ The EFF has a good graphical explanation of how Tor works:
 
 ### Setup
 
-The easiest way to start using Tor is to download and install the [Tor Browser Bundle](https://www.torproject.org/download/download-easy.html.en). Once you download and install it, you'll see that it works like any other web browser but is a little bit slower, since your traffic is being routed through the Tor network to provide you with anonymity.
+The easiest way to start using Tor is to download and install the [Tor Browser](https://www.torproject.org/download/download-easy.html.en). Once you download and install it, you'll see that it works like any other web browser but is a little bit slower, since your traffic is being routed through the Tor network to provide you with anonymity.
 
 Some countries, such as [China](https://blog.torproject.org/blog/torprojectorg-blocked-gfw-china-sooner-or-later) and [Iran](https://blog.torproject.org/blog/iran-blocks-tor-tor-releases-same-day-fix) block Tor because, by design, Tor exit nodes are public. It's possible to get around this by using what are known as [bridges](https://bridges.torproject.org/) — unlisted relays which may be less likely to be blocked by ISPs and/or governments.
 
@@ -241,7 +241,7 @@ When Snowden [was answering questions on Guardian's website](http://www.guardian
 
 ### Browsing Habits
 
-Here are some further tips to enhance your security and privacy while using the Tor browser. Some tips, such as disabling flash, are good advice for any web browser.
+Here are some further tips to enhance your security and privacy while using the Tor Browser. Some tips, such as disabling flash, are good advice for any web browser.
 
 - Use Tor's new [Security Slider](https://blog.torproject.org/blog/tor-browser-45-released) feature. This allows you some control over your Tor experience based on your threat model. Generally speaking, we recommend setting it to "Medium-High."
 - Be careful of unencrypted sites, ones which begin with "HTTP" rather than "HTTPS." Tor anonymizes your Internet traffic but unencrypted connections can still be eavesdropped on between the final node and the Internet server.
@@ -272,7 +272,7 @@ The attack reinforced what we already suspected about Tor: targeted attacks *can
 
 You also have to be careful *where* you use Tor, since it could actually leave you *more* exposed in some instances, even though your traffic is encrypted. That's because network admins can tell when someone is using Tor, even though they can't tell what websites you're browsing.
 
-In December 2013, several members of the Harvard University administration [received](http://www.theverge.com/2013/12/18/5224130/fbi-agents-tracked-harvard-bomb-threats-across-tor) a bomb threat sent from a burner email address. The FBI and Harvard officials were able to trace the email back to a student who had sent the threat to avoid taking a final exam. The student had used an anonymous email with the Tor browser, but still got caught because he used Tor from the Harvard network: administrators were able to tell he was one of the few people using Tor that morning and confronted him.
+In December 2013, several members of the Harvard University administration [received](http://www.theverge.com/2013/12/18/5224130/fbi-agents-tracked-harvard-bomb-threats-across-tor) a bomb threat sent from a burner email address. The FBI and Harvard officials were able to trace the email back to a student who had sent the threat to avoid taking a final exam. The student had used an anonymous email with the Tor Browser, but still got caught because he used Tor from the Harvard network: administrators were able to tell he was one of the few people using Tor that morning and confronted him.
 
 It's hard to have much sympathy for the prankster, but the fact that users can sometimes be de-anonymized is worrying for the many human rights activists and journalists who depend on Tor. This is why prominent security researcher Bruce Schneier [talks about](https://www.schneier.com/blog/archives/2015/06/why_we_encrypt.html) using encryption to provide "cover" for others who use encryption to save their lives.
 
@@ -290,7 +290,7 @@ To use OTR, you'll need to download additional software with your IM client. If 
 
 The OTR client for [https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im](Android) and [iOS devices](https://itunes.apple.com/us/app/chatsecure/id464200063) is called ChatSecure.
 
-For a full explanation of how OTR works and how to set it up, check out the Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/). As an added bonus, the Intercept also explains how to set up OTR to work with Tor so you can keep your chats both anonymous and encrypted.
+For a full explanation of how OTR works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/). As an added bonus, The Intercept also explains how to set up OTR to work with Tor so you can keep your chats both anonymous and encrypted.
 
 As with PGP, which will be discussed in a later section, OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people you chat with. Identity verification is important, and something many OTR users neglect to do. While OTR is more user-friendly than other types of encryption, there are some things you should know about OTR to understand it fully and know what attacks against it are possible.
 
@@ -308,7 +308,7 @@ This property is called forward secrecy, and it is a feature that OTR has which 
 
 ### A Note About Gmail's "off the record" function.
 
-When using Google Talk for instant messaging, there's a setting to "Go off the record," and it's useful to differentiate between this feature and what the Off-The-Record encryption software offers.
+When using Google Talk for instant messaging, there's a setting to "Go off the record," and it's useful to differentiate between this feature and what the Off-the-Record encryption software offers.
 
 ![Google's "Off the record" function may not be secure.](images/gtalk_off_the_record_john.png) ![Google's "Hangout history" function may not be secure.](images/hangouts_history.png)
 
@@ -330,7 +330,7 @@ Fingerprints are unique to devices, not accounts. This means that if I chat with
 
 ![Verifying a contact's OTR fingerprint in Adium.](images/verifying_otr_fingerprints.png)
 
-In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints, with positions swapped. In order to be sure that both parties are seeing the correct fingerprints you both need to find some other secure channel to verify fingerprints. You could meet up in person, or talk on the phone if you can recognize their voice, or send a PGP encrypted and signed email.
+In the screenshot above, you can see the OTR fingerprints for both users in the session. The other person should see the exact same fingerprints, with positions swapped. In order to be sure that both parties are seeing the correct fingerprints you both need to find some other secure channel to verify fingerprints. You could meet up in person, or talk on the phone if you can recognize their voice, or send a PGP-encrypted and signed email.
 
 OTR fingerprints are 40 characters. It's statistically impossible to generate two OTR keys that have the same fingerprint. However, it is possible to generate an OTR key that isn't a collision but looks like one on cursory inspection. For example, the first few characters and last few characters could be the same with different characters in the middle. For this reason, it's important to compare all 40 characters to be sure you have the correct OTR key.
 
@@ -374,7 +374,7 @@ In 1991, cryptographer Phil Zimmermann developed [Pretty Good Privacy](https://e
 
 PGP stands for "Pretty Good Privacy," software you can use to encrypt your email messages. Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
 
-Unfortunately, the process is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk security with Edward Snowden. However, as Snowden says in the documentary _CitizenFour_:
+Unfortunately, the process is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk security with Edward Snowden. However, as Snowden says in the documentary _Citizenfour_:
 
 > You want to get in the process of doing this for everything because it seems hard, but it's not hard... this is super easy.
 
@@ -463,7 +463,7 @@ If you're a journalist trying to get to grips with these privacy tools, it's use
 Here's how to verify someone's GPG key:
 
 - Meet your colleagues face-to-face. Each person should bring their own laptop.
-- Make sure your key is uploaded to a key-server. In the "Key Management" section of Enigmail, right-click and select "Upload Public Keys to Keyserver." It should suggest [pgp.mit.edu](http://pgp.mit.edu) by default, which will work fine.
+- Make sure your key is uploaded to a keyserver. In the "Key Management" section of Enigmail, right-click and select "Upload Public Keys to Keyserver." It should suggest [pgp.mit.edu](http://pgp.mit.edu) by default, which will work fine.
 - Search for your friend's key in the keyserver and download it into Enigmail. Then, verbally verify that the fingerprints are the same. If you know your colleagues, this is enough, but if you're unsure of names, feel free to ask people to bring some form of ID so you can double-check.
 - Once you've verified their key is correct, you should sign it with yours.
 - You can see who else has signed a person's key by clicking on it and choosing "View Signatures" from the "Select action ..." drop-down menu.
@@ -471,9 +471,9 @@ Here's how to verify someone's GPG key:
 
 ### PGP Isn't Just For Email
 
-While PGP is often used for email encryption, nothing stops you from using it to encrypt anything and publish it using any medium. You can post PGP encrypted messages on blogs, social networks, and forums.
+While PGP is often used for email encryption, nothing stops you from using it to encrypt anything and publish it using any medium. You can post PGP-encrypted messages on blogs, social networks, and forums.
 
-For example, Wired journalist Kevin Poulsen [published a PGP encrypted message on Wired's website](http://www.wired.com/threatlevel/2013/06/signed-bda0df3c/) intended for Edward Snowden to read the same week his name was made public. Snowden's alleged public key was [published](http://pgp.mit.edu/pks/lookup?search=edward+snowden) on a keyserver under a Hushmail email address.
+For example, Wired journalist Kevin Poulsen [published a PGP-encrypted message on Wired's website](http://www.wired.com/threatlevel/2013/06/signed-bda0df3c/) intended for Edward Snowden to read the same week his name was made public. Snowden's alleged public key was [published](http://pgp.mit.edu/pks/lookup?search=edward+snowden) on a keyserver under a Hushmail email address.
 
 As long as Wired has a copy of Snowden's real public key, only someone in possession of Snowden's secret key can decrypt this message.
 
@@ -520,7 +520,7 @@ To use PGP effectively, it's good to understand what it does and doesn't do.
 
 For instance, using PGP with email encryption only encrypts the *content* of your emails. It doesn't encrypt the to/from fields, the subject line or the metadata, the sundry details associated with the message. For an email, metadata would include the associated email addresses, the time and date sent and the IP address the email originated from. This means that someone surveilling me can tell that at 2:05pm on Sunday, June 21, `tommy@freedom.press` emailed `trevor@freedom.press` from a certain IP address, but they can't tell what the content of the message was.
 
-Senator Diane Feinstein (D—Calif.) is a staunch defender of the NSA and has long [maintained](http://www.theguardian.com/world/2013/oct/21/dianne-feinstein-defends-nsa-data-collection) that the type of metadata collection the NSA carries out isn't intrusive because it doesn't include the content. However, even the list of people you're in email correspondence with can be very revealing. In May 2013, the Associated Press [reported](http://bigstory.ap.org/article/govt-obtains-wide-ap-phone-records-probe) that the Justice Department had seized email and phone records of the AP newsroom as part of their [investigation](http://www.vanityfair.com/news/2015/03/james-risen-anonymous-source-government-battle) of government leaks. Even if the reporters had been using PGP, this wouldn't have encrypted the email addresses the reporters were in contact with.
+Senator Diane Feinstein (D-Calif.) is a staunch defender of the NSA and has long [maintained](http://www.theguardian.com/world/2013/oct/21/dianne-feinstein-defends-nsa-data-collection) that the type of metadata collection the NSA carries out isn't intrusive because it doesn't include the content. However, even the list of people you're in email correspondence with can be very revealing. In May 2013, the Associated Press [reported](http://bigstory.ap.org/article/govt-obtains-wide-ap-phone-records-probe) that the Justice Department had seized email and phone records of the AP newsroom as part of their [investigation](http://www.vanityfair.com/news/2015/03/james-risen-anonymous-source-government-battle) of government leaks. Even if the reporters had been using PGP, this wouldn't have encrypted the email addresses the reporters were in contact with.
 
 EFF [lists](https://www.eff.org/deeplinks/2013/06/why-metadata-matters) the numerous ways metadata can reveal more about someone than even the content of the calls. This is corroborated by former General Counsel of the National Security Agency Stewart Baker, who [said](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "Metadata absolutely tells you everything about somebody’s life. If you have enough metadata, you don’t really need content." Chillingly, former NSA director Michael Hayden has publicly [asserted](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "We kill people based on metadata." 
 
@@ -534,7 +534,7 @@ The second is using `--hidden-recipient` as a modifier to the `gpg` command when
 
 ### Verifying Checksums
 
-Another use for PGP is to verify correct software. To understand what I mean, consider the question: when you go to download a piece of software (the Tor Browser Bundle, for example), how do you know that what you're downloading is the same as what the developers created? How do you know that you didn't download a fake version? This could happen accidentally or maliciously.
+Another use for PGP is to verify correct software. To understand what I mean, consider the question: when you go to download a piece of software (the Tor Browser, for example), how do you know that what you're downloading is the same as what the developers created? How do you know that you didn't download a fake version? This could happen accidentally or maliciously.
 
 The answer is to check the "checksum" of the software. This is a string of between 32 and 64 characters which are unique to the piece of software you want to download. The string is shown in two places, on your computer and on the servers where you download the software from. Using the GPG tools installed on your computer, you can determine whether the string you see matches the one published on the developer's website. If the strings are the same, we can say with some degree of certainty that the file we downloaded is the same as the one the developer intended us to get.
 
