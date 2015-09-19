@@ -208,7 +208,7 @@ This was a big step, making iMessage more secure than traditional text messaging
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is a shortcoming of closed-source software. Free and open-source software, on the other hand, is developed with open bug trackers, open mailing lists, open governing structures and open source code. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open-source, it has a higher degree of trust in this regard than iMessage.
+As mentioned above, this is one possible shortcoming of closed-source software. Free and open-source software, on the other hand, is developed with open bug trackers, open mailing lists, open governing structures and open source code. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open-source, it has a higher degree of trust from the security community than iMessage.
 
 ## Anonymize Your Location with Tor
 
