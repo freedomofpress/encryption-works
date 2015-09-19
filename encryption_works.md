@@ -65,7 +65,7 @@ This is why free and open source software is more reliable in this regard. Free 
 
 It’s useful here to delineate between different stages of encryption: endpoint security, encryption in transit, and end-to-end encryption. 
 
-When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a keylogger on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
+When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a [keylogger](https://en.wikipedia.org/wiki/Keystroke_logging) on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
 But secure communications rely on more than just endpoint security — your data should also be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Yahoo) can read it once you hit "Send." However, PGP encryption provides end-to-end encryption for email, since the message cannot be read in plaintext until one of the conversation partners decrypts it.
 
@@ -275,7 +275,7 @@ It's hard to have much sympathy for the prankster, but the fact that users can s
 
 As with all privacy-enhancing software, an attacker with physical access to the device can compromise you in any number of ways.
 
-With all this said, using Tor still gives us many advantages. It makes the job of the global adversary much harder, and we leave much less identifying data on the servers we connect to through the Tor network. It makes it much harder to be the victim of a man-in-the-middle attack at our local network or ISP level. Even if some Tor circuits can be defeated by a global adversary, if enough people are getting their traffic routed through the same Tor nodes at the same time, it might be difficult for the adversary to tell which traffic belongs to which circuits.
+With all this said, using Tor still gives us many advantages. It makes the job of the global adversary much harder, and we leave much less identifying data on the servers we connect to through the Tor network. It makes it much harder to be the victim of a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) at our local network or ISP level. Even if some Tor circuits can be defeated by a global adversary, if enough people are getting their traffic routed through the same Tor nodes at the same time, it might be difficult for the adversary to tell which traffic belongs to which circuits.
 
 ## Off-the-Record (OTR) Chat
 
@@ -433,7 +433,7 @@ This serves as a second layer of protection if you use full-disk encryption and 
 
 ### The Web of Trust
 
-PGP works best when a web of trust is created. Strong crypto can't be broken, but can still be circumvented since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted email and I'm an attacker. I could trick you into thinking that my public key was your colleague's. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message on to your colleague, with information purported to be from you.
+PGP works best when a [web of trust](https://en.wikipedia.org/wiki/Web_of_trust) is created. Strong crypto can't be broken, but can still be circumvented since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted email and I'm an attacker. I could trick you into thinking that my public key was your colleague's. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message on to your colleague, with information purported to be from you.
 
 This can be solved, or at least mitigated, if you and your colleague independently verify each other's keys. This way, you verify your colleague's public key independently of when they email you. But this raises another problem — meeting people and verifying their keys is time-consuming.
 
