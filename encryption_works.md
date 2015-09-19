@@ -192,7 +192,7 @@ You can download [Signal](https://itunes.apple.com/us/app/signal-private-messeng
 
 It's important to note that as with most encryption tools, both parties need to be using the app for it to work. Signal uses your device's data connection (or WiFi), and so users don't incur SMS fees.
 
-Signal also makes it possible for you to verify the cryptographic identities of the people you communicate with. This is not possible in iMessage — the key fingerprints are totally hidden from and inaccessible to the end user.
+Signal also makes it possible for you to verify the cryptographic identities of the people you communicate with. This is not possible in iMessage — the key fingerprints are totally hidden from and inaccessible to the end user. A fingerprint is simply a hexadecimal string of numbers of letters that summarizes and uniquely identifies an encryption key — an important concept that we'll be referring back to later.
 
 It's important to remember what these apps can and can't do — while they will encrypt your conversations and log less metadata than traditional text messaging (Open Whisper Systems says they don't keep logs of who called who), you still have to use a valid cellphone number to sign up and, as always, beware of malware on your device.
 
@@ -397,7 +397,7 @@ It's a good idea to publicize your public key, to help people who want to contac
 
 ![Glenn Greenwald's Twitter bio, which includes a link to his PGP public key.](https://raw.githubusercontent.com/tommycollison/encryption-works/issue_76_pgp_intro/images/Greenwald_key_link.png)
 
-This increases the legitimacy of the key. Not only does an attacker have to create a false key for Greenwald, but they have to hack his Twitter account and point the link in his bio to the fake key. That's not likely to happen, especially since —for added security— Glenn's public key is listed on [his profile at his website](https://theintercept.com/staff/glenn-greenwald/). This line of attack leaves several obvious clues, and so it's hard to pull off. Therefore, we can say with some degree of trust that Glenn's public key info is legitimate.
+This increases the legitimacy of the key. Not only does an attacker have to create a false key for Greenwald, but they have to hack his Twitter account and point the link in his bio to the fake key. That's not likely to happen, especially since — for added security — Glenn's public key is listed on [his profile at his website](https://theintercept.com/staff/glenn-greenwald/). This line of attack leaves several obvious clues, and so it's hard to pull off. Therefore, we can say with some degree of trust that Glenn's public key info is legitimate.
 
 ### Software
 
@@ -583,7 +583,7 @@ Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP
 
 Every time you boot Tails you start from a clean state. Anything and everything you do gets erased on shutdown, and the system starts in a clean state. It's designed this way so that if you get infected with malware or create a history trail while using Tails, it's almost certainly gone the next time you boot up.
 
-(While Tails prevents many endpoint attacks, like all security tools, it is not 100% impervious to attacks. Recently, researchers have showed how attackers can implant malware in the BIOS —or the brains— of a computer, which may allow Tails to be [compromised](http://www.wired.com/2015/03/researchers-uncover-way-hack-bios-undermine-secure-operating-systems/). However, it's unclear how widespread this attack is or if it's particularly effective in the wild.)
+(While Tails prevents many endpoint attacks, like all security tools, it is not 100% impervious to attacks. Recently, researchers have showed how attackers can implant malware in the BIOS — or the brains — of a computer, which may allow Tails to be [compromised](http://www.wired.com/2015/03/researchers-uncover-way-hack-bios-undermine-secure-operating-systems/). However, it's unclear how widespread this attack is or if it's particularly effective in the wild.)
 
 It's a good idea to install Tails on a fresh storage device (either a DVD or a USB stick) to ensure everything works as it should. There are two ways of installing Tails:
 
