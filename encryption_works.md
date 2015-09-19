@@ -581,7 +581,7 @@ In some ways, Tails is more difficult to use compared to a regular operating sys
 
 Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP, and OTR encryption on your main operating system is also a good idea. 
 
-Every time you boot Tails you start from a clean state. Anything and everything you do gets erased on shutdown, and the system starts in a clean state. It's designed this way so that if you get infected with malware or create a history trail while using Tails, it's almost certainly gone the next time you boot up.
+Every time you boot Tails you start from a clean state. It's "amnesic" — anything and everything you do gets erased on shutdown, and it doesn't leave a trace on the computer you used it on. It's designed this way so that if you create a trail of activity or get infected with malware while using Tails, it's almost certainly gone the next time you boot up.
 
 (While Tails prevents many endpoint attacks, like all security tools, it is not 100% impervious to attacks. Recently, researchers have showed how attackers can implant malware in the BIOS — or the brains — of a computer, which may allow Tails to be [compromised](http://www.wired.com/2015/03/researchers-uncover-way-hack-bios-undermine-secure-operating-systems/). However, it's unclear how widespread this attack is or if it's particularly effective in the wild.)
 
