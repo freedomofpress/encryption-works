@@ -608,7 +608,7 @@ The Tails [installation guide](https://tails.boum.org/doc/first_steps/persistenc
 > 
 > Glenn Greenwald, journalist and Freedom of the Press Foundation board-member.
 
-Tails is currently the most secure operating system out there, so it's a good tool to have in your journalistic arsenal. The benefits of using it compound if your colleagues are using it too. Here's how to get several people up and running on Tails.
+When it comes to privacy and anonymity, Tails is currently one of the best operating systems out there, so it's a good tool to have in your journalistic arsenal. The benefits of using it compound if your colleagues are using it too. Here's how to get several people up and running on Tails.
 
 1. Download and burn a Tails DVD. Boot to Tails and create Tails USB sticks for each person.		
 2. When everyone has a Tails USB stick, each person should boot to Tails on her own laptop and configure a persistence volume on her USB stick. Since this volume is encrypted, each person should come up with her own secure passphrase that she will need to enter each time she boots to Tails. Everyone should reboot their laptops into Tails again and this time mount the persistent volume.		
