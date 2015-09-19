@@ -371,9 +371,7 @@ In 1991, cryptographer Phil Zimmermann developed [Pretty Good Privacy](https://e
 
 PGP stands for "Pretty Good Privacy," software you can use to encrypt your email messages. Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
 
-Unfortunately, the standard is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk securely with Edward Snowden. However, as Snowden says in the documentary _Citizenfour_:
-
-> You want to get in the process of doing this for everything because it seems hard, but it's not hard... this is super easy.
+Unfortunately, the standard is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk securely with Edward Snowden. However, once you're in the habit of using it regularly, it gets easier.
 
 If you use PGP encryption, you will have to make a few changes to how you use email. For example, if you use PGP on your computer but receive an encrypted email on your phone, you won't be able to decrypt the email and read it until you get back to your computer.
 
