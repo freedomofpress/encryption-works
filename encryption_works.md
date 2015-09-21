@@ -1,7 +1,5 @@
 ### Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
 
-### August 2015
-
 ### Originally written by Micah Lee. Updated version written by Tommy Collison and edited by Harlo Holmes and Garrett Robinson.
 
 *Dedicated to cypherpunks, and to whistleblowers past and future.*
