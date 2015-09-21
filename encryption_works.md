@@ -3,7 +3,7 @@
 
 *Dedicated to cypherpunks, and to whistleblowers past and future.*
 
-A publication of **Freedom of the Press Foundation**. Original version written by Micah Lee and published July 2013. Updated version written by Tommy Collison and published September 2015. Licensed as [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).
+A publication of [Freedom of the Press Foundation](https://freedom.press/). Original version written by Micah Lee and published July 2013. Updated version written by Tommy Collison and published September 2015. Licensed as [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).
 
 If you're interested in contributing to Encryption Works, or have ideas for what this guide should cover, please check out the project on [GitHub](https://github.com/freedomofpress/encryption-works/blob/master/CONTRIBUTING.md).
 
