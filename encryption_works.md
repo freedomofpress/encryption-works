@@ -1,19 +1,28 @@
-# Encryption Works
-## A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
+### Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
+
+### August 2015
+
+### Originally written by Micah Lee. Updated version written by Tommy Collison and edited by Harlo Holmes and Garrett Robinson.
 
 *Dedicated to cypherpunks, and to whistleblowers past and future.*
 
-A publication of [Freedom of the Press Foundation](https://freedom.press/). Original version written by Micah Lee and published July 2013. Updated version written by Tommy Collison and published September 2015. Licensed as [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).
+A publication of **Freedom of the Press Foundation**. Originally published July 2013, updated August 2015.
+
+Encryption Works: A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else is licensed under a Creative Commons Attribution 3.0 Unported License. [https://creativecommons.org/licenses/by/3.0/](https://creativecommons.org/licenses/by/3.0/).
 
 If you're interested in contributing to Encryption Works, or have ideas for what this guide should cover, please check out the project on [GitHub](https://github.com/freedomofpress/encryption-works/blob/master/CONTRIBUTING.md).
 
-> *Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.*
+> Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.
 > 
-> — Edward Snowden, answering questions live on the [Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower)
+> — Edward Snowden, answering questions live on the [Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower).
 
 Edward Snowden’s NSA revelations have caused a sea change in how the world’s citizens perceive their privacy and security online. News reports have shown the US spy agency and its global partners [have vacuumed up the metadata](http://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order) of all Americans’ phone calls en masse, [scanned large portions](http://www.nytimes.com/2015/08/16/us/politics/att-helped-nsa-spy-on-an-array-of-internet-traffic.html) of the world’s emails, [tracked the locations](https://www.washingtonpost.com/world/national-security/nsa-tracking-cellphone-locations-worldwide-snowden-documents-show/2013/12/04/5492873a-5cf2-11e3-bc56-c6ca94801fac_story.html) of hundreds of millions of people at a time, and recorded the phone calls of entire countries. 
 
 Journalists or ordinary citizens who have no prior technical skills may feel helpless when it comes to protecting themselves. But just as technology has enabled government surveillance—not just from the US, but also in Russia, China and beyond—it can also provide a shield to safeguard your communications more comprehensively than at any other time in history. 
+
+As Edward Snowden [famously said](http://www.theguardian.com/world/2013/jun/17/edward-snowden-nsa-files-whistleblower) shortly after he went public with his disclosures in June 2013: 
+
+> Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.
 
 The goal of this guide is to explain—in easy-to-understand language the threats that you may face when communicating online, and many of the steps you can take to mitigate those threats using open-source software, tried-and-true digital security techniques, and encryption. In short, encryption works — this guide explains why, and how.
 
@@ -23,14 +32,15 @@ It’s important to remember that no security tool will 100% protect you against
 
 ## Software You Can Trust
 
-> *Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide.*
+> Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide.
 > 
 > — Eric Hughes, in his 1993 Cypherpunk Manifesto.
 
 One of the most controversial aspects of the Snowden disclosures was the complicity of several software companies, which either handed over data to the NSA or purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies. 
 
 > Microsoft has collaborated closely with US intelligence services to allow users' communications to be intercepted, including helping the National Security Agency to circumvent the company's own encryption, according to top-secret documents obtained by the Guardian. […] In July last year, nine months after Microsoft bought Skype, the NSA boasted that a new capability had tripled the amount of Skype video calls being collected.
-> —[“Microsoft handed the NSA access to encrypted messages.”](http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data) The Guardian. July 11, 2013.
+>
+> [“Microsoft handed the NSA access to encrypted messages.”](http://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data) The Guardian. July 11, 2013.
 
 In addition, Bloomberg reported that Microsoft had given information to the NSA about software bugs before they fixed them:
 
@@ -46,7 +56,7 @@ Some pieces of closed-source software are still better than others. While Micros
 
 > “Finally, I want to be absolutely clear that we have never worked with any government agency from any country to create a backdoor in any of our products or services. We have also never allowed access to our servers. And we never will.”
 >
-> —["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
+> ["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
 
 While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
@@ -68,7 +78,7 @@ Tools such as Facebook Chat promise transit encryption but not end-to-end encryp
 
 > "The sad fact is that when it comes to the internet, everybody is a spy: the government, the service providers watching your packets whiz by, the employer who operates the network you're reading this post on, the lurker on the wifi at Starbucks. The ubiquity of digital communications has made it harder than ever before to engage in truly private conversations."
 >
-> —John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
+> — John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
 
 Threat modeling is risk assessment — looking at your workflow and assessing areas where you could be targeted, and therefore what you need to protect. It involves asking questions about your work and identifying sensitive information and attack vectors. 
 
@@ -597,7 +607,7 @@ The Tails [installation guide](https://tails.boum.org/doc/first_steps/persistenc
 
 > “Tails have been vital to my ability to work securely on the NSA story. The more I've come to learn about communications security, the more central Tails has become to my approach.”
 > 
-> Glenn Greenwald, journalist and Freedom of the Press Foundation board-member.
+> — Glenn Greenwald, journalist and Freedom of the Press Foundation board-member.
 
 When it comes to privacy and anonymity, Tails is currently one of the best operating systems out there, so it's a good tool to have in your journalistic arsenal. The benefits of using it compound if your colleagues are using it too. Here's how to get several people up and running on Tails.
 
