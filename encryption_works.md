@@ -19,7 +19,7 @@ As Edward Snowden [famously said](http://www.theguardian.com/world/2013/jun/17/e
 
 > Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.
 
-The goal of this guide is to explain—in easy-to-understand language the threats that you may face when communicating online, and many of the steps you can take to mitigate those threats using open-source software, tried-and-true digital security techniques, and encryption. In short, encryption works — this guide explains why, and how.
+The goal of this guide is to explain, in easy-to-understand language, the threats that you may face when communicating online, and many of the steps you can take to mitigate those threats using open source software, tried-and-true digital security techniques, and encryption. In short, encryption works — this guide explains why, and how.
 
 It takes a bit of patience, but no matter your skill set, you can learn how to use encryption tools to better protect yourself when emailing, calling, texting, or using your computer even when you are not connected to the internet.
 
@@ -45,7 +45,7 @@ In addition, Bloomberg reported that Microsoft had given information to the NSA 
 
 Not only is this a grossly irresponsible act which places innocent customers at risk of being hacked just so the NSA can spy on their targets, but it also means that the NSA, with enough effort, has been handed the keys to any computer running Windows, MS Office, Skype, or any other piece of Microsoft software, including their SkyDrive cloud storage software. This would obviate any encryption one uses with communications.
 
-How could Skype get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open source or closed-source, depending on whether the underlying code is publicly available for independent observers to review it and make sure that nothing untoward is happening. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
+How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open source or closed-source, depending on whether the underlying code is publicly available for independent observers to review it and make sure that nothing untoward is happening. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
 
 Some pieces of closed-source software are still better than others. While Microsoft has openly collaborated with the US government, Apple took a different tack. Apple CEO Tim Cook recently released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which would allow a government to access user data, and that its iMessage and FaceTime protocols are fully end-to-end encrypted, so even Apple can't decrypt the messages if they wanted (or were forced) to.
 
@@ -55,7 +55,7 @@ Some pieces of closed-source software are still better than others. While Micros
 
 While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
-This is why free and open source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users as Microsoft did.
+This is why free and open source software is more reliable in this regard. Free and open source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users as Microsoft did.
 
 ### Types of Encryption
 
@@ -102,7 +102,7 @@ Jonathan Stray, Tow Center for Digital Journalism Fellow, has [more examples of 
 
 As you can see, threat modeling concerns how you think about a problem as much as what you do to solve it.
 
-A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists — it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
+A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have been targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists — it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
 
 Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. Sometimes, adversaries just use intimidation to get that info out of people.
 
@@ -124,15 +124,15 @@ Traditionally, computer users were encouraged to create and choose a password an
 
 The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
 
-Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" would be a long and memorable passphrase, but it's a common phrase, so it's not a good idea to use since password crackers are often preloaded with lists of common phrases.
+Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" would be a long and memorable passphrase, but it's a common phrase ([in some circles](https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog)), so it's not a good idea to use since password crackers are often preloaded with lists of common phrases.
 
 > Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.
 > 
-> Edward Snowden's first email to Laura Poitras. Source: [WIRED.com](http://www.wired.com/2014/10/snowdens-first-emails-to-poitras/).
+> - Edward Snowden's first email to Laura Poitras. Source: [WIRED.com](http://www.wired.com/2014/10/snowdens-first-emails-to-poitras/).
 
 The XKCD comic's advice, to invent a passphrase consisting of unconnected words such as "correct horse battery staple," is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and words often come in groups — I say brown, you think cow; I say garden, you think shed.
 
-The solution is to use a password manager. This is an application which creates and stores passwords in an encrypted "vault" which is protected by a strong passphrase which you memorize. This reduces the number of passphrases you have to memorize to one. There are a handful of well-known passphrase managers, such as 1Password or LastPass — we recommend using [KeePassX](https://www.keepassx.org), because it's open source. The app generates lengthy strings of characters, such as _0e3@ft5n(xx1gncio,ofigryj0^4vl_, which is hard to remember but quite secure, and can be copied and pasted from the application into your web browser. Not being able to remember your password can add to your security, since it means an attacker needs to have access to something physical (your computer, or your password vault) before they can compromise your account.
+The solution is to use a password manager. This is an application which creates and stores passwords in an encrypted "vault" which is protected by a strong passphrase which you memorize. This reduces the number of passphrases you have to memorize to one. There are a handful of well-known passphrase managers, such as [1Password](https://agilebits.com/onepassword) or [LastPass](https://lastpass.com/) — we recommend using [KeePassX](https://www.keepassx.org), because it's open source. The app generates lengthy strings of characters, such as _0e3@ft5n(xx1gncio,ofigryj0^4vl_, which is hard to remember but quite secure, and can be copied and pasted from the application into your web browser. Not being able to remember your password can add to your security, since it means an attacker needs to have access to something physical (your computer, or your password vault) before they can compromise your account.
 
 For the master passphrase, and for other passphrases you have to memorize or enter regularly, you can use [Diceware](http://world.std.com/~reinhold/diceware.html). This creates a passphrase made up of 6 or more words, such as _cleft cam synod lacy yr wok_. This is more secure than a password like _Tr0ub4dor&3_. Why? Check out what Micah Lee [has to say](https://firstlook.org/theintercept/2015/03/26/passphrases-can-memorize-attackers-cant-guess/) about passphrase entropy (the metric we use to measure password security):
 
@@ -180,7 +180,7 @@ Using the digital security tools described in this document only gives you so mu
 
 Cryptography tools have been available to the public since the early 90s, but the Snowden disclosures kickstarted a renewed interest in widespread consumer cryptography. In response to usability issues with PGP and the ubiquity of smartphones, several new messaging apps providing end-to-end encryption have risen to prominence.
 
-Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is completely open source, and is made by [Open Whisper Systems](https://whispersystems.org).
+Chief among these is [Signal](https://whispersystems.org), a free and open source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is completely open source, and is made by [Open Whisper Systems](https://whispersystems.org).
 
 You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android devices, the functionality for making encrypted calls and sending encrypted texts is split into two apps: [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone). The Android apps are entirely cross-compatible with Signal.
 
@@ -204,13 +204,13 @@ This was a big step, making iMessage more secure than traditional text messaging
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is one possible shortcoming of closed-source software. Free and open-source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open-source, it has a higher degree of trust from the security community than iMessage.
+As mentioned above, this is one possible shortcoming of closed-source software. Free and open source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open source, it has a higher degree of trust from the security community than iMessage.
 
 ## Anonymize Your Location with Tor
 
 While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location, and can allow you to be uniquely identified.
 
-The software is free and open-source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
+The software is free and open source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
 
 ![The Tor Browser](images/tor_fpf.png)
 
@@ -255,7 +255,7 @@ We don't know if the NSA and GCHQ are big enough to fit this definition of "glob
 
 According to leaked NSA slides with titles such as ["Tor Stinks"](http://www.theguardian.com/world/interactive/2013/oct/04/tor-stinks-nsa-presentation-document), Tor is "still the King of high secure, low latency Internet Anonymity" with "no contenders." However, the same slides also indicate that the surveillance agency can de-anonymize "a very small fraction" of Tor users. Also important to note is that these slides are also several years old now, so we don't know what the current status of these powerful organization's capabilities might be.
 
-An attack like this becomes much harder as the number of nodes and the volume of traffic increases — not impossible, but more time-consuming and expensive. Everyone can pitch in and bolster the Tor network by setting up a node; since colleges and universities are often their own ISP with strong infrastructure, students and staff are particularly [encouraged](https://www.eff.org/torchallenge/tor-on-campus.html) to set up a Tor node on campus.
+An attack like this becomes much harder as the number of nodes and the volume of traffic increases — not impossible, but more time-consuming and expensive. Everyone can pitch in and bolster the Tor network by setting up a node; since colleges and universities are often their own ISPs with strong infrastructure, students and staff are particularly [encouraged](https://www.eff.org/torchallenge/tor-on-campus.html) to set up a Tor node on campus.
 
 Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
 
@@ -443,7 +443,7 @@ There are some occasions when you won't want someone to sign your key, since doi
 
 On the other hand, signatures lend trustworthiness — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
 
-(When you create a PGP key, there's no verification process that you the email address associated with the key, so signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.)
+Keep in mind that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.
 
 In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and to decide on a case-by-case basis.
 
