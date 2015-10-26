@@ -337,7 +337,7 @@ That said, it's better to use OTR unverified than it is to have a sensitive conv
 
 OTR will encrypt the content of your chats, but there's another factor to consider when you're chatting with Off-The Record: logs.
 
-Here is an excerpt from the chat logs of a conversation between Chelsea Manning (shown here as bradass87) and Adrian Lamo, who turned her in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
+Here is an excerpt from the chat logs of a conversation between WikiLeaks whistleblower Chelsea Manning (shown here as bradass87) and hacker Adrian Lamo, who turned her in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
 
 > (1:40:51 PM) bradass87 has not been authenticated yet. You should authenticate this buddy.
 
