@@ -208,9 +208,9 @@ As mentioned above, this is one shortcoming of closed-source software. Free and 
 
 ## Anonymize Your Location with Tor
 
-While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location, and can allow you to be uniquely identified.
+While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location and can sometimes allow you to be uniquely identified.
 
-The software is free and open source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
+The software is free and open source and is an adapted version of the Firefox browser.
 
 ![The Tor Browser](images/tor_fpf.png)
 
