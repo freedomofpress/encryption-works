@@ -172,7 +172,7 @@ If you're working on sensitive material, it's also a good idea to keep your lapt
 
 Using the digital security tools described in this document only gives you so much security — good physical security is half the battle. In a 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201), American journalist and WikiLeaks volunteer Jacob Appelbaum said that he destroys his laptop if it's out of his sight for any length of time. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
 
-## Signal and TextSecure
+## Encrypted Calls and Texts
 
 >"Now we have free, easy-to-use tools which you can download on your smartphone, which is sitting in the room with you. For the iPhone, there's a program called Signal, by Open Whisper Systems. It's very good, I know the security model."
 >
@@ -200,11 +200,11 @@ Apple made news when they [announced](https://www.apple.com/apples-commitment-to
 >
 > [What we’re most commonly asked for and how we respond.](http://www.apple.com/privacy/government-information-requests/) Apple.com
 
-This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies are putting out. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints.  Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
+This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies currently offer. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints and confirm the true identity of the other party receiving your message.  Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is one possible shortcoming of closed-source software. Free and open source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open source, it has a higher degree of trust from the security community than iMessage.
+As mentioned above, this is one shortcoming of closed-source software. Free and open source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open source, it has a higher degree of trust from the security community than iMessage.
 
 ## Anonymize Your Location with Tor
 
