@@ -439,11 +439,11 @@ The Intercept's technologist Micah Lee helped Snowden get in contact with Laura 
 
 > My encryption key was posted at both sites, so Snowden was able to find it easily, and the key was digitally signed by people who were well-known in the privacy world (pioneering blogger Cory Doctorow and free software champion Richard Stallman, for instance); this meant those people had digitally vouched, in a way that was incredibly difficult to forge, that the key really belonged to me and not to, say, some NSA trickster. In other words, Snowden didn’t need to worry about the key being a fake. Poitras was a founding board member of the FPF, so he assumed I would have her key, and he was right.
 
-There are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. There are times when you don't always want to reveal that — the source-journalist relationship comes to mind.
+Keep in mind there are some legitimate criticisms and limitations to the web of trust as well. As Tor's Mike Perry [has explained](https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html), there are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. The web of trust leaks this type of data, it also has a single point of failure, and does not scale well for large populations. 
 
-On the other hand, signatures lend trustworthiness — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
+On the other hand, signatures can lend trustworthiness in some situations — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
 
-Keep in mind that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.
+It's important to remember that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.
 
 In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and to decide on a case-by-case basis.
 
