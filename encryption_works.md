@@ -23,7 +23,7 @@ The goal of this guide is to explain, in easy-to-understand language, the threat
 
 It takes a bit of patience, but no matter your skill set, you can learn how to use encryption tools to better protect yourself when emailing, calling, texting, or using your computer even when you are not connected to the internet.
 
-It’s important to remember that no security tool will 100% protect you against all forms of surveillance. Criminals, governments, and corporations have many tools at their disposal and vast budgets to constantly develop new techniques for spying. But by implementing the practices in this guide, your private communications will be far better protected and you will be in a better position to maintain control over your private information—whether you are a journalist, a source, or anyone else. 
+It’s important to remember that no security tool will 100% protect you against all forms of surveillance. Criminals, governments, and corporations have many techniques at their disposal and vast budgets to constantly develop new techniques for spying. But by implementing the practices in this guide, your private communications will be far better protected and you will be in a better position to maintain control over your private information—whether you are a journalist, a source, or anyone else. 
 
 ## Software You Can Trust
 
