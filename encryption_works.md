@@ -23,7 +23,7 @@ The goal of this guide is to explain, in easy-to-understand language, the threat
 
 It takes a bit of patience, but no matter your skill set, you can learn how to use encryption tools to better protect yourself when emailing, calling, texting, or using your computer even when you are not connected to the internet.
 
-It’s important to remember that no security tool will 100% protect you against all forms of surveillance. Criminals, governments, and corporations have many tools at their disposal and vast budgets to constantly develop new techniques for spying. But by implementing the practices in this guide, your private communications will be far better protected and you will be in a better position to maintain control over your private information—whether you are a journalist, a source, or anyone else. 
+It’s important to remember that no security tool will 100% protect you against all forms of surveillance. Criminals, governments, and corporations have many techniques at their disposal and vast budgets to constantly develop new techniques for spying. But by implementing the practices in this guide, your private communications will be far better protected and you will be in a better position to maintain control over your private information—whether you are a journalist, a source, or anyone else. 
 
 ## Software You Can Trust
 
@@ -172,7 +172,7 @@ If you're working on sensitive material, it's also a good idea to keep your lapt
 
 Using the digital security tools described in this document only gives you so much security — good physical security is half the battle. In a 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201), American journalist and WikiLeaks volunteer Jacob Appelbaum said that he destroys his laptop if it's out of his sight for any length of time. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
 
-## Signal and TextSecure
+## Encrypted Calls and Texts
 
 >"Now we have free, easy-to-use tools which you can download on your smartphone, which is sitting in the room with you. For the iPhone, there's a program called Signal, by Open Whisper Systems. It's very good, I know the security model."
 >
@@ -200,17 +200,17 @@ Apple made news when they [announced](https://www.apple.com/apples-commitment-to
 >
 > [What we’re most commonly asked for and how we respond.](http://www.apple.com/privacy/government-information-requests/) Apple.com
 
-This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies are putting out. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints.  Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
+This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies currently offer. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints and confirm the true identity of the other party receiving your message.  Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is one possible shortcoming of closed-source software. Free and open source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open source, it has a higher degree of trust from the security community than iMessage.
+As mentioned above, this is one shortcoming of closed-source software. Free and open source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open source, it has a higher degree of trust from the security community than iMessage.
 
 ## Anonymize Your Location with Tor
 
-While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location, and can allow you to be uniquely identified.
+While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location and can sometimes allow you to be uniquely identified.
 
-The software is free and open source, meaning that it comes with a high degree of trust, and is an adapted version of the Firefox browser.
+The software is free and open source and is an adapted version of the Firefox browser.
 
 ![The Tor Browser](images/tor_fpf.png)
 
@@ -281,7 +281,7 @@ The best way to end-to-end encrypt your instant messages is to use something cal
 
 To use OTR, you'll need to download additional software with your IM client. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use Mac OS X you can download and install [Adium](https://adium.im), a free software chat application that includes OTR support. If you use GNU/Linux you can install the pidgin and pidgin-otr packages.
 
-The OTR client for [https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im](Android) and [iOS devices](https://itunes.apple.com/us/app/chatsecure/id464200063) is called ChatSecure.
+The OTR client for [Android](https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im]) and [iOS devices](https://itunes.apple.com/us/app/chatsecure/id464200063) is called ChatSecure.
 
 For a full explanation of how OTR works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/). As an added bonus, The Intercept also explains how to set up OTR to work with Tor so you can keep your chats both anonymous and encrypted.
 
@@ -307,7 +307,7 @@ When using Google Talk for instant messaging, there's a setting to "Go off the r
 
 Essentially, going off the record in Google Talk (or disabling the "Hangout history" function, if you've updated to Hangouts) does not store the conversation log in either conversation participant's Gmail chat history. This may seem more secure, but it only prevents the conversation participants from viewing the history of their own conversations. There is no guarantee or way of determining whether or not Google retains a copy of your conversation.
 
-By comparison, conversations over Google Talk which use Off-The Record message encryption are only readable to the participants, and Google is never able to read the contents of your conversation. This is far more secure.
+By comparison, conversations over Google Talk which use Off-The Record message encryption are only readable to the participants, and Google is never able to read the contents of your conversation. 
 
 ### Verifying A Contact's OTR Fingerprint
 
@@ -337,7 +337,7 @@ That said, it's better to use OTR unverified than it is to have a sensitive conv
 
 OTR will encrypt the content of your chats, but there's another factor to consider when you're chatting with Off-The Record: logs.
 
-Here is an excerpt from the chat logs of a conversation between Chelsea Manning (shown here as bradass87) and Adrian Lamo, who turned her in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
+Here is an excerpt from the chat logs of a conversation between WikiLeaks whistleblower Chelsea Manning (shown here as bradass87) and hacker Adrian Lamo, who turned her in to authorities. They were [published](http://www.wired.com/threatlevel/2011/07/manning-lamo-logs) by Wired.
 
 > (1:40:51 PM) bradass87 has not been authenticated yet. You should authenticate this buddy.
 
@@ -363,9 +363,9 @@ With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conver
 
 ## "Pretty Good Privacy" (PGP) Email Encryption
 
-In 1991, cryptographer Phil Zimmermann developed [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (PGP), software that he intended for peace activists to use while organizing in the anti-nuclear movement.
+In 1991, cryptographer Phil Zimmermann developed [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (PGP), email encryption software that he intended for peace activists to use while organizing in the anti-nuclear movement.
 
-PGP stands for "Pretty Good Privacy," software you can use to encrypt your email messages. Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
+Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
 
 Unfortunately, the standard is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk securely with Edward Snowden. However, once you're in the habit of using it regularly, it gets easier.
 
@@ -439,11 +439,11 @@ The Intercept's technologist Micah Lee helped Snowden get in contact with Laura 
 
 > My encryption key was posted at both sites, so Snowden was able to find it easily, and the key was digitally signed by people who were well-known in the privacy world (pioneering blogger Cory Doctorow and free software champion Richard Stallman, for instance); this meant those people had digitally vouched, in a way that was incredibly difficult to forge, that the key really belonged to me and not to, say, some NSA trickster. In other words, Snowden didn’t need to worry about the key being a fake. Poitras was a founding board member of the FPF, so he assumed I would have her key, and he was right.
 
-There are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. There are times when you don't always want to reveal that — the source-journalist relationship comes to mind.
+Keep in mind there are some legitimate criticisms and limitations to the web of trust as well. As Tor's Mike Perry [has explained](https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html), there are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. The web of trust leaks this type of data, it also has a single point of failure, and does not scale well for large populations. 
 
-On the other hand, signatures lend trustworthiness — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
+On the other hand, signatures can lend trustworthiness in some situations — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
 
-Keep in mind that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.
+It's important to remember that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.
 
 In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and to decide on a case-by-case basis.
 
@@ -531,7 +531,7 @@ One answer is to check the signature of the software.
 
 This is a file typically ending in .sig or .asc which is distributed along with the piece of software you want to download. Using the GPG tools installed on your computer, you can determine whether the file you downloaded is the same as the one the developers intended for you to receive.
 
-For this example, let's verify the signature of Tails, the operating system used by Greenwald, Poitras and Snowden which I go into detail about in a later chapter.
+For this example, let's verify the signature of Tails, the operating system used by Greenwald and Poitras which I go into detail about in a later chapter.
 
 To verify a signature, you need to import the GPG public key of the Tails developers. To do this, download the Tails signing key from the [Tails website](https://tails.boum.org/download/index.en.html):
 
@@ -573,7 +573,7 @@ Tails was designed to be an entire operating system comprised solely of "softwar
 >
 > "About." [tails.boum.org](https://tails.boum.org/about/index.en.html).
 
-In some ways, Tails is more difficult to use compared to a regular operating system. It's slow, and doesn't have all the software you might need. But some of these shortcomings are by design: such limitations make it a lot harder to mess up their endpoint security. If you're in the position where you think an intelligence agency, or another potential attacker, may want to target you or your colleagues (the journalist-whistleblower relationship comes to mind), it's the best tool available.
+In some ways, Tails is more difficult to use compared to a regular operating system. It's slow, and doesn't have all the software you might need. But some of these shortcomings are by design: such limitations make it a lot harder to mess up your endpoint security. If you're in the position where you think an intelligence agency, or another potential attacker, may want to target you or your colleagues (the journalist-whistleblower relationship comes to mind), it's the best tool available.
 
 Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP, and OTR encryption on your main operating system is also a good idea. 
 
