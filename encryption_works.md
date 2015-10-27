@@ -166,11 +166,7 @@ For journalists who travel internationally, it's important to remember that fede
 
 As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when weighing what should be stored on a computer you're crossing borders with.
 
-### Physical Security
-
 If you're working on sensitive material, it's also a good idea to keep your laptop in your possession and line of sight as much as possible. This prevents an attacker from stealing or gaining access to the machine long enough to install malicious software on it. Devices left in hotel rooms are susceptible to this kind of attack so often that it's referred to as an "evil maid" attack.
-
-Using the digital security tools described in this document only gives you so much security — good physical security is half the battle. In a 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201), American journalist and WikiLeaks volunteer Jacob Appelbaum said that he destroys his laptop if it's out of his sight for any length of time. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
 
 ## Signal and TextSecure
 
