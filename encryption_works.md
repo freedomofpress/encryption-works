@@ -59,15 +59,15 @@ This is why free and open source software is more reliable in this regard. Free 
 
 ### Types of Encryption
 
-It’s useful here to delineate between different stages of encryption: endpoint security, encryption in transit, and end-to-end encryption. 
+It’s useful here to delineate between different types of encryption - encrypt at rest, encryption in transit, and end-to-end encryption - as well as endpoint security. 
 
 When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a [keylogger](https://en.wikipedia.org/wiki/Keystroke_logging) on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
-But secure communications rely on more than just endpoint security — your data should also be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Yahoo) can read it once you hit "Send." However, PGP encryption provides end-to-end encryption for email, since the message cannot be read in plaintext until one of the conversation partners decrypts it.
+But secure communications rely on more than just endpoint security — your data first needs to be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a regular email message, your email provider (such as Gmail or Yahoo) may encrypt it as from your computer to its servers, but once it hits the tech company servers, Google or Yahoo can read it. (Before the Snowden revelations, hardly any email providers even provided this type of security and it allowed the NSA [to siphon off millions of emails](https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html) from the Internet backbone). 
 
-Finally, transit encryption refers to the encryption of data as it travels between two points, such as your computer and the amazon.com server, allowing you to securely buy things while keeping your credit card info hidden from your ISP or other people on the network. Sites that provide transit encryption begin with "HTTPS" rather than "HTTP."
+Tools such as Facebook Chat also promise transit encryption, meaning that the data is encrypted between your computer and Facebook's server, but can be seen by Facebook as it's being delivered to the recipient. This isn't true of end-to-end encryption, meaning that service providers can't look at the content of your communications even if they wanted to. It's not enough to ask whether a service provider _intends_ to circumvent its own encryption; providers rarely do. Instead, we must ask whether a service _can_ circumvent encryption, by nature of its design. If the answer is yes, you cannot trust the security of that service, because secure communication relies on taking advantage of each of these different types of encryption — it's not enough to rely on just one.
 
-Tools such as Facebook Chat promise transit encryption but not end-to-end encryption, meaning that the data is encrypted between your computer and Facebook's server, but can be seen by Facebook as it's being delivered to the recipient. This isn't true of end-to-end encryption, meaning that service providers can't look at the content of your communications even if they wanted to. It's not enough to ask whether a service provider _intends_ to circumvent its own encryption; providers rarely do. Instead, we must ask whether a service _can_ circumvent encryption, by nature of its design. If the answer is yes, you cannot trust the security of that service, because secure communication relies on taking advantage of each of these different types of encryption — it's not enough to rely on just one.
+However, PGP encryption goes a step farther: it provides end-to-end encryption for email, so the message cannot be read in plaintext until one of the conversation partners decrypts it on either end of the conversation. You can read more about how to set up PGP and what it can be used for later in this guide. 
 
 ### Threat Models
 
@@ -75,7 +75,7 @@ Tools such as Facebook Chat promise transit encryption but not end-to-end encryp
 >
 > — John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
 
-Threat modeling is risk assessment — looking at your workflow and assessing areas where you could be targeted, and therefore what you need to protect. It involves asking questions about your work and identifying sensitive information and attack vectors. 
+Before learning about how to use encrpytion tool, you should familiarize yoursefl with threat modeling, or risk assessment. To best understand what tools you need to learn, it's important to look at your workflow and assess areas where you could be targeted, and therefore what you need to protect. Threat modeling involves asking questions about your work and identifying sensitive information and attack vectors. 
 
 Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption. 
 
@@ -102,9 +102,9 @@ Jonathan Stray, Tow Center for Digital Journalism Fellow, has [more examples of 
 
 As you can see, threat modeling concerns how you think about a problem as much as what you do to solve it.
 
-A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have been targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists — it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
+A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have been targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists — it probably isn't how people will come by your data or compromise you. If you're a journalist in the US, you may be much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
 
-Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. Sometimes, adversaries just use intimidation to get that info out of people.
+Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. For example, the CIA director's AOL account was recently "hacked" by a 13-year old who [merely answered some security questions](http://www.nbcnews.com/tech/tech-news/cia-director-my-email-was-hacked-yours-can-be-too-n452271) to trick AOL into giving up the password, rather than performing any technical attack on the password itself. 
 
 !["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
 
