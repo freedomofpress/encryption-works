@@ -573,7 +573,7 @@ Tails was designed to be an entire operating system comprised solely of "softwar
 >
 > "About." [tails.boum.org](https://tails.boum.org/about/index.en.html).
 
-In some ways, Tails is more difficult to use compared to a regular operating system. It's slow, and doesn't have all the software you might need. But some of these shortcomings are by design: such limitations make it a lot harder to mess up their endpoint security. If you're in the position where you think an intelligence agency, or another potential attacker, may want to target you or your colleagues (the journalist-whistleblower relationship comes to mind), it's the best tool available.
+In some ways, Tails is more difficult to use compared to a regular operating system. It's slow, and doesn't have all the software you might need. But some of these shortcomings are by design: such limitations make it a lot harder to mess up your endpoint security. If you're in the position where you think an intelligence agency, or another potential attacker, may want to target you or your colleagues (the journalist-whistleblower relationship comes to mind), it's the best tool available.
 
 Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP, and OTR encryption on your main operating system is also a good idea. 
 
