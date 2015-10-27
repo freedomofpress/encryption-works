@@ -531,7 +531,7 @@ One answer is to check the signature of the software.
 
 This is a file typically ending in .sig or .asc which is distributed along with the piece of software you want to download. Using the GPG tools installed on your computer, you can determine whether the file you downloaded is the same as the one the developers intended for you to receive.
 
-For this example, let's verify the signature of Tails, the operating system used by Greenwald, Poitras and Snowden which I go into detail about in a later chapter.
+For this example, let's verify the signature of Tails, the operating system used by Greenwald and Poitras which I go into detail about in a later chapter.
 
 To verify a signature, you need to import the GPG public key of the Tails developers. To do this, download the Tails signing key from the [Tails website](https://tails.boum.org/download/index.en.html):
 
