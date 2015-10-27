@@ -144,7 +144,7 @@ As well as protecting password vaults, you should also choose good passphrases f
 
 ### Two Factor Authentication (2FA)
 
-Another way to beef up the security of your accounts is to enable two-factor authentication, which alters your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This can be checked in a couple of ways, such as a code sent to you via SMS which you need to enter during the login process. Other means include "one-time password" apps, QR codes or smartcards.
+Another way to beef up the security of your accounts is to enable two-factor authentication, which alters your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This can be done in a couple of ways, such as a code sent to you via SMS which you need to enter during the login process. Other means include "one-time password" apps, QR codes or smartcards.
 
 With 2FA, even if an attacker somehow learns your password, they won’t be able to log in without the second factor associated with the account. After the 2014 celebrity photo hack, Recode [reported](https://recode.net/2014/09/01/apple-says-it-is-actively-investigating-celeb-photo-hack/) that two-factor authentication would probably have prevented the attackers from gaining access to the iCloud accounts.
 
@@ -154,7 +154,7 @@ For information on how to set up two-factor authentication on most websites and 
 
 A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're traveling.
 
-Encrypting your hard-drive doesn't just make it harder for the NSA to access your documents, it makes you more secure generally — if your laptop is stolen, the thief can't rip out the hard-drive and extract sensitive data.
+Encrypting your hard-drive doesn't just make it harder for law enforcement to access your documents, it makes you more secure generally — if your laptop is stolen, the thief can't rip out the hard-drive and extract sensitive data.
 
 Disk encryption is available for Mac OS X, Windows, and Linux, but the steps for enabling it differ for each operating system. For information on how to encrypt your disk, check out Micah Lee's guide to [encrypting your laptop like you mean it](https://firstlook.org/theintercept/2015/04/27/encrypting-laptop-like-mean/) on The Intercept.
 
