@@ -31,7 +31,7 @@ It’s important to remember that no security tool will 100% protect you against
 > 
 > — Eric Hughes, in his 1993 Cypherpunk Manifesto.
 
-One of the most controversial aspects of the Snowden disclosures was the complicity of several software companies, which either handed over data to the NSA or purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies. 
+One of the most alarming aspects of the Snowden disclosures was the complicity of several software companies, who not only handed over data to the NSA, but also purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies that involved circumventing the encryption designed to protect users: 
 
 > Microsoft has collaborated closely with US intelligence services to allow users' communications to be intercepted, including helping the National Security Agency to circumvent the company's own encryption, according to top-secret documents obtained by the Guardian. […] In July last year, nine months after Microsoft bought Skype, the NSA boasted that a new capability had tripled the amount of Skype video calls being collected.
 >
@@ -43,11 +43,11 @@ In addition, Bloomberg reported that Microsoft had given information to the NSA 
 >
 > ["U.S. Agencies Said to Swap Data With Thousands of Firms."](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html) Bloomberg. June 14, 2013.
 
-Not only is this a grossly irresponsible act which places innocent customers at risk of being hacked just so the NSA can spy on their targets, but it also means that the NSA, with enough effort, has been handed the keys to any computer running Windows, MS Office, Skype, or any other piece of Microsoft software, including their SkyDrive cloud storage software. This would obviate any encryption one uses with communications.
+Not only is this a dangerous act which places innocent customers at risk of being hacked just so the NSA can spy on their targets, but it also means that the NSA, with enough effort, has potentially been handed the keys to any computer running Windows, MS Office, Skype, or any other piece of Microsoft software, including their SkyDrive cloud storage software. This would allow the NSA, or any other attacker to circumvent any encryption one uses with communications.
 
-How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open source or closed-source, depending on whether the underlying code is publicly available for independent observers to review it and make sure that nothing untoward is happening. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
+How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open source or closed-source, depending on whether the underlying code is publicly available for independent observers to review and audit it for backdoors or vulnerabilities. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
 
-Some pieces of closed-source software are still better than others. While Microsoft has openly collaborated with the US government, Apple took a different tack. Apple CEO Tim Cook recently released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which would allow a government to access user data, and that its iMessage and FaceTime protocols are fully end-to-end encrypted, so even Apple can't decrypt the messages if they wanted (or were forced) to.
+To be sure, some pieces of closed-source software are still better than others. While Microsoft openly collaborated with the US government pre-Snowden, Apple took a different tack since the Snowden revelations started. Apple CEO Tim Cook recently released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which would allow a government to access user data, and that its iMessage and FaceTime protocols are fully end-to-end encrypted, so even Apple can't decrypt the messages if they wanted (or were forced) to.
 
 > “Finally, I want to be absolutely clear that we have never worked with any government agency from any country to create a backdoor in any of our products or services. We have also never allowed access to our servers. And we never will.”
 >
@@ -55,19 +55,19 @@ Some pieces of closed-source software are still better than others. While Micros
 
 While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
-This is why free and open source software is more reliable in this regard. Free and open source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. It’s much more difficult for such projects to betray their users as Microsoft did.
+This is why free and open source software is more reliable in this regard. Free and open source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. While it's not impossible, free and open source software makes it much more difficult for such projects to betray their users as Microsoft did.
 
 ### Types of Encryption
 
-It’s useful here to delineate between different stages of encryption: endpoint security, encryption in transit, and end-to-end encryption. 
+It’s useful here to delineate between different types of encryption - encrypt at rest, encryption in transit, and end-to-end encryption - as well as endpoint security. 
 
 When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a [keylogger](https://en.wikipedia.org/wiki/Keystroke_logging) on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
-But secure communications rely on more than just endpoint security — your data should also be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a plaintext message, your email provider (such as Gmail or Yahoo) can read it once you hit "Send." However, PGP encryption provides end-to-end encryption for email, since the message cannot be read in plaintext until one of the conversation partners decrypts it.
+But secure communications rely on more than just endpoint security — your data first needs to be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a regular email message, your email provider (such as Gmail or Yahoo) may encrypt it as from your computer to its servers, but once it hits the tech company servers, Google or Yahoo can read it. (Before the Snowden revelations, hardly any email providers even provided this type of security and it allowed the NSA [to siphon off millions of emails](https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html) from the Internet backbone). 
 
-Finally, transit encryption refers to the encryption of data as it travels between two points, such as your computer and the amazon.com server, allowing you to securely buy things while keeping your credit card info hidden from your ISP or other people on the network. Sites that provide transit encryption begin with "HTTPS" rather than "HTTP."
+Tools such as Facebook Chat also promise transit encryption, meaning that the data is encrypted between your computer and Facebook's server, but can be seen by Facebook as it's being delivered to the recipient. This isn't true of end-to-end encryption, meaning that service providers can't look at the content of your communications even if they wanted to. It's not enough to ask whether a service provider _intends_ to circumvent its own encryption; providers rarely do. Instead, we must ask whether a service _can_ circumvent encryption, by nature of its design. If the answer is yes, you cannot trust the security of that service, because secure communication relies on taking advantage of each of these different types of encryption — it's not enough to rely on just one.
 
-Tools such as Facebook Chat promise transit encryption but not end-to-end encryption, meaning that the data is encrypted between your computer and Facebook's server, but can be seen by Facebook as it's being delivered to the recipient. This isn't true of end-to-end encryption, meaning that service providers can't look at the content of your communications even if they wanted to. It's not enough to ask whether a service provider _intends_ to circumvent its own encryption; providers rarely do. Instead, we must ask whether a service _can_ circumvent encryption, by nature of its design. If the answer is yes, you cannot trust the security of that service, because secure communication relies on taking advantage of each of these different types of encryption — it's not enough to rely on just one.
+However, PGP encryption goes a step farther: it provides end-to-end encryption for email, so the message cannot be read in plaintext until one of the conversation partners decrypts it on either end of the conversation. You can read more about how to set up PGP and what it can be used for later in this guide. 
 
 ### Threat Models
 
@@ -75,7 +75,7 @@ Tools such as Facebook Chat promise transit encryption but not end-to-end encryp
 >
 > — John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
 
-Threat modeling is risk assessment — looking at your workflow and assessing areas where you could be targeted, and therefore what you need to protect. It involves asking questions about your work and identifying sensitive information and attack vectors. 
+Before learning about how to use encrpytion tool, you should familiarize yoursefl with threat modeling, or risk assessment. To best understand what tools you need to learn, it's important to look at your workflow and assess areas where you could be targeted, and therefore what you need to protect. Threat modeling involves asking questions about your work and identifying sensitive information and attack vectors. 
 
 Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption. 
 
@@ -102,9 +102,9 @@ Jonathan Stray, Tow Center for Digital Journalism Fellow, has [more examples of 
 
 As you can see, threat modeling concerns how you think about a problem as much as what you do to solve it.
 
-A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have been targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists — it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
+A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have been targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists — it probably isn't how people will come by your data or compromise you. If you're a journalist in the US, you may be much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
 
-Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. Sometimes, adversaries just use intimidation to get that info out of people.
+Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. For example, the CIA director's AOL account was recently "hacked" by a 13-year old who [merely answered some security questions](http://www.nbcnews.com/tech/tech-news/cia-director-my-email-was-hacked-yours-can-be-too-n452271) to trick AOL into giving up the password, rather than performing any technical attack on the password itself. 
 
 !["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
 
@@ -144,7 +144,7 @@ As well as protecting password vaults, you should also choose good passphrases f
 
 ### Two Factor Authentication (2FA)
 
-Another way to beef up the security of your accounts is to enable two-factor authentication, which alters your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This can be checked in a couple of ways, such as a code sent to you via SMS which you need to enter during the login process. Other means include "one-time password" apps, QR codes or smartcards.
+Another way to beef up the security of your accounts is to enable two-factor authentication, which alters your login process and provides you with a second layer of protection against people trying to change or brute-force your password. In addition to asking you for something you know (your password), you also have to provide something you have (physical access to your cellphone). This can be done in a couple of ways, such as a code sent to you via SMS which you need to enter during the login process. Other means include "one-time password" apps, QR codes or smartcards.
 
 With 2FA, even if an attacker somehow learns your password, they won’t be able to log in without the second factor associated with the account. After the 2014 celebrity photo hack, Recode [reported](https://recode.net/2014/09/01/apple-says-it-is-actively-investigating-celeb-photo-hack/) that two-factor authentication would probably have prevented the attackers from gaining access to the iCloud accounts.
 
@@ -154,7 +154,7 @@ For information on how to set up two-factor authentication on most websites and 
 
 A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're traveling.
 
-Encrypting your hard-drive doesn't just make it harder for the NSA to access your documents, it makes you more secure generally — if your laptop is stolen, the thief can't rip out the hard-drive and extract sensitive data.
+Encrypting your hard-drive doesn't just make it harder for law enforcement to access your documents, it makes you more secure generally — if your laptop is stolen, the thief can't rip out the hard-drive and extract sensitive data.
 
 Disk encryption is available for Mac OS X, Windows, and Linux, but the steps for enabling it differ for each operating system. For information on how to encrypt your disk, check out Micah Lee's guide to [encrypting your laptop like you mean it](https://firstlook.org/theintercept/2015/04/27/encrypting-laptop-like-mean/) on The Intercept.
 
@@ -166,11 +166,7 @@ For journalists who travel internationally, it's important to remember that fede
 
 As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when weighing what should be stored on a computer you're crossing borders with.
 
-### Physical Security
-
 If you're working on sensitive material, it's also a good idea to keep your laptop in your possession and line of sight as much as possible. This prevents an attacker from stealing or gaining access to the machine long enough to install malicious software on it. Devices left in hotel rooms are susceptible to this kind of attack so often that it's referred to as an "evil maid" attack.
-
-Using the digital security tools described in this document only gives you so much security — good physical security is half the battle. In a 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201), American journalist and WikiLeaks volunteer Jacob Appelbaum said that he destroys his laptop if it's out of his sight for any length of time. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
 
 ## Encrypted Calls and Texts
 
