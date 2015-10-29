@@ -4,7 +4,7 @@ Hey! Great to have you here. This is where we describe how you can contribute to
 
 ### Discussions
 
-If you'd like to see any specific changes or improvements to this document, feel free to [open an issue](https://github.com/freedomofpress/encryption-works/issues) on this repository. To comment on particular paragraphs or sections, you can reference the line numbers - here is a [handy StackOverflow thread](https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github) that tells you how to do that. Normally, just referring to the section using natural language should be enough, though.
+If you'd like to see any specific changes or improvements to this document, feel free to [open an issue](https://github.com/freedomofpress/encryption-works/issues) on this repository. To comment on particular paragraphs or sections, you can reference the line numbers — here is a [handy StackOverflow thread](https://stackoverflow.com/questions/23821235/how-to-link-to-specific-line-number-on-github) that tells you how to do that. Normally, just referring to the section using natural language should be enough, though.
 
 We use GitHub because it has a process for discussing lines and sections of the code easily, and it is close to the source. If you need help, at all, please open an issue asking for help and we'll be more than happy to see what we can do.
 
