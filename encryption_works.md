@@ -59,7 +59,7 @@ This is why free and open source software is more reliable in this regard. Free 
 
 ### Types of Encryption
 
-It’s useful here to delineate between different types of encryption - encrypt at rest, encryption in transit, and end-to-end encryption - as well as endpoint security. 
+It’s useful here to delineate between different types of encryption — encryption at rest, encryption in transit, and end-to-end encryption — as well as endpoint security. 
 
 When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation — the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a [keylogger](https://en.wikipedia.org/wiki/Keystroke_logging) on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
@@ -128,7 +128,7 @@ Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" w
 
 > Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.
 > 
-> - Edward Snowden's first email to Laura Poitras. Source: [WIRED.com](http://www.wired.com/2014/10/snowdens-first-emails-to-poitras/).
+> — Edward Snowden's first email to Laura Poitras. Source: [WIRED.com](http://www.wired.com/2014/10/snowdens-first-emails-to-poitras/).
 
 The XKCD comic's advice, to invent a passphrase consisting of unconnected words such as "correct horse battery staple," is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and words often come in groups — I say brown, you think cow; I say garden, you think shed.
 
@@ -194,13 +194,13 @@ Apple made news when they [announced](https://www.apple.com/apples-commitment-to
 
 >For example, conversations which take place over iMessage and FaceTime are protected by end-to-end encryption so no one but the sender and receiver can see or read them. Apple cannot decrypt that data.
 >
-> [What we’re most commonly asked for and how we respond.](http://www.apple.com/privacy/government-information-requests/) Apple.com
+> [What we’re most commonly asked for and how we respond.](https://www.apple.com/privacy/government-information-requests/) Apple.com
 
-This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies currently offer. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints and confirm the true identity of the other party receiving your message.  Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
+This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies currently offer. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints and confirm the true identity of the other party receiving your message. Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is one shortcoming of closed-source software. Free and open source software, on the other hand, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Since Signal is open source, it has a higher degree of trust from the security community than iMessage.
+As mentioned above, this is one example of a shortcoming in closed-source software. Free and open source software, by contrast, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Apple has publicly [detailed the security of iOS](https://ssl.apple.com/business/docs/iOS_Security_Guide.pdf#39), which is laudable, but their claims and designs are more difficult to verify — unless you work for Apple and have access to the code. Signal is open source, so it receives a higher degree of trust and credibility from the security community and the cryptographers who have examined its implementation of encryption algorithms. Plus, features are added and bugs are fixed based on feedback from the user base, and anyone with the requisite programming experience can submit contributions to Signal's further development.
 
 ## Anonymize Your Location with Tor
 
@@ -435,7 +435,7 @@ The Intercept's technologist Micah Lee helped Snowden get in contact with Laura 
 
 > My encryption key was posted at both sites, so Snowden was able to find it easily, and the key was digitally signed by people who were well-known in the privacy world (pioneering blogger Cory Doctorow and free software champion Richard Stallman, for instance); this meant those people had digitally vouched, in a way that was incredibly difficult to forge, that the key really belonged to me and not to, say, some NSA trickster. In other words, Snowden didn’t need to worry about the key being a fake. Poitras was a founding board member of the FPF, so he assumed I would have her key, and he was right.
 
-Keep in mind there are some legitimate criticisms and limitations to the web of trust as well. As Tor's Mike Perry [has explained](https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html), there are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. The web of trust leaks this type of data, it also has a single point of failure, and does not scale well for large populations. 
+Keep in mind there are some legitimate criticisms and limitations to the web of trust as well. As Tor's Mike Perry [has explained](https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html), there are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. The web of trust leaks this type of data, it also has some points of failure, and does not scale well to large populations. 
 
 On the other hand, signatures can lend trustworthiness in some situations — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
 
