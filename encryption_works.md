@@ -23,6 +23,8 @@ It’s important to remember that no security tool will 100% protect you against
 
 ## Software You Can Trust
 
+## Software You Can Trust
+
 > Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide.
 > 
 > — Eric Hughes, in his 1993 Cypherpunk Manifesto.
@@ -37,13 +39,19 @@ In addition, Bloomberg reported that Microsoft had given information to the NSA 
 
 > Microsoft Corp. (MSFT), the world's largest software company, provides intelligence agencies with information about bugs in its popular software before it publicly releases a fix, according to two people familiar with the process. That information can be used to protect government computers and to access the computers of terrorists or military foes.
 >
-> ["U.S. Agencies Said to Swap Data With Thousands of Firms."](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html) Bloomberg. June 14, 2013.
 
+> ["U.S. Agencies Said to Swap Data With Thousands of Firms."](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html) Bloomberg. June 14, 2013.
 Not only is this a dangerous act which places innocent customers at risk of being hacked just so the NSA can spy on their targets, but it also means that the NSA, with enough effort, has potentially been handed the keys to any computer running Windows, MS Office, Skype, or any other piece of Microsoft software, including their SkyDrive cloud storage software. This would allow the NSA, or any other attacker to circumvent any encryption one uses with communications.
 
-How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open source or closed-source, depending on whether the underlying code is publicly available for independent observers to review and audit it for backdoors or vulnerabilities. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
+How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open-source or closed-source, depending on whether the underlying code is publicly available for independent observers to review and audit it for backdoors or vulnerabilities. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
 
-To be sure, some pieces of closed-source software are still better than others. While Microsoft openly collaborated with the US government pre-Snowden, Apple took a different tack since the Snowden revelations started. Apple CEO Tim Cook recently released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which would allow a government to access user data, and that its iMessage and FaceTime protocols are fully end-to-end encrypted, so even Apple can't decrypt the messages if they wanted (or were forced) to.
+This is not to say we can't use what we've learned through the Snowden revelations, along with other sources of information, to make an educated guess as to whether certain closed-source programs are trustworthy; it is just that we have no reliable way to verify that we are not mistaken in allocating this trust. While it was revealed Microsoft openly collaborated with the US government, there was not evidence Apple did the same. However, some speculate Apple may have collaborated with the NSA, or at least "thrown source code over the fence" such that the NSA could analyze it and find vulnerabilities. Here is one such speculative statement from security researcher Jacob Appelbaum discussing the NSA iOS exploit codenamed DROPOUTJEEP:
+
+> Do you think that Apple helped them build that? I don't know. I hope Apple will clarify that. I think it's really important that Apple does that. Here's the problem: I don't really believe that Apple didn't help them. I can't prove it--yet--but [the NSA] literally claim that anytime they target an iOS device that it will succeed for implanation. Either they have a huge collection of exploits that work against Apple products, meaning that they are hoarding information about cricitcal systems that American companies produce and sabotaging them, or Apple sabotaged it themselves. Not sure which one it is. I'd like to believe that since Apple didn't join the PRISM program until after Steve Jobs died, that maybe it's just they write shitty software. We know that's true.
+>
+> — Jacob Appelbaum, in his "To Protect and Infect, the Militarization of the Internet" talk at 30c3
+
+Since the revelations, Apple has been more publicly outspoken about its commitment to user privacy. Apple CEO Tim Cook recently released an impassioned open letter in which he affirmed Apple’s commitment to privacy. In it, he claimed that no Apple device has a backdoor which would allow a government to access user data, and that its iMessage and FaceTime protocols are fully end-to-end encrypted, so even Apple can't decrypt the messages if they wanted (or were forced) to.
 
 > “Finally, I want to be absolutely clear that we have never worked with any government agency from any country to create a backdoor in any of our products or services. We have also never allowed access to our servers. And we never will.”
 >
@@ -51,7 +59,7 @@ To be sure, some pieces of closed-source software are still better than others. 
 
 While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
-This is why free and open source software is more reliable in this regard. Free and open source software is developed with open bug trackers, open mailing lists, open governing structures and open source code. While it's not impossible, free and open source software makes it much more difficult for such projects to betray their users as Microsoft did.
+This is why free and open-source software is more reliable in this regard. Free and open-source software is developed with open bug trackers, open mailing lists, open governing structures, and open-source code. While it's not impossible, free and open-source software makes it much more difficult for such projects to betray their users as Microsoft did.
 
 ### Types of Encryption
 
