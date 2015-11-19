@@ -176,9 +176,9 @@ If you're working on sensitive material, it's also a good idea to keep your lapt
 
 Cryptography tools have been available to the public since the early 90s, but the Snowden disclosures kickstarted a renewed interest in widespread consumer cryptography. In response to usability issues with PGP and the ubiquity of smartphones, several new messaging apps providing end-to-end encryption have risen to prominence.
 
-Chief among these is [Signal](https://whispersystems.org), a free and open source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is completely open source, and is made by [Open Whisper Systems](https://whispersystems.org).
+Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is open-source, and is made by [Open Whisper Systems](https://whispersystems.org).
 
-You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android devices, the functionality for making encrypted calls and sending encrypted texts is split into two apps: [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone). The Android apps are entirely cross-compatible with Signal.
+You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on [iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) devices and [Android](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) devices.
 
 ![Signal messages are end-to-end encrypted.](images/signal.png)
 
