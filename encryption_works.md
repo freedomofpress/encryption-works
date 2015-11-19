@@ -200,7 +200,11 @@ Apple made news when they [announced](https://www.apple.com/apples-commitment-to
 >
 > [What we’re most commonly asked for and how we respond.](https://www.apple.com/privacy/government-information-requests/) Apple.com
 
-This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies currently offer. But while both Signal and iMessage offer end-to-end encryption, there's an important distinction that makes Signal more secure: the ability to compare fingerprints and confirm the true identity of the other party receiving your message. Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
+This was a big step, making iMessage more secure than traditional text messaging, and it's better than what most tech companies currently offer. But while both Signal and iMessage offer end-to-end encryption, there are some important distinctions that makes Signal a better choice:
+
+* Signal gives users the ability to compare fingerprints and confirm the true identity of the other party receiving their message. Apple opaquely checks the fingerprints, giving users no way of doing their own checking, or being alerted when they change.
+* Signal is open-source, allowing anyone to audit the code to ensure both that it is trustworthy (i.e., it does what it says it does and nothing else) and that there are no unintentional security flaws.
+* Signal is cross-platform. You can have end-to-end encrypted conversations with your friends using Android phones as well.
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
