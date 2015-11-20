@@ -501,7 +501,7 @@ Washington Post journalist Barton Gellman, who Edward Snowden trusted with infor
 > 
 > "Do I know you?" he wrote.
 > 
-> I sent him a note on another channel to verify my digital "fingerprint," a precaution we had been using for some time. Tired, I sent the wrong one. "That is not at all the right fingerprint," he wrote, preparing to sign off. "You're getting MITM'd." He was talking about a "man in the middle" attack, a standard NSA technique to bypass encryption. I hastily corrected my error.
+> I sent him a note on another channel to verify my digital "fingerprint," a precaution we had been using for some time. Tired, I sent the wrong one. "That is not at all the right fingerprint," he wrote, preparing to sign off. "You're getting MITM'd." He was talking about a man-in-the-middle attack, a standard NSA technique to bypass encryption. I hastily corrected my error.
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used correctly, provides the tools necessary to prevent MITM attacks. But these tools only work if users are vigilant about identity verification and careful in obtaining keys.
 
