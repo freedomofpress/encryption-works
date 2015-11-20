@@ -33,6 +33,6 @@ This work is licensed under [Creative Commons Attribution 3.0 Unported License](
 
 ---
 
-Micah Lee
-[@micahflee](https://twitter.com/micahflee) | micah@pressfreedomfoundation.org
-0x0B1491929806596254700155FD720AD9EBA34B1C
+Freedom of the Press Foundation
+[@freedomofpress](https://twitter.com/freedomofpress) | info@freedom.press
+GPG: 0x734F6E707434ECA6C007E1AE82BD6C9616DABB79
