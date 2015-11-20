@@ -588,8 +588,6 @@ It's a good idea to install Tails on a fresh storage device (either a DVD or a U
 
 Once you get past this tricky install, Tails is currently the gold standard for anonymously using a computer, particularly when coupled with PGP-encrypted email.
 
-**The email application bundled with Tails is called Claws Mail. Currently, there is a [serious vulnerability](https://tails.boum.org/support/known_issues/index.en.html#index21h2) in Claws Mail that can leak the plaintext of your emails to the email server. If you decide to use Claws Mail, we strongly recommend implementing one of the [official workarounds](https://tails.boum.org/security/claws_mail_leaks_plaintext_to_imap/index.en.html#index1h1) until the issue is fixed in Tails.**
-
 ### Persistence: How to save your work between sessions
 
 Journalists rely on their notes, and so the idea of an operating system that saves nothing between sessions may sound sub-optimal. But Tails has the optional feature of persistence — saving files in an encrypted volume which are accessible across separate sessions. This is useful for files you're working on, and encryption keys you use with Tails. (It's generally inadvisable to move keys off a Tails machine — you should keep them compartmentalized and away from your regular computer operating system.)
