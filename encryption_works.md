@@ -126,7 +126,7 @@ Traditionally, computer users were encouraged to create and choose a password an
 
 !["Password Strength." Courtesy of XKCD.](http://imgs.xkcd.com/comics/password_strength.png)
 
-The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
+The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.
 
 Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" would be a long and memorable passphrase, but it's a common phrase ([in some circles](https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog)), so it's not a good idea to use since password crackers are often preloaded with lists of common phrases.
 
@@ -180,9 +180,7 @@ If you're working on sensitive material, it's also a good idea to keep your lapt
 
 Cryptography tools have been available to the public since the early 90s, but the Snowden disclosures kickstarted a renewed interest in widespread consumer cryptography. In response to usability issues with PGP and the ubiquity of smartphones, several new messaging apps providing end-to-end encryption have risen to prominence.
 
-Chief among these is [Signal](https://whispersystems.org), a free and open source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is completely open source, and is made by [Open Whisper Systems](https://whispersystems.org).
-
-You can download [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) on iOS devices; on Android devices, the functionality for making encrypted calls and sending encrypted texts is split into two apps: [TextSecure](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [RedPhone](https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone). The Android apps are entirely cross-compatible with Signal.
+Chief among these is [Signal](https://whispersystems.org), a free and open-source application which employs end-to-end encryption, allowing users to have encrypted calls and text conversations. Signal is compatible with both [iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) and [Android](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) devices.
 
 ![Signal messages are end-to-end encrypted.](images/signal.png)
 
