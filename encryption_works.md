@@ -429,7 +429,7 @@ This serves as a second layer of protection if you use full-disk encryption and 
 
 ### The Web of Trust
 
-PGP works best when a [web of trust](https://en.wikipedia.org/wiki/Web_of_trust) is created. Strong crypto can't be broken, but can still be circumvented since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man in the middle attack." Let's say you're talking to your colleague via encrypted email and I'm an attacker. I could trick you into thinking that my public key was your colleague's. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message on to your colleague, with information purported to be from you.
+PGP works best when a [web of trust](https://en.wikipedia.org/wiki/Web_of_trust) is created. Strong crypto can't be broken, but can still be circumvented since humans are the weakest elements of any security system. People using PGP can fall victim to what's called a "man-in-the-middle attack" (often abbreviated as MitM). Let's say you're talking to your colleague via encrypted email and I'm an attacker. I could trick you into thinking that my public key was your colleague's. You'd encrypt a message with your private key and my public key. I can decrypt it, read and/or tamper with it, and then send the compromised message on to your colleague, with information purported to be from you.
 
 This can be solved, or at least mitigated, if you and your colleague independently verify each other's keys. This way, you verify your colleague's public key independently of when they email you. But this raises another problem — meeting people and verifying their keys is time-consuming.
 
@@ -501,7 +501,7 @@ Washington Post journalist Barton Gellman, who Edward Snowden trusted with infor
 > 
 > "Do I know you?" he wrote.
 > 
-> I sent him a note on another channel to verify my digital "fingerprint," a precaution we had been using for some time. Tired, I sent the wrong one. "That is not at all the right fingerprint," he wrote, preparing to sign off. "You're getting MITM'd." He was talking about a "man in the middle" attack, a standard NSA technique to bypass encryption. I hastily corrected my error.
+> I sent him a note on another channel to verify my digital "fingerprint," a precaution we had been using for some time. Tired, I sent the wrong one. "That is not at all the right fingerprint," he wrote, preparing to sign off. "You're getting MITM'd." He was talking about a man-in-the-middle attack, a standard NSA technique to bypass encryption. I hastily corrected my error.
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used correctly, provides the tools necessary to prevent MITM attacks. But these tools only work if users are vigilant about identity verification and careful in obtaining keys.
 
