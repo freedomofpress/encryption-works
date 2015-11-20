@@ -588,6 +588,8 @@ It's a good idea to install Tails on a fresh storage device (either a DVD or a U
 
 Once you get past this tricky install, Tails is currently the gold standard for anonymously using a computer, particularly when coupled with PGP-encrypted email.
 
+There are two email clients bundled with Tails. Icedove (essentially Thunderbird with a different name and logo for trademark reasons) is now the default client in Tails and should strongly be preferred. Tails used to ship just with Claws Mail, which has a [serious vulnerability](https://tails.boum.org/support/known_issues/index.en.html#index21h2) that can leak the plaintext of your emails to the email server. **For those readers who may have an older persistent Tails volume, we suggest you upgrade to the latest release (which you should always be running anyway), and switch from Claws to Icedove.**
+
 ### Persistence: How to save your work between sessions
 
 Journalists rely on their notes, and so the idea of an operating system that saves nothing between sessions may sound sub-optimal. But Tails has the optional feature of persistence — saving files in an encrypted volume which are accessible across separate sessions. This is useful for files you're working on, and encryption keys you use with Tails. (It's generally inadvisable to move keys off a Tails machine — you should keep them compartmentalized and away from your regular computer operating system.)
