@@ -443,9 +443,7 @@ Keep in mind there are some legitimate criticisms and limitations to the web of 
 
 On the other hand, signatures can lend trustworthiness in some situations — if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
 
-It's important to remember that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. This has happened to several Tor developers and one of the editors of this guide.
-
-In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and to decide on a case-by-case basis.
+It's important to remember that when you create a PGP key, there's no verification process to prove that you are the owner of the email address associated with the key. Signing keys is a way of proving ownership. In general, it's good to be cautious about signing keys. It's worth weighing the pros and cons of signing and to decide on a case-by-case basis.
 
 ### How To Verify Someone's Key in Enigmail and View Signatures
 
