@@ -15,7 +15,7 @@ Edward Snowden’s NSA revelations have caused a sea change in how the world’s
 
 Journalists or ordinary citizens who have no prior technical skills may feel helpless when it comes to protecting themselves. But just as technology has enabled government surveillance—not just from the US, but also in Russia, China and beyond—it can also provide a shield to safeguard your communications more comprehensively than at any other time in history. 
 
-The goal of this guide is to explain, in easy-to-understand language, the threats that you may face when communicating online, and many of the steps you can take to mitigate those threats using open source software, tried-and-true digital security techniques, and encryption. In short, encryption works—this guide explains why, and how.
+The goal of this guide is to explain, in easy-to-understand language, the threats that you may face when communicating online, and many of the steps you can take to mitigate those threats using open-source software, tried-and-true digital security techniques, and encryption. In short, encryption works—this guide explains why, and how.
 
 It takes a bit of patience, but no matter your skill set, you can learn how to use encryption tools to better protect yourself when emailing, calling, texting, or using your computer even when you are not connected to the internet.
 
@@ -206,13 +206,13 @@ This was a big step, making iMessage more secure than traditional text messaging
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is one example of a shortcoming in closed-source software. Free and open source software, by contrast, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Apple has publicly [detailed the security of iOS](https://ssl.apple.com/business/docs/iOS_Security_Guide.pdf#39), which is laudable, but their claims and designs are more difficult to verify—unless you work for Apple and have access to the code. Signal is open source, so it receives a higher degree of trust and credibility from the security community and the cryptographers who have examined its implementation of encryption algorithms. Plus, features are added and bugs are fixed based on feedback from the user base, and anyone with the requisite programming experience can submit contributions to Signal's further development.
+As mentioned above, this is one example of a shortcoming in closed-source software. Free and open-source software, by contrast, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Apple has publicly [detailed the security of iOS](https://ssl.apple.com/business/docs/iOS_Security_Guide.pdf#39), which is laudable, but their claims and designs are more difficult to verify—unless you work for Apple and have access to the code. Signal is open-source, so it receives a higher degree of trust and credibility from the security community and the cryptographers who have examined its implementation of encryption algorithms. Plus, features are added and bugs are fixed based on feedback from the user base, and anyone with the requisite programming experience can submit contributions to Signal's further development.
 
 ## Anonymize Your Location with Tor
 
 While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location and can sometimes allow you to be uniquely identified.
 
-The software is free and open source and is an adapted version of the Firefox browser.
+The software is free and open-source and is an adapted version of the Firefox browser.
 
 ![The Tor Browser](images/tor_fpf.png)
 
@@ -367,7 +367,7 @@ With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conver
 
 In 1991, cryptographer Phil Zimmermann developed [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (PGP), email encryption software that he intended for peace activists to use while organizing in the anti-nuclear movement.
 
-Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open source. The terms PGP and GPG are often used interchangably.
+Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open-source. The terms PGP and GPG are often used interchangably.
 
 Unfortunately, the standard is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk securely with Edward Snowden. However, once you're in the habit of using it regularly, it gets easier.
 
