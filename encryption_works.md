@@ -23,8 +23,6 @@ It’s important to remember that no security tool will 100% protect you against
 
 ## Software You Can Trust
 
-## Software You Can Trust
-
 > Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide.
 > 
 >—Eric Hughes, in his 1993 Cypherpunk Manifesto.
