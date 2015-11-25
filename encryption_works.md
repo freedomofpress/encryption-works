@@ -8,26 +8,26 @@ A publication of [Freedom of the Press Foundation](https://freedom.press/). Orig
 If you're interested in contributing to Encryption Works, or have ideas for what this guide should cover, please check out the project on [GitHub](https://github.com/freedomofpress/encryption-works/blob/master/CONTRIBUTING.md).
 
 > Encryption works. Properly implemented strong crypto systems are one of the few things that you can rely on. Unfortunately, endpoint security is so terrifically weak that NSA can frequently find ways around it.
-> 
+>
 >—Edward Snowden, answering questions live on the [Guardian's website](http://www.guardian.co.uk/world/2013/jun/17/edward-snowden-nsa-files-whistleblower).
 
-Edward Snowden’s NSA revelations have caused a sea change in how the world’s citizens perceive their privacy and security online. News reports have shown the US spy agency and its global partners [have vacuumed up the metadata](http://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order) of all Americans’ phone calls en masse, [scanned large portions](http://www.nytimes.com/2015/08/16/us/politics/att-helped-nsa-spy-on-an-array-of-internet-traffic.html) of the world’s emails, [tracked the locations](https://www.washingtonpost.com/world/national-security/nsa-tracking-cellphone-locations-worldwide-snowden-documents-show/2013/12/04/5492873a-5cf2-11e3-bc56-c6ca94801fac_story.html) of hundreds of millions of people at a time, and recorded the phone calls of entire countries. 
+Edward Snowden’s NSA revelations have caused a sea change in how the world’s citizens perceive their privacy and security online. News reports have shown the US spy agency and its global partners [have vacuumed up the metadata](http://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order) of all Americans’ phone calls en masse, [scanned large portions](http://www.nytimes.com/2015/08/16/us/politics/att-helped-nsa-spy-on-an-array-of-internet-traffic.html) of the world’s emails, [tracked the locations](https://www.washingtonpost.com/world/national-security/nsa-tracking-cellphone-locations-worldwide-snowden-documents-show/2013/12/04/5492873a-5cf2-11e3-bc56-c6ca94801fac_story.html) of hundreds of millions of people at a time, and recorded the phone calls of entire countries.
 
-Journalists or ordinary citizens who have no prior technical skills may feel helpless when it comes to protecting themselves. But just as technology has enabled government surveillance—not just from the US, but also in Russia, China and beyond—it can also provide a shield to safeguard your communications more comprehensively than at any other time in history. 
+Journalists or ordinary citizens who have no prior technical skills may feel helpless when it comes to protecting themselves. But just as technology has enabled government surveillance—not just from the US, but also in Russia, China and beyond—it can also provide a shield to safeguard your communications more comprehensively than at any other time in history.
 
 The goal of this guide is to explain, in easy-to-understand language, the threats that you may face when communicating online, and many of the steps you can take to mitigate those threats using open-source software, tried-and-true digital security techniques, and encryption. In short, encryption works—this guide explains why, and how.
 
 It takes a bit of patience, but no matter your skill set, you can learn how to use encryption tools to better protect yourself when emailing, calling, texting, or using your computer even when you are not connected to the internet.
 
-It’s important to remember that no security tool will 100% protect you against all forms of surveillance. Criminals, governments, and corporations have many techniques at their disposal and vast budgets to constantly develop new techniques for spying. But by implementing the practices in this guide, your private communications will be far better protected and you will be in a better position to maintain control over your private information—whether you are a journalist, a source, or anyone else. 
+It’s important to remember that no security tool will 100% protect you against all forms of surveillance. Criminals, governments, and corporations have many techniques at their disposal and vast budgets to constantly develop new techniques for spying. But by implementing the practices in this guide, your private communications will be far better protected and you will be in a better position to maintain control over your private information—whether you are a journalist, a source, or anyone else.
 
 ## Software You Can Trust
 
 > Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it. We publish our code so that our fellow Cypherpunks may practice and play with it. Our code is free for all to use, worldwide.
-> 
+>
 >—Eric Hughes, in his 1993 Cypherpunk Manifesto.
 
-One of the most alarming aspects of the Snowden disclosures was the complicity of several software companies, who not only handed over data to the NSA, but also purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies that involved circumventing the encryption designed to protect users: 
+One of the most alarming aspects of the Snowden disclosures was the complicity of several software companies, who not only handed over data to the NSA, but also purposely designed their software to allow the NSA access to customer data. Specifically, The Guardian reported on voluntary sharing programs between US companies and US spy agencies that involved circumventing the encryption designed to protect users:
 
 > Microsoft has collaborated closely with US intelligence services to allow users' communications to be intercepted, including helping the National Security Agency to circumvent the company's own encryption, according to top-secret documents obtained by the Guardian. […] In July last year, nine months after Microsoft bought Skype, the NSA boasted that a new capability had tripled the amount of Skype video calls being collected.
 >
@@ -41,11 +41,11 @@ In addition, Bloomberg reported that Microsoft had given information to the NSA 
 > ["U.S. Agencies Said to Swap Data With Thousands of Firms."](http://www.bloomberg.com/news/2013-06-14/u-s-agencies-said-to-swap-data-with-thousands-of-firms.html) Bloomberg. June 14, 2013.
 Not only is this a dangerous act which places innocent customers at risk of being hacked just so the NSA can spy on their targets, but it also means that the NSA, with enough effort, has potentially been handed the keys to any computer running Windows, MS Office, Skype, or any other piece of Microsoft software, including their SkyDrive cloud storage software. This would allow the NSA, or any other attacker to circumvent any encryption one uses with communications.
 
-How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open-source or closed-source, depending on whether the underlying code is publicly available for independent observers to review and audit it for backdoors or vulnerabilities. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state. 
+How could Microsoft get away with this? The problem lies with proprietary, or closed-source software, which includes much of what’s released by Microsoft, Apple, and Google. Software is said to be either open-source or closed-source, depending on whether the underlying code is publicly available for independent observers to review and audit it for backdoors or vulnerabilities. It’s much more difficult to independently verify that secret backdoors don’t exist in closed-source software at the clandestine demands of the surveillance state.
 
 This is not to say we can't use what we've learned through the Snowden revelations, along with other sources of information, to make an educated guess as to whether certain closed-source programs are trustworthy; it is just that we have no reliable way to verify that we are not mistaken in allocating this trust. While it was revealed Microsoft openly collaborated with the US government, there was not evidence Apple did the same. However, some speculate Apple may have collaborated with the NSA, or at least "thrown source code over the fence" such that the NSA could analyze it and find vulnerabilities. Here is one such speculative statement from security researcher Jacob Appelbaum discussing the NSA iOS exploit codenamed DROPOUTJEEP:
 
-> Do you think that Apple helped them build that? I don't know. I hope Apple will clarify that. I think it's really important that Apple does that. Here's the problem: I don't really believe that Apple didn't help them. I can't prove it--yet--but [the NSA] literally claim that anytime they target an iOS device that it will succeed for implanation. Either they have a huge collection of exploits that work against Apple products, meaning that they are hoarding information about cricitcal systems that American companies produce and sabotaging them, or Apple sabotaged it themselves. Not sure which one it is. I'd like to believe that since Apple didn't join the PRISM program until after Steve Jobs died, that maybe it's just they write shitty software. We know that's true.
+> Do you think that Apple helped them build that? I don't know. I hope Apple will clarify that. I think it's really important that Apple does that. Here's the problem: I don't really believe that Apple didn't help them. I can't prove it--yet--but [the NSA] literally claim that anytime they target an iOS device that it will succeed for implantation. Either they have a huge collection of exploits that work against Apple products, meaning that they are hoarding information about critical systems that American companies produce and sabotaging them, or Apple sabotaged it themselves. Not sure which one it is. I'd like to believe that since Apple didn't join the PRISM program until after Steve Jobs died, that maybe it's just they write shitty software. We know that's true.
 >
 >—Jacob Appelbaum, in his "To Protect and Infect, the Militarization of the Internet" talk at 30c3
 
@@ -53,7 +53,7 @@ Since the revelations, Apple has been more publicly outspoken about its commitme
 
 > “Finally, I want to be absolutely clear that we have never worked with any government agency from any country to create a backdoor in any of our products or services. We have also never allowed access to our servers. And we never will.”
 >
-> ["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple. 
+> ["A message from Tim Cook about Apple’s commitment to your privacy."](https://www.apple.com/privacy/) Apple.
 
 While the rhetoric is promising, and there's evidence Apple is [telling](http://www.washingtonpost.com/business/technology/2014/09/25/68c4e08e-4344-11e4-9a15-137aa0153527_story.html) the truth, it's very hard to technically verify this. We’re forced to believe Cook. This is a step in the right direction, but we shouldn’t have to rely on blind trust for our online privacy. Such verification should be built into the software itself.
 
@@ -61,15 +61,15 @@ This is why free and open-source software is more reliable in this regard. Free 
 
 ### Types of Encryption
 
-It’s useful here to delineate between different types of encryption—encryption at rest, encryption in transit, and end-to-end encryption—as well as endpoint security. 
+It’s useful here to delineate between different types of encryption—encryption at rest, encryption in transit, and end-to-end encryption—as well as endpoint security.
 
 When Snowden refers to endpoint security being “terrifically weak,” he's referring to the security of the computers on either end of the conversation—the ones doing the encrypting and decrypting. For example, if you send an encrypted email to a friend and someone has managed to install a [keylogger](https://en.wikipedia.org/wiki/Keystroke_logging) on your computer, your adversary can spy on the entire message as well as the passphrase that’s protecting your encryption keys. In this case, your encryption setup isn’t worth very much.
 
-But secure communications rely on more than just endpoint security—your data first needs to be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a regular email message, your email provider (such as Gmail or Yahoo) may encrypt it as from your computer to its servers, but once it hits the tech company servers, Google or Yahoo can read it. (Before the Snowden revelations, hardly any email providers even provided this type of security and it allowed the NSA [to siphon off millions of emails](https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html) from the Internet backbone). 
+But secure communications rely on more than just endpoint security—your data first needs to be secure in transit, as it passes over the Internet. Take the same example, where you're sending your friend an email. With a regular email message, your email provider (such as Gmail or Yahoo) may encrypt it as from your computer to its servers, but once it hits the tech company servers, Google or Yahoo can read it. (Before the Snowden revelations, hardly any email providers even provided this type of security and it allowed the NSA [to siphon off millions of emails](https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html) from the Internet backbone).
 
 Tools such as Facebook Chat also promise transit encryption, meaning that the data is encrypted between your computer and Facebook's server, but can be seen by Facebook as it's being delivered to the recipient. This isn't true of end-to-end encryption, meaning that service providers can't look at the content of your communications even if they wanted to. It's not enough to ask whether a service provider _intends_ to circumvent its own encryption; providers rarely do. Instead, we must ask whether a service _can_ circumvent encryption, by nature of its design. If the answer is yes, you cannot trust the security of that service, because secure communication relies on taking advantage of each of these different types of encryption—it's not enough to rely on just one.
 
-However, PGP encryption goes a step farther: it provides end-to-end encryption for email, so the message cannot be read in plaintext until one of the conversation partners decrypts it on either end of the conversation. You can read more about how to set up PGP and what it can be used for later in this guide. 
+However, PGP encryption goes a step farther: it provides end-to-end encryption for email, so the message cannot be read in plaintext until one of the conversation partners decrypts it on either end of the conversation. You can read more about how to set up PGP and what it can be used for later in this guide.
 
 ### Threat Models
 
@@ -77,27 +77,27 @@ However, PGP encryption goes a step farther: it provides end-to-end encryption f
 >
 >—John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
 
-Before learning about how to use encrpytion tool, you should familiarize yoursefl with threat modeling, or risk assessment. To best understand what tools you need to learn, it's important to look at your workflow and assess areas where you could be targeted, and therefore what you need to protect. Threat modeling involves asking questions about your work and identifying sensitive information and attack vectors. 
+Before learning about how to use encryption tools, you should familiarize yourself with threat modeling, or risk assessment. To best understand what tools you need to learn, it's important to look at your workflow and assess areas where you could be targeted, and therefore what you need to protect. Threat modeling involves asking questions about your work and identifying sensitive information and attack vectors.
 
-Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption. 
+Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poitras-snowden.html?pagewanted=all&_r=0) Laura Poitras and Glenn Greenwald have to go through to work on the NSA documents might make you think that only national security journalists need to worry about the NSA or encryption.
 
 There are dozens of reasons people should use encryption even if you're not a journalist or a whistleblower—your medical details, credit card info, and personal photos shouldn't be fair game for hackers or governments.
 
 The NSA isn't the only adversary journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
 
-What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them. 
+What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them.
 It starts by asking questions such as:
 
 - What are you protecting?
-- Who/what are you protecting against? 
+- Who/what are you protecting against?
 - What steps can you take to do that?
 
 Take the above example of the newsroom which got scooped. They want to protect their story—they don't want all their research to go unrewarded and some other news outlet to get the credit. They're protecting against disgruntled ex-employees as well as external attackers. To prevent this from happening, the newsroom can take simple steps and implement strict practices where journalists have their access revoked to editorial documents as soon as their employment is terminated.
 
-Jonathan Stray, Tow Center for Digital Journalism Fellow, has [more examples of threats](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/#threat-modeling) that have nothing to do with the NSA: 
+Jonathan Stray, Tow Center for Digital Journalism Fellow, has [more examples of threats](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/#threat-modeling) that have nothing to do with the NSA:
 
 >*Police Misconduct.* You are reporting a story about local police misconduct. You have talked to sources including police officers and victims. You would prefer that the police commissioner not know of your story before it is ready to be published, to avoid any possible interference.
-> 
+>
 >*Insider Trading Whistleblower.* You are reporting on insider trading at a large bank and talking secretly to a whistleblower who may give you documents. If they are identified before the story comes out, at the very least you will lose your source. The source might lose their job or face legal trouble.
 >
 >*Syria War Photographer.* You are a photojournalist in Syria with digital images you want to get out of the country. Some of the images may identify people working with the rebels who could be targeted by the government. A security failure could mean someone loses their life.
@@ -106,11 +106,11 @@ As you can see, threat modeling concerns how you think about a problem as much a
 
 A 2013 study [showed](http://www.reuters.com/article/2014/03/28/us-media-cybercrime-idUSBREA2R0EU20140328) 21 out of the top 25 media organizations have been targeted by a nation state. However, state-sponsored hacking may not be the biggest danger facing local journalists—it probably isn't how people will come by your data or compromise you. If you're a journalist in the US, you may be much more at risk of your story being scooped, or of falling victim to a subpoena from an overzealous prosecutor who will secretly get access to all of your email.
 
-Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. For example, the CIA director's AOL account was recently "hacked" by a 13-year old who [merely answered some security questions](http://www.nbcnews.com/tech/tech-news/cia-director-my-email-was-hacked-yours-can-be-too-n452271) to trick AOL into giving up the password, rather than performing any technical attack on the password itself. 
+Journalists' email accounts are often the target of attacks, but it's more common for hackers to use social engineering to trick Gmail (or you) into resetting the password rather than hacking Google itself. For example, the CIA director's AOL account was recently "hacked" by a 13-year old who [merely answered some security questions](http://www.nbcnews.com/tech/tech-news/cia-director-my-email-was-hacked-yours-can-be-too-n452271) to trick AOL into giving up the password, rather than performing any technical attack on the password itself.
 
 !["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
 
-Let's look at Stray's example of a journalist reporting on local police misconduct: this is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story. 
+Let's look at Stray's example of a journalist reporting on local police misconduct: this is a story which will have sensitive documents to store, and sources to protect. These are the assets we're trying to protect, so that the corrupt officials in question aren't tipped off in advance about the story.
 
 The adversary in this case isn't as sophisticated as the NSA, but local authorities can still subpoena emails or phone call records to see who you've been talking to.
 
@@ -120,7 +120,7 @@ With threat modeling in mind, there are several easy steps you can take to impro
 
 The first meaningful action you can take towards ensuring your digital security is to protect your computer and online accounts with a strong password. This is the first—and most important—line of defense between you and anyone with physical access to your computer who wants to impersonate you or steal your data.
 
-Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as _Tr0ub4dor&3,_ to reference a popular [XKCD comic](https://xkcd.com/936/). 
+Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as _Tr0ub4dor&3,_ to reference a popular [XKCD comic](https://xkcd.com/936/).
 
 !["Password Strength." Courtesy of XKCD.](http://imgs.xkcd.com/comics/password_strength.png)
 
@@ -129,17 +129,17 @@ The problem with this password is that it's hard to remember and it's not especi
 Passphrases are longer than passwords. "The quick fox jumps over the lazy dog" would be a long and memorable passphrase, but it's a common phrase ([in some circles](https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog)), so it's not a good idea to use since password crackers are often preloaded with lists of common phrases.
 
 > Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.
-> 
+>
 >—Edward Snowden's first email to Laura Poitras. Source: [WIRED.com](http://www.wired.com/2014/10/snowdens-first-emails-to-poitras/).
 
-The XKCD comic's advice, to invent a passphrase consisting of unconnected words such as "correct horse battery staple," is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected and to choose words at random. Humans are bad at randomness, and words often come in groups—I say brown, you think cow; I say garden, you think shed. Further, when asked to choose a word at random, humans exceedingly pick from only a small fraction of the English language—even words like spatzle, laconic, and imbroglio may be more commonly than you think.
+The XKCD comic's advice, to invent a passphrase consisting of unconnected words such as "correct horse battery staple," is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected and to choose words at random. Humans are bad at randomness, and words often come in groups—I say brown, you think cow; I say garden, you think shed. Further, when asked to choose a word at random, humans exceedingly pick from only a small fraction of the English language—even words like spaetzle, laconic, and imbroglio may be more commonly than you think.
 
 The solution is to use a password manager. This is an application which creates and stores passwords in an encrypted "vault" which is protected by a strong passphrase which you memorize. This reduces the number of passphrases you have to memorize to one. There are a handful of well-known passphrase managers, such as [1Password](https://agilebits.com/onepassword) or [LastPass](https://lastpass.com/). We recommend using [KeePassX](https://www.keepassx.org) because it's open-source and a separate application (as opposed to a browser extension). The app generates lengthy strings of characters, such as _0e3@ft5n(xx1gncio,ofigryj0^4vl_, which is hard to remember but quite secure, and can be copied and pasted from the application into your web browser. For mobile use, there is [miniKeePass](https://itunes.apple.com/us/app/minikeepass-secure-password/id451661808)(iOS) and [KeePassDroid](https://play.google.com/store/apps/details?id=com.android.keepass&hl=en)(Android). Unfortunately, there is no simple way to synchronize databases as none of these KeePass-based applications are networked.
 
 For the master passphrase, and for other passphrases you have to memorize or enter regularly, you can use [Diceware](http://world.std.com/~reinhold/diceware.html). This creates a passphrase made up of 6 or more words, such as _cleft cam synod lacy yr wok_. This is more secure than a password like _Tr0ub4dor&3_. Why? Check out what Micah Lee [has to say](https://firstlook.org/theintercept/2015/03/26/passphrases-can-memorize-attackers-cant-guess/) about passphrase entropy (the metric we use to measure password security):
 
 > At one trillion guesses per second—per Edward Snowden’s January 2013 warning—it would take an average of 27 million years to guess [a Diceware] passphrase.
-> 
+>
 > Not too bad for a passphrase like “bolt vat frisky fob land hazy rigid,” which is entirely possible for most people to memorize. Compare that to “d07;oj7MgLz’%v,” a random password that contains slightly less entropy than the seven-word Diceware passphrase but is significantly more difficult to memorize.
 
 As well as protecting password vaults, you should also choose good passphrases for your PGP secret key and disk encryption.
@@ -160,10 +160,10 @@ Encrypting your hard-drive doesn't just make it harder for law enforcement to ac
 
 Disk encryption is available for Mac OS X, Windows, and Linux, but the steps for enabling it differ for each operating system. For information on how to encrypt your disk, check out Micah Lee's guide to [encrypting your laptop like you mean it](https://firstlook.org/theintercept/2015/04/27/encrypting-laptop-like-mean/) on The Intercept.
 
-For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/deeplinks/2010/11/effs-guide-protecting-devices-data-border) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border (the Ninth Circuit being the only [exception](https://scholar.google.com/scholar_case?case=13727924395632289367)). Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's also important to note that it is not entirely clear what geographic region legally constitutes the US border; area up to 100 miles from a border line may be included (see this [ACLU factsheet](https://www.aclu.org/aclu-factsheet-customs-and-border-protections-100-mile-zone) for further analysis). It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
+For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/deeplinks/2010/11/effs-guide-protecting-devices-data-border) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border (the Ninth Circuit being the only [exception](https://scholar.google.com/scholar_case?case=13727924395632289367)). Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's also important to note that it is not entirely clear what geographic region legally constitutes the US border; area up to 100 miles from a border line may be included (see this [ACLU factsheet](https://www.aclu.org/aclu-factsheet-customs-and-border-protections-100-mile-zone) for further analysis). It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling.
 
-- Have a separate computer for work travel, which does not contain sensitive material. 
-- Sign out of email accounts and power off laptops before approaching the border. 
+- Have a separate computer for work travel, which does not contain sensitive material.
+- Sign out of email accounts and power off laptops before approaching the border.
 - As always, make regular backups, so the loss of a computer is not catastrophic.
 
 As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when weighing what should be stored on a computer you're crossing borders with.
@@ -307,7 +307,7 @@ When using Google Talk for instant messaging, there's a setting to "Go off the r
 
 Essentially, going off the record in Google Talk (or disabling the "Hangout history" function, if you've updated to Hangouts) does not store the conversation log in either conversation participant's Gmail chat history. This may seem more secure, but it only prevents the conversation participants from viewing the history of their own conversations. There is no guarantee or way of determining whether or not Google retains a copy of your conversation.
 
-By comparison, conversations over Google Talk which use Off-The Record message encryption are only readable to the participants, and Google is never able to read the contents of your conversation. 
+By comparison, conversations over Google Talk which use Off-The Record message encryption are only readable to the participants, and Google is never able to read the contents of your conversation.
 
 ### Verifying A Contact's OTR Fingerprint
 
@@ -365,13 +365,13 @@ With the release of OTR 4.0 in September 2012, Pidgin stopped logging OTR conver
 
 In 1991, cryptographer Phil Zimmermann developed [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) (PGP), email encryption software that he intended for peace activists to use while organizing in the anti-nuclear movement.
 
-Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open-source. The terms PGP and GPG are often used interchangably.
+Today, PGP is a company that sells proprietary encryption software. [OpenPGP](http://openpgp.org/) is the open protocol that defines how PGP encryption works, and [GnuPG](http://www.gnupg.org/) (GPG for short) is free software, and is totally compatible with the proprietary version. GPG is much more popular than PGP today because it's free for everyone to download, and cypherpunks trust it more because it's open-source. The terms PGP and GPG are often used interchangeably.
 
 Unfortunately, the standard is notoriously hard to use, as evidenced by Glenn Greenwald initially being [unable](http://www.huffingtonpost.com/2013/06/10/edward-snowden-glenn-greenwald_n_3416978.html?1370895818) to set it up and talk securely with Edward Snowden. However, once you're in the habit of using it regularly, it gets easier.
 
 If you use PGP encryption, you will have to make a few changes to how you use email. For example, if you use PGP on your computer but receive an encrypted email on your phone, you won't be able to decrypt the email and read it until you get back to your computer.
 
-PGP is used in two ways with email: 
+PGP is used in two ways with email:
 
 1. A sender can encrypt the content of email messages so that only the sender and receiver can read them.
 
@@ -399,7 +399,7 @@ This increases the legitimacy of the key. Not only does an attacker have to crea
 
 To install GPG, Windows users can install [Gpg4win](http://www.gpg4win.org) and Mac OS X users can download [GPGTools](https://gpgtools.org). If you run GNU/Linux you should already have GPG installed (since GPG is a command line program) but software exists that interfaces with email clients and makes it much easier to use.
 
-To use GPG securely, you have to download and use a desktop mail client rather than log into your email through a browser. We recommend using [Thunderbird](https://www.mozilla.org/en-US/thunderbird) as your desktop email client with the [Enigmail](https://www.enigmail.net/home/index.php) add-on for GPG. 
+To use GPG securely, you have to download and use a desktop mail client rather than log into your email through a browser. We recommend using [Thunderbird](https://www.mozilla.org/en-US/thunderbird) as your desktop email client with the [Enigmail](https://www.enigmail.net/home/index.php) add-on for GPG.
 
 While some third parties have developed end-to-end encryption plugins that you can use with browser mail, we currently don't recommend them because they're comparatively less secure than desktop client-based GPG and don't have all the features.
 
@@ -411,7 +411,7 @@ Once you've installed Enigmail, you'll notice some new settings when you go to c
 
 When sent, only the private key for `sva1bard@risup.net` will be able to decrypt this email (since it's encrypted with the corresponding public key).
 
-If you try and access an encrypted email in a web browser, it's unreadable because the private key is missing. 
+If you try and access an encrypted email in a web browser, it's unreadable because the private key is missing.
 
 ![Web browsers can't read PGP-encrypted email.](images/pgp_gibberish_in_browser.png)
 
@@ -439,7 +439,7 @@ The Intercept's technologist Micah Lee helped Snowden get in contact with Laura 
 
 > My encryption key was posted at both sites, so Snowden was able to find it easily, and the key was digitally signed by people who were well-known in the privacy world (pioneering blogger Cory Doctorow and free software champion Richard Stallman, for instance); this meant those people had digitally vouched, in a way that was incredibly difficult to forge, that the key really belonged to me and not to, say, some NSA trickster. In other words, Snowden didn’t need to worry about the key being a fake. Poitras was a founding board member of the FPF, so he assumed I would have her key, and he was right.
 
-Keep in mind there are some legitimate criticisms and limitations to the web of trust as well. As Tor's Mike Perry [has explained](https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html), there are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. The web of trust leaks this type of data, it also has some points of failure, and does not scale well to large populations. 
+Keep in mind there are some legitimate criticisms and limitations to the web of trust as well. As Tor's Mike Perry [has explained](https://lists.torproject.org/pipermail/tor-talk/2013-September/030235.html), there are some occasions when you won't want someone to sign your key, since doing so implies a relationship between the two keys and, by extension, the two people. The web of trust leaks this type of data, it also has some points of failure, and does not scale well to large populations.
 
 On the other hand, signatures can lend trustworthiness in some situations—if I were a whistleblower looking for Glenn Greenwald's correct key, I'd trust the one signed by his colleagues more than any others.
 
@@ -496,9 +496,9 @@ If you don't verify identities you have no way of knowing whether or not you are
 Washington Post journalist Barton Gellman, who Edward Snowden trusted with information about the NSA's PRISM program, [wrote about his experience using PGP](http://www.washingtonpost.com/world/national-security/code-name-verax-snowden-in-exchanges-with-post-reporter-made-clear-he-knew-risks/2013/06/09/c9a25b54-d14c-11e2-9f1a-1a7cdee20287_story.html).
 
 > On Thursday, before The Post published its first story, I made contact on a new channel. He was not expecting me there and responded in alarm.
-> 
+>
 > "Do I know you?" he wrote.
-> 
+>
 > I sent him a note on another channel to verify my digital "fingerprint," a precaution we had been using for some time. Tired, I sent the wrong one. "That is not at all the right fingerprint," he wrote, preparing to sign off. "You're getting MITM'd." He was talking about a man-in-the-middle attack, a standard NSA technique to bypass encryption. I hastily corrected my error.
 
 Snowden was right to be cautious and to insist that he check Gellman's new PGP fingerprint. PGP, if used correctly, provides the tools necessary to prevent MITM attacks. But these tools only work if users are vigilant about identity verification and careful in obtaining keys.
@@ -511,7 +511,7 @@ For instance, using PGP with email encryption only encrypts the *content* of you
 
 Senator Diane Feinstein (D-Calif.) is a staunch defender of the NSA and has long [maintained](http://www.theguardian.com/world/2013/oct/21/dianne-feinstein-defends-nsa-data-collection) that the type of metadata collection the NSA carries out isn't intrusive because it doesn't include the content. However, even the list of people you're in email correspondence with can be very revealing. In May 2013, the Associated Press [reported](http://bigstory.ap.org/article/govt-obtains-wide-ap-phone-records-probe) that the Justice Department had seized email and phone records of the AP newsroom as part of their [investigation](http://www.vanityfair.com/news/2015/03/james-risen-anonymous-source-government-battle) of government leaks. Even if the reporters had been using PGP, this wouldn't have encrypted the email addresses the reporters were in contact with.
 
-EFF [lists](https://www.eff.org/deeplinks/2013/06/why-metadata-matters) the numerous ways metadata can reveal more about someone than even the content of the calls. This is corroborated by former General Counsel of the National Security Agency Stewart Baker, who [said](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "Metadata absolutely tells you everything about somebody’s life. If you have enough metadata, you don’t really need content." Chillingly, former NSA director Michael Hayden has publicly [asserted](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "We kill people based on metadata." 
+EFF [lists](https://www.eff.org/deeplinks/2013/06/why-metadata-matters) the numerous ways metadata can reveal more about someone than even the content of the calls. This is corroborated by former General Counsel of the National Security Agency Stewart Baker, who [said](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "Metadata absolutely tells you everything about somebody’s life. If you have enough metadata, you don’t really need content." Chillingly, former NSA director Michael Hayden has publicly [asserted](http://www.rt.com/usa/158460-cia-director-metadata-kill-people/) that "We kill people based on metadata."
 
 Many PGP users mitigate this metadata leakage by using purposefully unspecific email subject lines, such as "Summer 2015" or "cat pics," or leaving the field blank.
 
@@ -543,7 +543,7 @@ From here, follow the advice on the [Tails installation page](https://tails.boum
 
 ![Verifying signature of the Tails download.](images/tails_verification.png)
 
-Here, we can see my command line reads "Good signature," which means the software I downloaded was what the developers intended me to get. (In this example, I haven't verified the Tails signing key, which you should—check out the Tails [website](https://tails.boum.org/doc/get/trusting_tails_signing_key/index.en.html) to learn how to do this.) 
+Here, we can see my command line reads "Good signature," which means the software I downloaded was what the developers intended me to get. (In this example, I haven't verified the Tails signing key, which you should—check out the Tails [website](https://tails.boum.org/doc/get/trusting_tails_signing_key/index.en.html) to learn how to do this.)
 
 In general, software websites should provide the signature for you to check, but not all do. Both [Tor](https://www.torproject.org/docs/verifying-signatures.html.en) and [Tails](https://tails.boum.org/download/index.en.html) give information on how to verify a signature.
 
@@ -551,7 +551,7 @@ An easier method of verification involves checksums. This is a string or "hash" 
 
 ## Tails: The Amnesic Incognito Live System
 
->"[Tails] has been an essential tool for reporting the NSA story. It is an all-in-one secure digital communication system (GPG email, OTR chat, Tor web browser, encrypted storage) that is small enough to swallow." 
+>"[Tails] has been an essential tool for reporting the NSA story. It is an all-in-one secure digital communication system (GPG email, OTR chat, Tor web browser, encrypted storage) that is small enough to swallow."
 >
 >— Laura Poitras, Oscar-winning documentary filmmaker and board member with Freedom of the Press Foundation.
 
@@ -573,7 +573,7 @@ Tails was designed to be an entire operating system comprised solely of "softwar
 
 In some ways, Tails is more difficult to use compared to a regular operating system. It's slow, and doesn't have all the software you might need. But some of these shortcomings are by design: such limitations make it a lot harder to mess up your endpoint security. If you're in the position where you think an intelligence agency, or another potential attacker, may want to target you or your colleagues (the journalist-whistleblower relationship comes to mind), it's the best tool available.
 
-Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP, and OTR encryption on your main operating system is also a good idea. 
+Since Tails isn't a practical choice for daily computer use, setting up Tor, PGP, and OTR encryption on your main operating system is also a good idea.
 
 Every time you boot Tails you start from a clean state. It's "amnesic"—anything and everything you do gets erased on shutdown, and it doesn't leave a trace on the computer you used it on. It's designed this way so that if you create a trail of activity or get infected with malware while using Tails, it's almost certainly gone the next time you boot up.
 
@@ -596,26 +596,26 @@ If you're going to be using the persistence feature, you have to install Tails o
 
 The Tails [installation guide](https://tails.boum.org/doc/first_steps/persistence/configure/index.en.html) has instructions on configuring persistence.
 
-### Setting Up Secure Computers 
+### Setting Up Secure Computers
 
 > “Tails have been vital to my ability to work securely on the NSA story. The more I've come to learn about communications security, the more central Tails has become to my approach.”
-> 
+>
 >—Glenn Greenwald, journalist and Freedom of the Press Foundation board-member.
 
 When it comes to privacy and anonymity, Tails is currently one of the best operating systems out there, so it's a good tool to have in your journalistic arsenal. The benefits of using it compound if your colleagues are using it too. Here's how to get several people up and running on Tails.
 
-1. Download and burn a Tails DVD. Boot to Tails and create Tails USB sticks for each person.		
-2. When everyone has a Tails USB stick, each person should boot to Tails on her own laptop and configure a persistence volume on her USB stick. Since this volume is encrypted, each person should come up with her own secure passphrase that she will need to enter each time she boots to Tails. Everyone should reboot their laptops into Tails again and this time mount the persistent volume.		
-3.  Each person should create a new pseudonymous Jabber account. (Refer back to [The Intercept](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/) for a how-to.) Since Tails makes all Internet traffic go over Tor, this is effectively making an anonymous Jabber account.		
-4. Each person should open Pidgin and configure it to use their new Jabber account and create a new OTR key. Everyone should add one another to their buddy lists and start OTR sessions with eachother. Since everyone is in the same room, this is the perfect time to compare fingerprints and verify the identity of all parties so that you'll able to communicate securely over the Internet in the future.		
-5. Each person should create a new pseudonymous email address as well. Some email providers, such as Gmail, make it very difficult to create new accounts while using Tor and staying anonymous, so find another email provider to use instead. Make sure the email provider supports IMAP (so you can use a desktop email client) over SSL/TLS (so your email client uses encryption when communicating with the email server). If everyone chooses the same email provider, sending emails between accounts should never leave that email server, which reduces the metadata about your email usage available to anyone conducting dragnet surveillance of the Internet.		
-6. Each person should generate a new PGP key for their email address. Like with disk encryption, it's important to choose a strong passphrase when generating a PGP key.		
+1. Download and burn a Tails DVD. Boot to Tails and create Tails USB sticks for each person.
+2. When everyone has a Tails USB stick, each person should boot to Tails on her own laptop and configure a persistence volume on her USB stick. Since this volume is encrypted, each person should come up with her own secure passphrase that she will need to enter each time she boots to Tails. Everyone should reboot their laptops into Tails again and this time mount the persistent volume.
+3.  Each person should create a new pseudonymous Jabber account. (Refer back to [The Intercept](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/) for a how-to.) Since Tails makes all Internet traffic go over Tor, this is effectively making an anonymous Jabber account.
+4. Each person should open Pidgin and configure it to use their new Jabber account and create a new OTR key. Everyone should add one another to their buddy lists and start OTR sessions with each other. Since everyone is in the same room, this is the perfect time to compare fingerprints and verify the identity of all parties so that you'll able to communicate securely over the Internet in the future.
+5. Each person should create a new pseudonymous email address as well. Some email providers, such as Gmail, make it very difficult to create new accounts while using Tor and staying anonymous, so find another email provider to use instead. Make sure the email provider supports IMAP (so you can use a desktop email client) over SSL/TLS (so your email client uses encryption when communicating with the email server). If everyone chooses the same email provider, sending emails between accounts should never leave that email server, which reduces the metadata about your email usage available to anyone conducting dragnet surveillance of the Internet.
+6. Each person should generate a new PGP key for their email address. Like with disk encryption, it's important to choose a strong passphrase when generating a PGP key.
 
 ### Potential Pitfalls
 
 If a malicious attacker manages to modify or compromise your Tails USB stick, the security of the operating system can be compromised. For this reason, you should keep your install on you at all times and, if you suspect it's been compromised, create a new installation on a fresh device.
 
-There are two ways of mitigating such a problem, making it less likely your Tails installation will be compromised in some way: 
+There are two ways of mitigating such a problem, making it less likely your Tails installation will be compromised in some way:
 
 - 1) Only transfer the files and tools you need for the specific tasks you're trying to accomplish in Tails.
 - 2) Create compartmentalized accounts and identities (email accounts, chat accounts, GPG/OTR keys, etc.) that are totally separated from your established digital presence.
@@ -632,12 +632,12 @@ Two years after he blew the whistle on the NSA, Edward Snowden wrote an op-ed in
 >
 > At the turning of the millennium, few imagined that citizens of developed democracies would soon be required to defend the concept of an open society against their own leaders.
 >
-> Yet the balance of power is beginning to shift. We are witnessing the emergence of a post-terror generation, one that rejects a worldview defined by a singular tragedy. 
+> Yet the balance of power is beginning to shift. We are witnessing the emergence of a post-terror generation, one that rejects a worldview defined by a singular tragedy.
 >
 >—["Edward Snowden: The World Says No to Surveillance."](http://www.nytimes.com/2015/06/05/opinion/edward-snowden-the-world-says-no-to-surveillance.html) The New York Times.
 
-Protecting your privacy in the age of ubiquitous NSA surveillance is incredibly complex. Gaining a basic understanding of the concepts involved, much less actually using the software that's available, has an enormous learning curve. But it is worth it. The conversation around surveillance is changing. Users around the world are rallying against passive surveillance and legal challenges against the U.S. surveillance apparatus are growing in number. 
+Protecting your privacy in the age of ubiquitous NSA surveillance is incredibly complex. Gaining a basic understanding of the concepts involved, much less actually using the software that's available, has an enormous learning curve. But it is worth it. The conversation around surveillance is changing. Users around the world are rallying against passive surveillance and legal challenges against the U.S. surveillance apparatus are growing in number.
 
-Increasingly, we're living our lives online and creating long data trails which can be accessed and mined for information. When there is so much data about us online, it becomes exponentially harder to keep our personal information to ourselves. The challenge of the cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default. 
+Increasingly, we're living our lives online and creating long data trails which can be accessed and mined for information. When there is so much data about us online, it becomes exponentially harder to keep our personal information to ourselves. The challenge of the cypherpunk movement is to make secure and verified end-to-end encryption accessible to everyone, and turned on by default.
 
 But even with [direct access](http://www.guardian.co.uk/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa) to all the data traveling at the speed of light through the Internet's backbone fiber-optic cables and the [cooperation](https://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/) of the major United States tech companies (which are extremely difficult for people to boycott), the largest, most powerful and best-funded surveillance apparatus that humanity has ever seen can not invade our privacy without resistance.
