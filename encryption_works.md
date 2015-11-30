@@ -184,7 +184,7 @@ Chief among these is [Signal](https://whispersystems.org), a free and open-sourc
 
 It's important to note that as with most encryption tools, both parties need to be using the app for it to work. Signal uses your device's data connection (or WiFi), and so users don't incur SMS fees.
 
-Signal also makes it possible for you to verify the cryptographic identities of the people you communicate with. This is not possible in iMessage—the key fingerprints are totally hidden from and inaccessible to the end user. A fingerprint is simply a hexadecimal string of numbers of letters that summarizes and uniquely identifies an encryption key—an important concept that we'll be referring back to later.
+Signal also makes it possible for you to verify the cryptographic identities of the people you communicate with. This is not possible in iMessage—the key fingerprints are totally hidden from and inaccessible to the end user. A fingerprint is simply a hexadecimal string of numbers and letters that summarizes and uniquely identifies an encryption key—an important concept that we'll be referring back to later.
 
 It's important to remember what these apps can and can't do—while they will encrypt your conversations and log less metadata than traditional text messaging (Open Whisper Systems says they don't keep logs of who called who), you still have to use a valid cellphone number to sign up and, as always, beware of malware on your device.
 
