@@ -154,7 +154,7 @@ For information on how to set up two-factor authentication on most websites and 
 
 ### Hard-Drive Encryption
 
-A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're traveling.
+A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history, and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're traveling.
 
 Encrypting your hard-drive doesn't just make it harder for law enforcement to access your documents, it makes you more secure generally—if your laptop is stolen, the thief can't rip out the hard-drive and extract sensitive data.
 
