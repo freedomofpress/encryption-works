@@ -114,6 +114,10 @@ Let's look at Stray's example of a journalist reporting on local police miscondu
 
 The adversary in this case isn't as sophisticated as the NSA, but local authorities can still subpoena emails or phone call records to see who you've been talking to.
 
+An important distinction that will help you threat model is the difference between *confidentiality* and *anonymity*. Confidentiality refers to the contents of a conversation being hidden, while anonymity refers to the identity of the conversants being hidden. Two users of an encrypted text messaging app such as Signal (discussed later) may have a confidential conversation, but since their Signal identities are tied to their phone numbers their conversation is not anonymous. On the other hand, a few Tor Browser Bundle users may have an anonymous conversation on an internet forum site, but since they're posts are unencrypted and publicly visible, their conversation is not confidential. Note anonymity does not necessarily mean the participants of a conversation do not know each other's identities, rather that those outside the conversation do not.
+
+When working on a story with a colleague it is likely confidentiality will suffice—it is no secret you talk, but what you talk about should remain confidential. On the other hand, you may wish to communicate with a source or consultant on a particular issue anonymously *and* confidentially; neither of you wishes it be know you have a relationship, and what you talk about should also not be known to any third party.
+
 ### Strong passphrases and password managers
 
 With threat modeling in mind, there are several easy steps you can take to improve your security before ever encrypting your emails or chats. These steps can be just as important—if not more so—than the more complicated steps described later in this guide.
@@ -188,6 +192,21 @@ Signal also makes it possible for you to verify the cryptographic identities of 
 
 It's important to remember what these apps can and can't do—while they will encrypt your conversations and log less metadata than traditional text messaging (Open Whisper Systems says they don't keep logs of who called who), you still have to use a valid cellphone number to sign up and, as always, beware of malware on your device.
 
+It is important to remember that conversations over Signal are not anonymous. Since your Signal identity is tied to your phone number, and ["mobile phones are extremely loud metadata spewing fountains vomiting forth a trail of your life’s activities,"](https://medium.com/@thegrugq/signal-intelligence-free-for-all-5993c2f72f90), a whole lot of information regarding your conversation including:
+
+* Who you are talking to and their phone numbers (and who they are talking to and so on).
+* When and where you sent and received each encrypted message.
+* When and where each encrypted call occured.
+
+can be learned by anyone with access to your mobile carriers logs.
+
+If you read the article linked just above, you'll see that The Grugq states "this is true for all mobile messenger apps, including Wickr, Silent Circle, WhatsApp, LINE, Telegram, etc. Mobile messengers do not provide anonymity, the best they can offer is protecting message content." His statement is true for all the applications he mentioned, however, it is still possible to have anonymous (and confidential) conversations on Android using the apps ChatSecure and Orbot in combination to route an encrypted messaging protocol over Tor. We recommend Signal over this combination for two main reasons:
+
+* Signal is cross-platform
+* ChatSecure uses a messaging protocol (XMPP w/ OTR) that was developed for desktops and does not adapt well to mobile usage
+
+That said, sometimes you may need anonymity in addition to encryption on your mobile device. Use of Orbot and ChatSecure will be covered in the section on OTR.
+
 ### Doesn't Apple Provide End-To-End Encryption?
 
 Apple made news when they [announced](https://www.apple.com/apples-commitment-to-customer-privacy/) that iMessage conversations were end-to-end encrypted, meaning that if Apple is served with a legal order, they could not decrypt your communications even if they wanted to.
@@ -204,7 +223,7 @@ This was a big step, making iMessage more secure than traditional text messaging
 
 ![Signal fingerprint verification](images/Signal_fingerprint_verification.png)
 
-As mentioned above, this is one example of a shortcoming in closed-source software. Free and open-source software, by contrast, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Apple has publicly [detailed the security of iOS](https://ssl.apple.com/business/docs/iOS_Security_Guide.pdf#39), which is laudable, but their claims and designs are more difficult to verify—unless you work for Apple and have access to the code. Signal is open-source, so it receives a higher degree of trust and credibility from the security community and the cryptographers who have examined its implementation of encryption algorithms. Plus, features are added and bugs are fixed based on feedback from the user base, and anyone with the requisite programming experience can submit contributions to Signal's further development.
+As mentioned above, the inability to independently audit iMessage is a shortcoming of all closed-source software. Free and open-source software, by contrast, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Apple has publicly [detailed the security of iOS](https://ssl.apple.com/business/docs/iOS_Security_Guide.pdf#39), which is laudable, but their claims and designs are more difficult to verify—unless you work for Apple and have access to the code. Signal is open-source, so it receives a higher degree of trust and credibility from the security community and the cryptographers who have examined its implementation of encryption algorithms. Plus, features are added and bugs are fixed based on feedback from the user base, and anyone with the requisite programming experience can submit contributions to Signal's further development.
 
 ## Anonymize Your Location with Tor
 
@@ -281,13 +300,21 @@ The best way to end-to-end encrypt your instant messages is to use something cal
 
 To use OTR, you'll need to download additional software with your IM client. If you use Windows you can download and install [Pidgin](https://pidgin.im/) and the [OTR plugin](http://www.cypherpunks.ca/otr/). If you use Mac OS X you can download and install [Adium](https://adium.im), a free software chat application that includes OTR support. If you use GNU/Linux you can install the pidgin and pidgin-otr packages.
 
-The OTR client for [Android](https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im]) and [iOS devices](https://itunes.apple.com/us/app/chatsecure/id464200063) is called ChatSecure.
+We recommend the OTR client ChatSecure, which is available for [Android](https://play.google.com/store/apps/details?id=info.guardianproject.otr.app.im]) and [iOS devices](https://itunes.apple.com/us/app/chatsecure/id464200063). Getting set up with using OTR with ChatSecure is pretty straightforward and should only take a few minutes. See the [EFF how-to](https://ssd.eff.org/en/module/how-install-and-use-chatsecure) for details. One thing to be aware of is that OTR requires both parties to have a consistent internet connection for the duration of the chat. If one party loses service the OTR session between them will end and no messages can be sent until both parties are back online *and* the session has been re-initiated. In short, OTR was no designed for the asynchronicity of the mobile world. For this reason, we recommend Signal as your main solution for confidential mobile messaging.
 
 For a full explanation of how OTR works and how to set it up, check out The Intercept's guide to [chatting in secret while we're all being watched](https://firstlook.org/theintercept/2015/07/14/communicating-secret-watched/). As an added bonus, The Intercept also explains how to set up OTR to work with Tor so you can keep your chats both anonymous and encrypted.
 
 As with PGP, which will be discussed in a later section, OTR is used for two things: **encrypting the contents** of real-time instant message conversations and **verifying the identity** of people you chat with. Identity verification is important, and something many OTR users neglect to do. While OTR is more user-friendly than other types of encryption, there are some things you should know about OTR to understand it fully and know what attacks against it are possible.
 
-OTR encrypts the contents of your chats but not the metadata related to them—who you talk to, how often, and when. You can use Google Talk and Facebook Chat with OTR, but we know that these services comply with surveillance requests from many governments and leave your metadata exposed, even if you're encrypting the content of your IM conversations. For this reason, we recommend using XMPP services that demonstrably take the necessary precautions to ensure user privacy on all fronts: XMPP servers that support communication over Tor, encrypt metadata (like the "to" and "from" fields) between servers, require OTR from the very beginning of a conversation, and have privacy-friendly logging policies.   XMPP servers hosted by [Calyx Institute](https://www.calyxinstitute.org/projects/public_jabber_xmpp_server), [Riseup](https://help.riseup.net/en/chat) and [Duck Duck Go](https://duck.co/blog/post/4/xmpp-services-at-duckduckgo) score quite highly in this regard.  Have a look at the [Public XMPP Server Directory](https://xmpp.net/directory.php) for even more options for privacy-forward XMPP services.
+### OTR, Metadata, and Anonymity
+
+ Note that OTR encrypts the contents of your chats but not the metadata related to them—who you talk to, how often, and when (i.e., it provides confidentiality, but not anonymity). You can use Google Talk and Facebook Chat with OTR, but we know that these services comply with surveillance requests from many governments and leave your metadata exposed, even if you're encrypting the content of your IM conversations. For this reason, we recommend using XMPP services that demonstrably take the necessary precautions to ensure user privacy on all fronts: XMPP servers that support communication over Tor, encrypt metadata (like the "to" and "from" fields) between servers, require OTR from the very beginning of a conversation, and have privacy-friendly logging policies. XMPP servers hosted by [Calyx Institute](https://www.calyxinstitute.org/projects/public_jabber_xmpp_server), [Riseup](https://help.riseup.net/en/chat) and [Duck Duck Go](https://duck.co/blog/post/4/xmpp-services-at-duckduckgo) score quite highly in this regard. Have a look at the [Public XMPP Server Directory](https://xmpp.net/directory.php) for even more options for privacy-forward XMPP services.
+
+Unfortunately, there are few ways to easily route OTR-encrypted XMPP traffic over Tor. In fact because of the difficulty in set up and configuration for most operating systems and software clients, we discuss here just two—Android and Tails OS. You'll find the set up for Android below. Tails OS, discussed in its own section below, routes all traffic through Tor (and also conveniently ships with the Pidgin OTR client we recommend).
+
+On Android, it is easy to run ChatSecure traffic over Tor, by using it in combination with an app called [Orbot](https://play.google.com/store/apps/details?id=org.torproject.android). This is fantastic because it's the easiest way to have conversations that are not just confidential, but anonymous from your mobile device. First, setup Orbot [like so](https://securityinabox.org/en/guide/orbot/android) (be sure to follow the instructions in section 4.2 if you plan on regularly running ChatSecure over Tor), and then open ChatSecure. ChatSecure will automatically try to connect over Tor [like so](https://securityinabox.org/en/hands-guide-content/using-orbot-chatsecure).
+
+Note that to benefit from using ChatSecure (or Pidgin on Tails) over Tor, you must also create your account using Tor. All the clients and servers we recommend support *in-band registration*, which means you can create an XMPP account right from your client, without having to go online. We recommend using in-band registation to create your anonymous account, once you have your client routed over Tor.
 
 ### Keys
 
