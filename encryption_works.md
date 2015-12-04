@@ -83,7 +83,7 @@ Stories about the [lengths](http://www.nytimes.com/2013/08/18/magazine/laura-poi
 
 There are dozens of reasons people should use encryption even if you're not a journalist or a whistleblower—your medical details, credit card info, and personal photos shouldn't be fair game for hackers or governments.
 
-The NSA isn't the only adversary journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. They return their work laptop but nobody thinks to revoke their access to the cloud storage system your newsroom uses. They take the story and the months of research to a rival newspaper and scoops you.
+The NSA isn't the only adversary journalists have to be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. They return their work laptop but nobody thinks to revoke their access to the cloud storage system your newsroom uses. They take the story and the months of research to a rival newspaper and scoop you.
 
 What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them.
 It starts by asking questions such as:
