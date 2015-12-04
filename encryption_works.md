@@ -259,7 +259,7 @@ An attack like this becomes much harder as the number of nodes and the volume of
 
 Recently, the Tor Project [commented](https://blog.torproject.org/blog/preliminary-analysis-hacking-teams-slides) on reports that Hacking Team, the surveillance technology vendor which was massively hacked in July 2015, had managed to compromise the Tor network. The attack turned out to be a case of targeted surveillance rather than a widespread problem:
 
-> The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating them, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
+> The good news is that they don't appear to have any exploit on Tor or on Tor Browser. The other good news is that their proposed attack doesn't scale well. They need to put malicious hardware on the local network of their target user, which requires choosing their target, locating her, and then arranging for the hardware to arrive in the right place. So it's not really practical to launch the attack on many Tor users at once.
 
 The attack reinforced what we already suspected about Tor: targeted attacks *can* de-anonymize Tor traffic, but widespread attacks probably aren't feasible for small companies.
 
