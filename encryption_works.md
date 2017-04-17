@@ -225,6 +225,80 @@ This was a big step, making iMessage more secure than traditional text messaging
 
 As mentioned above, the inability to independently audit iMessage is a shortcoming of all closed-source software. Free and open-source software, by contrast, is available for the entire world to see how it works. This makes it much harder for the software to be compromised by an adversary without its maintainers or developers knowing. Apple has publicly [detailed the security of iOS](https://ssl.apple.com/business/docs/iOS_Security_Guide.pdf#39), which is laudable, but their claims and designs are more difficult to verify—unless you work for Apple and have access to the code. Signal is open-source, so it receives a higher degree of trust and credibility from the security community and the cryptographers who have examined its implementation of encryption algorithms. Plus, features are added and bugs are fixed based on feedback from the user base, and anyone with the requisite programming experience can submit contributions to Signal's further development.
 
+## Threat Models
+
+> "The sad fact is that when it comes to the internet, everybody is a spy: the government, the service providers watching your packets whiz by, the employer who operates the network you're reading this post on, the lurker on the wifi at Starbucks. The ubiquity of digital communications has made it harder than ever before to engage in truly private conversations."
+>
+> — John Cook, [talking](http://politburo.gawker.com/introducing-the-gawker-media-securedrop-1688075673) about why Gawker set up a SecureDrop instance.
+
+Protecting the communications between journalists and sources is one of the most important press freedom issues of the 21st century. A record number of whistleblowers have recently been prosecuted in large part because the government thinks it can obtain the email and phone call records of any interaction, without ever attempting to force journalists to testify against their sources in court. A [report](https://www.aclu.org/sites/default/files/field_document/dem14-withlibertytomonitorall-07282014.pdf) from the American Civil Liberties Union, titled "With Liberty To Monitor All: How Large-Scale US Surveillance is Harming Journalism, Law And American Democracy" pointed out the numerous ways in which the US surveillance apparatus is chilling journalism. In interviews with numerous reporters, several themes emerged: 
+
+- The landscape for journalists reporting on policy failures and military decisions has been chilled and toughened.
+- Journalists believe sources are less likely to talk to them, since technology makes it much easier to follow a leak trail than before.
+- Journalists are concerned that the government now has access to "a record of everywhere I’ve walked, everywhere I’ve been." 
+
+To that end, Freedom of the Press Foundation has supported a variety of encryption tools for journalists that aim at protecting these digital communications. We hope to train journalism organizations in how to use these tools, so they can keep their sources, and themselves, safer.
+
+Once it's clear that journalists have to protect themselves from a variety of threats, not only three-letter government agencies, the next thing to consider is what steps to take to protect themselves from other threats. This line of thinking is called "operational security," or "opsec" for short.
+
+### Operational Security
+
+**The advice is this chapter is directed towards journalists in particular, but the advice is far more general, and can be adapted to other scenarios.**
+
+The NSA is just adversary reporters should be wary of. Imagine a newsroom that relies on a cloud-based storage system for documents. You and your colleagues are working on a story over the course of a few weeks. Just as you're beginning to edit the final draft, a reporter is fired. He returns his work laptop but nobody thinks to revoke his access to the cloud storage system your newsroom uses. He takes the story and the months of research to a rival newspaper and scoops you.
+
+What steps could have been taken to stop this from happening? Working through this scenario will go a long way towards threat modeling, meaning we figure out the threats facing us and decide how best to defend against them. This starts by asking questions such as:
+
+- What are you protecting?
+- Who/what are you protecting against? 
+- What steps can you take?
+
+Take the above example of the newsroom which got scooped. They want to protect their story -- they don't want all their research to go unrewarded and some other news outlet to get the credit. They're protecting against disgruntled ex-employees as well as external attackers. To prevent this from happening, the newsroom can take steps and implement strict practices where journalists have their access revoked to editorial documents as soon as their employment is terminated.
+
+As you can see, threat modeling is about how you think about a problem as much as what you do to solve it. In this example, we weren't thinking about the NSA or of being hacked by an external adversary. In fact, hacking isn't the biggest danger facing most journalists -- it probably isn't how people will come by your data or compromise you. If you're a journalist, you're much more at risk of your story being scooped, or of falling victim to a phishing attack and someone getting access to all your e-mail. 
+
+!["Security." Courtesy of XKCD.](http://imgs.xkcd.com/comics/security.png)
+
+Journalists' e-mail accounts are often the subject of attacks, but it's more common for hackers to try and trick Gmail into resetting the password rather than hacking Google itself. In any security system, the user is always the weakest link -- you can have all the PGP encryption in the world, but if your password's written on a post-it note on your desk, anyone with physical access to your office has access to your data.
+
+The adversary isn't the NSA, but the scenario shows why practicing good operational security protects you from numerous adversities. Snowden is the most famous recent example of a whistleblower, but journalists use inside sources who need protecting quite often.
+
+For more information on threat models, how they work and how to develop them, check out Jonathan Stray's excellent guide to [threat modeling](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/#threat-modeling).
+
+### Strong Passphrases
+
+The first meaningful action you can take towards ensuring your digital security is to protect your computer and online accounts with a strong password. This is the first —and most important— line of defense between you and anyone with physical access to your computer who wants to impersonate you. 
+
+Traditionally, computer users were encouraged to create and choose a password and attach some numbers onto the end of it. This would lead to passwords such as "Tr0ub4dor&3," to reference a popular [XKCD comic](https://xkcd.com/936/). The problem with this password is that it's hard to remember and it's not especially secure against a brute-force password-guessing attack.  
+
+Passphrases are longer than passwords."The quick fox jumps over the lazy dog" is a long and memorable passphrase, but is a common phrase, so it's not a good idea to use it. The aforementioned XKCD comic's advice is to come up with a passphrase of unconnected words, such as "correct horse battery staple." This is good advice, but it's surprisingly hard to come up with four or five words that are truly unconnected. Humans are bad at randomness, and often think of words in groups -- I say brown, you think cow; I say garden, you think shed.
+
+The solution is to externally randomize the words that constitute your passphrase. This is where [Diceware](http://world.std.com/~reinhold/diceware.html) comes in -- using dice to choose the words of your passphrase increases its randomness and its security.
+
+Additionally, Freedom of the Press Foundation recommends using a password manager such as [KeePassX](https://www.keepassx.org). The app is unlocked by a master passphrase, which you memorize.
+
+As well as protecting password vaults, you should also choose good passphrases for your PGP secret key and disk encryption.
+
+### Hard-Drive Encryption
+
+A journalist's computer is an unparalleled look into their life. It's a rolodex, a research history and a store of interview notes and works-in-progress. For this reason, it's important to lock down access to it, both when you're at the office and when you're travelling.
+
+Encrypting your hard-drive doesn't just make it harder for the NSA to access your documents, it makes you more secure generally -- if your laptop is stolen, an attacker can't rip out the hard-drive and extract sensitive data.
+
+For journalists who travel internationally, it's important to remember that federal courts have traditionally [affirmed](https://www.eff.org/files/eff-border-search_2.pdf) that the government does not need suspicion of criminal activity to search a traveler's laptop at the border. Non-citizens may be turned away if they do not comply, and U.S. citizens can face extended questioning. It's up to the individual to decide how much hassle they're willing to risk, but there are some steps you can take to secure files when traveling. 
+
+- Have a separate computer for work travel, which does not contain sensitive material. 
+- Sign out of e-mail accounts and power off laptops before approaching the border. 
+- As always, make regular backups, so that the loss of a computer is not catastrophic.
+
+As a general rule, consider the question "how bad would it be if a government had access to the files on this computer?" when deciding what files to have on a computer you cross borders with.
+
+### Physical Security
+
+If you're working on sensitive material, it's a good idea to keep your laptop in your possession at all times. This limits an attacker's ability to steal your device or gain access long enough to install malicious software (such as a keylogger) on it.
+
+Using the digital security tools described in this document only gives you so much security -- good physical security is half the battle. A 2010 Rolling Stone [profile](http://www.rollingstone.com/culture/news/meet-the-american-hacker-behind-wikileaks-20101201) of American journalist and WikiLeaks volunteer Jacob Appelbaum revealed that if his laptop is out of his sight for any length of time, he destroys it because of the risk that it's been compromised. Appelbaum has long been the subject of harassment by the U.S. government and what level of risk you individually face is something you have to decide for yourself, but in general it's a good idea not to expose yourself to more risk than necessary.
+
 ## Anonymize Your Location with Tor
 
 While you can often be tracked when browsing the Internet by both private corporations and governments, it's still possible to use the web and avoid many types of mass surveillance. The easiest way is to use the Tor Browser, a web browser based on Firefox. The Tor Browser allows you to browse the web while masking your IP address, which is generally a relatively accurate representation of your approximate location and can sometimes allow you to be uniquely identified.
