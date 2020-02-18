@@ -1,4 +1,11 @@
 # Encryption Works
+
+**Important:** The documentation provided here is out of date, and preserved in read-only format.
+For up-to-date advice on using encryption to protect yourself, see our
+[Digital Security Training guides](https://freedom.press/training/).
+
+---
+
 ## A Guide to Protecting Your Privacy for Journalists, Sources, and Everyone Else
 
 *Dedicated to cypherpunks, and to whistleblowers past and future.*
