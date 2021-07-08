@@ -244,11 +244,11 @@ The Tor network is made up of over 6,000 volunteer servers, called nodes. When y
 
 The EFF has a good graphical explanation of how Tor works:
 
-![Tor 1](https://www.torproject.org/images/htw1.png)
+![Tor 1](images/htw1.png)
 
-![Tor 2](https://www.torproject.org/images/htw2.png)
+![Tor 2](images/htw2.png)
 
-![Tor 3](https://www.torproject.org/images/htw3.png)
+![Tor 3](images/htw3.png)
 
 ### Setup
 
